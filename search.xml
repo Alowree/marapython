@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Hexo blog SEO</title>
+      <link href="/posts/389693095/"/>
+      <url>/posts/389693095/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-seo-autopush --save</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> SEO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何在网站底部增加导航菜单</title>
       <link href="/posts/2809951222/"/>
       <url>/posts/2809951222/</url>
