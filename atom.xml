@@ -6,7 +6,7 @@
   <link href="https://alowree.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://alowree.gitee.io/"/>
-  <updated>2021-09-09T11:21:44.035Z</updated>
+  <updated>2021-09-09T12:12:57.619Z</updated>
   <id>https://alowree.gitee.io/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo blog SEO</title>
+    <title>如何将你的Hexo博客站点被搜索引擎收录</title>
     <link href="https://alowree.gitee.io/posts/389693095/"/>
     <id>https://alowree.gitee.io/posts/389693095/</id>
     <published>2021-09-09T10:30:05.000Z</published>
-    <updated>2021-09-09T11:21:44.035Z</updated>
+    <updated>2021-09-09T12:12:57.619Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-seo-autopush --save</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2>]]></content>
+    <content type="html"><![CDATA[<p>你辛辛苦苦建立起来的博客站点，当然希望站点文章被搜索引擎收录，从而出现在访客的搜索结果中，为人所用。本文我们详细介绍如何主动推送站点去到三大搜索引擎：必应，百度，和谷歌。</p><h2 id="必应验证"><a href="#必应验证" class="headerlink" title="必应验证"></a>必应验证</h2><ol><li><p>到必应<a href="https://www.bing.com/webmasters/">Webmaster Tools</a>添加自己的网站，选择<code>手动添加网站</code></p><p><img src="https://gitee.com/Alowree/img/raw/master/AddYourSite.png"></p></li><li><p>添加并验证网站，选择一种验证方法，选第一种<code>XML文件</code></p><ul><li><p>XML文件</p></li><li><p>HTML Meta标记</p></li><li><p>将 CNAME 记录添加到 DNS 中</p></li></ul><p><img src="https://gitee.com/Alowree/img/raw/master/image-20210909200110938.png" alt="image-20210909200110938"></p></li><li><p>下载<code>BingSiteAuth.xml</code>文件并把它添加到网站根目录下</p><p>这里我们只需要直接把<code>BingSiteAuth.xml</code>放在<code>source</code>文件中就可以，然后<code>hexo d</code>部署网站。注意，如果是像我一样布置在<code>Gitee</code>上的，记得先去<code>https://gitee.com/用户名/用户名/pages</code>手动点击更新站点，之后再回到必应<a href="https://www.bing.com/webmasters/">Webmaster Tools</a>点击<code>验证</code>按钮。</p></li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;安装插件&quot;&gt;&lt;a href=&quot;#安装插件&quot; class=&quot;headerlink&quot; title=&quot;安装插件&quot;&gt;&lt;/a&gt;安装插件&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre</summary>
+    <summary type="html">&lt;p&gt;你辛辛苦苦建立起来的博客站点，当然希望站点文章被搜索引擎收录，从而出现在访客的搜索结果中，为人所用。本文我们详细介绍如何主动推送站点去到三大搜索引擎：必应，百度，和谷歌。&lt;/p&gt;
+&lt;h2 id=&quot;必应验证&quot;&gt;&lt;a href=&quot;#必应验证&quot; class=&quot;headerlink</summary>
       
     
     
