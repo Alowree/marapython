@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://alowree.gitee.io/googlefba9766889e0cb6e.html</loc>
+    <loc>https://alowree.gitee.io/posts/389693095/</loc>
     
     <lastmod>2021-09-10</lastmod>
     
   </url>
   
   <url>
-    <loc>https://alowree.gitee.io/posts/389693095/</loc>
+    <loc>https://alowree.gitee.io/googlefba9766889e0cb6e.html</loc>
     
     <lastmod>2021-09-10</lastmod>
     
@@ -186,6 +186,13 @@
   </url>
   
   <url>
+    <loc>https://alowree.gitee.io/tags/Python/</loc>
+    <lastmod>2021-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://alowree.gitee.io/tags/Butterfly/</loc>
     <lastmod>2021-09-10</lastmod>
     <changefreq>daily</changefreq>
@@ -201,13 +208,6 @@
   
   <url>
     <loc>https://alowree.gitee.io/tags/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</loc>
-    <lastmod>2021-09-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://alowree.gitee.io/tags/Python/</loc>
     <lastmod>2021-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
