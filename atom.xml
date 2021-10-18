@@ -3,11 +3,11 @@
   <title>MaraPython</title>
   <icon>https://www.gravatar.com/avatar/154df4dc90b74ddd2f4c8abe8c0e2ccf</icon>
   <subtitle>Marketing Analytics with Python and Marathon</subtitle>
-  <link href="https://alowree.gitee.io/atom.xml" rel="self"/>
+  <link href="https://marapython.com/atom.xml" rel="self"/>
   
-  <link href="https://alowree.gitee.io/"/>
+  <link href="https://marapython.com/"/>
   <updated>2021-10-15T00:00:43.497Z</updated>
-  <id>https://alowree.gitee.io/</id>
+  <id>https://marapython.com/</id>
   
   <author>
     <name>Alowree</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>愚公移山 Yu Gong Wants to Move the Mountains</title>
-    <link href="https://alowree.gitee.io/posts/1547424583/"/>
-    <id>https://alowree.gitee.io/posts/1547424583/</id>
+    <link href="https://marapython.com/posts/1547424583/"/>
+    <id>https://marapython.com/posts/1547424583/</id>
     <published>2021-10-14T10:19:30.000Z</published>
     <updated>2021-10-15T00:00:43.497Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>英文写作中的排比</title>
-    <link href="https://alowree.gitee.io/posts/parallelism/"/>
-    <id>https://alowree.gitee.io/posts/parallelism/</id>
+    <link href="https://marapython.com/posts/parallelism/"/>
+    <id>https://marapython.com/posts/parallelism/</id>
     <published>2021-10-02T11:22:28.000Z</published>
     <updated>2021-10-12T02:10:40.471Z</updated>
     
@@ -54,25 +54,25 @@
     
     
     
-    <category term="GMAT" scheme="https://alowree.gitee.io/categories/GMAT/"/>
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
     
     
-    <category term="Parallel Construction" scheme="https://alowree.gitee.io/tags/Parallel-Construction/"/>
+    <category term="Parallel Construction" scheme="https://marapython.com/tags/Parallel-Construction/"/>
     
-    <category term="parallelism" scheme="https://alowree.gitee.io/tags/parallelism/"/>
+    <category term="parallelism" scheme="https://marapython.com/tags/parallelism/"/>
     
-    <category term="排比" scheme="https://alowree.gitee.io/tags/%E6%8E%92%E6%AF%94/"/>
+    <category term="排比" scheme="https://marapython.com/tags/%E6%8E%92%E6%AF%94/"/>
     
-    <category term="平行结构" scheme="https://alowree.gitee.io/tags/%E5%B9%B3%E8%A1%8C%E7%BB%93%E6%9E%84/"/>
+    <category term="平行结构" scheme="https://marapython.com/tags/%E5%B9%B3%E8%A1%8C%E7%BB%93%E6%9E%84/"/>
     
-    <category term="并列结构" scheme="https://alowree.gitee.io/tags/%E5%B9%B6%E5%88%97%E7%BB%93%E6%9E%84/"/>
+    <category term="并列结构" scheme="https://marapython.com/tags/%E5%B9%B6%E5%88%97%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>英文的第九类词性--限定词</title>
-    <link href="https://alowree.gitee.io/posts/determiners/"/>
-    <id>https://alowree.gitee.io/posts/determiners/</id>
+    <link href="https://marapython.com/posts/determiners/"/>
+    <id>https://marapython.com/posts/determiners/</id>
     <published>2021-09-29T10:41:22.000Z</published>
     <updated>2021-10-14T02:35:41.869Z</updated>
     
@@ -86,15 +86,15 @@
     
     
     
-    <category term="GMAT" scheme="https://alowree.gitee.io/categories/GMAT/"/>
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
     
     
   </entry>
   
   <entry>
     <title>Some..., some..., and others...</title>
-    <link href="https://alowree.gitee.io/posts/279186413/"/>
-    <id>https://alowree.gitee.io/posts/279186413/</id>
+    <link href="https://marapython.com/posts/279186413/"/>
+    <id>https://marapython.com/posts/279186413/</id>
     <published>2021-09-29T01:15:09.000Z</published>
     <updated>2021-10-11T07:27:18.050Z</updated>
     
@@ -105,27 +105,27 @@
     
     
     
-    <category term="GMAT" scheme="https://alowree.gitee.io/categories/GMAT/"/>
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
     
     
-    <category term="Parallelism" scheme="https://alowree.gitee.io/tags/Parallelism/"/>
+    <category term="Parallelism" scheme="https://marapython.com/tags/Parallelism/"/>
     
-    <category term="Parallel Construction" scheme="https://alowree.gitee.io/tags/Parallel-Construction/"/>
+    <category term="Parallel Construction" scheme="https://marapython.com/tags/Parallel-Construction/"/>
     
-    <category term="Parallel Structure" scheme="https://alowree.gitee.io/tags/Parallel-Structure/"/>
+    <category term="Parallel Structure" scheme="https://marapython.com/tags/Parallel-Structure/"/>
     
-    <category term="Other" scheme="https://alowree.gitee.io/tags/Other/"/>
+    <category term="Other" scheme="https://marapython.com/tags/Other/"/>
     
-    <category term="The Other" scheme="https://alowree.gitee.io/tags/The-Other/"/>
+    <category term="The Other" scheme="https://marapython.com/tags/The-Other/"/>
     
-    <category term="Another" scheme="https://alowree.gitee.io/tags/Another/"/>
+    <category term="Another" scheme="https://marapython.com/tags/Another/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Butterfly的主题插件</title>
-    <link href="https://alowree.gitee.io/posts/1155088082/"/>
-    <id>https://alowree.gitee.io/posts/1155088082/</id>
+    <link href="https://marapython.com/posts/1155088082/"/>
+    <id>https://marapython.com/posts/1155088082/</id>
     <published>2021-09-27T04:25:20.000Z</published>
     <updated>2021-09-28T23:54:31.221Z</updated>
     
@@ -141,15 +141,15 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo Butterfly的标签外挂（三）</title>
-    <link href="https://alowree.gitee.io/posts/2118605294/"/>
-    <id>https://alowree.gitee.io/posts/2118605294/</id>
+    <link href="https://marapython.com/posts/2118605294/"/>
+    <id>https://marapython.com/posts/2118605294/</id>
     <published>2021-09-16T00:50:44.000Z</published>
     <updated>2021-09-28T04:27:31.573Z</updated>
     
@@ -163,15 +163,15 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo Butterfly的标签外挂（二）</title>
-    <link href="https://alowree.gitee.io/posts/1069065524/"/>
-    <id>https://alowree.gitee.io/posts/1069065524/</id>
+    <link href="https://marapython.com/posts/1069065524/"/>
+    <id>https://marapython.com/posts/1069065524/</id>
     <published>2021-09-15T23:34:13.000Z</published>
     <updated>2021-09-28T05:51:47.437Z</updated>
     
@@ -187,21 +187,21 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="Butterfly" scheme="https://alowree.gitee.io/tags/Butterfly/"/>
+    <category term="Butterfly" scheme="https://marapython.com/tags/Butterfly/"/>
     
-    <category term="Tag Plugin" scheme="https://alowree.gitee.io/tags/Tag-Plugin/"/>
+    <category term="Tag Plugin" scheme="https://marapython.com/tags/Tag-Plugin/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Butterfly的标签外挂（一）</title>
-    <link href="https://alowree.gitee.io/posts/263080428/"/>
-    <id>https://alowree.gitee.io/posts/263080428/</id>
+    <link href="https://marapython.com/posts/263080428/"/>
+    <id>https://marapython.com/posts/263080428/</id>
     <published>2021-09-15T23:33:44.000Z</published>
     <updated>2021-09-28T04:57:59.518Z</updated>
     
@@ -212,21 +212,21 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="Butterfly" scheme="https://alowree.gitee.io/tags/Butterfly/"/>
+    <category term="Butterfly" scheme="https://marapython.com/tags/Butterfly/"/>
     
-    <category term="Tag Plugin" scheme="https://alowree.gitee.io/tags/Tag-Plugin/"/>
+    <category term="Tag Plugin" scheme="https://marapython.com/tags/Tag-Plugin/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Butterfly使用指南</title>
-    <link href="https://alowree.gitee.io/posts/3468678593/"/>
-    <id>https://alowree.gitee.io/posts/3468678593/</id>
+    <link href="https://marapython.com/posts/3468678593/"/>
+    <id>https://marapython.com/posts/3468678593/</id>
     <published>2021-09-12T03:42:42.000Z</published>
     <updated>2021-09-28T04:11:21.651Z</updated>
     
@@ -241,15 +241,15 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>如何将你的Hexo博客站点被搜索引擎收录</title>
-    <link href="https://alowree.gitee.io/posts/389693095/"/>
-    <id>https://alowree.gitee.io/posts/389693095/</id>
+    <link href="https://marapython.com/posts/389693095/"/>
+    <id>https://marapython.com/posts/389693095/</id>
     <published>2021-09-09T10:30:05.000Z</published>
     <updated>2021-10-18T02:43:28.930Z</updated>
     
@@ -263,19 +263,19 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="SEO" scheme="https://alowree.gitee.io/tags/SEO/"/>
+    <category term="SEO" scheme="https://marapython.com/tags/SEO/"/>
     
   </entry>
   
   <entry>
     <title>Hello Hexo! Hello World!</title>
-    <link href="https://alowree.gitee.io/posts/1243066710/"/>
-    <id>https://alowree.gitee.io/posts/1243066710/</id>
+    <link href="https://marapython.com/posts/1243066710/"/>
+    <id>https://marapython.com/posts/1243066710/</id>
     <published>2021-09-09T10:30:05.000Z</published>
     <updated>2021-09-28T08:13:48.336Z</updated>
     
@@ -289,19 +289,19 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="SEO" scheme="https://alowree.gitee.io/tags/SEO/"/>
+    <category term="SEO" scheme="https://marapython.com/tags/SEO/"/>
     
   </entry>
   
   <entry>
     <title>如何在Hexo博客网站底部增加页脚导航菜单</title>
-    <link href="https://alowree.gitee.io/posts/2809951222/"/>
-    <id>https://alowree.gitee.io/posts/2809951222/</id>
+    <link href="https://marapython.com/posts/2809951222/"/>
+    <id>https://marapython.com/posts/2809951222/</id>
     <published>2021-09-06T23:46:07.000Z</published>
     <updated>2021-10-12T02:37:25.094Z</updated>
     
@@ -315,25 +315,25 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="Butterfly" scheme="https://alowree.gitee.io/tags/Butterfly/"/>
+    <category term="Butterfly" scheme="https://marapython.com/tags/Butterfly/"/>
     
-    <category term="页脚" scheme="https://alowree.gitee.io/tags/%E9%A1%B5%E8%84%9A/"/>
+    <category term="页脚" scheme="https://marapython.com/tags/%E9%A1%B5%E8%84%9A/"/>
     
-    <category term="导航菜单" scheme="https://alowree.gitee.io/tags/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/"/>
+    <category term="导航菜单" scheme="https://marapython.com/tags/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/"/>
     
-    <category term="footer" scheme="https://alowree.gitee.io/tags/footer/"/>
+    <category term="footer" scheme="https://marapython.com/tags/footer/"/>
     
   </entry>
   
   <entry>
     <title>如何在Hexo博客文章中添加思维导图</title>
-    <link href="https://alowree.gitee.io/posts/3830822335/"/>
-    <id>https://alowree.gitee.io/posts/3830822335/</id>
+    <link href="https://marapython.com/posts/3830822335/"/>
+    <id>https://marapython.com/posts/3830822335/</id>
     <published>2021-08-30T00:53:44.000Z</published>
     <updated>2021-09-28T04:09:21.416Z</updated>
     
@@ -347,19 +347,19 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="Butterfly" scheme="https://alowree.gitee.io/tags/Butterfly/"/>
+    <category term="Butterfly" scheme="https://marapython.com/tags/Butterfly/"/>
     
   </entry>
   
   <entry>
     <title>Soundfreaq Sound Rise II SFQ-16简介</title>
-    <link href="https://alowree.gitee.io/posts/30295/"/>
-    <id>https://alowree.gitee.io/posts/30295/</id>
+    <link href="https://marapython.com/posts/30295/"/>
+    <id>https://marapython.com/posts/30295/</id>
     <published>2021-08-25T05:30:50.061Z</published>
     <updated>2021-09-28T08:26:52.411Z</updated>
     
@@ -374,21 +374,21 @@
     
     
     
-    <category term="新零售" scheme="https://alowree.gitee.io/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/"/>
+    <category term="新零售" scheme="https://marapython.com/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/"/>
     
     
-    <category term="Soundfreaq" scheme="https://alowree.gitee.io/tags/Soundfreaq/"/>
+    <category term="Soundfreaq" scheme="https://marapython.com/tags/Soundfreaq/"/>
     
-    <category term="SFQ-16" scheme="https://alowree.gitee.io/tags/SFQ-16/"/>
+    <category term="SFQ-16" scheme="https://marapython.com/tags/SFQ-16/"/>
     
-    <category term="Sound Rise II" scheme="https://alowree.gitee.io/tags/Sound-Rise-II/"/>
+    <category term="Sound Rise II" scheme="https://marapython.com/tags/Sound-Rise-II/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Butterfly自定义首页</title>
-    <link href="https://alowree.gitee.io/posts/34232320/"/>
-    <id>https://alowree.gitee.io/posts/34232320/</id>
+    <link href="https://marapython.com/posts/34232320/"/>
+    <id>https://marapython.com/posts/34232320/</id>
     <published>2021-08-24T01:28:35.000Z</published>
     <updated>2021-09-28T06:39:48.184Z</updated>
     
@@ -399,15 +399,15 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Butterfly主题的Hexo博客如何修改站点logo</title>
-    <link href="https://alowree.gitee.io/posts/3/"/>
-    <id>https://alowree.gitee.io/posts/3/</id>
+    <link href="https://marapython.com/posts/3/"/>
+    <id>https://marapython.com/posts/3/</id>
     <published>2021-08-23T03:25:54.000Z</published>
     <updated>2021-09-28T11:51:00.535Z</updated>
     
@@ -421,19 +421,19 @@
     
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://alowree.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
-    <category term="Butterfly" scheme="https://alowree.gitee.io/tags/Butterfly/"/>
+    <category term="Butterfly" scheme="https://marapython.com/tags/Butterfly/"/>
     
   </entry>
   
   <entry>
     <title>Git Rookies</title>
-    <link href="https://alowree.gitee.io/posts/3239246065/"/>
-    <id>https://alowree.gitee.io/posts/3239246065/</id>
+    <link href="https://marapython.com/posts/3239246065/"/>
+    <id>https://marapython.com/posts/3239246065/</id>
     <published>2021-08-03T08:00:30.000Z</published>
     <updated>2021-09-28T06:56:18.816Z</updated>
     
@@ -448,17 +448,17 @@
     
     
     
-    <category term="Git" scheme="https://alowree.gitee.io/categories/Git/"/>
+    <category term="Git" scheme="https://marapython.com/categories/Git/"/>
     
     
-    <category term="Git" scheme="https://alowree.gitee.io/tags/Git/"/>
+    <category term="Git" scheme="https://marapython.com/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Github Rookies</title>
-    <link href="https://alowree.gitee.io/posts/106702426/"/>
-    <id>https://alowree.gitee.io/posts/106702426/</id>
+    <link href="https://marapython.com/posts/106702426/"/>
+    <id>https://marapython.com/posts/106702426/</id>
     <published>2021-08-03T06:52:37.000Z</published>
     <updated>2021-08-03T07:49:16.760Z</updated>
     
@@ -477,8 +477,8 @@
   
   <entry>
     <title>开直通车应该如何出价</title>
-    <link href="https://alowree.gitee.io/posts/373632574/"/>
-    <id>https://alowree.gitee.io/posts/373632574/</id>
+    <link href="https://marapython.com/posts/373632574/"/>
+    <id>https://marapython.com/posts/373632574/</id>
     <published>2021-07-28T00:37:07.000Z</published>
     <updated>2021-09-08T06:01:40.995Z</updated>
     
@@ -494,17 +494,17 @@
     
     
     
-    <category term="新零售" scheme="https://alowree.gitee.io/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/"/>
+    <category term="新零售" scheme="https://marapython.com/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/"/>
     
     
-    <category term="直通车" scheme="https://alowree.gitee.io/tags/%E7%9B%B4%E9%80%9A%E8%BD%A6/"/>
+    <category term="直通车" scheme="https://marapython.com/tags/%E7%9B%B4%E9%80%9A%E8%BD%A6/"/>
     
   </entry>
   
   <entry>
     <title>Markdown Style Preview</title>
-    <link href="https://alowree.gitee.io/posts/48849/"/>
-    <id>https://alowree.gitee.io/posts/48849/</id>
+    <link href="https://marapython.com/posts/48849/"/>
+    <id>https://marapython.com/posts/48849/</id>
     <published>2021-07-09T02:09:14.000Z</published>
     <updated>2021-09-28T04:55:39.410Z</updated>
     
@@ -515,10 +515,10 @@
     
     
     
-    <category term="Markdown" scheme="https://alowree.gitee.io/categories/Markdown/"/>
+    <category term="Markdown" scheme="https://marapython.com/categories/Markdown/"/>
     
     
-    <category term="Markdown" scheme="https://alowree.gitee.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="https://marapython.com/tags/Markdown/"/>
     
   </entry>
   
