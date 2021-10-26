@@ -1,0 +1,71 @@
+---
+title: 愚公移山 Yu Gong Wants to Move the Mountains
+toc_number: true
+abbrlink: 1547424583
+date: 2021-10-14 18:19:30
+updated:
+tags:
+categories:
+keywords:
+description:
+top_img:
+comments:
+cover:
+toc:
+copyright:
+copyright_author:
+copyright_author_href:
+copyright_url:
+copyright_info:
+mathjax:
+katex:
+aplayer:
+highlight_shrink:
+aside:
+swiper_index:
+---
+
+太行1、王屋2二山，方3七百里，高万仞4，本在冀州5之南，河阳6之北。
+
+Two great mountains Taihang and Wangwu, about **hundreds of square miles** <u>wide</u> and **thousands of feet** <u>high</u>, originally located <u>between</u> `southern Jizhou` <u>and</u> `northern Heyang`.
+
+北山愚公者，年且7九十，面山而居8。惩9山北之塞10，出入之迂11也。
+
+<u>Directly opposite to the mountains</u> lived an old man called Yu Gong, who was nearly 90 years old. Suffering from the obstruction at <u>one</u> side of the mountains, he and his family had to **take a detour** whenever they had something to do at <u>the other</u> side of the mountains.
+
+聚室而谋12曰：“吾与汝13毕力平险14，指通豫南15，达于汉阴16，可乎？”杂然相许17。其妻献疑18曰：“以19君之力，曾20不能损21魁父22之丘23，如太行、王屋何？且24焉25置26土石？”杂曰：“投诸渤海之尾，隐土之北27。”
+
+Therefore, one day he summoned the whole family to discuss: "let's work together to get rid of the two mountains and build a road that <u>connects to</u> Yunan and Hanyin. Is this feasible?" Most people tended to agree, but his wife questioned, "with your strength, even one small hill of Kuifu cannot be flattened, not to mention the two great mountains. Even if you can, where to dump so much earth and stone?" Others replied, "to the edge of the Bohai Sea, to the north of Yintu."
+
+遂率子孙荷28担者三夫29，叩石垦壤30，箕畚31运于渤海之尾。邻人京城32氏之孀33妻有遗男34，始龀35，跳往助之。寒暑易节36，始一反焉37。　
+
+So some of his children and grandchildren started digging the mountains, led by the old man Yu Gong. A little boy about 7-8 years old from the neighbour also came to help.  He worked long and he worked hard, rarely returning home.
+
+河曲38智叟39笑而止之曰：“甚矣，汝之不惠40！以残年余力41，曾不能毁山之一毛42，其43如土石何？”北山愚公长息44曰：“汝心之固，固不可彻45，曾不若孀妻弱子。虽我之死46，有子存焉；子又生孙，孙又生子；子又有子，子又有孙；子子孙孙无穷匮47也，而山不加增，何苦48而不平？”河曲智叟亡49以应。
+
+A wise old man named Zhi Sou from Hequ **laughed at** Yu Gong and **prevented him from doing** this, saying: "You are so silly! With your age and strength, you cannot move any plants from the mountain. How could you possibly move away that much of earth and stone?"
+
+Beishan Yu Gong sighed and said, "You are <u>so</u> stubborn <u>that</u> you cannot **think out of the box**. You are even **not up to** `the orphans and widows`. Even if I die, my children would continue, and my children would bear their children, **and so on and so forth**. Our family will have endless supplies of people, whereas the mountains will not increase an inch. Why should we be afraid? Zhi Sou was unable to respond. 
+
+操蛇之神50闻之，惧其不已51也，告之于帝52。帝感其诚53，命夸娥氏54二子负55二山，一厝56朔东57，一厝雍58南。自此，冀之南，汉之阴，无陇断59焉。 [1] 
+
+`The Mountain God` heard about this surprising story. Fearing that Yu Gong and his family would keep digging **forever and ever**, he reported the case to `the Emperor of Heaven`. Deeply moved by Yu Gong's sincerity, `the Emperor of Heaven` demanded the two sons of the Kua'e to **carry away** the two mountains, <u>one</u> placed `in the east of` Shuofang and <u>the other</u> `in the south of` Yongzhou. **From then on**, <u>from</u> the south of Jizhou <u>to</u> the south bank of the Hanshui River, there were no mountain barriers anymore.
+
+这个故事告诉我们，一个人只要胸有成竹、意志坚定，面对的任务无论有多么困难，他都有可能完成本来看似不可能的任务。
+
+The ancient story tells us **that** <u>as long as one is purposeful and determined, anything can be accomplished, no matter how difficult the task may be</u>.
+
+译文参考：
+
+愚公移山
+太行、王屋两座山，方圆七百里，高七八千丈，本来在冀州南边，黄河北岸的北边。
+北山下面有个名叫愚公的人，年纪快到90岁了，在山的正对面居住。他苦于山区北部的阻塞，出来进去都要绕道，就召集全家人商量说：“我跟你们尽力挖平险峻的大山，使道路一直通到豫州南部，到达汉水南岸，好吗？”大家纷纷表示赞同。他的妻子提出疑问说：“凭你的力气，连魁父这座小山都不能削平，能把太行、王屋怎么样呢？再说，往哪儿搁挖下来的土和石头？”众人说：“把它扔到渤海的边上，隐土的北边。”于是愚公率领儿孙中能挑担子的三个人上了山，凿石头，挖土，用箕畚运到渤海边上。邻居京城氏的寡妇有个孤儿，刚七八岁，蹦蹦跳跳地去帮助他。冬夏换季，才能往返一次。
+河曲的智叟讥笑愚公，阻止他干这件事，说：“你简直太愚蠢了！就凭你残余的岁月、剩下的力气连山上的一棵草都动不了，又能把泥土石头怎么样呢？”北山愚公长叹说：“你的思想真顽固，顽固得没法开窍，连孤儿寡妇都比不上。即使我死了，还有儿子在呀；儿子又生孙子，孙子又生儿子；儿子又有儿子，儿子又有孙子；子子孙孙无穷无尽，可是山却不会增高加大，还怕挖不平吗？”河曲智叟无话可答。
+握着蛇的山神听说了这件事，怕他没完没了地挖下去，向天帝报告了。天帝被愚公的诚心感动，命令大力神夸娥氏的两个儿子背走了那两座山，一座放在朔方的东部，一座放在雍州的南部。从这时开始，冀州的南部直到汉水南岸，再也没有高山阻隔了。
+
+## 咬文嚼字
+
+[Family | Definition of Family by Merriam-Webster](https://www.merriam-webster.com/dictionary/family)
+
+[grammar - Family or families - English Language Learners Stack Exchange](https://ell.stackexchange.com/questions/104445/family-or-families)
+
