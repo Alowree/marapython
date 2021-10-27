@@ -139,7 +139,7 @@ backup:
   theme: butterfly
   message: To back up my locale Hexo production folder to a remote repository
   repository:
-    github: git@github.com:Alowree/marapython.git,production
+    github: git@github.com:Alowree/marapython-production-backup.git
 
 search:
   path: search.xml
