@@ -25,7 +25,7 @@ aside:
 swiper_index:
 ---
 
-## 主电脑上的博客目录备份至远程仓库
+## 把博客工作目录备份至远程仓库
 
 1. 安装插件
 
@@ -62,7 +62,7 @@ swiper_index:
 
 
 
-## 新电脑上从远程仓库拉取备份资料
+## 从远程仓库拉取备份资料
 
 这个需要在新电脑上试运行。
 
@@ -70,7 +70,20 @@ swiper_index:
 
 ## 思考问题
 
-或许将备份存放在同一仓库的`production`分支并不是一个好主意？为什么不存放在一个单独的仓库比如`marapython-production`？
+或许将备份存放在同一仓库的`production`分支并不是一个好主意？为什么不存放在一个单独的仓库比如`marapython-production-backup`？
+
+经测试，如果更改上述第2步中的远程仓库设置：
+
+```yml
+backup:
+  type: git
+  theme: butterfly
+  message: To back up my locale Hexo production folder to a remote repository
+  repository:
+    github: git@github.com:Alowree/marapython-production-backup.git
+```
+
+再使用`hexo b`命令，这时并不能将生产目录成功备份至远程仓库`marapython-production-backup`，而是直接将生产目录更新到博客仓库`marapython`的`master`分支，并且覆盖和擦除了原来`hexo d`所部署的博客内容。This is weird. 可能插件本身就是按照设定的使用逻辑所开发出来，不能向单独的仓库进行备份，只能向博客仓库的另外一个分支备份吧。Anyway, forget it.
 
 ## 参考资料
 

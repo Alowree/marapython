@@ -1,5 +1,5 @@
 ---
-title: 愚公移山 Yu Gong Wants to Move the Mountains
+title: 愚公移山 Yu Gong to Move the Mountains
 toc_number: true
 abbrlink: 1547424583
 date: 2021-10-14 18:19:30
