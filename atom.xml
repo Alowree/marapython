@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2021-10-28T05:32:28.673Z</updated>
+  <updated>2021-10-29T00:52:46.817Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《极简市场营销》读书笔记</title>
+    <link href="https://marapython.com/posts/18372802/"/>
+    <id>https://marapython.com/posts/18372802/</id>
+    <published>2021-10-28T23:49:35.000Z</published>
+    <updated>2021-10-29T00:52:46.817Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>马克思主义实践观认为：实践是认识的来源，是认识发展的根本动力，是检验认识正确与否的唯一标准。实践与认识是辩证统一的关系，实践决定认识，认识对实践有巨大的反作用。正确的科学的认识促进实践的发展，错误的认识阻碍实践的发展。认识要随着实践的发展而不断进步。</p></blockquote><p>你可以去读N多个商学院的MBA或者EMBA，但是学过Marketing之后，如果不去实践，也终将是一个空字。大脑会慢慢地忘记你学习过市场营销，甚至忘记你曾经支付过高贵的学费。所以，当出现一个可以给你操盘的机会，你要把握，注意快速地学习和借鉴市场营销专业人士的全景观、方法论、工具包，结合企业和品牌当前的实际情况，仔细地评估，恰当地取舍，选择合乎自身的策略和方法，来打造和推广所服务的品牌。</p><p>很庆幸，遇到了胡超的《极简市场营销》这本书。</p><p>三个推荐理由。</p><ol><li>正本清源，明确和澄清了市场营销中常见术语的定义，解决<strong>是什么</strong>。</li><li>科学系统，提供了行军和作战的全景地图，解决<strong>现在哪里</strong>和<strong>去往哪里</strong>。</li><li>方法工具，提供了作战工具包，解决<strong>阵地选择</strong>和<strong>武器选择</strong>。</li></ol><p><img src="https://s3.bmp.ovh/imgs/2021/10/97d1a73b78a87493.png" alt=""></p><p>通过《极简市场营销》提供的这份行军作战全景地图，可以很快诊断我军现在的所处位置，以及明显的营销短板：那就是4P中的第4个P，也就是IMC (Integrated Marketing Communication) 整合营销传播。缺乏士兵，缺乏阵地，缺乏火力点。应该选择有利的阵地，派补兵员，快速插入有效火力。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;马克思主义实践观认为：实践是认识的来源，是认识发展的根本动力，是检验认识正确与否的唯一标准。实践与认识是辩证统一的关系，实践决定认识，认识对实践有巨大的反作用。正确的科学的认识促进实践的发展，错误的认识阻碍实践的发展。认识要随着实践的发展而不断进步</summary>
+      
+    
+    
+    
+    <category term="新零售" scheme="https://marapython.com/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>闻鸡起舞 Rise at Cockcrow to Practice the Sword</title>
     <link href="https://marapython.com/posts/1792540153/"/>
     <id>https://marapython.com/posts/1792540153/</id>
     <published>2021-10-28T05:30:21.000Z</published>
-    <updated>2021-10-28T05:32:28.673Z</updated>
+    <updated>2021-10-28T13:03:46.640Z</updated>
     
     <content type="html"><![CDATA[<p>Zu Ti and Liu Kun were from the Eastern Jin Dynasty. They were both diligent and ambitious young men.</p><p>东晋时期，有一对好朋友叫祖逖和刘坤。他们都是非常勤奋并野心勃勃的年轻人。</p><p>However, they felt their knowledge was not enough to serve their country. So they put all their energy into study.</p><p>然而，他们觉得自己的学识并不足够以报效祖国。于是他们将全部精力都投入到了学习中。</p><p>Once Zu Ti in the middle of the night heard roosters crowing in his sleep.</p><p>有一天半夜，祖逖在睡梦中听到公鸡在打鸣。</p><p>He woke Liu and said to him: “people say it is unlucky to hear roosters crowing in the middle of the night but I don’t think so. How about we get up and practice sword the moment we hear the rooster crowing from now on?”</p><p>他把刘坤踹醒说道： “人家说半夜听到鸡叫不吉利，但我不觉得。要不以后咱们听见鸡叫就起来练剑怎么样？</p><p>Liu Kun agreed. Every day they woke up at cockcrow and practiced the sword. And they never stopped. </p><p>刘坤开心的同意了。每天他们伴着鸡叫起床练剑。冬去春来，从未停歇。</p><p>After a long period of study and training, Zu Ti grew into a general and Liu Kun a governor.</p><p>在经过漫长的学习与练习之后，祖逖成为了将军，刘坤也成为重臣。</p><p>Because of their story, people use 闻鸡起舞 to describe someone of noble aspirations exerts himself in time. </p><p>正因他们的故事，人们用“闻鸡起舞”来形容那些有崇高志向的人，以及他们的勤奋和自律。</p>]]></content>
     
@@ -492,26 +515,6 @@
     
     
     <category term="Git" scheme="https://marapython.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github Rookies</title>
-    <link href="https://marapython.com/posts/106702426/"/>
-    <id>https://marapython.com/posts/106702426/</id>
-    <published>2021-08-03T06:52:37.000Z</published>
-    <updated>2021-08-03T07:49:16.760Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="To-Create-a-New-Repository"><a href="#To-Create-a-New-Repository" class="headerlink" title="To Create a New Repository"></a>To Create a New Repository</h2><ol><li>Repository name</li><li>Description</li><li>Public / Private</li><li>Initialize this repository with a README</li><li>Add .gitignore</li><li>Add a license</li></ol><h2 id="To-Connect-the-Repository"><a href="#To-Connect-the-Repository" class="headerlink" title="To Connect the Repository"></a>To Connect the Repository</h2><p><a href="https://github.com:Alowree/Hello-World">https://github.com:Alowree/Hello-World</a></p><ol><li>README.md</li><li>Github Flavored Markdown</li></ol><h2 id="To-Publish-Code-on-Github"><a href="#To-Publish-Code-on-Github" class="headerlink" title="To Publish Code on Github"></a>To Publish Code on Github</h2><ol><li><code>git clone</code> repository to local</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@github.com:Alowree/Hello-World.git</span><br><span class="line">Cloning into <span class="string">&#x27;Hello-World&#x27;</span>...</span><br><span class="line">remote: Enumerating objects: 3, <span class="keyword">done</span>.</span><br><span class="line">remote: Counting objects: 100% (3/3), <span class="keyword">done</span>.</span><br><span class="line">remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0</span><br><span class="line">Receiving objects: 100% (3/3), <span class="keyword">done</span>.</span><br></pre></td></tr></table></figure><ol><li><p>Create a code file locally, write some codes, and save the file.</p></li><li><p>Check with <code>git status</code> command</p></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> Hello-World</span><br><span class="line">$ git status</span><br><span class="line">On branch main</span><br><span class="line">Your branch is up to date with <span class="string">&#x27;origin/main&#x27;</span>.</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use <span class="string">&quot;git add &lt;file&gt;...&quot;</span> to include <span class="keyword">in</span> what will be committed)</span><br><span class="line">        hello-world.php</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use <span class="string">&quot;git add&quot;</span> to track)</span><br></pre></td></tr></table></figure><ol><li><code>git add</code> and <code>git commit</code></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git add hello-world.php</span><br><span class="line">$ git commit -m <span class="string">&quot;Add hello world script by php&quot;</span></span><br><span class="line">[main b0dadc4] Add hello world script by php</span><br><span class="line"> 1 file changed, 5 insertions(+)</span><br><span class="line"> create mode 100644 hello-world.php</span><br></pre></td></tr></table></figure><ol><li><code>git log</code></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">commit b0dadc41fb2bc53d5d94ee272d47d70fa58953b1 (HEAD -&gt; main)</span><br><span class="line">Author: Alowree &lt;alowree@hotmail.com&gt;</span><br><span class="line">Date:   Tue Aug 3 15:07:04 2021 +0800</span><br><span class="line"></span><br><span class="line">    Add hello world script by php</span><br><span class="line"></span><br><span class="line">commit 3dc8f6dfbc023e2749424481c4359e7a97651b74 (origin/main, origin/HEAD)</span><br><span class="line">Author: Alowree Xu &lt;alowree@hotmail.com&gt;</span><br><span class="line">Date:   Tue Aug 3 14:49:38 2021 +0800</span><br><span class="line"></span><br><span class="line">    Initial commit</span><br></pre></td></tr></table></figure><ol><li><code>git push</code></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git push</span><br><span class="line">Enumerating objects: 4, <span class="keyword">done</span>.</span><br><span class="line">Counting objects: 100% (4/4), <span class="keyword">done</span>.</span><br><span class="line">Delta compression using up to 4 threads</span><br><span class="line">Compressing objects: 100% (2/2), <span class="keyword">done</span>.</span><br><span class="line">Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, <span class="keyword">done</span>.</span><br><span class="line">Total 3 (delta 0), reused 0 (delta 0), pack-reused 0</span><br><span class="line">To github.com:Alowree/Hello-World.git</span><br><span class="line">   3dc8f6d..b0dadc4  main -&gt; main</span><br></pre></td></tr></table></figure><p>Now your code files have been published successfully on Github.</p><div class="note red icon simple"><i class="note-icon fas fa-question"></i><p>What is the difference between <code>master</code> and <code>main</code> when creating repositories on Github?</p></div>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;To-Create-a-New-Repository&quot;&gt;&lt;a href=&quot;#To-Create-a-New-Repository&quot; class=&quot;headerlink&quot; title=&quot;To Create a New Repository&quot;&gt;&lt;/a&gt;To Creat</summary>
-      
-    
-    
-    
     
   </entry>
   
