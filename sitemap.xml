@@ -368,20 +368,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/SFQ-16/</loc>
-    <lastmod>2021-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/Sound-Rise-II/</loc>
-    <lastmod>2021-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Sound-Platform-2/</loc>
     <lastmod>2021-11-18</lastmod>
     <changefreq>daily</changefreq>
@@ -390,6 +376,20 @@
   
   <url>
     <loc>https://marapython.com/tags/SFQ-06/</loc>
+    <lastmod>2021-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/SFQ-16/</loc>
+    <lastmod>2021-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Sound-Rise-II/</loc>
     <lastmod>2021-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
