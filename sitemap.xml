@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://marapython.com/posts/3213549675/</loc>
+    
+    <lastmod>2021-11-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/regular-expression/</loc>
     
     <lastmod>2021-11-19</lastmod>
@@ -621,6 +628,34 @@
   
   <url>
     <loc>https://marapython.com/tags/%E5%A3%B0%E9%9F%B3/</loc>
+    <lastmod>2021-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <lastmod>2021-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/regular-expression/</loc>
+    <lastmod>2021-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%AD%97%E7%AC%A6%E7%BB%84/</loc>
+    <lastmod>2021-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/character-class/</loc>
     <lastmod>2021-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
