@@ -119,7 +119,7 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     animation: ccc 3.2s linear infinite ;
 }
 
-
+/* Adjust font-size of each title after the setting of windchill */
 article h2 {
     border-bottom: 1px solid #FF7242;
     font-size: 1.8em;

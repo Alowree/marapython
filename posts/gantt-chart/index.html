@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>gantt chart | MaraPython</title><meta name="keywords" content="Markdown,Mermaid,Gantt Chart"><meta name="author" content="Alowree,alowree@hotmail.com"><meta name="copyright" content="Alowree"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="善于时间管理的人可以轻松自如地在多个任务之间来回切换，既能够照顾到各个任务的轻重缓急，又能结合各个任务间内在的依赖关系和持续时长，做到节时、高效、完美地完成复杂的任务组合。但是多重任务的数量一旦超过某个阀值，人的大脑便会显得力不从心，会出现错误和纰漏。这时，我们需要使用工具来进行辅助，更为科学和系统地管理多重任务。 项目经理们通常会使用Office Project来管理复杂的项目，也有的项目经理为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gantt chart">
+<meta property="og:url" content="https://marapython.com/posts/gantt-chart/index.html">
+<meta property="og:site_name" content="MaraPython">
+<meta property="og:description" content="善于时间管理的人可以轻松自如地在多个任务之间来回切换，既能够照顾到各个任务的轻重缓急，又能结合各个任务间内在的依赖关系和持续时长，做到节时、高效、完美地完成复杂的任务组合。但是多重任务的数量一旦超过某个阀值，人的大脑便会显得力不从心，会出现错误和纰漏。这时，我们需要使用工具来进行辅助，更为科学和系统地管理多重任务。 项目经理们通常会使用Office Project来管理复杂的项目，也有的项目经理为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/Alowree/img/raw/master/pexels-lumn-311039.jpg">
+<meta property="article:published_time" content="2021-11-30T01:05:15.000Z">
+<meta property="article:modified_time" content="2021-11-30T11:50:28.141Z">
+<meta property="article:author" content="Alowree">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/Alowree/img/raw/master/pexels-lumn-311039.jpg"><link rel="shortcut icon" href="/img/favicon-32x32.png"><link rel="canonical" href="https://marapython.com/posts/gantt-chart/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu_site_verification" content="code-a5Xk3ddsv2"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Alowree","link":"链接: ","source":"来源: MaraPython","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'gantt chart',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-11-30 19:50:28'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css"><link rel="stylesheet" href="/css/custom.css" media="all"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/carousel-touch.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/mindmap.min.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="MaraPython" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://gitee.com/Alowree/img/raw/master/pexels-lumn-311039.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MaraPython</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">gantt chart</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-30T01:05:15.000Z" title="发表于 2021-11-30 09:05:15">2021-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-30T11:50:28.141Z" title="更新于 2021-11-30 19:50:28">2021-11-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Markdown/">Markdown</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="gantt chart"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>善于时间管理的人可以轻松自如地在多个任务之间来回切换，既能够照顾到各个任务的轻重缓急，又能结合各个任务间内在的依赖关系和持续时长，做到节时、高效、完美地完成复杂的任务组合。但是多重任务的数量一旦超过某个阀值，人的大脑便会显得力不从心，会出现错误和纰漏。这时，我们需要使用工具来进行辅助，更为科学和系统地管理多重任务。</p>
+<p>项目经理们通常会使用Office Project来管理复杂的项目，也有的项目经理为图省事，仅使用Excel表格也可以完成项目管理。不管是使用Office Project，还是Excel表格，其本质都是通过绘制甘特图，来揭示复杂项目中各项相关工作的依赖关系和持续时长，以优化工作流程监视事项进度。在这篇博文中，我们来介绍使用Markdown进行甘特图的绘制。其中，使用Typora绘制的甘特图，更可以简便地导出为SVG或PDF格式文件，非常方便分发和浏览。</p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><blockquote>
+<p>A Gantt chart is a type of bar chart, first developed by Karol Adamiecki in 1896, and independently by Henry Gantt in the 1910s, that illustrates a project schedule and the amount of time it would take for any one project to finish. Gantt charts illustrate number of days between the start and finish dates of the terminal elements and summary elements of a project.</p>
+</blockquote>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p>在Typora编辑器里面，按照如下格式直接输入：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">gantt</span></span><br><span class="line"><span class="code">    dateFormat  YYYY-MM-DD</span></span><br><span class="line"><span class="code">    title       Adding GANTT diagram functionality to mermaid</span></span><br><span class="line"><span class="code">    excludes    weekends</span></span><br><span class="line"><span class="code">    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    section A section</span></span><br><span class="line"><span class="code">    Completed task            :done,    des1, 2014-01-06,2014-01-08</span></span><br><span class="line"><span class="code">    Active task               :active,  des2, 2014-01-09, 3d</span></span><br><span class="line"><span class="code">    Future task               :         des3, after des2, 5d</span></span><br><span class="line"><span class="code">    Future task2              :         des4, after des3, 5d</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    section Critical tasks</span></span><br><span class="line"><span class="code">    Completed task in the critical line :crit, done, 2014-01-06,24h</span></span><br><span class="line"><span class="code">    Implement parser and jison          :crit, done, after des1, 2d</span></span><br><span class="line"><span class="code">    Create tests for parser             :crit, active, 3d</span></span><br><span class="line"><span class="code">    Future task in critical line        :crit, 5d</span></span><br><span class="line"><span class="code">    Create tests for renderer           :2d</span></span><br><span class="line"><span class="code">    Add to mermaid                      :1d</span></span><br><span class="line"><span class="code">    Functionality added                 :milestone, 2014-01-25, 0d</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    section Documentation</span></span><br><span class="line"><span class="code">    Describe gantt syntax               :active, a1, after des1, 3d</span></span><br><span class="line"><span class="code">    Add gantt diagram to demo page      :after a1  , 20h</span></span><br><span class="line"><span class="code">    Add another diagram to demo page    :doc1, after a1  , 48h</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    section Last section</span></span><br><span class="line"><span class="code">    Describe gantt syntax               :after doc1, 3d</span></span><br><span class="line"><span class="code">    Add gantt diagram to demo page      :20h</span></span><br><span class="line"><span class="code">    Add another diagram to demo page    :48h</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<p>Typora渲染出的甘特图效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">    dateFormat  YYYY-MM-DD</span><br><span class="line">    title       Adding GANTT diagram functionality to mermaid</span><br><span class="line">    excludes    weekends</span><br><span class="line">    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)</span><br><span class="line"></span><br><span class="line">    section A section</span><br><span class="line">    Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">    Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">    Future task               :         des3, after des2, 5d</span><br><span class="line">    Future task2              :         des4, after des3, 5d</span><br><span class="line"></span><br><span class="line">    section Critical tasks</span><br><span class="line">    Completed task in the critical line :crit, done, 2014-01-06,24h</span><br><span class="line">    Implement parser and jison          :crit, done, after des1, 2d</span><br><span class="line">    Create tests for parser             :crit, active, 3d</span><br><span class="line">    Future task in critical line        :crit, 5d</span><br><span class="line">    Create tests for renderer           :2d</span><br><span class="line">    Add to mermaid                      :1d</span><br><span class="line">    Functionality added                 :milestone, 2014-01-25, 0d</span><br><span class="line"></span><br><span class="line">    section Documentation</span><br><span class="line">    Describe gantt syntax               :active, a1, after des1, 3d</span><br><span class="line">    Add gantt diagram to demo page      :after a1  , 20h</span><br><span class="line">    Add another diagram to demo page    :doc1, after a1  , 48h</span><br><span class="line"></span><br><span class="line">    section Last section</span><br><span class="line">    Describe gantt syntax               :after doc1, 3d</span><br><span class="line">    Add gantt diagram to demo page      :20h</span><br><span class="line">    Add another diagram to demo page    :48h</span><br></pre></td></tr></table></figure>
+<p>在Hexo博客站点使用Butterfly主题时，如果要在博文的Markdown文件内绘制甘特图，必须：</p>
+<ol>
+<li><p>首先，在主题配置文件<code>_config.butterfly.yml</code>内作如下配置：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mermaid</span></span><br><span class="line"><span class="comment"># see https://github.com/knsv/mermaid</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># built-in themes: default/forest/dark/neutral</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">default</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>其次，在Markdown文件内使用<code>mermaid</code>标签外挂：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">内容</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>关于Butterfly主题的<a target="_blank" rel="noopener" href="https://www.marapython.com/posts/butterfly-tag-plugins/#mermaid图表">mermaid标签外挂</a>或者<a target="_blank" rel="noopener" href="https://www.marapython.com/posts/butterfly-tag-plugins/">其他标签外挂</a>，可以点击前往了解更多。</p>
+</li>
+</ol>
+<p>经Butterfly主题渲染出的甘特图效果如下：</p>
+<div class="mermaid">gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding GANTT diagram functionality to mermaid
+    excludes    weekends
+    %% (&#96;excludes&#96; accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+    
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+    Functionality added                 :milestone, 2014-01-25, 0d
+    
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+    
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h</div>
+<p>下面我们逐一介绍各个参数的意义和使用方法。</p>
+<h3 id="标题Title"><a href="#标题Title" class="headerlink" title="标题Title"></a>标题Title</h3><p>甘特图的<strong>标题</strong>属于可选参数，通过<code>title</code>进行引入，主要用来在甘特图的顶部标示整个图表的名称或说明。</p>
+<h3 id="区块Section"><a href="#区块Section" class="headerlink" title="区块Section"></a>区块Section</h3><p>每个具体的任务<strong>区块</strong>，使用<code>section [name]</code>的格式作为首行来引导，需要注意，<strong>区块</strong>后面的名称是必须的。经过渲染以后，区块的名称会出现在甘特图最左侧的位置。</p>
+<p>任务区块内的各个任务<strong>事项</strong>，在<code>section [name]</code>的下方单独每行使用类似<br><code>task [name]    :[default=normal|crit|milestone,] [done|active|default=future,] [simplified_name,] [(start, finish)|(start, duration)|(default=last_finish, duration)]</code>的格式来描述。</p>
+<ul>
+<li>事项名称：<code>task [name]</code></li>
+<li>事项性质：<code>[default=normal|crit|milestone,]</code>，分别表示正常事项、关键事项、重要事件节点。</li>
+<li>事项状态：<code>[done|active|default=future,]</code>，分别表示已完成、进行中、待开展。</li>
+<li>事项简称：<code>[simplified_name,]</code>，作为后续事项的依赖项，可以使用简称进行引用。</li>
+<li>持续时间：<code>[(start, finish)|(start, duration)|(default=last_finish, duration)]</code></li>
+</ul>
+<h3 id="重要事件节点Milestone"><a href="#重要事件节点Milestone" class="headerlink" title="重要事件节点Milestone"></a>重要事件节点Milestone</h3><p>甘特图中可以加入<strong>重要事件节点</strong>。任务事项通常表现为持续的时间段，重要事件节点则通常表现为独立的时间点。重要事件节点的准确时间位置，由<strong>开始时间</strong>和<strong>持续时间</strong>共同决定：</p>
+<script type="math/tex; mode=display">重要事件节点的准确时间位置=开始时间 + 持续时间/2</script><p>在Typora里，关于<strong>重要事件节点</strong>的示例代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">gantt </span></span><br><span class="line"><span class="code">dateFormat HH:mm</span></span><br><span class="line"><span class="code">axisFormat %H:%M</span></span><br><span class="line"><span class="code">Initial milestone : milestone, m1, 17:49,2min</span></span><br><span class="line"><span class="code">taska2 : 10min</span></span><br><span class="line"><span class="code">taska3 : 5min </span></span><br><span class="line"><span class="code">Final milestone : milestone, m2, 18:14, 2min</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<p>Typora的渲染效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gantt </span><br><span class="line">dateFormat HH:mm</span><br><span class="line">axisFormat %H:%M</span><br><span class="line">Initial milestone : milestone, m1, 17:49,2min</span><br><span class="line">taska2 : 10min</span><br><span class="line">taska3 : 5min </span><br><span class="line">Final milestone : milestone, m2, 18:14, 2min</span><br></pre></td></tr></table></figure>
+<p>Butterfly的渲染效果如下：</p>
+<div class="mermaid">gantt 
+dateFormat HH:mm
+axisFormat %H:%M
+Initial milestone : milestone, m1, 17:49,2min
+taska2 : 10min
+taska3 : 5min 
+Final milestone : milestone, m2, 18:14, 2min</div>
+<h3 id="设置日期Setting-dates"><a href="#设置日期Setting-dates" class="headerlink" title="设置日期Setting dates"></a>设置日期Setting dates</h3><p><code>dateFormat</code> 用来定义<strong>代码输入</strong>的日期时间格式，默认的输入格式是<code>YYYY-MM-DD</code>。如果需要重新定义输入格式，可通过<code>dateFormat</code>引入以下参数进行设定。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Input       Example             Description:</span><br><span class="line">YYYY        2014                4 digit year</span><br><span class="line">YY          14                  2 digit year</span><br><span class="line">Q           1..4                Quarter of year. Sets month to first month in quarter.</span><br><span class="line">M MM        1..12               Month number</span><br><span class="line">MMM MMMM    January..Dec        Month name in locale set by moment.locale()</span><br><span class="line">D DD        1..31               Day of month</span><br><span class="line">Do          1st..31st           Day of month with ordinal</span><br><span class="line">DDD DDDD    1..365              Day of year</span><br><span class="line">X           1410715640.579      Unix timestamp</span><br><span class="line">x           1410715640579       Unix ms timestamp</span><br><span class="line">H HH        0..23               24 hour time</span><br><span class="line">h hh        1..12               12 hour time used with a A.</span><br><span class="line">a A         am pm               Post or ante meridiem</span><br><span class="line">m mm        0..59               Minutes</span><br><span class="line">s ss        0..59               Seconds</span><br><span class="line">S           0..9                Tenths of a second</span><br><span class="line">SS          0..99               Hundreds of a second</span><br><span class="line">SSS         0..999              Thousandths of a second</span><br><span class="line">Z ZZ        +12:00              Offset from UTC as +-HH:mm, +-HHmm, or Z</span><br></pre></td></tr></table></figure>
+<p><code>axisFormat</code>用来定义<strong>图表输出</strong>的日期时间格式，默认的输出格式是<code>YYYY-MM-DD</code>。如果需要重新定义输出格式，可通过<code>axisFormat</code>引入以下参数进行设定。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">%a - abbreviated weekday name.</span><br><span class="line">%A - full weekday name.</span><br><span class="line">%b - abbreviated month name.</span><br><span class="line">%B - full month name.</span><br><span class="line">%c - date and time, as &quot;%a %b %e %H:%M:%S %Y&quot;.</span><br><span class="line">%d - zero-padded day of the month as a decimal number [01,31].</span><br><span class="line">%e - space-padded day of the month as a decimal number [ 1,31]; equivalent to <span class="code">`%_d`</span>.</span><br><span class="line">%H - hour (24-hour clock) as a decimal number [00,23].</span><br><span class="line">%I - hour (12-hour clock) as a decimal number [01,12].</span><br><span class="line">%j - day of the year as a decimal number [001,366].</span><br><span class="line">%m - month as a decimal number [01,12].</span><br><span class="line">%M - minute as a decimal number [00,59].</span><br><span class="line">%L - milliseconds as a decimal number [000, 999].</span><br><span class="line">%p - either AM or PM.</span><br><span class="line">%S - second as a decimal number [00,61].</span><br><span class="line">%U - week number of the year (Sunday as the first day of the week) as a decimal number [00,53].</span><br><span class="line">%w - weekday as a decimal number [0(Sunday),6].</span><br><span class="line">%W - week number of the year (Monday as the first day of the week) as a decimal number [00,53].</span><br><span class="line">%x - date, as &quot;%m/%d/%Y&quot;.</span><br><span class="line">%X - time, as &quot;%H:%M:%S&quot;.</span><br><span class="line">%y - year without century as a decimal number [00,99].</span><br><span class="line">%Y - year with century as a decimal number.</span><br><span class="line">%Z - time zone offset, such as &quot;-0700&quot;.</span><br><span class="line">%% - a literal &quot;%&quot; character.</span><br></pre></td></tr></table></figure>
+<h3 id="注释Comments"><a href="#注释Comments" class="headerlink" title="注释Comments"></a>注释Comments</h3><p>在甘特图的代码输入位置可以使用注释，注释内容在解释器进行编译渲染的时候会被忽略和跳过。注释必须单独另起一行，以<code>%%</code>（双百分号）开头的内容会全部当作注释。</p>
+<h3 id="小结Summary"><a href="#小结Summary" class="headerlink" title="小结Summary"></a>小结Summary</h3><ul>
+<li><code>title</code>：甘特图的标题</li>
+<li><code>section [name]</code>：任务区块</li>
+<li><code>exclude</code>：接受格式为<code>YYYY-MM-DD</code>的<strong>具体日期</strong>、格式为<code>sunday</code>的<strong>一周七天</strong>、 格式为<code>weekends</code>的<strong>周末</strong>，但不接受使用<code>weekdays</code>来表示工作日。</li>
+<li><code>%%</code>: 在任意地方插入注释</li>
+</ul>
+<p>Typora渲染生成的实例演示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">    dateFormat  YYYY-MM-DD</span><br><span class="line">    title       Master Schedule of LAUNCH</span><br><span class="line">    excludes    weekends</span><br><span class="line">    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)</span><br><span class="line"></span><br><span class="line">    section Certification</span><br><span class="line">    US, CE and UK认证         :active, cert1, 2021-12-01,2021-12-10</span><br><span class="line">    3C认证                    :crit, active, cert2,2021-12-01,2021-12-15</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    section Production</span><br><span class="line">    US 4K             		:done,    p1, 2021-12-13,2021-12-17</span><br><span class="line">    CN 1K             		:done,    p2, 2021-12-20,2021-12-24</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    section JD Store</span><br><span class="line">    选代运营					:active, jd1, 2021-11-29,2021-12-10</span><br><span class="line">    店铺申请					:crit, jd2, after cert2, 10d</span><br><span class="line">    店铺装修     				:crit,jd3,  after jd2, 5d</span><br><span class="line">    店铺上线  					:milestone,jd4,  after jd3, 1d</span><br><span class="line">    运营方案					:active, after jd1,15d</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    section PR</span><br><span class="line">    新闻稿件					:pr1, after jd4, 10d</span><br><span class="line">    发小红书					:pr2, after jd4  , 15d</span><br><span class="line">    问答口碑					:pr3, after jd4  , 10d</span><br><span class="line"></span><br><span class="line">    section Reviews</span><br><span class="line">    爱范儿 众测					:r1,2022-01-25,2022-02-15</span><br><span class="line">    B站视频评测      			:5d</span><br><span class="line">    什么值得买					:5d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Butterfly渲染生成的实例演示：</p>
+<div class="mermaid">gantt
+    dateFormat  YYYY-MM-DD
+    title       Master Schedule of LAUNCH
+    excludes    weekends
+    %% (&#96;excludes&#96; accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)
+
+    section Certification
+    US, CE and UK认证         :active, cert1, 2021-12-01,2021-12-10
+    3C认证                    :crit, active, cert2,2021-12-01,2021-12-15
+
+    section Production
+    US 4K             		:done,    p1, 2021-12-13,2021-12-17
+    CN 1K             		:done,    p2, 2021-12-20,2021-12-24
+
+
+    section JD Store
+    选代运营					:active, jd1, 2021-11-29,2021-12-10
+    店铺申请					:crit, jd2, after cert2, 10d
+    店铺装修     				:crit,jd3,  after jd2, 5d
+    店铺上线  					:milestone,jd4,  after jd3, 1d
+    运营方案					:active, after jd1,15d
+
+
+    section PR
+    新闻稿件					:pr1, after jd4, 10d
+    发小红书					:pr2, after jd4  , 15d
+    问答口碑					:pr3, after jd4  , 10d
+    
+    section Reviews
+    爱范儿 众测					:r1,2022-01-25,2022-02-15
+    B站视频评测      			:5d
+    什么值得买					:5d
+
+</div>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://mermaid-js.github.io/mermaid/#/gantt">https://mermaid-js.github.io/mermaid/#/gantt</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:alowree@hotmail.com">Alowree</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://marapython.com/posts/gantt-chart/">https://marapython.com/posts/gantt-chart/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://gitee.com/Alowree/img/raw/master/pexels-lumn-311039.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/how-to-remove-external-links-in-a-markdown-file/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Alowree/img/raw/master/pexels-johannes-plenio-2259232.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">如何批量地去除Markdown文本内的外链</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alowree</div><div class="author-info__description">Keep the Momentum</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/alowree"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/alowree" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:alowree@hotmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">半路Coder，使用Python</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E9%A2%98Title"><span class="toc-number">2.1.</span> <span class="toc-text">标题Title</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97Section"><span class="toc-number">2.2.</span> <span class="toc-text">区块Section</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E4%BA%8B%E4%BB%B6%E8%8A%82%E7%82%B9Milestone"><span class="toc-number">2.3.</span> <span class="toc-text">重要事件节点Milestone</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%97%A5%E6%9C%9FSetting-dates"><span class="toc-number">2.4.</span> <span class="toc-text">设置日期Setting dates</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8AComments"><span class="toc-number">2.5.</span> <span class="toc-text">注释Comments</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93Summary"><span class="toc-number">2.6.</span> <span class="toc-text">小结Summary</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">3.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/gantt-chart/" title="gantt chart"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Alowree/img/raw/master/pexels-lumn-311039.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gantt chart"/></a><div class="content"><a class="title" href="/posts/gantt-chart/" title="gantt chart">gantt chart</a><time datetime="2021-11-30T01:05:15.000Z" title="发表于 2021-11-30 09:05:15">2021-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/how-to-remove-external-links-in-a-markdown-file/" title="如何批量地去除Markdown文本内的外链"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Alowree/img/raw/master/pexels-johannes-plenio-2259232.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何批量地去除Markdown文本内的外链"/></a><div class="content"><a class="title" href="/posts/how-to-remove-external-links-in-a-markdown-file/" title="如何批量地去除Markdown文本内的外链">如何批量地去除Markdown文本内的外链</a><time datetime="2021-11-28T12:44:52.000Z" title="发表于 2021-11-28 20:44:52">2021-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/penguins-of-madagascar/" title="Penguins of Madagascar"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Alowree/img/raw/master/pexels-matheus-natan-3394939.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Penguins of Madagascar"/></a><div class="content"><a class="title" href="/posts/penguins-of-madagascar/" title="Penguins of Madagascar">Penguins of Madagascar</a><time datetime="2021-11-19T12:21:11.000Z" title="发表于 2021-11-19 20:21:11">2021-11-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/regular-expression/" title="正则指引"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Alowree/img/raw/master/pexels-pew-nguyen-243971.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="正则指引"/></a><div class="content"><a class="title" href="/posts/regular-expression/" title="正则指引">正则指引</a><time datetime="2021-11-08T23:15:18.000Z" title="发表于 2021-11-09 07:15:18">2021-11-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/18372802/" title="《极简市场营销》读书笔记"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Alowree/img/raw/master/pexels-petr-ganaj-4032662.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《极简市场营销》读书笔记"/></a><div class="content"><a class="title" href="/posts/18372802/" title="《极简市场营销》读书笔记">《极简市场营销》读书笔记</a><time datetime="2021-10-28T23:49:35.000Z" title="发表于 2021-10-29 07:49:35">2021-10-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><div id="heo-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Photoshop/" data-pjax-state="">Photoshop</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/categories/翻译内容/" data-pjax-state="">翻译内容</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://pan.zhheo.com/">海鸥云盘</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/rss/" data-pjax-state="">RSS订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div></div><div class="copyright">&copy;2020 - 2021 By Alowree</div><div class="icp"><a target="_blank" rel="noopener" href="http://www.beian.miit.gov.cn/"><span>粤ICP备20043865号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'ajuJLGXlPqFtm3MLk83sF0l5-gzGzoHsz',
+      appKey: 'RN8c6YqdlC8Y8VdQUJSYMTfC',
+      placeholder: 'Your kudos and feedback are welcome! 请记得留下昵称和邮箱，这样博主可以更快地回复你哦。',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script defer src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/mindmap.min.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
