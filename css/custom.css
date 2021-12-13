@@ -144,9 +144,13 @@ article h4 {
     top: 0;
 }
 
+thead tr {
+  background: #49B1F5;
+  color: #ffffff;
+}
 tbody tr:nth-child(2n) {
   background: rgba(158,188,226,0.12);
 }
-tr:hover {
+tbody tr:hover {
   background: #efefef;
 }
