@@ -4,13 +4,13 @@ toc_number: true
 abbrlink: 19966222
 date: 2021-10-18 16:12:14
 updated:
-tags:
-categories:
+tags: [Hexo, Github, Vercel]
+categories: Hexo
 keywords:
 description:
 top_img:
 comments:
-cover:
+cover: https://gitee.com/Alowree/img/raw/master/pexels-dhaval-maru-7079400.jpg
 toc:
 copyright:
 copyright_author:

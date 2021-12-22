@@ -9,7 +9,7 @@ keywords: [Hexo, Butterfly]
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-asim-alnamat-442189.jpg
+cover: https://gitee.com/Alowree/img/raw/master/rainy-day-drops-on-glass-lights-bokeh-5k-1m-1920x1080.jpg
 toc:
 toc_number: true
 copyright:

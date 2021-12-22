@@ -22,7 +22,7 @@ updated:
 keywords:
 description:
 top_img:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-anthony-133175.jpg
+cover: https://gitee.com/Alowree/img/raw/master/denise-johnson-F3vbFTQ2v-o-unsplash.jpg
 comments:
 toc:
 toc_number:

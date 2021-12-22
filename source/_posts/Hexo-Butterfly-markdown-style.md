@@ -7,10 +7,10 @@ categories:
 keywords:
   - Markdown
 description: [This post is used for testing markdown style, including headers, blockquotes, lists, and etc., along with some HTML tags.]
-top_img: https://gitee.com/Alowree/img/raw/master/I_love_markdown_0816.png
+top_img: 
 cover: https://gitee.com/Alowree/img/raw/master/pexels-chris-f-6664375.jpg
 swiper_index: 1
-abbrlink: 48849
+abbrlink: markdown
 date: 2021-07-09 10:09:14
 updated:
 comments:
@@ -30,13 +30,11 @@ aside:
 
 This post is used for testing markdown style. 
 
-<!-- more --> 
-
 -----
 
 ## Headers
 
-要创建标题，请在单词或短语前面添加井号 (#) 。# 的数量代表了标题的级别。例如，添加三个 # 表示创建一个三级标题 (`<h3>`) (例如：### My Header)。
+要创建标题，请在单词或短语前面添加井号`#` 。`#`的数量代表了标题的级别。例如，添加三个`#`表示创建一个三级标题 (`<h3>`) (例如：### My Header)。
 
 | Markdown语法 | HTML | 预览效果 |
 | ------------ | ---- | -------- |
@@ -107,27 +105,27 @@ Ordered list
 对应的HTML代码：`<a href="超链接地址" title="超链接title">超链接显示名</a>`
 
 ```markdown
-欢迎来我的博客看看，这是传送门 [MaraPython](https://alowree.gitee.io)
+欢迎来我的博客看看，这是传送门 [MaraPython](https://www.marapython.com/)
 ```
 
 渲染效果如下：
 
-欢迎来我的博客看看，这是传送门 [MaraPython](https://alowree.gitee.io)
+欢迎来我的博客看看，这是传送门 [MaraPython](https://www.marapython.com)
 
 链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。
 
 ```markdown
-欢迎来我的博客看看，这是传送门 [MaraPython](https://alowree.gitee.io "Marketing Analytics with Python and Marathon")
+欢迎来我的博客看看，这是带title属性的传送门 [MaraPython](https://www.marapython.com/ "Marketing Analytics with Python and Marathon")
 ```
 渲染效果如下：
 
-欢迎来我的博客看看，这是传送门 [MaraPython](https://alowree.gitee.io "Marketing Analytics with Python and Marathon")
+欢迎来我的博客看看，这是带title属性的传送门 [MaraPython](https://www.marapython.com "Marketing Analytics with Python and Marathon")
 
 ## Images
 
 插入图片Markdown语法代码：`![图片alt](图片链接 "图片title")`。
 
-要添加图像，请使用感叹号 (!), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。在Typora里面，快捷键<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>会快速插入图片语法代码。
+要添加图像，请使用感叹号`!`, 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。在Typora里面，快捷键<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>会快速插入图片语法代码。
 
 对应的HTML代码：`<img src="图片链接" alt="图片alt" title="图片title">`
 

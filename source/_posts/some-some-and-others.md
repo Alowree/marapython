@@ -10,7 +10,7 @@ tags: [Parallelism, Parallel Construction, Parallel Structure, Other, The Other,
 keywords:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-pixabay-247819.jpg
+cover: https://gitee.com/Alowree/img/raw/master/Pt96RG.jpg
 toc:
 copyright:
 copyright_author:

@@ -14,7 +14,7 @@ keywords:
   - Bluetooth Speaker
   - 蓝牙音箱
   - MFI认证产品
-cover: https://gitee.com/Alowree/img/raw/master/pawel-blazewicz-bR9hMgBoKP0-unsplash.jpg
+cover: https://gitee.com/Alowree/img/raw/master/thomas-lipke-CXNLFnbhsS4-unsplash.jpg
 aside: false
 abbrlink: 35715
 date: 2021-06-30 10:10:10

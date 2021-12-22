@@ -10,7 +10,7 @@ keywords:
 description:
 top_img:
 comments:
-cover:
+cover: https://gitee.com/Alowree/img/raw/master/pexels-the-cheap-shot-photo-show-4008141.jpg
 toc:
 copyright:
 copyright_author:

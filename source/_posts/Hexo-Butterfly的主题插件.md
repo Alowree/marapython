@@ -9,7 +9,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-anthony-132477.jpg
+cover: https://gitee.com/Alowree/img/raw/master/pexels-ag-zn-4075452.jpg
 toc:
 toc_number:
 copyright:

@@ -127,11 +127,25 @@ url		: 直接使用来自bilibili的视频链接
 
 ```markdown
 {% iframe //player.bilibili.com/player.html?aid=248141899&bvid=BV12v41157Mb&cid=339791117&page=1 100% 100% %}
+
+<iframe src="//player.bilibili.com/player.html?aid=548164883&bvid=BV1fq4y1A7nq&cid=413312905&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<div align=center class="aspect-ratio">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1fq4y1A7nq&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 ```
 
 **样式预览**
 
 {% iframe //player.bilibili.com/player.html?aid=248141899&bvid=BV12v41157Mb&cid=339791117&page=1 100% 100% %}
+
+<iframe src="//player.bilibili.com/player.html?aid=548164883&bvid=BV1fq4y1A7nq&cid=413312905&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<div align=center class="aspect-ratio">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1fq4y1A7nq&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+
 
 ## link
 

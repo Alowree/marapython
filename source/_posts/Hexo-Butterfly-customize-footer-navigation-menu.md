@@ -19,7 +19,7 @@ tags:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/david-clode-17qtdqSjE-4-unsplash.jpg
+cover: https://gitee.com/Alowree/img/raw/master/715727.jpg
 toc:
 toc_number:
 copyright:

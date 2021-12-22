@@ -9,7 +9,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-jill-burrow-6858658.jpg
+cover: https://gitee.com/Alowree/img/raw/master/Plant-Wallpaper-37-2048x1356.jpg
 toc:
 toc_number: true
 copyright:

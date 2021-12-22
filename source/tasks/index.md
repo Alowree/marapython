@@ -16,6 +16,7 @@ highlight_shrink:
 
 ## 待完成任务
 
+{% checkbox red, 为博客评论添加微信提醒 %}
 {% checkbox red, 首页顶图轮播相册carousel %}
 {% checkbox yellow, Hexo表格美化 %}
 {% checkbox green, inline文字背景颜色 %}
