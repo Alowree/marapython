@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-01-16T13:36:05.321Z</updated>
+  <updated>2022-01-18T05:59:52.039Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>站点主题Butterfly升级至4.0.1啦</title>
+    <link href="https://marapython.com/posts/butterfly-v4/"/>
+    <id>https://marapython.com/posts/butterfly-v4/</id>
+    <published>2022-01-18T04:08:10.000Z</published>
+    <updated>2022-01-18T05:59:52.039Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;三个月过去了，Butterfly主题终于又迎来了一次重大升级。备份了下面四份重要配置文件之后，开始准备升级。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_config.butterfly.yml&lt;/code&gt;&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>泊松分布</title>
@@ -64,7 +90,7 @@
     <link href="https://marapython.com/posts/markdown-math/"/>
     <id>https://marapython.com/posts/markdown-math/</id>
     <published>2022-01-02T02:33:49.000Z</published>
-    <updated>2022-01-09T05:40:26.285Z</updated>
+    <updated>2022-01-18T08:29:28.094Z</updated>
     
     
       
@@ -72,8 +98,8 @@
         
         
     <summary type="html">&lt;p&gt;最近在补习《概率论与数理统计》，需要写数学公式，于是总结一下。&lt;/p&gt;
-&lt;p&gt;需要知道，所有各种的数学字符，都属于Unicode的一个个小子集，在本文中我们将重点了解：在Typora里面，如何使用Markdown语法录入常用的数学字母或者运算符号。&lt;/p&gt;
-&lt;h2</summary>
+&lt;p&gt;在本文中我们将重点了解：在Typora里面，如何使用Markdown语法录入一些常用的数学公式，包括希腊字母，运算符号，图形符号等。&lt;/p&gt;
+&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot;</summary>
         
       
     
@@ -95,7 +121,7 @@
     <link href="https://marapython.com/posts/probability-and-mathematical-statistics-A/"/>
     <id>https://marapython.com/posts/probability-and-mathematical-statistics-A/</id>
     <published>2021-12-30T08:19:19.000Z</published>
-    <updated>2022-01-16T12:20:59.545Z</updated>
+    <updated>2022-01-18T07:30:41.932Z</updated>
     
     
       
@@ -497,30 +523,6 @@
     <category term="Github" scheme="https://marapython.com/tags/Github/"/>
     
     <category term="Vercel" scheme="https://marapython.com/tags/Vercel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>愚公移山 Yu Gong to Move the Mountains</title>
-    <link href="https://marapython.com/posts/1547424583/"/>
-    <id>https://marapython.com/posts/1547424583/</id>
-    <published>2021-10-14T10:19:30.000Z</published>
-    <updated>2021-10-30T13:46:07.637Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;太行1、王屋2二山，方3七百里，高万仞4，本在冀州5之南，河阳6之北。&lt;/p&gt;
-&lt;p&gt;Two great mountains Taihang and Wangwu, about &lt;strong&gt;hundreds of square miles&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
-    
     
   </entry>
   
