@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-01-18T05:59:52.039Z</updated>
+  <updated>2022-01-19T03:47:04.771Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -17,21 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>站点主题Butterfly升级至4.0.1啦</title>
+    <title>站点主题Butterfly升级至4</title>
     <link href="https://marapython.com/posts/butterfly-v4/"/>
     <id>https://marapython.com/posts/butterfly-v4/</id>
     <published>2022-01-18T04:08:10.000Z</published>
-    <updated>2022-01-18T05:59:52.039Z</updated>
+    <updated>2022-01-19T03:47:04.771Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;三个月过去了，Butterfly主题终于又迎来了一次重大升级。备份了下面四份重要配置文件之后，开始准备升级。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;三个月过去了，Butterfly主题终于又迎来了一次重大升级。备份了下面四份重要配置文件之后，抄起家伙开始升级。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;_config.butterfly.yml&lt;/code&gt;&lt;</summary>
+&lt;li&gt;&lt;code&gt;_config.butterfly.yml&lt;/code</summary>
         
       
     
@@ -47,7 +47,7 @@
     <link href="https://marapython.com/posts/poisson-distribution/"/>
     <id>https://marapython.com/posts/poisson-distribution/</id>
     <published>2022-01-16T11:03:53.000Z</published>
-    <updated>2022-01-16T13:36:05.321Z</updated>
+    <updated>2022-01-18T23:24:51.272Z</updated>
     
     
       
@@ -338,11 +338,11 @@
   </entry>
   
   <entry>
-    <title>如何批量地去除Markdown文本内的外链</title>
+    <title>运用正则表达式批量去除外链</title>
     <link href="https://marapython.com/posts/back-reference/"/>
     <id>https://marapython.com/posts/back-reference/</id>
     <published>2021-11-28T12:44:52.000Z</published>
-    <updated>2022-01-18T01:54:32.785Z</updated>
+    <updated>2022-01-19T03:10:34.817Z</updated>
     
     
       
