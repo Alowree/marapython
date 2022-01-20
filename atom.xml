@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-01-19T03:47:04.771Z</updated>
+  <updated>2022-01-20T00:03:52.730Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -21,23 +21,22 @@
     <link href="https://marapython.com/posts/butterfly-v4/"/>
     <id>https://marapython.com/posts/butterfly-v4/</id>
     <published>2022-01-18T04:08:10.000Z</published>
-    <updated>2022-01-19T03:47:04.771Z</updated>
+    <updated>2022-01-20T00:03:52.730Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;三个月过去了，Butterfly主题终于又迎来了一次重大升级。备份了下面四份重要配置文件之后，抄起家伙开始升级。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;_config.butterfly.yml&lt;/code</summary>
+    <summary type="html">&lt;p&gt;三个月过去了，Butterfly主题终于又迎来了一次重大升级。在备份了下面四份重要配置文件之后，抄起家伙准备开始升级。至于为什么选择保存这四个文件，这是因为博客所有个性化的设计，都是在这几个文件内进行配置的，如果升级时不小心搞砸了，还可以再倒回到升级之前的保存状态。&lt;/p&gt;</summary>
         
       
     
     
     
     <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
+    
+    <category term="Butterfly" scheme="https://marapython.com/categories/Hexo/Butterfly/"/>
     
     
   </entry>
