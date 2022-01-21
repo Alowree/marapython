@@ -14,4 +14,4 @@ bottom:
       name: 访客地图
       icon: fas fa-users
       order:
-      html: '<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=pYSv_5eoiPjKhMPRxdCYg-Cd1hL7mrECG2C9laZ9n24"></script>'
+      html: '<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=56JaZfHoBTtqBQ4b6ruUtZrR9_5qx5HGgB6dI0aAN18"></script>'

@@ -7,10 +7,10 @@ title: MaraPython
 subtitle: 'Marketing Analytics with Python and Marathon'
 description: 'Keep the Momentum'
 keywords: Python
-author: Alowree
+author: Alowree XU
 language: 
   - zh-CN
-  - en
+
 timezone: Asia/Shanghai
 email: alowree@hotmail.com
 
@@ -147,3 +147,16 @@ search:
   format: html
   limit: 10000
 
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:

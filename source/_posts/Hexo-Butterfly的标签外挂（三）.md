@@ -1,11 +1,11 @@
 ---
 title: Hexo Butterfly的标签外挂（三）
-categories: Hexo
+categories: [Hexo, Butterfly]
 keywords:
   - Hexo
   - Butterfly
   - Tag Plugin
-abbrlink: 2118605294
+abbrlink: hexo-tag-plugins-i
 date: 2021-09-16 08:50:44
 updated:
 tags:
@@ -129,11 +129,11 @@ swiper_index:
 1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
 
    {% btns circle grid5 %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
    {% endbtns %}
 
 2. 或者含有图标的按钮：
@@ -166,11 +166,11 @@ swiper_index:
 1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
 
    {% btns circle grid5 %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
-   {% cell MaraPython, https://alowree.gitee.io, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
+   {% cell MaraPython, https://marapython.com, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg %}
    {% endbtns %}
 
 2. 或者含有图标的按钮：

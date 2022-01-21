@@ -1,7 +1,7 @@
 ---
 title: Hexo Butterfly的主题插件
 categories: Hexo
-abbrlink: 1155088082
+abbrlink: butterfly-plug-ins
 date: 2021-09-27 12:25:20
 updated:
 tags:
@@ -39,7 +39,7 @@ swiper_index:
     message: 本文已经加密，请输入密码：
     ```
     
-## 页面插入B站视频
+## 插入B站视频
 
 这里没有使用插件，直接使用HTML标签写就。
 
@@ -128,6 +128,6 @@ permalink: :year/:month/:day/:title/
      trailing_html: true # Set to false to remove trailing '.html' from permalinks
    ```
 
-经过以上配置，在`hexo new post "文章标题"`、`hexo generate`之后，在文章头部的`Front Matter`位置会生成类似于`abbrlink: 1155088082`这样的内容，那这篇文章的URL也就自然地成为了`https://alowree.gitee.io/posts/1155088082`这样的格式。
+经过以上配置，在`hexo new post "文章标题"`、`hexo generate`之后，在文章头部的`Front Matter`位置会生成类似于`abbrlink: 1155088082`这样的内容，那这篇文章的URL也就自然地成为了`https://marapython.com/posts/1155088082/`这样的格式。
 
-如果我们觉得类似`1155088082`这样的数字没有什么实际意义，也可以手动地在文章头部的`Front Matter`位置把这串数字更改为包含实际意义的英文单词。比如我们把`1155088082`更改为`seo`以后，那这篇文章在重新生成以后，其URL就会自动变成`https://alowree.gitee.io/posts/seo`了。
+如果我们觉得类似`1155088082`这样的数字没有什么实际意义，也可以手动地在文章头部的`Front Matter`位置把这串数字更改为包含实际意义的英文单词。比如我们把`1155088082`更改为`seo`以后，那这篇文章在重新生成以后，其URL就会自动变成`https://marapython.com/posts/seo/`了。

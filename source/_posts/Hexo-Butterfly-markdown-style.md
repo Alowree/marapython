@@ -10,7 +10,7 @@ description: [This post is used for testing markdown style, including headers, b
 top_img: 
 cover: https://gitee.com/Alowree/img/raw/master/pexels-chris-f-6664375.jpg
 swiper_index: 1
-abbrlink: markdown
+abbrlink: markdown-preview
 date: 2021-07-09 10:09:14
 updated:
 comments:

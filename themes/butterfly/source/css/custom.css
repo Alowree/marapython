@@ -16,8 +16,8 @@
 }
 
 #heo-footer .footer-title {
-    color: var(--heo-secondtext);
-    font-size: .8rem;
+    color: var(--heo-secondtext); 
+    font-size: 1rem;
     text-align: left;
 }
 
@@ -27,110 +27,33 @@
 }
 
 #heo-footer .footer-item {
-    font-size: .8rem;
-    color: var(--heo-fontcolor);
+    font-size: 1rem;
     margin-right: auto;
 }
 
 
-
-/* add spinning windmills for headers */
-/* 文章页H1-H6图标样式效果 */
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-    -webkit-animation: ccc 1.6s linear infinite ;
-    animation: ccc 1.6s linear infinite ;
-}
-@-webkit-keyframes ccc {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn)
-    }
-}
-@keyframes ccc {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn)
-    }
-}
-
-/* Revise colors for different headers */
-#content-inner.layout h1::before {
-    color: #e40078 ;
-    margin-left: -1.55rem;
-    font-size: 1.3rem;
-    margin-top: -0.23rem;
-}
-#content-inner.layout h2::before {
-    color: #F47466 ;
-    margin-left: -1.35rem;
-    font-size: 1.1rem;
-    margin-top: -0.12rem;
-}
-#content-inner.layout h3::before {
-    color: #D66384 ;
-    margin-left: -1.22rem;
-    font-size: 0.95rem;
-    margin-top: -0.09rem;
-}
-#content-inner.layout h4::before {
-    color: #A65F94 ;
-    margin-left: -1.05rem;
-    font-size: 0.8rem;
-    margin-top: -0.09rem;
-}
-#content-inner.layout h5::before {
-    color: #705D8F ;
-    margin-left: -0.9rem;
-    font-size: 0.7rem;
-    margin-top: 0.0rem;
-}
-#content-inner.layout h6::before {
-    color: #445578 ;
-    margin-left: -0.9rem;
-    font-size: 0.66rem;
-    margin-top: 0.0rem;
-}
-
-/* Revise hover effect of each windchill */
-#content-inner.layout h1:hover, 
-#content-inner.layout h2:hover, 
-#content-inner.layout h3:hover, 
-#content-inner.layout h4:hover, 
-#content-inner.layout h5:hover, 
-#content-inner.layout h6:hover {
-    color: #49b1f5 ;
-}
-#content-inner.layout h1:hover::before, 
-#content-inner.layout h2:hover::before, 
-#content-inner.layout h3:hover::before, 
-#content-inner.layout h4:hover::before, 
-#content-inner.layout h5:hover::before, 
-#content-inner.layout h6:hover::before {
-    color: #49b1f5 ;
-    -webkit-animation: ccc 3.2s linear infinite ;
-    animation: ccc 3.2s linear infinite ;
-}
-
-/* Adjust font-size of each title after the setting of windchill */
+/* Adjust font-size of each title */
 article h2 {
-    border-bottom: 1px solid #FF7242;
     font-size: 1.8em;
+    border-left: 6px solid #D56464;
+    margin: 20px 0px 14px -45px;
+    padding: 3px 20px 7px 38px;
 }
 article h3 {
     font-size: 1.4em;
 }
 
 article h4 {
-    border-bottom: 1px solid #A65F94; 
     font-size: 1.2em;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+/* adjust H2 location under mobile screen */
+@media screen and (max-width: 768px) {
+  article h2 {
+    margin: 20px 0px 14px -20px;
+    padding: 5px 20px 5px 14px;
+    }
 }
 
 
@@ -144,6 +67,7 @@ article h4 {
     top: 0;
 }
 
+/*
 thead tr {
   background: #49B1F5;
   color: #ffffff;
@@ -154,3 +78,4 @@ tbody tr:nth-child(2n) {
 tbody tr:hover {
   background: #efefef;
 }
+*/

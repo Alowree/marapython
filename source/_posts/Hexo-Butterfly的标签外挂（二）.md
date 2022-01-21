@@ -3,8 +3,8 @@ title: Hexo Butterfly的标签外挂（二）
 abbrlink: butterfly-tag-plugins
 date: 2021-09-16 07:34:13
 updated:
-tags: [Hexo, Butterfly, Tag Plugin]
-categories: Hexo
+tags: [Hexo, Butterfly, Tag Plugins]
+categories: [Hexo, Butterfly]
 keywords:
 description:
 top_img:
