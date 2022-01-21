@@ -4,6 +4,177 @@
   
     
     <entry>
+      <title>系统的状态变量分析</title>
+      <link href="/posts/35532648/"/>
+      <url>/posts/35532648/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信号与系统理论的应用</title>
+      <link href="/posts/1198733880/"/>
+      <url>/posts/1198733880/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>离散时间信号与系统的z域分析</title>
+      <link href="/posts/2177522112/"/>
+      <url>/posts/2177522112/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>连续时间信号与系统的复频域分析</title>
+      <link href="/posts/3842582895/"/>
+      <url>/posts/3842582895/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>离散时间信号与系统的频域分析</title>
+      <link href="/posts/Frequency-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/"/>
+      <url>/posts/Frequency-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>连续时间信号与系统的频域分析</title>
+      <link href="/posts/Frequency-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"/>
+      <url>/posts/Frequency-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>离散时间系统的时域分析</title>
+      <link href="/posts/Time-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/"/>
+      <url>/posts/Time-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>连续时间系统的时域分析</title>
+      <link href="/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"/>
+      <url>/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信号与系统概论</title>
+      <link href="/posts/signals-and-systems-overview/"/>
+      <url>/posts/signals-and-systems-overview/</url>
+      
+        <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p><strong>信号</strong>一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为<strong>消息</strong>，如语言、文字、图像等。消息中有意义的内容称为<strong>信息</strong>。</p><p><strong>信号</strong>是消息的表现形式与传送载体，而<strong>消息</strong>则是信号的具体内容。</p><p>在各种信号中，电信号是应用最广的物理量。电信号不仅易于产生、传输和处理，而且，许多非电信号也容易转换成电信号。因此，研究电信号具有重要意义。本课程主要讨论电信号，它通常表现为随时间变化的电压或电流。</p><p>信号的产生、传输及处理都需要一定的物理装置，这种装置通常就称为<strong>系统</strong>。系统是能将一组信号处理为另一组信号的实体。当一个或多个激励信号作用到系统的输入端时，就会在系统的输出端产生一个或多个响应信号。</p><h2 id="信号的概念"><a href="#信号的概念" class="headerlink" title="信号的概念"></a>信号的概念</h2><h3 id="信号的定义与描述"><a href="#信号的定义与描述" class="headerlink" title="信号的定义与描述"></a>信号的定义与描述</h3><p><strong>信号</strong>是消息的表现形式，而<strong>消息</strong>则是信号的具体内容。</p><h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><h4 id="确定信号与随机信号"><a href="#确定信号与随机信号" class="headerlink" title="确定信号与随机信号"></a>确定信号与随机信号</h4><p><strong>确定信号</strong>是指以确定的时间函数（或序列）表示的信号，又称规则信号。这种信号在定义域内的任意时刻都有确定的函数值，例如正弦信号。</p><p><strong>随机信号</strong>也称不确定信号，它不是时间的确定函数，在定义域内的任意时刻没有确定的函数值。如语音信号、雷电干扰信号等。</p><p>本课程只讨论确定信号。</p><h4 id="连续时间信号与离散时间信号"><a href="#连续时间信号与离散时间信号" class="headerlink" title="连续时间信号与离散时间信号"></a>连续时间信号与离散时间信号</h4><p>时间和幅值都为连续的信号称为<strong>模拟信号</strong>。</p><p>时间和幅值都为离散的信号称为<strong>数字信号</strong>。</p><h4 id="周期性信号与非周期性信号"><a href="#周期性信号与非周期性信号" class="headerlink" title="周期性信号与非周期性信号"></a>周期性信号与非周期性信号</h4><h4 id="能量信号与功率信号"><a href="#能量信号与功率信号" class="headerlink" title="能量信号与功率信号"></a>能量信号与功率信号</h4><h4 id="因果信号与非因果信号"><a href="#因果信号与非因果信号" class="headerlink" title="因果信号与非因果信号"></a>因果信号与非因果信号</h4><h2 id="典型信号及其特性"><a href="#典型信号及其特性" class="headerlink" title="典型信号及其特性"></a>典型信号及其特性</h2><h3 id="连续时间信号"><a href="#连续时间信号" class="headerlink" title="连续时间信号"></a>连续时间信号</h3><h4 id="指数信号"><a href="#指数信号" class="headerlink" title="指数信号"></a>指数信号</h4><p>指数信号</p><script type="math/tex; mode=display">x(t)=Ke^{at}</script><p>单边指数衰减信号</p><script type="math/tex; mode=display">x(t)=\begin{cases}e^{-\frac{t}{\tau}}, \quad t \geqslant 0 \\\\0, \quad  \quad t < 0\end{cases}</script><h4 id="正弦信号和虚指数信号"><a href="#正弦信号和虚指数信号" class="headerlink" title="正弦信号和虚指数信号"></a>正弦信号和虚指数信号</h4><p>正弦信号</p><script type="math/tex; mode=display">x(t)=K \sin(\omega t + \theta)</script><h4 id="复指数信号"><a href="#复指数信号" class="headerlink" title="复指数信号"></a>复指数信号</h4><h4 id="抽样函数"><a href="#抽样函数" class="headerlink" title="抽样函数"></a>抽样函数</h4><h4 id="钟形信号"><a href="#钟形信号" class="headerlink" title="钟形信号"></a>钟形信号</h4><h4 id="单位斜变信号"><a href="#单位斜变信号" class="headerlink" title="单位斜变信号"></a>单位斜变信号</h4><h4 id="单位阶跃信号"><a href="#单位阶跃信号" class="headerlink" title="单位阶跃信号"></a>单位阶跃信号</h4><h4 id="单位冲激信号"><a href="#单位冲激信号" class="headerlink" title="单位冲激信号"></a>单位冲激信号</h4><h4 id="冲激偶信号"><a href="#冲激偶信号" class="headerlink" title="冲激偶信号"></a>冲激偶信号</h4><h3 id="离散时间信号"><a href="#离散时间信号" class="headerlink" title="离散时间信号"></a>离散时间信号</h3><h4 id="单位样值序列"><a href="#单位样值序列" class="headerlink" title="单位样值序列"></a>单位样值序列</h4><h4 id="单位阶跃序列"><a href="#单位阶跃序列" class="headerlink" title="单位阶跃序列"></a>单位阶跃序列</h4><h4 id="矩形序列"><a href="#矩形序列" class="headerlink" title="矩形序列"></a>矩形序列</h4><h4 id="实指数序列"><a href="#实指数序列" class="headerlink" title="实指数序列"></a>实指数序列</h4><h4 id="正弦序列和虚指数序列"><a href="#正弦序列和虚指数序列" class="headerlink" title="正弦序列和虚指数序列"></a>正弦序列和虚指数序列</h4><h4 id="复指数序列"><a href="#复指数序列" class="headerlink" title="复指数序列"></a>复指数序列</h4><h2 id="信号的基本运算"><a href="#信号的基本运算" class="headerlink" title="信号的基本运算"></a>信号的基本运算</h2><h3 id="连续时间信号的基本运算"><a href="#连续时间信号的基本运算" class="headerlink" title="连续时间信号的基本运算"></a>连续时间信号的基本运算</h3><h4 id="相加和相乘"><a href="#相加和相乘" class="headerlink" title="相加和相乘"></a>相加和相乘</h4><h4 id="时移反褶与展缩"><a href="#时移反褶与展缩" class="headerlink" title="时移反褶与展缩"></a>时移反褶与展缩</h4><h4 id="微分和积分"><a href="#微分和积分" class="headerlink" title="微分和积分"></a>微分和积分</h4><h3 id="离散时间信号的基本运算"><a href="#离散时间信号的基本运算" class="headerlink" title="离散时间信号的基本运算"></a>离散时间信号的基本运算</h3><h4 id="序列相加"><a href="#序列相加" class="headerlink" title="序列相加"></a>序列相加</h4><h4 id="序列相乘"><a href="#序列相乘" class="headerlink" title="序列相乘"></a>序列相乘</h4><h4 id="序列移位"><a href="#序列移位" class="headerlink" title="序列移位"></a>序列移位</h4><h4 id="序列展缩"><a href="#序列展缩" class="headerlink" title="序列展缩"></a>序列展缩</h4><h2 id="信号的分解"><a href="#信号的分解" class="headerlink" title="信号的分解"></a>信号的分解</h2><h3 id="直流分量与交流分量"><a href="#直流分量与交流分量" class="headerlink" title="直流分量与交流分量"></a>直流分量与交流分量</h3><h3 id="偶分量与奇分量"><a href="#偶分量与奇分量" class="headerlink" title="偶分量与奇分量"></a>偶分量与奇分量</h3><h3 id="脉冲分量线性组合"><a href="#脉冲分量线性组合" class="headerlink" title="脉冲分量线性组合"></a>脉冲分量线性组合</h3><h3 id="实部分量与虚部分量"><a href="#实部分量与虚部分量" class="headerlink" title="实部分量与虚部分量"></a>实部分量与虚部分量</h3><h2 id="系统的概念"><a href="#系统的概念" class="headerlink" title="系统的概念"></a>系统的概念</h2><h3 id="系统的定义"><a href="#系统的定义" class="headerlink" title="系统的定义"></a>系统的定义</h3><h3 id="系统的描述"><a href="#系统的描述" class="headerlink" title="系统的描述"></a>系统的描述</h3><h3 id="系统的分类"><a href="#系统的分类" class="headerlink" title="系统的分类"></a>系统的分类</h3><h4 id="连续时间系统和离散时间系统"><a href="#连续时间系统和离散时间系统" class="headerlink" title="连续时间系统和离散时间系统"></a>连续时间系统和离散时间系统</h4><h4 id="线性系统和非线性系统"><a href="#线性系统和非线性系统" class="headerlink" title="线性系统和非线性系统"></a>线性系统和非线性系统</h4><h4 id="时变系统和时不变系统"><a href="#时变系统和时不变系统" class="headerlink" title="时变系统和时不变系统"></a>时变系统和时不变系统</h4><h4 id="因果系统和非因果系统"><a href="#因果系统和非因果系统" class="headerlink" title="因果系统和非因果系统"></a>因果系统和非因果系统</h4><h4 id="稳定系统和不稳定系统"><a href="#稳定系统和不稳定系统" class="headerlink" title="稳定系统和不稳定系统"></a>稳定系统和不稳定系统</h4><h2 id="信号与系统分析概述"><a href="#信号与系统分析概述" class="headerlink" title="信号与系统分析概述"></a>信号与系统分析概述</h2><h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信号与系统 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>站点主题Butterfly升级至4</title>
       <link href="/posts/butterfly-v4/"/>
       <url>/posts/butterfly-v4/</url>

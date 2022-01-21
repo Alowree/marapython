@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-01-20T00:03:52.730Z</updated>
+  <updated>2022-01-21T05:29:40.959Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,149 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统的状态变量分析</title>
+    <link href="https://marapython.com/posts/35532648/"/>
+    <id>https://marapython.com/posts/35532648/</id>
+    <published>2022-01-21T03:58:48.000Z</published>
+    <updated>2022-01-21T05:29:40.959Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>信号与系统理论的应用</title>
+    <link href="https://marapython.com/posts/1198733880/"/>
+    <id>https://marapython.com/posts/1198733880/</id>
+    <published>2022-01-21T03:58:23.000Z</published>
+    <updated>2022-01-21T05:54:31.139Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>离散时间信号与系统的z域分析</title>
+    <link href="https://marapython.com/posts/2177522112/"/>
+    <id>https://marapython.com/posts/2177522112/</id>
+    <published>2022-01-21T03:57:52.000Z</published>
+    <updated>2022-01-21T05:29:40.951Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>连续时间信号与系统的复频域分析</title>
+    <link href="https://marapython.com/posts/3842582895/"/>
+    <id>https://marapython.com/posts/3842582895/</id>
+    <published>2022-01-21T03:57:12.000Z</published>
+    <updated>2022-01-21T05:29:40.947Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>离散时间信号与系统的频域分析</title>
+    <link href="https://marapython.com/posts/Frequency-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/"/>
+    <id>https://marapython.com/posts/Frequency-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/</id>
+    <published>2022-01-21T03:56:40.000Z</published>
+    <updated>2022-01-21T05:50:14.872Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>连续时间信号与系统的频域分析</title>
+    <link href="https://marapython.com/posts/Frequency-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"/>
+    <id>https://marapython.com/posts/Frequency-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</id>
+    <published>2022-01-21T03:56:11.000Z</published>
+    <updated>2022-01-21T05:49:31.829Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>离散时间系统的时域分析</title>
+    <link href="https://marapython.com/posts/Time-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/"/>
+    <id>https://marapython.com/posts/Time-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/</id>
+    <published>2022-01-21T03:55:45.000Z</published>
+    <updated>2022-01-21T05:48:50.183Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>连续时间系统的时域分析</title>
+    <link href="https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"/>
+    <id>https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</id>
+    <published>2022-01-21T03:55:19.000Z</published>
+    <updated>2022-01-21T05:48:19.512Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>信号与系统概论</title>
+    <link href="https://marapython.com/posts/signals-and-systems-overview/"/>
+    <id>https://marapython.com/posts/signals-and-systems-overview/</id>
+    <published>2022-01-21T03:54:35.000Z</published>
+    <updated>2022-01-21T08:36:32.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>站点主题Butterfly升级至4</title>
@@ -291,241 +434,6 @@
     <category term="regular expressions" scheme="https://marapython.com/tags/regular-expressions/"/>
     
     <category term="正则表达式" scheme="https://marapython.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Musical Notes</title>
-    <link href="https://marapython.com/posts/musical-notes/"/>
-    <id>https://marapython.com/posts/musical-notes/</id>
-    <published>2021-12-10T06:31:30.000Z</published>
-    <updated>2022-01-18T00:02:22.978Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;SOUND: A VERY SHORT</summary>
-        
-      
-    
-    
-    
-    <category term="声学" scheme="https://marapython.com/categories/%E5%A3%B0%E5%AD%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>在Markdown文件中绘制甘特图</title>
-    <link href="https://marapython.com/posts/gantt-chart/"/>
-    <id>https://marapython.com/posts/gantt-chart/</id>
-    <published>2021-11-30T01:05:15.000Z</published>
-    <updated>2021-12-21T10:49:55.798Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;善于时间管理的人可以轻松自如地在多个任务之间来回切换，既能够照顾到各个任务的轻重缓急，又能结合各个任务间内在的依赖关系和持续时长，做到节时、高效、完美地完成复杂的任务组合。但是多重任务的数量一旦超过某个阀值，人的大脑便会显得力不从心，会出现错误和纰漏。这时，我们需要使用工具</summary>
-        
-      
-    
-    
-    
-    <category term="Markdown" scheme="https://marapython.com/categories/Markdown/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>运用正则表达式批量去除外链</title>
-    <link href="https://marapython.com/posts/back-reference/"/>
-    <id>https://marapython.com/posts/back-reference/</id>
-    <published>2021-11-28T12:44:52.000Z</published>
-    <updated>2022-01-19T03:10:34.817Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;当我们使用Markdown进行写作时，有时候会从某些外部的网站上复制一些文本，而这些复制来的文本内有时有含有大量的外部链接，例如下面这段文本。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Antarctica.&lt;/p&gt;
-&lt;p&gt;An &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Markdown" scheme="https://marapython.com/categories/Markdown/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Penguins of Madagascar</title>
-    <link href="https://marapython.com/posts/penguins-of-madagascar/"/>
-    <id>https://marapython.com/posts/penguins-of-madagascar/</id>
-    <published>2021-11-19T12:21:11.000Z</published>
-    <updated>2021-11-30T23:57:03.783Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1&quot;&gt;&lt;/a&gt;1&lt;/h2&gt;&lt;p&gt;Antarctica.&lt;/p&gt;
-&lt;p&gt;An &lt;code&gt;inhospitable&lt;/code&gt; wasteland.&lt;/p&gt;
-&lt;p&gt;But</summary>
-        
-      
-    
-    
-    
-    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>正则指引</title>
-    <link href="https://marapython.com/posts/regular-expressions/"/>
-    <id>https://marapython.com/posts/regular-expressions/</id>
-    <published>2021-11-08T23:15:18.000Z</published>
-    <updated>2022-01-17T23:58:50.837Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本文改编自余晟的《正则指引》第2版，也就是微信读书上的电子版。改编主要目的在于：通过逼迫自己快速地通读全书和反复地精读相关章节，系统地学习和总结正则表达式中常见的语法规则。&lt;/p&gt;
-&lt;p&gt;将原书电子版的主要内容重新编辑、校对、搬运到博客上还有几个原因：第一，电子版《正则指引</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://marapython.com/categories/Python/"/>
-    
-    
-    <category term="正则表达式" scheme="https://marapython.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-    <category term="regular expression" scheme="https://marapython.com/tags/regular-expression/"/>
-    
-    <category term="字符组" scheme="https://marapython.com/tags/%E5%AD%97%E7%AC%A6%E7%BB%84/"/>
-    
-    <category term="character class" scheme="https://marapython.com/tags/character-class/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《极简市场营销》读书笔记</title>
-    <link href="https://marapython.com/posts/18372802/"/>
-    <id>https://marapython.com/posts/18372802/</id>
-    <published>2021-10-28T23:49:35.000Z</published>
-    <updated>2021-10-30T13:35:39.472Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;马克思主义实践观认为：实践是认识的来源，是认识发展的根本动力，是检验认识正确与否的唯一标准。实践与认识是辩证统一的关系，实践决定认识，认识对实践有巨大的反作用。正确的科学的认识促进实践的发展，错误的认识阻碍实践的发展。认识要随着实践的发展而不断进步</summary>
-        
-      
-    
-    
-    
-    <category term="新零售" scheme="https://marapython.com/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/"/>
-    
-    
-    <category term="市场营销" scheme="https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/"/>
-    
-    <category term="市场营销组合" scheme="https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E7%BB%84%E5%90%88/"/>
-    
-    <category term="Integrated Marketing Communication" scheme="https://marapython.com/tags/Integrated-Marketing-Communication/"/>
-    
-    <category term="整合营销传播" scheme="https://marapython.com/tags/%E6%95%B4%E5%90%88%E8%90%A5%E9%94%80%E4%BC%A0%E6%92%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>闻鸡起舞 Rise at Cockcrow to Practice the Sword</title>
-    <link href="https://marapython.com/posts/1792540153/"/>
-    <id>https://marapython.com/posts/1792540153/</id>
-    <published>2021-10-28T05:30:21.000Z</published>
-    <updated>2021-12-01T04:59:56.593Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Zu Ti and Liu Kun were from the Eastern Jin Dynasty. They were both diligent and ambitious young</summary>
-        
-      
-    
-    
-    
-    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客本地生产环境的备份</title>
-    <link href="https://marapython.com/posts/1561081268/"/>
-    <id>https://marapython.com/posts/1561081268/</id>
-    <published>2021-10-26T07:18:11.000Z</published>
-    <updated>2021-11-26T08:26:55.184Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;把博客工作目录备份至远程仓库&quot;&gt;&lt;a href=&quot;#把博客工作目录备份至远程仓库&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MaraPython正式迁移托管至Vercel</title>
-    <link href="https://marapython.com/posts/19966222/"/>
-    <id>https://marapython.com/posts/19966222/</id>
-    <published>2021-10-18T08:12:14.000Z</published>
-    <updated>2021-12-22T23:10:44.597Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;今天真是个好日子，值得纪念一下，终于弃坑WordPress + Tempera + 腾讯云，全身心拥抱Hexo + Butterfly + Github + Vercel，立贴为证。&lt;/p&gt;
-&lt;h2 id=&quot;Github-Pages&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
-    
-    <category term="Github" scheme="https://marapython.com/tags/Github/"/>
-    
-    <category term="Vercel" scheme="https://marapython.com/tags/Vercel/"/>
     
   </entry>
   
