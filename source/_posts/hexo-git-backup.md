@@ -1,11 +1,11 @@
 ---
 title: Hexo博客本地生产环境的备份
 toc_number: true
-abbrlink: 1561081268
+abbrlink: hexo-git-backup
 date: 2021-10-26 15:18:11
 updated:
 tags:
-categories:
+categories: Hexo
 keywords:
 description:
 top_img:
@@ -65,6 +65,42 @@ swiper_index:
 ## 从远程仓库拉取备份资料
 
 这个需要在新电脑上试运行。
+
+在新电脑D盘创建一个新的工作目录`Blogsite20220121`，进入`Blogsite202201021`鼠标右击选中`Get Bash Here`打开`bash`命令行，运行下面命令，克隆复制备份资料到新电脑。
+
+```bash
+git clone -b production https://github.com/Alowree/marapython.git MaraPython
+```
+
+将生产环境拉取至本地电脑之后，再在新电脑上安装Hexo：
+
+```bash
+cd MaraPython
+```
+
+```bash
+npm install hexo-cli
+```
+
+```bash
+hexo -v
+```
+
+```bash
+npm install
+```
+
+```bash
+npm install hexo-deployer-git --save
+```
+
+```bash
+hexo cl
+hexo g
+hexo s
+```
+
+本地预览成功。
 
 
 
