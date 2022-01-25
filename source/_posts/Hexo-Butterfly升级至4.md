@@ -1,5 +1,5 @@
 ---
-title: 站点主题Butterfly升级至4
+title: Hexo站点Butterfly主题升级至4
 toc_number: true
 categories: [Hexo, Butterfly]
 abbrlink: butterfly-v4

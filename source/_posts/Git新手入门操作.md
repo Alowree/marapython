@@ -1,6 +1,6 @@
 ---
-title: Git Rookies
-abbrlink: 3239246065
+title: Git新手入门操作
+abbrlink: git-get-started
 date: 2021-08-03 16:00:30
 updated:
 tags: [Git]

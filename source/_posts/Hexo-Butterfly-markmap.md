@@ -1,6 +1,6 @@
 ---
 title: 如何在Hexo博客文章中添加思维导图
-abbrlink: markmap
+abbrlink: hexo-markmap
 date: 2021-08-30 08:53:44
 updated:
 tags: [Hexo, Butterfly]

@@ -1,16 +1,17 @@
 ---
-title: Markdown Style Preview
+title: Butterfly主题之Markdown样式预览
 tags:
   - Markdown
 categories:
-  - Markdown
+  - Hexo
+  - Butterfly
 keywords:
   - Markdown
 description: [This post is used for testing markdown style, including headers, blockquotes, lists, and etc., along with some HTML tags.]
 top_img: 
 cover: https://gitee.com/Alowree/img/raw/master/pexels-chris-f-6664375.jpg
 swiper_index: 1
-abbrlink: markdown-preview
+abbrlink: markdown-style-preview
 date: 2021-07-09 10:09:14
 updated:
 comments:

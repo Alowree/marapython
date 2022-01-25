@@ -1,5 +1,5 @@
 ---
-title: How to use Font Awesome icons in your Hexo site?
+title: 如何在Hexo站点Butterfly主题使用Font Awesome图标
 tags:
   - Font Awesome
   - icon
@@ -9,7 +9,7 @@ top_img:
 cover: https://gitee.com/Alowree/img/raw/master/pexels-felix-mittermeier-957024.jpg
 toc_number: true
 swiper_index: 2
-abbrlink: 36587
+abbrlink: font-awesome
 date: 2021-06-30 07:47:03
 updated:
 keywords:

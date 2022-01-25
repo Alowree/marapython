@@ -1,6 +1,6 @@
 ---
-title: Butterfly主题的Hexo博客如何修改站点logo
-abbrlink: 3
+title: Hexo站点Butterfly主题如何修改站点LOGO
+abbrlink: image-logo
 date: 2021-08-23 11:25:54
 updated:
 tags: [Hexo, Butterfly]
@@ -27,7 +27,7 @@ swiper_index:
 
 ## Background
 
-On the upper left corner, the rendered blog name `FINEQ` is of plain text. For some folks, they may want to use an image rather than a text-based name. In this article we will explore how to achieve the goal and discuss the basics behind the codes. 
+On the upper left corner, the rendered blog name `MaraPython` is of plain text. For some folks, they may want to use an image rather than a text-based name. In this article we will explore how to achieve the goal and discuss the basics behind the codes. 
 
 ## Simple Fix
 

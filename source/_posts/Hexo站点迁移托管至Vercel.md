@@ -1,7 +1,7 @@
 ---
-title: MaraPython正式迁移托管至Vercel
+title: Hexo站点迁移托管至Vercel
 toc_number: true
-abbrlink: 19966222
+abbrlink: hexo-github-vercel
 date: 2021-10-18 16:12:14
 updated:
 tags: [Hexo, Github, Vercel]

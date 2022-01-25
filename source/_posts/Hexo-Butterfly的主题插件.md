@@ -1,7 +1,7 @@
 ---
-title: Hexo Butterfly的主题插件
-categories: Hexo
-abbrlink: butterfly-plug-ins
+title: Hexo Butterfly已安装插件
+categories: [Hexo, Butterfly]
+abbrlink: plug-ins
 date: 2021-09-27 12:25:20
 updated:
 tags:
@@ -82,13 +82,13 @@ swiper_index:
 在站点配置文件`_config.yml`里面，站点URL的默认设置如下：
 
 ```yml
-url: https://alowree.gitee.io
+url: https://marapython.com
 permalink: :year/:month/:day/:title/
 ```
 
 这样，每当发布一篇新的博客文章，生成的URL链接格式类似于：
 
-`https://alowree.gitee.io/2021/9/27/文章标题`
+`https://marapython.com/2021/9/27/文章标题`
 
 对于搜索引擎来说，一般的中小型网站，它只爬前3层，超过3层就不再爬取。如上所述，我们博客站点上的文章，其链接层次已经去到了第4层，是不利于搜索引擎爬取和收录的。因此，我们采用固定链接方式减少文章链接层次来达到SEO的目的。
 

@@ -6,7 +6,7 @@ tags:
   - Tag Plugin
 categories: [Hexo, Butterfly]
 toc_number: true
-abbrlink: hexo-tag-plugins
+abbrlink: hexo-tag-plugins-1
 date: 2021-09-16 07:33:44
 updated:
 keywords:

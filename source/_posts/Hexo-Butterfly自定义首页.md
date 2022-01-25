@@ -1,10 +1,10 @@
 ---
 title: Hexo Butterfly自定义首页
-abbrlink: 34232320
+abbrlink: custom-index
 date: 2021-08-24 09:28:35
 updated:
 tags:
-categories: Hexo
+categories: [Hexo, Butterfly]
 keywords: [Hexo, Butterfly, Matery, Slider, Carousel]
 description: 本文的主要目的在于探索和记录，如何在基于Butterfly主题的Hexo博客首页上，实现一个类似于Matery主题首页顶部的旋转木马相册carousel以及我的梦想dream卡片。由于本菜的前端水平，于是就有了这篇文章，并且希望这种愚公的精神可以感动和招引来某位前端大神，助我移山。Inspired by Matery Theme. 
 top_img:

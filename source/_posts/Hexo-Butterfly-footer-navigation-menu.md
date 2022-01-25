@@ -1,5 +1,5 @@
 ---
-title: 如何在Hexo博客网站底部增加页脚导航菜单
+title: Hexo站点Butterfly主题：网站底部添加页脚导航菜单
 categories:
   - Hexo
 keywords:
@@ -7,7 +7,7 @@ keywords:
   - Butterfly
   - 页脚
   - 导航菜单
-abbrlink: 2809951222
+abbrlink: footer-navigation-menu
 date: 2021-09-07 07:46:07
 updated:
 tags:

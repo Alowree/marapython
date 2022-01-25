@@ -1,5 +1,5 @@
 ---
-title: 在Markdown文件中绘制甘特图
+title: Markdown文件中绘制甘特图
 toc_number: true
 categories: Markdown
 keywords:

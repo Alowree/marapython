@@ -1,10 +1,10 @@
 ---
-title: 如何将你的Hexo博客站点被搜索引擎收录
+title: Hexo站点推送至三大搜索引擎
 tags:
   - Hexo
   - SEO
 categories: Hexo
-abbrlink: 389693095
+abbrlink: hexo-seo
 date: 2021-09-09 18:30:05
 updated:
 keywords:
