@@ -183,11 +183,11 @@ e^{j x}=\cos x + j \sin</summary>
   </entry>
   
   <entry>
-    <title>站点主题Butterfly升级至4</title>
+    <title>Hexo站点Butterfly主题升级至4</title>
     <link href="https://marapython.com/posts/butterfly-v4/"/>
     <id>https://marapython.com/posts/butterfly-v4/</id>
     <published>2022-01-18T04:08:10.000Z</published>
-    <updated>2022-01-20T00:03:52.730Z</updated>
+    <updated>2022-01-25T03:44:13.859Z</updated>
     
     
       
@@ -327,7 +327,7 @@ e^{j x}=\cos x + j \sin</summary>
     <link href="https://marapython.com/posts/hexo-jupyter-notebook/"/>
     <id>https://marapython.com/posts/hexo-jupyter-notebook/</id>
     <published>2021-12-29T07:28:53.000Z</published>
-    <updated>2022-01-24T08:28:16.020Z</updated>
+    <updated>2022-01-25T04:18:02.236Z</updated>
     
     
       
@@ -339,6 +339,8 @@ e^{j x}=\cos x + j \sin</summary>
       
     
     
+    
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
   </entry>
