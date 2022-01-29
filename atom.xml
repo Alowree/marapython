@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-01-23T12:41:23.291Z</updated>
+  <updated>2022-01-29T07:59:08.329Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高等数学4微分方程</title>
+    <link href="https://marapython.com/posts/differential-equations/"/>
+    <id>https://marapython.com/posts/differential-equations/</id>
+    <published>2022-01-28T00:55:27.000Z</published>
+    <updated>2022-01-29T07:59:08.329Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;微分方程的概念&quot;&gt;&lt;a href=&quot;#微分方程的概念&quot; class=&quot;headerlink&quot; title=&quot;微分方程的概念&quot;&gt;&lt;/a&gt;微分方程的概念&lt;/h2&gt;&lt;h3 id=&quot;微分方程的引例&quot;&gt;&lt;a href=&quot;#微分方程的引例&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="高等数学" scheme="https://marapython.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>欧拉公式</title>
@@ -149,8 +172,16 @@ e^{j x}=\cos x + j \sin</summary>
     <link href="https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"/>
     <id>https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</id>
     <published>2022-01-21T03:55:19.000Z</published>
-    <updated>2022-01-21T05:48:19.512Z</updated>
+    <updated>2022-01-28T06:45:56.607Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -327,7 +358,7 @@ e^{j x}=\cos x + j \sin</summary>
     <link href="https://marapython.com/posts/hexo-jupyter-notebook/"/>
     <id>https://marapython.com/posts/hexo-jupyter-notebook/</id>
     <published>2021-12-29T07:28:53.000Z</published>
-    <updated>2022-01-26T07:18:36.090Z</updated>
+    <updated>2022-01-27T08:09:21.652Z</updated>
     
     
       
@@ -392,45 +423,6 @@ e^{j x}=\cos x + j \sin</summary>
     
     <category term="语音识别" scheme="https://marapython.com/categories/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>混合高斯模型</title>
-    <link href="https://marapython.com/posts/gaussian-mixture-model/"/>
-    <id>https://marapython.com/posts/gaussian-mixture-model/</id>
-    <published>2021-12-26T13:19:50.000Z</published>
-    <updated>2022-01-20T08:31:20.431Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随机变量&lt;/p&gt;
-&lt;p&gt;概率分布&lt;/p&gt;
-&lt;p&gt;高斯随机变量&lt;/p&gt;
-&lt;p&gt;高尔顿钉板试验&lt;/p&gt;
-&lt;p&gt;大数定律&lt;/p&gt;
-&lt;p&gt;中心极限定理&lt;/p&gt;
-&lt;p&gt;事实上，中心极限定理不是一个定理，而是一组定理，分别适用于不同的条件。但基本可以用一句话来概括它们：大量相互独立的随</summary>
-        
-      
-    
-    
-    
-    <category term="语音识别" scheme="https://marapython.com/categories/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
-    
-    
-    <category term="正态分布" scheme="https://marapython.com/tags/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83/"/>
-    
-    <category term="混合高斯模型" scheme="https://marapython.com/tags/%E6%B7%B7%E5%90%88%E9%AB%98%E6%96%AF%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="语音识别" scheme="https://marapython.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
-    
-    <category term="GMM" scheme="https://marapython.com/tags/GMM/"/>
-    
-    <category term="Gaussian Mixture Model" scheme="https://marapython.com/tags/Gaussian-Mixture-Model/"/>
     
   </entry>
   
