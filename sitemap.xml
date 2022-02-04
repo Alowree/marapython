@@ -578,27 +578,6 @@
 
   
   <url>
-    <loc>https://marapython.com/tags/Font-Awesome/</loc>
-    <lastmod>2022-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/icon/</loc>
-    <lastmod>2022-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/iconfont/</loc>
-    <lastmod>2022-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Hexo/</loc>
     <lastmod>2022-02-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -628,6 +607,27 @@
   
   <url>
     <loc>https://marapython.com/tags/footer/</loc>
+    <lastmod>2022-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Font-Awesome/</loc>
+    <lastmod>2022-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/icon/</loc>
+    <lastmod>2022-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/iconfont/</loc>
     <lastmod>2022-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
