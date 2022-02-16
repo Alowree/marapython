@@ -32,7 +32,7 @@
 }
 
 
-/* Adjust font-size of each title */
+/* Adjust font-size of each title 
 article h2 {
     font-size: 1.8em;
     border-left: 6px solid #D56464;
@@ -46,7 +46,7 @@ article h3 {
 article h4 {
     font-size: 1.2em;
     border-bottom: 1px solid #EEEEEE;
-}
+} */
 
 /* adjust H2 location under mobile screen */
 @media screen and (max-width: 768px) {
