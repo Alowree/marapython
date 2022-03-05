@@ -48,14 +48,14 @@ article h4 {
     border-bottom: 1px solid #EEEEEE;
 } */
 
-/* adjust H2 location under mobile screen */
+/* adjust H2 location under mobile screen
 @media screen and (max-width: 768px) {
   article h2 {
     margin: 20px 0px 14px -20px;
     padding: 5px 20px 5px 14px;
     }
 }
-
+*/
 
 /*哔哩哔哩视频适配*/
 .aspect-ratio {position: relative;width: 100%;height: 0;padding-bottom: 75%;margin: 3% auto;text-align: center;}      
