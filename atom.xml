@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-03-05T11:23:42.337Z</updated>
+  <updated>2022-03-06T12:11:41.843Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python字面量</title>
+    <link href="https://marapython.com/posts/python-literals/"/>
+    <id>https://marapython.com/posts/python-literals/</id>
+    <published>2022-03-06T10:49:37.000Z</published>
+    <updated>2022-03-06T12:11:41.843Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;In Python, &lt;strong&gt;literals&lt;/strong&gt; refer to the data</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://marapython.com/categories/Python/"/>
+    
+    
+    <category term="变量类型" scheme="https://marapython.com/tags/%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/"/>
+    
+    <category term="Python Literals" scheme="https://marapython.com/tags/Python-Literals/"/>
+    
+    <category term="字面量" scheme="https://marapython.com/tags/%E5%AD%97%E9%9D%A2%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2022政府工作报告之中英对照</title>
     <link href="https://marapython.com/posts/2742607043/"/>
     <id>https://marapython.com/posts/2742607043/</id>
     <published>2022-03-05T11:11:50.000Z</published>
-    <updated>2022-03-05T11:23:42.337Z</updated>
+    <updated>2022-03-05T12:14:24.067Z</updated>
     
     
       
@@ -35,7 +65,7 @@
     
     
     
-    <category term="中文对照" scheme="https://marapython.com/categories/%E4%B8%AD%E6%96%87%E5%AF%B9%E7%85%A7/"/>
+    <category term="中英对照" scheme="https://marapython.com/categories/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"/>
     
     
     <category term="政治" scheme="https://marapython.com/tags/%E6%94%BF%E6%B2%BB/"/>
@@ -454,29 +484,6 @@ e^{j x}=\cos x + j \sin</summary>
     <category term="multivariate normal distribution" scheme="https://marapython.com/tags/multivariate-normal-distribution/"/>
     
     <category term="covariance matrix" scheme="https://marapython.com/tags/covariance-matrix/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo中插入Jupyter Notebook文件</title>
-    <link href="https://marapython.com/posts/hexo-jupyter-notebook/"/>
-    <id>https://marapython.com/posts/hexo-jupyter-notebook/</id>
-    <published>2021-12-29T07:28:53.000Z</published>
-    <updated>2022-01-27T08:09:21.652Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这篇文章主要想研究一下，在Hexo博客框架下，博文是否可以使用Jupyter</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
-    
     
   </entry>
   
