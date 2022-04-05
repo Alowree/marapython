@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>Gitee图床崩了，于是我做了这几件事情</title>
+      <title>Gitee图床崩了</title>
       <link href="/posts/397582350/"/>
       <url>/posts/397582350/</url>
       
-        <content type="html"><![CDATA[<p>最近忙于工作，许久未更新博客。三月底偶尔上来博客一看，我勒了去：图片全部断链，火箭掉了一地。随后的几天里留意到圈里的新闻说是由于Gitee添加了防盗链，不鼓励站外的博客主们继续将Gitee空间用作免费图床这种use case了。</p><p>网上虽有破解和绕过之法，奈何主人已然逐客，死皮赖脸不是办法。所以这第一件事便是重新寻找和搭建图床。让子弹先飞上一会儿。</p><ol><li><p>在<code>_config.butterfly.yml</code>配置文件中取消Beautify页面美化</p></li><li><p>增添下列CSS代码至<code>themes\butterfly\source\css\custom.css</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add h2-h3 format after Beautify Effect being disabled */</span></span><br><span class="line"><span class="selector-class">.post-content</span> <span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">1.8em</span> auto <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.8em</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#00c4b6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.post-content</span> <span class="selector-tag">h3</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.4em</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.43</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">1.6em</span> auto <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">padding-left</span>: <span class="number">9px</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">5px</span> solid <span class="number">#00c4b6</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>修改<code>themes\butterfly\source\css\var.styl</code>的全局字体大小<code>14px</code>变为<code>15px</code></p><figure class="highlight styl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$font</span>-size = <span class="built_in">hexo-config</span>(<span class="string">&#x27;font.global-font-size&#x27;</span>) ? <span class="built_in">convert</span>(<span class="built_in">hexo-config</span>(<span class="string">&#x27;font.global-font-size&#x27;</span>)) : <span class="number">15px</span></span><br></pre></td></tr></table></figure></li><li><p>随后又仔细一想，这样改动似乎不妥，并不是值得推荐的改动办法。因为当主题后面再有升级的话，<code>var.styl</code>文件里的改动又会自动复原。所以，还是推荐修改<code>_config.butterfly.yml</code>配置文件</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Global font settings</span></span><br><span class="line"><span class="comment"># Don&#x27;t modify the following settings unless you know how they work (非必要不要修改)</span></span><br><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">global-font-size:</span> <span class="string">15px</span></span><br><span class="line">  <span class="attr">code-font-size:</span></span><br><span class="line">  <span class="attr">font-family:</span></span><br><span class="line">  <span class="attr">code-font-family:</span></span><br></pre></td></tr></table></figure></li></ol><p>本来是要来解决和修正图床问题的，结果又去调整网站的格式和外观了。</p>]]></content>
+        <content type="html"><![CDATA[<p>最近忙于工作，许久未更新博客。三月底偶尔上来博客一看，我勒了去：图片全部断链，火箭掉了一地。随后的几天里留意到圈里的新闻说是由于Gitee添加了防盗链，不鼓励站外的博客主们继续将Gitee空间用作免费图床这种use case了。</p><p>网上虽有破解和绕过之法，奈何主人已然逐客，死皮赖脸不是办法。所以这第一件事便是重新寻找和搭建图床，得空研究一下配置七牛云。让子弹飞。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
       
     </entry>
     
@@ -893,9 +899,9 @@
       
         <tags>
             
-            <tag> Parallel Construction </tag>
-            
             <tag> Parallelism </tag>
+            
+            <tag> Parallel Construction </tag>
             
             <tag> Parallel Structure </tag>
             
