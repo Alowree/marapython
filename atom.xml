@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-03-06T12:11:41.843Z</updated>
+  <updated>2022-04-05T09:09:53.499Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gitee图床崩了，于是我做了这几件事情</title>
+    <link href="https://marapython.com/posts/397582350/"/>
+    <id>https://marapython.com/posts/397582350/</id>
+    <published>2022-04-05T00:57:30.000Z</published>
+    <updated>2022-04-05T09:09:53.499Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近忙于工作，许久未更新博客。三月底偶尔上来博客一看，我勒了去：图片全部断链，火箭掉了一地。随后的几天里留意到圈里的新闻说是由于Gitee添加了防盗链，不鼓励站外的博客主们继续将Gitee空间用作免费图床这种use</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Python字面量</title>
@@ -114,7 +135,7 @@
     <link href="https://marapython.com/posts/2095961271/"/>
     <id>https://marapython.com/posts/2095961271/</id>
     <published>2022-03-05T03:04:37.000Z</published>
-    <updated>2022-03-05T12:03:26.463Z</updated>
+    <updated>2022-03-06T12:46:50.201Z</updated>
     
     
       
@@ -441,49 +462,6 @@ e^{j x}=\cos x + j \sin</summary>
     <category term="Typora" scheme="https://marapython.com/tags/Typora/"/>
     
     <category term="数学公式" scheme="https://marapython.com/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概率论与数理统计（一）</title>
-    <link href="https://marapython.com/posts/probability-and-mathematical-statistics-A/"/>
-    <id>https://marapython.com/posts/probability-and-mathematical-statistics-A/</id>
-    <published>2021-12-30T08:19:19.000Z</published>
-    <updated>2022-03-05T03:28:42.160Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本文是基于《概率论与数理统计》同济版的概念梳理，旨在理清出现在《人工智能：语音识别理解与实践》中，但尚未完全掌握的相关概念，尤其是：多元或向量值高斯随机变量，联合概率密度函数，多元高斯随机变量的均值和协方差矩阵。这几个概念是&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="概率论与数理统计" scheme="https://marapython.com/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"/>
-    
-    
-    <category term="cumulative distributive function" scheme="https://marapython.com/tags/cumulative-distributive-function/"/>
-    
-    <category term="probability density function" scheme="https://marapython.com/tags/probability-density-function/"/>
-    
-    <category term="univariate normal distribution" scheme="https://marapython.com/tags/univariate-normal-distribution/"/>
-    
-    <category term="expectation" scheme="https://marapython.com/tags/expectation/"/>
-    
-    <category term="mean" scheme="https://marapython.com/tags/mean/"/>
-    
-    <category term="variance" scheme="https://marapython.com/tags/variance/"/>
-    
-    <category term="standard deviation" scheme="https://marapython.com/tags/standard-deviation/"/>
-    
-    <category term="bivariate normal distribution" scheme="https://marapython.com/tags/bivariate-normal-distribution/"/>
-    
-    <category term="multivariate normal distribution" scheme="https://marapython.com/tags/multivariate-normal-distribution/"/>
-    
-    <category term="covariance matrix" scheme="https://marapython.com/tags/covariance-matrix/"/>
     
   </entry>
   

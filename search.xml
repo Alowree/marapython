@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Gitee图床崩了，于是我做了这几件事情</title>
+      <link href="/posts/397582350/"/>
+      <url>/posts/397582350/</url>
+      
+        <content type="html"><![CDATA[<p>最近忙于工作，许久未更新博客。三月底偶尔上来博客一看，我勒了去：图片全部断链，火箭掉了一地。随后的几天里留意到圈里的新闻说是由于Gitee添加了防盗链，不鼓励站外的博客主们继续将Gitee空间用作免费图床这种use case了。</p><p>网上虽有破解和绕过之法，奈何主人已然逐客，死皮赖脸不是办法。所以这第一件事便是重新寻找和搭建图床。让子弹先飞上一会儿。</p><ol><li><p>在<code>_config.butterfly.yml</code>配置文件中取消Beautify页面美化</p></li><li><p>增添下列CSS代码至<code>themes\butterfly\source\css\custom.css</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add h2-h3 format after Beautify Effect being disabled */</span></span><br><span class="line"><span class="selector-class">.post-content</span> <span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">1.8em</span> auto <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.8em</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#00c4b6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.post-content</span> <span class="selector-tag">h3</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.4em</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.43</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">1.6em</span> auto <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">padding-left</span>: <span class="number">9px</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">5px</span> solid <span class="number">#00c4b6</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>修改<code>themes\butterfly\source\css\var.styl</code>的全局字体大小<code>14px</code>变为<code>15px</code></p><figure class="highlight styl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$font</span>-size = <span class="built_in">hexo-config</span>(<span class="string">&#x27;font.global-font-size&#x27;</span>) ? <span class="built_in">convert</span>(<span class="built_in">hexo-config</span>(<span class="string">&#x27;font.global-font-size&#x27;</span>)) : <span class="number">15px</span></span><br></pre></td></tr></table></figure></li><li><p>随后又仔细一想，这样改动似乎不妥，并不是值得推荐的改动办法。因为当主题后面再有升级的话，<code>var.styl</code>文件里的改动又会自动复原。所以，还是推荐修改<code>_config.butterfly.yml</code>配置文件</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Global font settings</span></span><br><span class="line"><span class="comment"># Don&#x27;t modify the following settings unless you know how they work (非必要不要修改)</span></span><br><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">global-font-size:</span> <span class="string">15px</span></span><br><span class="line">  <span class="attr">code-font-size:</span></span><br><span class="line">  <span class="attr">font-family:</span></span><br><span class="line">  <span class="attr">code-font-family:</span></span><br></pre></td></tr></table></figure></li></ol><p>本来是要来解决和修正图床问题的，结果又去调整网站的格式和外观了。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python字面量</title>
       <link href="/posts/python-literals/"/>
       <url>/posts/python-literals/</url>
@@ -99,7 +112,7 @@
       <link href="/posts/2095961271/"/>
       <url>/posts/2095961271/</url>
       
-        <content type="html"><![CDATA[<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>absolute risk　绝对风险<br>Additional Law　加法定理<br>airline overbooking　航班超额预订<br>Alzheimer’s disease　阿尔茨海默病<br>amniocentesis　羊膜穿刺术<br>Astumian’s game　阿斯图米安的游戏<br>axiom　公理</p><h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><p>Balls in a bag/urn　袋子/罐子中的球<br>batch testing　批量测试<br>Bayes’s Rule　贝叶斯公式<br>Bayes, Thomas　托马斯·贝叶斯<br>belief, degree of　可信度<br>Bernoulli family　伯努利家族<br>Bernoulli Society　伯努利学会<br>Bernoulli trials　伯努利试验<br>beta distribution　贝塔分布<br>bets　赌注<br>binomial distribution　二项分布<br>birthdays　生日<br>births　出生<br>blackjack　二十一点<br>Black-Scholes　布莱克-斯科尔斯模型<br>Bletchley Park　布莱切利园<br>Bochner, Salomon　所罗门·博纳<br>Borel-Cantelli Lemmas　波莱尔-坎泰利引理<br>Borel, émile　埃米尔·博雷尔<br>Box, George　乔治·博克斯<br>breast cancer　乳腺癌<br>bridge　桥牌<br>Brownian motion　布朗运动<br>Butler, Bishop Joseph　主教乔瑟夫·巴特勒</p><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>card dealing　分牌<br>Central Limit Theorem　中心极限定理<br>certainty　确定性<br>Chebychev, Pafnuty　巴夫尼提·切比雪夫<br>classical approach　古典方法　参见 objective approach<br>coin-throwing　掷硬币<br>Colour of Money　金钱本色<br>conditional probability　条件概率<br>continuous distribution　连续分布<br>correlation　相关性<br>cricket　板球<br>criminal trials　刑事审判</p><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>Deal or No Deal　交易与否<br>de Finetti, Bruno　布鲁诺·德·菲内蒂<br>de Moivre, Albraham　亚伯拉罕·棣莫弗<br>density　密度　参见 probability density<br>dice　色子<br>diffusion　扩散<br>dilemmas　难题<br>discrete distributions　离散分布<br>disjoint　不相容的<br>distribution　分布<br>Doob, Joseph　乔·杜布</p><h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><p>eggs     鸡蛋<br>Einstein, Albert　阿尔伯特·爱因斯坦<br>engineering students　工科生<br>epidemics　流行病<br>Erlang, Agner　艾格纳·埃朗<br>errors　误差<br>expected utility　预期效用<br>expected value　预期值　参见 mean value<br>exponential distribution　指数分布<br>extreme-value distributions　极端值分布</p><h2 id="F"><a href="#F" class="headerlink" title="F"></a>F</h2><p>fair price　公平价格<br>Feller, William　威廉·费勒<br>fencing, Olympic　奥运会上的击剑项目<br>Fermat, Pierre de　威廉·费勒<br>Florentine gamblers　佛罗伦萨的赌徒们<br>fiying bombs　飞行炸弹<br>football results　足球比赛结果<br>Fréchet distribution　弗雷歇分布<br>frequencies　频率<br>frequency approach　频率方法</p><h2 id="G"><a href="#G" class="headerlink" title="G"></a>G</h2><p>Galileo, Galilei　伽利略·伽利莱<br>games, recreational　休闲游戏<br>Gauss, Carl Friedrich　卡尔·弗里德里希·高斯<br>Gaussian distribution　高斯分布<br>genetics　基因<br>geometric distribution　几何分布<br>Gnedenko, Boris　鲍里斯·格涅坚科<br>Golden Balls　黄金球<br>Gorbachev, Mikhail　米哈伊尔·戈尔巴乔夫<br>Gore, Al　阿尔·戈尔<br>Griffin, Peter　皮特·格里芬<br>Gumbel distribution　冈贝尔分布</p><h2 id="H"><a href="#H" class="headerlink" title="H"></a>H</h2><p>Hand, David　大卫·汉德<br>haemophilia　血友病<br>herd immunity　群体免疫<br>horse kicks, death from　被马踢死<br>horse racing　赛马</p><h2 id="I"><a href="#I" class="headerlink" title="I"></a>I</h2><p>infiuence of computers　计算机的影响<br>impossibility　不可能<br>independence　独立性<br>insurance　保险<br>inverse probability　逆概率</p><h2 id="K"><a href="#K" class="headerlink" title="K"></a>K</h2><p>Kelly, John　约翰·凯利<br>Kendall, David　大卫·肯德尔<br>Kermack, William　威廉·科尔马克<br>Khinchin, Alexander　亚历山大·欣钦<br>Kolmogorov, Andrey　安德鲁·柯尔莫哥洛夫</p><h2 id="L"><a href="#L" class="headerlink" title="L"></a>L</h2><p>Laplace, Pierre-Simon　皮埃尔-西蒙·拉普拉斯<br>Law of Iterated Logarithm　《重对数率》<br>Law of Large Numbers　大数定律<br>Likelihood Ratio　似然比<br>Longcor, Willard　威拉德·朗克尔<br>lottery　彩票</p><h2 id="M"><a href="#M" class="headerlink" title="M"></a>M</h2><p>Malawi, child deaths　马拉维儿童死亡<br>Markov, Andrey　安德雷·马尔可夫<br>martingale　鞅<br>McHale, Ian　伊恩·麦克海尔<br>McKendrick, Anderson　安德森·迈肯德里克<br>mean value　平均值<br>misprints　印刷错误<br>misunderstandings　误解<br>Monte Carlo simulation　蒙特卡罗模拟<br>Morse code　摩尔斯电码<br>Mosteller, Frederick　弗雷德里克·莫斯特勒<br>Multiplication Law　乘法定理<br>mutually exclusive　相互排斥　参见 disjoint</p><h2 id="N"><a href="#N" class="headerlink" title="N"></a>N</h2><p>Nader, Ralph　拉尔夫·纳德<br>Newton, Isaac　艾萨克·牛顿<br>Nobel prize　诺贝尔奖<br>normal distribution　正态分布　参见 Gaussian distribution<br>Number Needed to Treat　需治疗人数</p><h2 id="O"><a href="#O" class="headerlink" title="O"></a>O</h2><p>objective approach　客观方法<br>odds　赔率<br>opinion poll　民意测验<br>option　期权<br>Oscars　奥斯卡</p><h2 id="P"><a href="#P" class="headerlink" title="P"></a>P</h2><p>pairwise disjoint　两两不相交<br>Parrondo’s paradox　帕隆多悖论<br>Pascal, Blaise　布莱兹·帕斯卡<br>payout price　赔付金额<br>Penney-ante　彭尼赌局游戏<br>personal probability　个人概率　参见 subjective probability<br>Poincaré, Henri　亨利·庞加莱<br>points, problem of　点数分配问题<br>Poisson distribution　泊松分布<br>Poisson, Siméon Denis　西莫恩·德尼·泊松<br>poker　扑克<br>polymer chemistry　聚合物化学<br>posterior odds　后验赔率<br>prior odds　先验赔率<br>Prisoners’ Dilemma　囚徒困境<br>probability density　概率密度<br>prosecutor’s fallacy　检察官谬误<br>pseudo-random sequence　伪随机数序列</p><h2 id="Q"><a href="#Q" class="headerlink" title="Q"></a>Q</h2><p>queues　队列</p><h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>radioactivity　放射性<br>random choice　随机选择<br>randomized response　随机化回答<br>random numbers　随机数<br>random walk　随机游走<br>relative risk　相对风险<br>Restricted Choice, Principle of　限制选择原则<br>Richard III　理查三世<br>risk　风险<br>roulette　轮盘赌<br>Rutherford, Ernest　欧内斯特·卢瑟福</p><h2 id="S"><a href="#S" class="headerlink" title="S"></a>S</h2><p>safety　安全<br>sex discrimination　性别歧视<br>share portfolios　投资分配<br>Simpson’s paradox　辛普森悖论<br>soccer, World Cup　足球世界杯</p><p>Spiegelhalter, David　大卫·斯皮格霍特<br>square root　平方根<br>standard deviation　标准差<br>Star Trek　《星际迷航》<br>Strong Law　强大数定律<br>subjective probability　主观概率<br>sums　和<br>survival analysis　生存分析<br>symmetry　对称性</p><h2 id="T"><a href="#T" class="headerlink" title="T"></a>T</h2><p>tennis　网球<br>terrorist detection　检测恐怖分子<br>Thorp, Edward　爱德华·索普<br>tiny probabilities　微小概率<br>traffic intensity　流量强度<br>trick questions　轨迹问题<br>TV game shows　电视游戏</p><h2 id="U"><a href="#U" class="headerlink" title="U"></a>U</h2><p>uniform distribution　均匀分布<br>utility　效用</p><h2 id="V"><a href="#V" class="headerlink" title="V"></a>V</h2><p>variability　变化<br>variance　方差<br>volatility　波动性</p><h2 id="W"><a href="#W" class="headerlink" title="W"></a>W</h2><p>WADA　世界反兴奋剂机构<br>weather　天气<br>Weaver, Warren　瓦伦·韦弗<br>Weibull distribution　韦布尔分布<br>Weldon, Raphael　拉斐尔·韦尔登</p><h2 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h2><p>zero probability　零概率</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>absolute risk　绝对风险<br>Additional Law　加法定理<br>airline overbooking　航班超额预订<br>Alzheimer’s disease　阿尔茨海默病<br>amniocentesis　羊膜穿刺术<br>Astumian’s game　阿斯图米安的游戏<br>axiom　公理</p><h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><p>Balls in a bag/urn　袋子/罐子中的球<br>batch testing　批量测试<br>Bayes’s Rule　贝叶斯公式<br>Bayes, Thomas　托马斯·贝叶斯<br>belief, degree of　可信度<br>Bernoulli family　伯努利家族<br>Bernoulli Society　伯努利学会<br>Bernoulli trials　伯努利试验<br>beta distribution　贝塔分布<br>bets　赌注<br>binomial distribution　二项分布<br>birthdays　生日<br>births　出生<br>blackjack　二十一点<br>Black-Scholes　布莱克-斯科尔斯模型<br>Bletchley Park　布莱切利园<br>Bochner, Salomon　所罗门·博纳<br>Borel-Cantelli Lemmas　波莱尔-坎泰利引理<br>Borel, émile　埃米尔·博雷尔<br>Box, George　乔治·博克斯<br>breast cancer　乳腺癌<br>bridge　桥牌<br>Brownian motion　布朗运动<br>Butler, Bishop Joseph　主教乔瑟夫·巴特勒</p><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>card dealing　分牌<br>Central Limit Theorem　中心极限定理<br>certainty　确定性<br>Chebychev, Pafnuty　巴夫尼提·切比雪夫<br>classical approach　古典方法　参见 objective approach<br>coin-throwing　掷硬币<br>Colour of Money　金钱本色<br>conditional probability　条件概率<br>continuous distribution　连续分布<br>correlation　相关性<br>cricket　板球<br>criminal trials　刑事审判</p><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>Deal or No Deal　交易与否<br>de Finetti, Bruno　布鲁诺·德·菲内蒂<br>de Moivre, Albraham　亚伯拉罕·棣莫弗<br>density　密度　参见 probability density<br>dice　色子<br>diffusion　扩散<br>dilemmas　难题<br>discrete distributions　离散分布<br>disjoint　不相容的<br>distribution　分布<br>Doob, Joseph　乔·杜布</p><h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><p>eggs     鸡蛋<br>Einstein, Albert　阿尔伯特·爱因斯坦<br>engineering students　工科生<br>epidemics　流行病<br>Erlang, Agner　艾格纳·埃朗<br>errors　误差<br>expected utility　预期效用<br>expected value　预期值　参见 mean value<br>exponential distribution　指数分布<br>extreme-value distributions　极端值分布</p><h2 id="F"><a href="#F" class="headerlink" title="F"></a>F</h2><p>fair price　公平价格<br>Feller, William　威廉·费勒<br>fencing, Olympic　奥运会上的击剑项目<br>Fermat, Pierre de　威廉·费勒<br>Florentine gamblers　佛罗伦萨的赌徒们<br>fiying bombs　飞行炸弹<br>football results　足球比赛结果<br>Fréchet distribution　弗雷歇分布<br>frequencies　频率<br>frequency approach　频率方法</p><h2 id="G"><a href="#G" class="headerlink" title="G"></a>G</h2><p>Galileo, Galilei　伽利略·伽利莱<br>games, recreational　休闲游戏<br>Gauss, Carl Friedrich　卡尔·弗里德里希·高斯<br>Gaussian distribution　高斯分布<br>genetics　基因<br>geometric distribution　几何分布<br>Gnedenko, Boris　鲍里斯·格涅坚科<br>Golden Balls　黄金球<br>Gorbachev, Mikhail　米哈伊尔·戈尔巴乔夫<br>Gore, Al　阿尔·戈尔<br>Griffin, Peter　皮特·格里芬<br>Gumbel distribution　冈贝尔分布</p><h2 id="H"><a href="#H" class="headerlink" title="H"></a>H</h2><p>Hand, David　大卫·汉德<br>haemophilia　血友病<br>herd immunity　群体免疫<br>horse kicks, death from　被马踢死<br>horse racing　赛马</p><h2 id="I"><a href="#I" class="headerlink" title="I"></a>I</h2><p>infiuence of computers　计算机的影响<br>impossibility　不可能<br>independence　独立性<br>insurance　保险<br>inverse probability　逆概率</p><h2 id="K"><a href="#K" class="headerlink" title="K"></a>K</h2><p>Kelly, John　约翰·凯利<br>Kendall, David　大卫·肯德尔<br>Kermack, William　威廉·科尔马克<br>Khinchin, Alexander　亚历山大·欣钦<br>Kolmogorov, Andrey　安德鲁·柯尔莫哥洛夫</p><h2 id="L"><a href="#L" class="headerlink" title="L"></a>L</h2><p>Laplace, Pierre-Simon　皮埃尔-西蒙·拉普拉斯<br>Law of Iterated Logarithm　《重对数率》<br>Law of Large Numbers　大数定律<br>Likelihood Ratio　似然比<br>Longcor, Willard　威拉德·朗克尔<br>lottery　彩票</p><h2 id="M"><a href="#M" class="headerlink" title="M"></a>M</h2><p>Malawi, child deaths　马拉维儿童死亡<br>Markov, Andrey　安德雷·马尔可夫<br>martingale　鞅<br>McHale, Ian　伊恩·麦克海尔<br>McKendrick, Anderson　安德森·迈肯德里克<br>mean value　平均值<br>misprints　印刷错误<br>misunderstandings　误解<br>Monte Carlo simulation　蒙特卡罗模拟<br>Morse code　摩尔斯电码<br>Mosteller, Frederick　弗雷德里克·莫斯特勒<br>Multiplication Law　乘法定理<br>mutually exclusive　相互排斥　参见 disjoint</p><h2 id="N"><a href="#N" class="headerlink" title="N"></a>N</h2><p>Nader, Ralph　拉尔夫·纳德<br>Newton, Isaac　艾萨克·牛顿<br>Nobel prize　诺贝尔奖<br>normal distribution　正态分布　参见 Gaussian distribution<br>Number Needed to Treat　需治疗人数</p><h2 id="O"><a href="#O" class="headerlink" title="O"></a>O</h2><p>objective approach　客观方法<br>odds　赔率<br>opinion poll　民意测验<br>option　期权<br>Oscars　奥斯卡</p><h2 id="P"><a href="#P" class="headerlink" title="P"></a>P</h2><p>pairwise disjoint　两两不相交<br>Parrondo’s paradox　帕隆多悖论<br>Pascal, Blaise　布莱兹·帕斯卡<br>payout price　赔付金额<br>Penney-ante　彭尼赌局游戏<br>personal probability　个人概率　参见 subjective probability<br>Poincaré, Henri　亨利·庞加莱<br>points, problem of　点数分配问题<br>Poisson distribution　泊松分布<br>Poisson, Siméon Denis　西莫恩·德尼·泊松<br>poker　扑克<br>polymer chemistry　聚合物化学<br>posterior odds　后验赔率<br>prior odds　先验赔率<br>Prisoners’ Dilemma　囚徒困境<br>probability density　概率密度<br>prosecutor’s fallacy　检察官谬误<br>pseudo-random sequence　伪随机数序列</p><h2 id="Q"><a href="#Q" class="headerlink" title="Q"></a>Q</h2><p>queues　队列</p><h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>radioactivity　放射性<br>random choice　随机选择<br>randomized response　随机化回答<br>random numbers　随机数<br>random walk　随机游走<br>relative risk　相对风险<br>Restricted Choice, Principle of　限制选择原则<br>Richard III　理查三世<br>risk　风险<br>roulette　轮盘赌<br>Rutherford, Ernest　欧内斯特·卢瑟福</p><h2 id="S"><a href="#S" class="headerlink" title="S"></a>S</h2><p>safety　安全<br>sex discrimination　性别歧视<br>share portfolios　投资分配<br>Simpson’s paradox　辛普森悖论<br>soccer, World Cup　足球世界杯</p><p>Spiegelhalter, David　大卫·斯皮格霍特<br>square root　平方根<br>standard deviation　标准差<br>Star Trek　《星际迷航》<br>Strong Law　强大数定律<br>subjective probability　主观概率<br>sums　和<br>survival analysis　生存分析<br>symmetry　对称性</p><h2 id="T"><a href="#T" class="headerlink" title="T"></a>T</h2><p>tennis　网球<br>terrorist detection　检测恐怖分子<br>Thorp, Edward　爱德华·索普<br>tiny probabilities　微小概率<br>traffic intensity　流量强度<br>TV game shows　电视游戏</p><h2 id="U"><a href="#U" class="headerlink" title="U"></a>U</h2><p>uniform distribution　均匀分布<br>utility　效用</p><h2 id="V"><a href="#V" class="headerlink" title="V"></a>V</h2><p>variability　变化<br>variance　方差<br>volatility　波动性</p><h2 id="W"><a href="#W" class="headerlink" title="W"></a>W</h2><p>WADA　世界反兴奋剂机构<br>weather　天气<br>Weaver, Warren　瓦伦·韦弗<br>Weibull distribution　韦布尔分布<br>Weldon, Raphael　拉斐尔·韦尔登</p><h2 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h2><p>zero probability　零概率</p>]]></content>
       
       
       <categories>
@@ -880,9 +893,9 @@
       
         <tags>
             
-            <tag> Parallelism </tag>
-            
             <tag> Parallel Construction </tag>
+            
+            <tag> Parallelism </tag>
             
             <tag> Parallel Structure </tag>
             
@@ -1236,48 +1249,6 @@
     
     
     <entry>
-      <title>Soundfreaq Double Spot SFQ-09蓝牙音箱</title>
-      <link href="/posts/23422/"/>
-      <url>/posts/23422/</url>
-      
-        <content type="html"><![CDATA[<p>与Sound Spot SFQ-07一脉相承，Double Spot SFQ-09变成了双喇叭立体声。从其尺寸大小和声音效果而言，这应该算是Soundfreaq排名第三的蓝牙音箱产品，排名紧随Sound Stack SFQ-03和Sound Platform 2 SFQ-06之后。</p><p>这是一款设计极简的产品，音箱顶部总共只有7颗键位，除去电源键使用了1颗Tact Switch之外，其他6颗功能键，全部都是触摸设计。从价格选择上，有两个版本</p><ul><li><p>标配音箱: $99</p></li><li><p>标配音箱+锂电池：$129</p></li></ul><h2 id="【选配】内置锂电池-支持6小时播放"><a href="#【选配】内置锂电池-支持6小时播放" class="headerlink" title="【选配】内置锂电池 支持6小时播放"></a>【选配】内置锂电池 支持6小时播放</h2><p><strong>类型：</strong> 可充电锂电池<br><strong>型号：</strong> LC18650<br><strong>额定电压：</strong> 7.4V<br><strong>容量：</strong> 1800mAh</p><h2 id="极简设计-不看说明书也可使用"><a href="#极简设计-不看说明书也可使用" class="headerlink" title="极简设计 不看说明书也可使用"></a>极简设计 不看说明书也可使用</h2><ol><li><strong>音量减：</strong>轻触以减小音量</li><li><strong>音量加：</strong>轻触以加大音量</li><li><strong>上一首 / 快退：</strong>蓝牙音源状态下，<code>触按一下</code>跳至上一首曲目，<code>按住</code>可以快速后退。</li><li><strong>播放 / 暂停：</strong><code>开始</code>播放或者<code>暂停</code>播放</li><li><strong>下一首 / 快进：</strong>蓝牙音源状态下，<code>触按一下</code>跳至下一首曲目，<code>按住</code>可以快速前进。</li><li><strong>蓝牙配对键：</strong>按住不放3秒，音箱将进入<code>配对模式</code>，这时电源键的LED将会快闪。</li><li><p><strong>电源开关：</strong>按一下，可以进行<code>开机 / 关机</code>操作</p></li><li><p><strong>电源输入接口：</strong>连接电源适配器供电</p></li><li><strong>USB充电接口：</strong>可以给外接电子设备充电，提供5V 1A的充电输出</li><li><strong>AUX IN输入：</strong>接驳外部设备的音源信号</li><li><strong>UQ3滑动开关：</strong><code>开启</code>或者<code>关闭</code>立体声扩展功能</li><li><strong>音色滑动开关：</strong>滑动至相应位置来选择不同的音色模式，有<code>温暖</code>，<code>平直</code>和<code>明亮</code>三种模式可选</li></ol><h2 id="规格参数"><a href="#规格参数" class="headerlink" title="规格参数"></a>规格参数</h2><div class="table-container"><table><thead><tr><th>SFQ-09</th><th>规格参数</th></tr></thead><tbody><tr><td>颜色</td><td>黑/白两种颜色可选</td></tr><tr><td>品牌</td><td>Soundfreaq 奇响</td></tr><tr><td>音源接口</td><td>无线蓝牙（BT）/  3.5mm音频接口（AUX）</td></tr><tr><td>无线蓝牙</td><td>A2DP，AVRCP</td></tr><tr><td>充电接口</td><td>USB接口，连接充电线给手机充电</td></tr><tr><td>内置电池</td><td>可充电锂电池，7.4V 1800mAh，可连续播放音乐 6 小时以上</td></tr><tr><td>电源适配器</td><td>输入：AC 100-240V, 50/60Hz;   输出：DC 12V 2.5A</td></tr><tr><td>商品尺寸</td><td>280 L x 80 D x 112 H mm</td></tr><tr><td>商品重量</td><td>1.23千克</td></tr><tr><td>商品包装</td><td>精美四色彩盒包装</td></tr></tbody></table></div><h2 id="包装清单"><a href="#包装清单" class="headerlink" title="包装清单"></a>包装清单</h2><ul><li>音箱主机，1台</li><li>电源适配器，1个</li><li>音频线，1条</li><li>快速开始指引说明，1本</li><li>安全认证卡，1张</li><li>保修卡，1张</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Soundfreaq迷你台式蓝牙音箱Sound Step SFQ-02</title>
-      <link href="/posts/35715/"/>
-      <url>/posts/35715/</url>
-      
-        <content type="html"><![CDATA[<h2 id="造型紧凑简洁-声音明快响亮-悦耳的声音倾刻便充满了房间"><a href="#造型紧凑简洁-声音明快响亮-悦耳的声音倾刻便充满了房间" class="headerlink" title="造型紧凑简洁 声音明快响亮 悦耳的声音倾刻便充满了房间"></a>造型紧凑简洁 声音明快响亮 悦耳的声音倾刻便充满了房间</h2><h2 id="MFI认证产品-给iPod-iPhone-iPad充电的同时-可播放你最喜爱的音乐"><a href="#MFI认证产品-给iPod-iPhone-iPad充电的同时-可播放你最喜爱的音乐" class="headerlink" title="MFI认证产品 给iPod/iPhone/iPad充电的同时 可播放你最喜爱的音乐"></a>MFI认证产品 给iPod/iPhone/iPad充电的同时 可播放你最喜爱的音乐</h2><h2 id="音色表现出众-当然百听不厌"><a href="#音色表现出众-当然百听不厌" class="headerlink" title="音色表现出众 当然百听不厌"></a>音色表现出众 当然百听不厌</h2><ul><li>Soundfreaq典型的声音特色：<code>低频自然，人声清晰干净</code></li><li><code>2.1声道</code>，独家定制喇叭单元：全频单元 4瓦 x 2，低音单元 10瓦 x 1</li><li>精心调校的音腔，<code>不破音 无失真</code></li><li>独家专利<code>声场扩展技术</code>UQ3<sup>TM</sup></li></ul><h2 id="内置锂电池-持续播放音乐6小时-小巧轻便-在各个房间随意移动"><a href="#内置锂电池-持续播放音乐6小时-小巧轻便-在各个房间随意移动" class="headerlink" title="内置锂电池 持续播放音乐6小时 小巧轻便 在各个房间随意移动"></a>内置锂电池 持续播放音乐6小时 小巧轻便 在各个房间随意移动</h2><p>【注意：中国版本，内置电池已取消】</p><h2 id="外貌协会-高颜值成员-精美四色彩盒包装"><a href="#外貌协会-高颜值成员-精美四色彩盒包装" class="headerlink" title="外貌协会 高颜值成员 精美四色彩盒包装"></a>外貌协会 高颜值成员 精美四色彩盒包装</h2><h2 id="操作界面简洁易懂-不用说明书也能直接上手使用"><a href="#操作界面简洁易懂-不用说明书也能直接上手使用" class="headerlink" title="操作界面简洁易懂 不用说明书也能直接上手使用"></a>操作界面简洁易懂 不用说明书也能直接上手使用</h2><ol><li><p><strong>UQ3音场扩展键：</strong><code>启动</code>或<code>取消</code>立体声扩展功能，灯亮表示<code>启动</code>状态 【注意：中国版本，此按键已取消并更改为USB音源】</p></li><li><p><strong>DOCK基座音源：</strong>切换至<code>基座音源</code>模式，灯亮表示<code>基座音源</code>模式</p></li><li><p><strong>蓝牙音源：</strong>切换至<code>蓝牙音源</code>模式，灯亮表示<code>蓝牙音源</code>模式</p></li><li><p><strong>AUX音源：</strong>切换至<code>AUX音源</code>模式，灯亮表示<code>AUX音源</code>模式</p></li><li><p><strong>苹果9针基座：</strong>可接驳苹果设备如<code>iPod/iPhone/iPad</code></p></li><li><p><strong>配对指示灯：</strong>LED显示<code>配对状态</code></p></li><li><p><strong>蓝牙配对键：</strong>启动音箱的<code>配对模式</code></p></li><li><p><strong>上一首 / 下一首：</strong>在基座音源和蓝牙音源状态下，切换<code>上一首 / 下一首</code>音源，在收音机状态下，用来进行<code>调频</code></p></li><li><p><strong>播放 / 暂停：</strong><code>开始</code>播放或者<code>暂停</code>播放，或者在收音机状态下用来<code>保存电台</code></p></li><li><p><strong>音量减 / 音量加：</strong><code>音量调节</code></p></li><li><p><strong>电源开关：</strong><code>开机 / 关机</code>操作</p></li><li><p><strong>USB充电接口：</strong>通过连接USB充电线给外部电子设备充电</p></li><li><p><strong>电源适配器接口：</strong>连接随主机购买的<code>电源适配器</code></p></li><li><p><strong>低音喇叭单元：</strong>此位置有<code>金属喇叭网</code>，保护<code>低音喇叭单元</code></p></li><li><p><strong>FM收音机天线接口：</strong>增强<code>收音效果</code></p></li><li><p><strong>AUX音源输入接口：</strong>连接外部<code>AUX音源</code>设备</p></li><li><p><strong>视频输入接口：</strong>连接外部<code>视频播放设备</code>，例如电视机，通常在基座上插苹果设备如<code>iPod/iPhone/iPad</code>时才可正常工作</p></li></ol><h2 id="规格参数"><a href="#规格参数" class="headerlink" title="规格参数"></a>规格参数</h2><div class="table-container"><table><thead><tr><th>SFQ-02</th><th>规格参数</th></tr></thead><tbody><tr><td>颜色</td><td>黑/白两种颜色可选</td></tr><tr><td>品牌</td><td>Soundfreaq 奇响</td></tr><tr><td>音源接口</td><td>苹果9针基座接口（DOCK）/  无线蓝牙（BT）/  3.5mm音频接口（AUX）</td></tr><tr><td>无线蓝牙</td><td>A2DP</td></tr><tr><td>充电接口</td><td>苹果9针基座接口，可给iPod/iPhone/iPad充电; USB接口，连接充电线给安卓手机充电</td></tr><tr><td>内置电池</td><td>可充电锂电池，可连续播放音乐 6 小时以上</td></tr><tr><td>电源适配器</td><td>输入：AC 100-240V, 50/60Hz;   输出：DC 12V 2.5A</td></tr><tr><td>商品尺寸</td><td>32 x 12 x 9 cm</td></tr><tr><td>商品重量</td><td>1.23千克</td></tr><tr><td>商品包装</td><td>精美四色彩盒包装</td></tr></tbody></table></div>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Soundfreaq </tag>
-            
-            <tag> Sound Step </tag>
-            
-            <tag> SFQ-02 </tag>
-            
-            <tag> Bluetooth Speaker </tag>
-            
-            <tag> 蓝牙音箱 </tag>
-            
-            <tag> MFI </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>如何在Hexo站点Butterfly主题使用Font Awesome图标</title>
       <link href="/posts/font-awesome/"/>
       <url>/posts/font-awesome/</url>
@@ -1299,138 +1270,6 @@
             <tag> icon </tag>
             
             <tag> iconfont </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Soundfreaq SFQ-06可以一边充电一边放歌吗</title>
-      <link href="/posts/54290/"/>
-      <url>/posts/54290/</url>
-      
-        <content type="html"><![CDATA[<p>答案是：<strong>可以，完全没问题。</strong></p><p>SFQ-06的电源适配器直流输出功率是59.4瓦（DC 18V 3.3A），喇叭的音频输出功率是40瓦，每个USB充电接口的输出功率是5瓦（5V 1A），单纯地从算术的角度来看：</p><p>电源功率59.4W = 音乐功率40W + USB充电 5W + USB充电 5W + 富余功率9.4W</p><p>可以看到，SFQ-06的电源功率足够大，不仅可以支持最大音量放歌，可以支持<strong>2个USB接口同时充电</strong>，在这种情况下，电源还富余了9.4瓦的功率让音箱可以从容应对大能量的低频信号，严格保证音箱在极限使用状态下也能够<strong>不失真、不破音</strong>。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 新零售 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Soundfreaq </tag>
-            
-            <tag> Sound Platform 2 </tag>
-            
-            <tag> SFQ-06 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Soundfreaq旗舰蓝牙音箱Sound Stack需要煲机吗</title>
-      <link href="/posts/burn-in/"/>
-      <url>/posts/burn-in/</url>
-      
-        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>有一位来自福建做茶业生意的老铁，关注SFQ-03有一段时间了，也添加了微信好友。但是，由于经营生意经常在外奔波，无法收货，故而一直没下单，直到上周人返福建。下单后的第三天，这位老兄收到了音箱。开箱试用了不一会儿，很是满意和欣喜，特意地拍照、拍视频、写评论，还给我发来了截图。</p><p><img src="https://gitee.com/Alowree/img/raw/master/customer_review_soundfreaq_sfq-03.png" alt=""></p><p>不得不说，这位兄台写的评论，拍的视频，简直堪比专业刷单的枪手。这台Sound Stack的彩花版，也就是Novogratz的定制版，跟他家里橱柜上的一只<strong>景德镇手绘粉彩将军罐</strong>简直是绝配，音箱与摆罐，简直了就是门当户对的一妆婚配。</p><iframe src="//player.bilibili.com/player.html?aid=248141899&bvid=BV12v41157Mb&cid=339791117&page=1" width="100%" height="100%" frameborder="0" loading="lazy" allowfullscreen></iframe><p>这款旗舰蓝牙音箱使用了两天之后，这位兄台在微信上发信息给我，提出了一个问题：<strong>这款音箱大约需要多长的煲机时间？</strong></p><span id="more"></span><p>煲机这个术语，在音响行业肯定会经常听到人们提起，但是个人来讲对它没有怎么过多的关注。有一个主要的原因，我认为自己的耳朵就是一对普通人的“肉耳朵”（也有人称“木耳朵”），不是专业声学工程师们通常所具有的“金耳朵”，可以分辨出哪怕是最细微的声音差别。听过最夸张的一个故事，公司之前的技术顾问Kitazawa就是这样一个声学专家，喇叭供应商在某一批喇叭单元的生产中仅是更换了一条引线，Kitazawa都可以听出喇叭更换引线前后的声音差别。</p><p>作为一个音响行业的从业者，木头耳朵也就罢了，如果又是木头脑袋那就糗得大了。</p><p>现在用户提出了一个专业的声学问题，为使我看起来像是一个具有行业知识的专业人士，我很想若有其事的告诉他，你可以使用某某类型的音乐，大约煲个百把小时，然后就可以“低频汹涌澎湃，人声细腻悦耳，高频柔顺，总之一个字就是通透”，blah blah blah。然而，这不并是我真实的想法，如果客人针对这一话题打破沙锅问到底的话，我没有办法提供更多的信息并且自圆其说。</p><p>我决定实事求是，说出我自己真实的看法。如果连我这样的行业人士都不觉得煲机真正有用，或许这也正是真相所在，至少是对于我所熟悉的产品类型，应是如此。</p><!--more--><p>于是我略微斟酌了一下措辞，在微信上回复他说：</p><blockquote><p>这个我真的不知道，说实话，煲机前后的音质效果差别，我个人的耳朵是分不出来的。所以，我个人一直以为，“煲机”是个伪概念。或许，那些金耳朵可以分辨出来。</p></blockquote><p>客人见罢这个回复，也是哈哈一笑：差不多，我也是听别人说的煲机。</p><p>这个煲机事件过去之后，我决定深入调查研究一下，想看看大家都分别持什么样的观点。</p><h2 id="煲机有用论"><a href="#煲机有用论" class="headerlink" title="煲机有用论"></a>煲机有用论</h2><blockquote><p>音箱和耳机的磨合期被行内人称作“煲机”，英文的叫法是“burn in”，煲机的过程犹如打通七经八脉，是一种快速使器材老化稳定的手段和方法。有些元器件例如晶体管、集成电路、电容等在全新的时候电气性能不稳定，需要经过一段时间的使用后才能逐渐稳定成行。</p><p>对于音箱而言，对扬声器的煲也是煲机中的一个重点部分；对于耳机来说，煲机实际就是在煲振膜折环，新耳机振膜折环机械顺性差，导致失真比较大，经过一段时间使用后，顺性逐渐变好，失真也会逐渐降到正常的水平。</p></blockquote><p>个人觉得，百度百科关于“煲机”的这段简介，似是而非，具有很强的迷惑性，但经不起仔细推敲。但凡稍稍具有生产制造经验的人士，不论产品类别，应该一眼就能看出其中的逻辑漏洞。</p><h3 id="电子元器件-Electronics"><a href="#电子元器件-Electronics" class="headerlink" title="电子元器件 Electronics"></a>电子元器件 Electronics</h3><p>这段文字的前半部分，似乎在质疑电子元器件在全新状态时的稳定性。这部分内容，要么是写于几十年前，目前而论早已过时，要么其作者对于电子产品的研发、设计、生产和检测流程缺乏必要的了解。</p><p>首先，在现如今，任何电子元器件的规格参数都有一个明确的标称数值外加可以接受的误差范围，根本不存在所谓“全新的时候电器参数不稳定，经过一段时间的使用后才能逐渐稳定”这样的说法。假设这种“新的电子元器件不稳定”的说法为真，你让研发工程师如何使用新的电子元器件去进行电子电路的设计？难不成一定要去获取和使用这种“煲”过的电子元器件来进行产品的设计？这显然不可能。其次，当产品批量生产阶段，进行电子元器件批量采购时，你让进料品控工程师如何对新进的电子元器件进行来料检验？最后，在成品组装完毕之后，你又让出货品控工程师如何对成品进行出货检验？在工程界，电子元器件的时域稳定性是一个非常基本的要求，否则，电子产品的设计开发、来料检验和组装测试都将成为不可完成的任务。</p><h3 id="弹波-Damper"><a href="#弹波-Damper" class="headerlink" title="弹波 Damper"></a>弹波 Damper</h3><p>弹波，书面名称“定心支片”，英文有<strong>Damper / Spider / Suspension</strong>等几种叫法，在日文称“中心保档部” ，国内有地方称“弹波”、“弹拔”，是扬声器（喇叭单元，Speaker Driver）系统的重要组成部分，它有以下作用：</p><ul><li>保持音圈（Voice Coil）在磁路空地中的正确方位，因为弹波不单单是中心定位的作用，还担负着让音圈行程上“回归复位”的作用，类似于简谐振动模型中的弹簧</li><li>音圈在做上下运动时，保持振动体系仅作上下笔直运动，且保持出色的安稳恢复力</li><li>防止尘土落入磁路空地中</li></ul><h3 id="折环-Surround"><a href="#折环-Surround" class="headerlink" title="折环 Surround"></a>折环 Surround</h3><p>折环，和弹波配合工作，两个部分一上一下地扶住振膜，把振膜固定或者悬挂在音盆上，同样起的是定位作用，使振膜在音圈的带动下做径向运动。折环的材料一般有橡胶，布基加胶纸质等，折环的软硬和柔顺度，直接影响鼓纸纸在整个运动行程里的线性，影响喇叭在整个标称功率内的表现曲线。</p><p>当然，橡胶折环的柔软特性跟温度也有关系，并且这种温度上的相关性，比静置时长的相关性更为强烈。同一台音箱设备，在温暖的夏天听，与在寒冷的冬天听，两相对比，前者的听音效果会更加自然和逼真，后者也会有冻住了的感觉。这些差异都是橡胶材料的自然特性和温度特性所致。</p><p><img src="Soundfreaq旗舰蓝牙音箱Sound-Stack需要煲机吗？/Speaker_driver_construction.jpg" alt=""></p><p>“煲机有用论”的支持者们认为，喇叭单元的弹波和折环这两个构成要素，由于其材料特性的缘故，在喇叭未经使用之前，它们的柔软度欠佳。这种情况下，由于弹波和折环的牵制作用，振膜未能随着线圈作自由的振动和发声，会导致泛音的缺乏和不足，喇叭的声音听起来会比较僵硬。而当喇叭使用了一段时间之后，弹波和折环经过反复地弯折，其柔软特性慢慢得以改善，声音的效果也会慢慢得到提升。</p><h2 id="煲机无用论"><a href="#煲机无用论" class="headerlink" title="煲机无用论"></a>煲机无用论</h2><p>先说结论：煲机有个锤子用。</p><p>实验对象：耳机</p><p>欲细读详情论证的，正文在此：<a href="https://zhuanlan.zhihu.com/p/78240557">煲机到底有没有用？告别玄学，用硬核实验告诉你真相</a></p><h2 id="煲机作为品控手段"><a href="#煲机作为品控手段" class="headerlink" title="煲机作为品控手段"></a>煲机作为品控手段</h2><p>如果说煲机无用的话，那么为什么还有人一直在提“煲机”呢？或者换句话说，为什么“煲机”这个概念没有被抛弃而能够得以流传下来呢？这就要从煲机的目的来进行分析了。</p><p>煲机测试，英文名称对应为Burn-in Test，被广泛地应用在电子产品的生产测试过程中，其主要目的在于让产品满功率、长时间的处于工作状态，借此来发现在生产过程中可能产生的品质缺陷，比如说在SMT制程中可能出现的虚焊、假焊而形成的功能不良，比如说功放芯片由于散热不足而导致的过热保护，比如说某颗电子物料的批量性缺陷。在整个生产流程中，这部分的测试通常进行得越早越好，可以尽早发现问题，解决问题，降低成本。</p><p>一般来说，能够在机板状态进行的测试，就决不要等到组装成品以后再进行，因为制程越往后，解决品质问题的成本就越高。在实际生产运营中，厂家一般都会对PCBA半成品进行煲机测试，来保证PCBA的机板制程的稳定性和一致性，从而保证产品的品质。当然，也有在成品阶段进行的煲机测试，比如说功放机或者有源音箱等产品类型。这部分产品，通过煲机测试，除了可以检测制程的可靠性，还可以检测电子元器件的可靠性，例如三极管在满功率大电流工作状态下的性能表现，是否可以从容应付规格参数的标称数值。</p><p>当煲机测试用于检测目的时，通常也叫做老化测试，Aging Test，尤其是当产品在满功率、长时间的状态下进行时，是一种破坏性测试，一般不会持续很长时间，常见的时长范围一般在24-96小时。</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>煲机目的，如果说是用以提升电子电路部分的性能，这一说法并不能成立。相反的，长时间、大功率的煲机是一种破坏性测试。而如果煲机目的，是通过一小段时间的热身工作，来改善喇叭单元弹波和折环的材料柔软特性，对音质（Sound Quality）提升作用也是非常有限，可能只有测量仪器和声学专家可以分辨得出，普通人的耳朵一般无法听出差别。</p><ul><li>煲机前后的声学特点可以客观的测量到，但前后的变化非常细微，通常不超过0.5dB</li><li>煲机前后的差别，也可以由受过专业训练的声学专家或者发烧友进行盲听测试分辨出来，但普通人不容易听出差别</li><li><p>相同的产品型号，批量生产的不同个体之间所允许的声学误差（通常在1- 3 dB的范围内）要大于煲机所产生的差异（通常小于0.5dB）</p></li><li><p>不论是音箱还是耳机，煲机若干小时之后所带来的声音差别，并非主要来自于喇叭单元的物理变化，而更多是来自于大脑听觉系统对新声音特点的逐渐适应</p></li></ul><p>煲机测试，更多的是生产厂家在生产过程中，用以暴露潜在的品质缺陷的一种有效检测手段。但是对于普通用户来讲，我们认为，煲机的意义，其心理上的安慰作用大于客观的实际效果，因此并不值得大力推荐。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>[1]Simon Chester: <a href="https://www.techradar.com/news/audio/what-is-speaker-burn-in-1301179">What is speaker burn-in?</a></p><p>[2]Wesley Fenlon: <a href="https://www.tested.com/tech/accessories/459117-science-and-myth-burning-headphones/">The Science and Myth of Burning In New Headphones</a></p><p>[3]Bryan Gardiner: <a href="https://www.wired.com/2013/11/tnhyui-earphone-burn-in/">Please Stop ‘Burning In’ Your Earphones</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 新零售 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Soundfreaq </tag>
-            
-            <tag> Sound Stack </tag>
-            
-            <tag> SFQ-03 </tag>
-            
-            <tag> 煲机 </tag>
-            
-            <tag> 老化测试 </tag>
-            
-            <tag> Burn-in </tag>
-            
-            <tag> speaker driver </tag>
-            
-            <tag> 弹波 </tag>
-            
-            <tag> Damper </tag>
-            
-            <tag> Spider </tag>
-            
-            <tag> Suspension </tag>
-            
-            <tag> 折环 </tag>
-            
-            <tag> Surround </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Soundfreaq蓝牙音箱之Sound Platform 2</title>
-      <link href="/posts/24275/"/>
-      <url>/posts/24275/</url>
-      
-        <content type="html"><![CDATA[<p>淘宝上有一个买家在看了SFQ-06的详细页以后，批评我说“描述不清楚，瓦数尺寸都不清晰”。于是，我决定听取批评意见，为SFQ-06 Sound Platform 2重新写一份中文版的产品介绍文档，然后再制作制作一份中文版的宝贝详情页。</p><p>参考了一份2013年的新闻稿，Soundfreaq是在当年的CES上发布这款Sound Platform 2产品，并且在产品主要的卖点中特别提到了DSS<sup>TM</sup>功能。DSS（Dual System Streaming）从功能实现上来说，跟今天铺天盖地的TWS耳机是同一种技术，都实现了一台音源（手机/平板/电脑），通过蓝牙无线同时连接两台音乐播放设备（音箱/耳机），也就是大家常说的“一拖二”。TWS技术在2021年的今天显得比较普遍，但是在2013年能够使用当时的蓝牙技术实现TWS“一拖二”还是比较考验研发实力的，需要品牌商和方案商进行大量的开发和调试工作，才可以完美实现由两台蓝牙音箱组合成一套真立体声音响系统，一台做为左声道，另一台做为右声道。这样的左右声道拉开一定的距离，用户可以享受更宽广的真正立体声声场。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06.jpg" alt=""></p><h2 id="简约时尚的外观"><a href="#简约时尚的外观" class="headerlink" title="简约时尚的外观"></a>简约时尚的外观</h2><p>简洁、明快的风格，自成一系。</p><p>好像是从SFQ-04 Sound Kick开始，Soundfreaq全系的产品线就采用了一种百页窗式的设计风格，并且在后续产品的ID造型中，这种family look的设计就一路沿续了下来。在SP2的外观设计中，这种百页窗式的小格子被放置于产品的的侧面和后面，除了美观上的效果，也能够方便用户在移动音箱的时候，手指可以更牢靠地抓住音箱，不会打滑。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SOUNDFREAQ_SFQ-06.jpg" alt=""></p><p>颜色方面则有两种可选，经典黑色和乳白花纹。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_Low_3Q.jpg" alt=""></p><p>从这张经典黑产品图片可以看到，位于音箱前面偏底部的位置，在手机/平板托盘的上方，有一条白色的状态指示灯，可以显示待机、蓝牙配对等各种工作状态，为操作音箱时的人机交互提供一个比较直观的反馈。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_White.jpg" alt=""></p><p>乳白花版本则更像是为年轻时尚的女性用户专门定制：这些女王和领导们掌管家里全部的装修布局，布艺风格，以及物品摆置。</p><p>科特尼和罗伯特•诺沃格拉茨，是来自美国的一对夫妻设计二人组合，已经在曼哈顿，洛杉矶和其他地方设计高端住宅和精品酒店超过25年。Novogratz 努力以实惠的价格为现代家庭带来高端精品设计。他们认为你的家应该反映你是谁：定制化，个性化和精心策划。Novogratz 不仅仅是一个家居品牌，它通过产品和内容向客户展示一种生活方式：激励人们在设计上无所畏惧，在生活中无所畏惧。</p><p>Soundfreaq在2013年跟Novogratz进行合作，将其部分产品在外观设计进行了一定的拓展，由此跨界进入life style时尚圈。这件乳白花色的SP2蓝牙音箱正是两个品牌跨界合作的结果之一。</p><h2 id="触摸按键示意图"><a href="#触摸按键示意图" class="headerlink" title="触摸按键示意图"></a>触摸按键示意图</h2><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Top_View.png" alt=""></p><ol><li>SOURCE: 切换<strong>蓝牙</strong>、<strong>AUX IN</strong>、<strong>收音机</strong>三种音源输入</li><li>VOLUME +/-: <strong>音量加/减</strong></li><li>TONE: 切换<strong>明亮</strong>、<strong>温暖</strong>、<strong>中性</strong>三种音色模式</li><li>UQ3/DSS: 按一下<strong>启动UQ3</strong>声场模式，再按一下<strong>关闭UQ3</strong>。在蓝牙模式下，同时按住两台SP3音箱DSS键大约4秒钟，可以创建无线连接。当然，为了享受更好的立体声效果，需要再买另外一台SP3音箱才能实现DSS功能。</li><li>PAIR: 在蓝牙模式下，按住不放2秒，音箱进入<strong>配对</strong>模式。</li><li>PREVIOUS/REWIND: <ul><li>在蓝牙模式下，按一下跳到<strong>上一首</strong>，按住1秒则为在当前曲目<strong>快退</strong>。</li><li>在收音机模式下，按一下选择一个<strong>预存</strong>的电台，按住1秒启动<strong>自动扫台</strong>功能。</li></ul></li><li>PLAY/PAUSE: <ul><li>在蓝牙模式下，按一下可以<strong>开始</strong>播放或者<strong>暂停</strong>播放当前曲目</li><li>在收音机模式下，按一下切换<strong>预存</strong>的电台，总共有20个可以预存的电台，分别保存为P01，P02，P03，…，P20 ；按住不放则进入保存模式，可以把喜欢的电台保存下来。</li></ul></li><li>NEXT/FAST FORWARD: <ul><li>在蓝牙模式下，按一下跳到<strong>下一首</strong>，按住1秒则在当前曲目<strong>快进</strong>。</li><li>在收音机模式下，按一下选择一个<strong>预存</strong>的电台，按住1秒启动<strong>自动扫台</strong>功能。</li></ul></li><li>DISPLAY: <strong>显示屏</strong>有两种显示模式<ul><li>频率显示，比如97.1</li><li>预存电台显示，比如P05</li></ul></li><li>ON/STANDBY: <strong>开机</strong>/<strong>关机</strong></li></ol><h2 id="必须出色的音质"><a href="#必须出色的音质" class="headerlink" title="必须出色的音质"></a>必须出色的音质</h2><p>一款音箱最重要的指标当然是<strong>音质</strong>，必须要<strong>好听</strong>、<strong>耐听</strong>，然后用户<strong>爱听</strong>。</p><p>Soundfreaq一直以来都以Happy Listening做为一个宣传上的口号，一幅四平八稳的派头，隐约含了一种宣传上的冷淡，有点“不喧哗，自有声”那么点调调。单从宣传的角度，个人觉得这个口号还不如Sounds Good或者Sounds Better来得更为直白、通俗、并且经得起推敲。SP2的声学特点是，低频强劲自然，中频人声清晰，立体声效果明显，很容易分辨出每个通道中不同乐器的声音，真正地为喜欢欣赏音乐的人士们所打造。</p><p>对于普通消费者来说，要客观地评判一台音箱音质的好坏，可能不太容易。但是单纯地从使用的角度，如果一台音箱你听了很长时间，耳朵也不觉得疲劳，反而有点像上瘾一样，还要想听更久一点，那么，很有可能你遇到了一台好音箱。将机身前面的喇叭布网取掉，我们可以清楚得看到音箱内部大致的结构布局和喇叭配置。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_Front_view_drivers_exposed.jpg" alt=""></p><h3 id="2吋全频喇叭-x-2个"><a href="#2吋全频喇叭-x-2个" class="headerlink" title="2吋全频喇叭 x 2个"></a>2吋全频喇叭 x 2个</h3><p>喇叭单元是音箱最重要的核心元器件之一。Soundfreaq所有音箱产品的喇叭单元全部是特别定制，Sound Platform 2当然也不例外。定制喇叭单元在产品中研发阶段进行反复的调试，换料，微调，再换料，再微调，真正算得上是一步一步的打磨。从技术实现角度来说，并不属于高难度的动作，关键在于喇叭单元工程师对电声设计方向的准确理解和把握，知道选用什么样的材料可以保证喇叭的曲线能够精确地去到频率响应上的某个点位，既不多也不少，减一分则太瘦，过尤不及。</p><h3 id="大功率：20瓦-x-2通道-40瓦"><a href="#大功率：20瓦-x-2通道-40瓦" class="headerlink" title="大功率：20瓦 x 2通道 =40瓦"></a>大功率：20瓦 x 2通道 =40瓦</h3><p>通常来说，音频输出功率越大，音量也就越大。现在多数家庭客厅里的60吋平板电视，比较常见音频功率配置通常在10瓦+10瓦=20瓦。如果粗略而单纯地比较响度，SP2比你家60吋平板电视的最大音量还要更大声。</p><p>当以正常音量播放音乐时，喇叭没有杂音，应该算是入门级最基本的要求；当以最大音量播放音乐时，喇叭没有失真，没有破音，应该算是中级的要求；当以最小音量播放音乐时，喇叭仍然可以提供足够的低频，应该算是高级一点的要求了。能够做到“最大音量时无削波失真，最小音量时仍然有低频”则是对声学工程能力的综合考验，这里面既有对喇叭单元的要求，也有对音箱整体调校的要求。</p><p>当然，40瓦的音箱在家里使用，如果音量开到最大的话，很有可能过不了多久，就会有邻居过来敲门，说这么大的声音会影响到他们家正在专心学习准备升学的孩子。本着“快乐聆听”的理念，我们提倡优雅、理性地欣赏音乐，为了邻里和谐，建议发烧友们尽量少地启用SP2的“炸楼器”功能。</p><h3 id="双导向管-密闭音腔"><a href="#双导向管-密闭音腔" class="headerlink" title="双导向管 + 密闭音腔"></a>双导向管 + 密闭音腔</h3><p>导向管没有什么好说的，就是为了得到更好的低频效果；双导向管也没有什么好说的，就是为了每个喇叭单元都配上一个，这样的话每个喇叭单元产生的低频可以下潜的深度可以大致相同。我们建议用户朋友们在小音量的时候，检验一下SP2的低频表现，看看这两支拿了工资的导向管是否真正发挥了其应有的价值。当然，如果从理论上来说，SP2能够再配置一个低音喇叭单元那是再好不过了，但是我们还要面对产品尺寸和成本上的一些限制，经过综合考量（主要是为用户的钱包着想），最终成型的产品还是不免要做出一些权衡和取舍。</p><h3 id="三种音色模式"><a href="#三种音色模式" class="headerlink" title="三种音色模式"></a>三种音色模式</h3><ul><li>Bright 明亮</li><li>Warm 温暖</li><li>Neutral 中性</li></ul><h3 id="声场扩展技术UQ3TM"><a href="#声场扩展技术UQ3TM" class="headerlink" title="声场扩展技术UQ3TM"></a>声场扩展技术UQ3<sup>TM</sup></h3><p>一体式音响系统对家庭很方便，但相对于尺寸更大的组合式音响而言，一体机左右通道之间的距离相对较短。结果可能是有限的立体声分离和较差的轴外性能，俗话说就是分离度不够，立体声的效果不够明显。举例来说，音乐会的现场音频肯定是立体声，意味着声波会达到你的左右两只耳朵，但到达有先后，不是在同一时间。这个自然延迟会在每个耳朵的所听内容上产生一个时间差，然后你的大脑将左右声波结合听音环境”重新组装”为你的听觉图像，比如说吉他贝司在左边，架子鼓在右边，歌手在中间。</p><p>为了复制这一点，Soundfreaq创建了其专有的 <strong>UQ3™声场扩展技术</strong>，这是使用数字信号处理 （DSP）和氛围技术创造一个增强的、立体的音场声效感觉。UQ3™的心理声学效应扩大了音场，提供更身临其境的音频体验，听起来更为自然和更具空间感。</p><h2 id="双USB充电接口"><a href="#双USB充电接口" class="headerlink" title="双USB充电接口"></a>双USB充电接口</h2><p>嗯，还在满家每个房间每个抽屉地找手机充电器吗？有了SP2就不再有这样的烦恼。机身背部有2个通过的USB充电接口，可以同时给你的手机或者平板充电。SP2的电源适配器输出功率为20V x 3A = 60W，这样，即使在音箱满功率40W工作的情况下，仍然富余15W的功率可以给你的手机和平板同时充电。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_Back_view.jpg" alt=""></p><p>在音箱产品上添加一个或者两个USB Type A充电接口，技术实现上也并不困难。但是，做为普通用户，通常意识不到的地方会有两个方面：</p><ol><li>USB接口在工作状态是否具有足够的安全性？即，产品内置的充电线路是否具有可靠的短路保护，过充保护，和过热保护，而不会因为意外烧掉你的房屋和财产？</li><li>USB接口在工作状态是否会给周围其他设备或者某些功能造成干扰？比如，在给手机充电的过程中所产生的高频电磁信号是否会影响收音机的接收性能，而产生噪声？</li></ol><p>这两项工作通常意味更高的研发成本和更贵的材料成本，因为是不为用户强烈关注的领域，也是厂商们容易投机取巧的地方。Soundfreaq的产品一向讲究安全可靠、品质稳定、音色自然，这些能够展现实力和体现细节的地方，自然是用足了功夫，做到了极致。</p><h2 id="通用手机平板托盘"><a href="#通用手机平板托盘" class="headerlink" title="通用手机平板托盘"></a>通用手机平板托盘</h2><p>SP2机身前面正中的位置配有一个托盘，使用的时候，轻按一下会自动弹出，可以方便地摆放手机或者平板，从此可以在家使用平板带着爆棚音效看好莱坞大片；托盘不用的时候，再轻按一下收回，节省空间。</p><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_Front_iPhone_5_White.jpg" alt=""></p><h2 id="三种音源接口"><a href="#三种音源接口" class="headerlink" title="三种音源接口"></a>三种音源接口</h2><ul><li>蓝牙无线</li><li>FM收音机</li><li>AUX IN接口</li></ul><h2 id="规格参数表"><a href="#规格参数表" class="headerlink" title="规格参数表"></a>规格参数表</h2><div class="table-container"><table><thead><tr><th>型号</th><th>SFQ-06</th></tr></thead><tbody><tr><td>名称</td><td>Sound Platform 2</td></tr><tr><td>蓝牙版本</td><td>Bluetooth 2.1</td></tr><tr><td>蓝牙协议</td><td>A2DP</td></tr><tr><td>输入灵敏度</td><td>AUX IN：1200mV</td></tr><tr><td>收音机</td><td>FM波段</td></tr><tr><td>调频频段</td><td>87.5~108.0MHz</td></tr><tr><td>调频步进</td><td>100KHz</td></tr><tr><td>预设电台</td><td>20个</td></tr><tr><td>输入接口</td><td>电源接口；3.5mm耳机接口</td></tr><tr><td>电源</td><td>DC 18V 3.3A</td></tr><tr><td>电源适配器</td><td>输入 AC 100-240V，50/60Hz;  输出 DC 18V 3.3A</td></tr><tr><td>尺寸</td><td>宽 328mm / 12.9” 高 177mm / 6.9” 深 123mm / 4.8”</td></tr><tr><td>重量</td><td>1.97公斤</td></tr></tbody></table></div><h2 id="相对尺寸示意图"><a href="#相对尺寸示意图" class="headerlink" title="相对尺寸示意图"></a>相对尺寸示意图</h2><ul><li>音箱主机: 宽 328mm / 12.9” 高 177mm / 6.9” 深 123mm / 4.8”</li><li>包装彩盒: 宽 422mm / 16.6” 高 224mm / 8.8” 深 172mm / 6.8”</li></ul><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_Side_View_Coke.jpg" alt=""></p><h2 id="包装配件清单"><a href="#包装配件清单" class="headerlink" title="包装配件清单"></a>包装配件清单</h2><ul><li>SP2音箱主机，1台；</li><li>电源适配器（输入: AC 100-240V 50/60Hz, 输出: DC 20V 3A），1个；</li><li>FM收音机天线，1条；</li></ul><h2 id="六色彩盒包装"><a href="#六色彩盒包装" class="headerlink" title="六色彩盒包装"></a>六色彩盒包装</h2><p><img src="https://gitee.com/Alowree/img/raw/master/SFQ-06_Sound_Platform_2_Package_View_Coke.jpg" alt=""></p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>早些年，Soundfreaq的产品未有在国内渠道进行销售，有部分喜欢产品的粉丝通过各种途径从国外购买。有自己去国外旅行的朋友，会选择在国外的销售渠道购买Soundfreaq的音箱产品，自带回国；更有钻研和熟悉海淘的朋友，在美亚或者英亚上下单，通过跨境物流转运回国，有时候过海关被抽到了还要再打税。不论通过哪一种方式，要么费力，要么费钱，但这都阻挡不了国内部分粉丝们的热情。好消息是，现在这款SP2音箱的3C版已经开始进入国内市场，喜欢的朋友可以留意关注一下这款产品。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 新零售 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Soundfreaq </tag>
-            
-            <tag> Sound Platform 2 </tag>
-            
-            <tag> SFQ-06 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Soundfreaq品牌简介</title>
-      <link href="/posts/soundfreaq/"/>
-      <url>/posts/soundfreaq/</url>
-      
-        <content type="html"><![CDATA[<h2 id="关于Soundfreaq"><a href="#关于Soundfreaq" class="headerlink" title="关于Soundfreaq"></a>关于Soundfreaq</h2><p>Soundfreaq是一个在欧洲和北美市场运营了10年的年轻音响品牌，在零售渠道和星级连锁酒店渠道都有相当的知名度和美誉度。2010年，Soundfreaq先是从北美市场开始起步，在线下渠道先后进入Target连锁超市和当地运营商们的数码3C渠道，在线上则有Shopify和亚马逊美国站。在欧洲市场，线下渠道跟Primark进行合作，线上渠道以英亚为主，德亚正在筹建当中。由于Soundfreaq安全可靠、品质稳定、音色自然，其产品也得以成功地进入到全球各大星级边锁酒店的客房，部分的合作伙伴包括丽兹卡顿，希尔顿，万豪，君悦…等一线品牌星级酒店。</p><p>音乐是我们每个人的生活中必不可少的一个组成部分。如果没有了音乐，生活将会黯然失色。而一台好的音响设备会将欣赏音乐的欢愉情感体验成倍地提升。 </p><p>市场上很多音箱，包括一些语音助手音箱，并不适合用来欣赏和享受音乐。对于讲究品质、追求细节的人来讲，某些音响设备从音质表现上来说根本无法接受。 在Soundfreaq，音质永远是第一位的。我们是热爱音乐的发烧友，我们是秉承工匠精神的设计师，我们是探索声音的工程师，我们是长期主义者，执着于品质和细节，只为把握最原始和最纯真的声音。</p><h2 id="Soundfreaq口碑"><a href="#Soundfreaq口碑" class="headerlink" title="Soundfreaq口碑"></a>Soundfreaq口碑</h2><blockquote><p>对于我们的耳朵来说，SOUNDFREAQ听起来棒极了，对于那么小尺寸的产品来说，非常优秀的低频表现。对于我们的耳朵来说，SOUNDFREAQ听起来棒极了，对于那么小尺寸的产品来说，非常优秀的低频表现。</p><p>Sound Step Recharge整体为说是一件很棒的产品：它提供了可靠的音质和一些创新性的设计，真正是一款支持iPad的产品。 </p><p>典范地演绎了“美丽绝伦”。 </p><p>SOUNDFREAQ凭空而出，交出了一款鲜有匹敌的产品。他们做出了许多额外的小功能，而这些功能在其他知名的品牌如索尼、罗技、菲利浦和创新，却都没有。 </p><p>声音就是棒极了。使用SOUND STACK我可更清晰地听辨每个拨弦的音符，低频调校良好，没有失真。多种音源连接方式，性感的外观。 </p><p>没错，确实是一件好货。听起来是音乐应该有的样子，没有杂音，没有失真。即便如此，面对B&amp;O的强劲竞争，我仍然倾向选择SOUND STACK。 </p><p>在我的评测过程，感觉这件音箱声音的音质，听起来就像是来自一件更大、更昂贵的设备。</p><p>SOUNDFREAQ不怎么经常性地发布新的产品，但是一旦发布新品，就可以说必定是引人入胜的。对于最近发布的面向音乐发烧友的SOUND STACK而言，情况恰恰正是如此。</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 新零售 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Soundfreaq </tag>
             
         </tags>
       
