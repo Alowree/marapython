@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-05-31T23:19:32.354Z</updated>
+  <updated>2022-06-05T23:56:51.234Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh: connect to host ssh.github.com port 443: Connection refused</title>
+    <link href="https://marapython.com/posts/1410468571/"/>
+    <id>https://marapython.com/posts/1410468571/</id>
+    <published>2022-06-04T02:31:25.000Z</published>
+    <updated>2022-06-05T23:56:51.234Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;端午假期，在家里的无线网络环境下， 发现无法使用&lt;code&gt;hexo</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://marapython.com/categories/Git/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>1000</title>
@@ -95,8 +118,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;This article covers some basic operations for beginners of a video editing software named Shotcup. &lt;/p&gt;
-&lt;h2 id=&quot;Open-File&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;p&gt;This article covers some basic operations for beginners of a video editing software named Shotcup.&lt;/p&gt;
+&lt;h2 id=&quot;Open-File&quot;&gt;Open</summary>
         
       
     
@@ -232,7 +255,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Inline-CSS&quot;&gt;&lt;a href=&quot;#Inline-CSS&quot; class=&quot;headerlink&quot; title=&quot;Inline CSS&quot;&gt;&lt;/a&gt;Inline CSS&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;h2 id=&quot;Inline-CSS&quot;&gt;Inline CSS&lt;/h2&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
         
       
     
@@ -283,7 +307,7 @@
         
         
     <summary type="html">&lt;p&gt;HTML指的是HTML4.01，XHTML是XML风格的HTML4.01，它是HTML的过渡版本。而HTML5指的是下一代HTML，也就是HTML4.01的升级版。&lt;/p&gt;
-&lt;h2 id=&quot;HTML4-01&quot;&gt;&lt;a href=&quot;#HTML4-01&quot;</summary>
+&lt;h2</summary>
         
       
     
@@ -329,8 +353,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;In Python, &lt;strong&gt;literals&lt;/strong&gt; refer to the data</summary>
+    <summary type="html">&lt;h2 id=&quot;定义-2&quot;&gt;定义&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Python, &lt;strong&gt;literals&lt;/strong&gt; refer to the data that is specified in a variable or constant.</summary>
         
       
     
@@ -360,7 +385,8 @@
         
         
     <summary type="html">&lt;p&gt;3月5日上午9时，第十三届全国人民代表大会第五次会议开幕会在人民大会堂举行。国务院总理李克强代表国务院作政府工作报告。双语要点如下：&lt;/p&gt;
-&lt;h2 id=&quot;一、去年工作回顾&quot;&gt;&lt;a href=&quot;#一、去年工作回顾&quot; class=&quot;headerlink&quot;</summary>
+&lt;h2 id=&quot;一、去年工作回顾&quot;&gt;一、去年工作回顾&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;►&lt;/strong&gt;</summary>
         
       
     
@@ -422,7 +448,11 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;absolute risk　绝对风险&lt;br&gt;Additional Law　加法定理&lt;br&gt;airline</summary>
+    <summary type="html">&lt;h2 id=&quot;A&quot;&gt;A&lt;/h2&gt;
+&lt;p&gt;absolute risk　绝对风险&lt;br&gt;
+Additional Law　加法定理&lt;br&gt;
+airline overbooking　航班超额预订&lt;br&gt;
+Alzheimer’s</summary>
         
       
     
@@ -455,36 +485,16 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;微分方程的概念&quot;&gt;&lt;a href=&quot;#微分方程的概念&quot; class=&quot;headerlink&quot; title=&quot;微分方程的概念&quot;&gt;&lt;/a&gt;微分方程的概念&lt;/h2&gt;&lt;h3 id=&quot;微分方程的引例&quot;&gt;&lt;a href=&quot;#微分方程的引例&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;微分方程的概念&quot;&gt;微分方程的概念&lt;/h2&gt;
+&lt;h3 id=&quot;微分方程的引例&quot;&gt;微分方程的引例&lt;/h3&gt;
+&lt;h3 id=&quot;微分方程的基本概念&quot;&gt;微分方程的基本概念&lt;/h3&gt;
+&lt;h4</summary>
         
       
     
     
     
     <category term="高等数学" scheme="https://marapython.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>欧拉公式</title>
-    <link href="https://marapython.com/posts/euler-formula/"/>
-    <id>https://marapython.com/posts/euler-formula/</id>
-    <published>2022-01-21T23:27:01.000Z</published>
-    <updated>2022-01-23T12:41:23.291Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;什么是欧拉公式？&lt;/p&gt;
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;
-e^{j x}=\cos x + j \sin</summary>
-        
-      
-    
-    
     
     
   </entry>
