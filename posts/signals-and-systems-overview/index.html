@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>信号与系统概论 | MaraPython</title><meta name="keywords" content="Python"><meta name="author" content="Alowree XU,alowree@hotmail.com"><meta name="copyright" content="Alowree XU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="引言 信号一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为消息，如语言、文字、图像等。消息中有意义的内容称为信息。 信号是消息的表现形式与传送载体，而消息则是信号的具体内容。 在各种信号中，电信号是应用最广的物理量。电信号不仅易于产生、传输和处理，而且，许多非电信号也容易转换成电信号。因此，研究电">
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>信号与系统概论 | MaraPython</title><meta name="keywords" content="Python"><meta name="author" content="Alowree XU,alowree@hotmail.com"><meta name="copyright" content="Alowree XU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="引言信号一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为消息，如语言、文字、图像等。消息中有意义的内容称为信息。 信号是消息的表现形式与传送载体，而消息则是信号的具体内容。 在各种信号中，电信号是应用最广的物理量。电信号不仅易于产生、传输和处理，而且，许多非电信号也容易转换成电信号。因此，研究电信">
 <meta property="og:type" content="article">
 <meta property="og:title" content="信号与系统概论">
 <meta property="og:url" content="https://marapython.com/posts/signals-and-systems-overview/index.html">
 <meta property="og:site_name" content="MaraPython">
-<meta property="og:description" content="引言 信号一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为消息，如语言、文字、图像等。消息中有意义的内容称为信息。 信号是消息的表现形式与传送载体，而消息则是信号的具体内容。 在各种信号中，电信号是应用最广的物理量。电信号不仅易于产生、传输和处理，而且，许多非电信号也容易转换成电信号。因此，研究电">
+<meta property="og:description" content="引言信号一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为消息，如语言、文字、图像等。消息中有意义的内容称为信息。 信号是消息的表现形式与传送载体，而消息则是信号的具体内容。 在各种信号中，电信号是应用最广的物理量。电信号不仅易于产生、传输和处理，而且，许多非电信号也容易转换成电信号。因此，研究电信">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://image.marapython.com/Sound-Wallpaper.jpg">
 <meta property="article:published_time" content="2022-01-21T03:54:35.000Z">
@@ -143,399 +143,250 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css"><link rel="stylesheet" href="/css/custom.css" media="all"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/carousel-touch.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/mindmap.min.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="MaraPython" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://image.marapython.com/Sound-Wallpaper.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MaraPython</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">信号与系统概论</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-21T03:54:35.000Z" title="发表于 2022-01-21 11:54:35">2022-01-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-08T07:16:39.749Z" title="更新于 2022-06-08 15:16:39">2022-06-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/">信号与系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="引言">引言</h2>
-<p><strong>信号</strong>一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为<strong>消息</strong>，如语言、文字、图像等。消息中有意义的内容称为<strong>信息</strong>。</p>
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://image.marapython.com/Sound-Wallpaper.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MaraPython</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">信号与系统概论</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-21T03:54:35.000Z" title="发表于 2022-01-21 11:54:35">2022-01-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-08T07:16:39.749Z" title="更新于 2022-06-08 15:16:39">2022-06-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/">信号与系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p><strong>信号</strong>一般表现为随时间变化的某种物理量。信号是多种多样的，例如，电话、广播、电视、红绿灯交通信号，或者股票市场的道·琼斯指数等。通常以直接形式表达的内容称为<strong>消息</strong>，如语言、文字、图像等。消息中有意义的内容称为<strong>信息</strong>。</p>
 <p><strong>信号</strong>是消息的表现形式与传送载体，而<strong>消息</strong>则是信号的具体内容。</p>
 <p>在各种信号中，电信号是应用最广的物理量。电信号不仅易于产生、传输和处理，而且，许多非电信号也容易转换成电信号。因此，研究电信号具有重要意义。本课程主要讨论电信号，它通常表现为随时间变化的电压或电流。</p>
 <p>信号的产生、传输及处理都需要一定的物理装置，这种装置通常就称为<strong>系统</strong>。系统是能将一组信号处理为另一组信号的实体。当一个或多个激励信号作用到系统的输入端时，就会在系统的输出端产生一个或多个响应信号。</p>
-<h2 id="信号的概念">信号的概念</h2>
-<h3 id="信号的定义与描述">信号的定义与描述</h3>
-<p><strong>信号</strong>是消息的表现形式，而<strong>消息</strong>则是信号的具体内容。</p>
-<h3 id="信号的分类">信号的分类</h3>
-<h4 id="确定信号与随机信号">确定信号与随机信号</h4>
-<p><strong>确定信号</strong>是指以确定的时间函数（或序列）表示的信号，又称规则信号。这种信号在定义域内的任意时刻都有确定的函数值，例如正弦信号。</p>
+<h2 id="信号的概念"><a href="#信号的概念" class="headerlink" title="信号的概念"></a>信号的概念</h2><h3 id="信号的定义与描述"><a href="#信号的定义与描述" class="headerlink" title="信号的定义与描述"></a>信号的定义与描述</h3><p><strong>信号</strong>是消息的表现形式，而<strong>消息</strong>则是信号的具体内容。</p>
+<h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><h4 id="确定信号与随机信号"><a href="#确定信号与随机信号" class="headerlink" title="确定信号与随机信号"></a>确定信号与随机信号</h4><p><strong>确定信号</strong>是指以确定的时间函数（或序列）表示的信号，又称规则信号。这种信号在定义域内的任意时刻都有确定的函数值，例如正弦信号。</p>
 <p><strong>随机信号</strong>也称不确定信号，它不是时间的确定函数，在定义域内的任意时刻没有确定的函数值。如语音信号、雷电干扰信号等。</p>
 <p>本课程只讨论确定信号。</p>
-<h4 id="连续时间信号与离散时间信号">连续时间信号与离散时间信号</h4>
-<p>时间和幅值都为连续的信号称为<strong>模拟信号</strong>。</p>
+<h4 id="连续时间信号与离散时间信号"><a href="#连续时间信号与离散时间信号" class="headerlink" title="连续时间信号与离散时间信号"></a>连续时间信号与离散时间信号</h4><p>时间和幅值都为连续的信号称为<strong>模拟信号</strong>。</p>
 <p>时间和幅值都为离散的信号称为<strong>数字信号</strong>。</p>
-<h4 id="周期性信号与非周期性信号">周期性信号与非周期性信号</h4>
-<h4 id="能量信号与功率信号">能量信号与功率信号</h4>
-<p>根据信号的能量和功率是否有限的特点，信号可分为能量信号和功率信号。</p>
-<p>如果把信号$x(t)$看作是随时间变化的电压或电流，则当信号$x(t)$通过$1Ω$的电阻两端时，提供给该电阻的瞬时功率为$|x(t)|^2$，其在$(−τ/2,τ/2)$时间间隔内所消耗的能量为<br>
-$$<br>
-\int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt<br>
-$$<br>
-把该能量对时间区间取平均值，即得信号在该区间内的平均功率为<br>
-$$<br>
-\frac{1}{\tau} \int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt<br>
-$$<br>
-进一步把时间区间拓展到无限区间$(−∞,+∞)$，对于连续时间信号$x(t)$，定义其能量为在该区间的平均能量，即<br>
-$$<br>
-E= \lim_{\tau → \infty}  \int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt<br>
-$$<br>
-定义其功率为在该区间的平均功率，即<br>
-$$<br>
-P= \lim_{\tau → \infty} \frac{1}{\tau} \int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt<br>
-$$<br>
-对于离散时间信号，其能量$E$与功率$P$的定义分别为<br>
-$$<br>
-E= \lim_{N → \infty} \sum_{-N}^{+N} |x(n)|^2<br>
-$$</p>
-<p>$$<br>
-P= \lim_{N → \infty} \frac{1}{2N+1} \sum_{-N}^{+N} |x(n)|^2<br>
-$$</p>
-<p>在无限大时间区间内</p>
+<h4 id="周期性信号与非周期性信号"><a href="#周期性信号与非周期性信号" class="headerlink" title="周期性信号与非周期性信号"></a>周期性信号与非周期性信号</h4><h4 id="能量信号与功率信号"><a href="#能量信号与功率信号" class="headerlink" title="能量信号与功率信号"></a>能量信号与功率信号</h4><p>根据信号的能量和功率是否有限的特点，信号可分为能量信号和功率信号。</p>
+<p>如果把信号$x(t)$看作是随时间变化的电压或电流，则当信号$x(t)$通过$1Ω$的电阻两端时，提供给该电阻的瞬时功率为$|x(t)|^2$，其在$(−τ/2,τ/2)$时间间隔内所消耗的能量为</p>
+<script type="math/tex; mode=display">
+\int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt</script><p>把该能量对时间区间取平均值，即得信号在该区间内的平均功率为</p>
+<script type="math/tex; mode=display">
+\frac{1}{\tau} \int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt</script><p>进一步把时间区间拓展到无限区间$(−∞,+∞)$，对于连续时间信号$x(t)$，定义其能量为在该区间的平均能量，即</p>
+<script type="math/tex; mode=display">
+E= \lim_{\tau → \infty}  \int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt</script><p>定义其功率为在该区间的平均功率，即</p>
+<script type="math/tex; mode=display">
+P= \lim_{\tau → \infty} \frac{1}{\tau} \int_{-\frac{\tau}{2}}^{+\frac{\tau}{2}} |x(t)|^2 dt</script><p>对于离散时间信号，其能量$E$与功率$P$的定义分别为</p>
+<script type="math/tex; mode=display">
+E= \lim_{N → \infty} \sum_{-N}^{+N} |x(n)|^2</script><script type="math/tex; mode=display">
+P= \lim_{N → \infty} \frac{1}{2N+1} \sum_{-N}^{+N} |x(n)|^2</script><p>在无限大时间区间内</p>
 <ul>
-<li>
-<p>若信号$x(t)$的能量为非零的有限值，且其功率为零，即$0&lt;E&lt;∞ \bigwedge P=0$，则该信号为<strong>能量信号</strong>；</p>
+<li><p>若信号$x(t)$的能量为非零的有限值，且其功率为零，即$0&lt;E&lt;∞ \bigwedge P=0$，则该信号为<strong>能量信号</strong>；</p>
 </li>
-<li>
-<p>若信号$x(t)$的能量为无限值，且其功率为非零的有限值，即$E→∞ \bigwedge 0&lt;P&lt;∞$，则该信号为<strong>功率信号</strong>。</p>
+<li><p>若信号$x(t)$的能量为无限值，且其功率为非零的有限值，即$E→∞ \bigwedge 0&lt;P&lt;∞$，则该信号为<strong>功率信号</strong>。</p>
 </li>
 </ul>
-<h4 id="因果信号与非因果信号">因果信号与非因果信号</h4>
-<h2 id="典型信号及其特性">典型信号及其特性</h2>
-<h3 id="连续时间信号">连续时间信号</h3>
-<p>在连续时间信号的分析中，常见的绝大部分信号都可以用基本信号及它们的变化形式来表示。基本信号可以分为两类，一类称为<strong>普通信号</strong>，是指信号本身及其微分和积分都连续的信号；另一类称为<strong>奇异信号</strong>，是指信号本身或其微分或其积分不连续的信号。</p>
-<h4 id="指数信号">指数信号</h4>
-<p>指数信号的数学表达式为<br>
-$$<br>
-x(t)=Ke^{at}<br>
-$$<br>
-单边指数衰减信号的数学表达式为<br>
-$$<br>
-x(t)=<br>
-\begin{cases}<br>
-e^{-\frac{t}{\tau}}, \quad t \geqslant 0 \<br>
-\<br>
-0, \quad  \quad t &lt; 0<br>
-\end{cases}<br>
-$$</p>
-<h4 id="正弦信号和虚指数信号">正弦信号和虚指数信号</h4>
-<p>正弦信号<br>
-$$<br>
-x(t)=K \sin(\omega t + \theta)<br>
-$$</p>
-<p>衰减的正弦信号<br>
-$$<br>
-x(t)=\begin{cases}<br>
-K e^{-at} \sin(\omega t), \quad t \geqslant 0, a &gt; 0 \<br>
-\<br>
-0, \quad \quad \quad \quad \quad \quad \quad t &lt; 0</p>
-<pre><code>\end&#123;cases&#125;
-</code></pre>
-<p>$$</p>
-<p>虚指数信号</p>
-<p>$$<br>
-x(t) = e^{j \omega t}<br>
-$$</p>
-<p>正弦信号和余弦信号可以借助虚指数信号来表示。由<a href="https://marapython.com/posts/euler-formula/">欧拉公式</a>可知</p>
-<p>$$<br>
-\sin (\omega t)= \frac{1}{2j} (e^{j \omega t} - e^{-j \omega t})<br>
-$$</p>
-<p>$$<br>
-\cos (\omega t)= \frac{1}{2} (e^{j \omega t} + e^{-j \omega t})<br>
-$$</p>
-<h4 id="复指数信号">复指数信号</h4>
-<p>如果指数信号的指数因子为一复数，则称之为复指数信号，其数学表达式为<br>
-$$<br>
-\begin{aligned}<br>
-x(t) &amp;=K e^{st} \<br>
-&amp;= K e^{(\sigma + j \omega) t} \<br>
-&amp;= K e^{\sigma t} \cdot  e^{ j \omega t} \<br>
-&amp;= K e^{\sigma t} \cos (\omega t) + j K e^{\sigma t} \sin (\omega t)<br>
-\end{aligned}<br>
-$$</p>
-<p>虽然实际上不能产生复指数信号，即复指数信号在物理上是不可实现的，但是它概括了多种情况，可以利用复指数信号来描述各种基本信号。例如：</p>
+<h4 id="因果信号与非因果信号"><a href="#因果信号与非因果信号" class="headerlink" title="因果信号与非因果信号"></a>因果信号与非因果信号</h4><h2 id="典型信号及其特性"><a href="#典型信号及其特性" class="headerlink" title="典型信号及其特性"></a>典型信号及其特性</h2><h3 id="连续时间信号"><a href="#连续时间信号" class="headerlink" title="连续时间信号"></a>连续时间信号</h3><p>在连续时间信号的分析中，常见的绝大部分信号都可以用基本信号及它们的变化形式来表示。基本信号可以分为两类，一类称为<strong>普通信号</strong>，是指信号本身及其微分和积分都连续的信号；另一类称为<strong>奇异信号</strong>，是指信号本身或其微分或其积分不连续的信号。</p>
+<h4 id="指数信号"><a href="#指数信号" class="headerlink" title="指数信号"></a>指数信号</h4><p>指数信号的数学表达式为</p>
+<script type="math/tex; mode=display">
+x(t)=Ke^{at}</script><p>单边指数衰减信号的数学表达式为</p>
+<script type="math/tex; mode=display">
+x(t)=
+\begin{cases}
+e^{-\frac{t}{\tau}}, \quad t \geqslant 0 \\
+\\
+0, \quad  \quad t < 0
+\end{cases}</script><h4 id="正弦信号和虚指数信号"><a href="#正弦信号和虚指数信号" class="headerlink" title="正弦信号和虚指数信号"></a>正弦信号和虚指数信号</h4><p>正弦信号</p>
+<script type="math/tex; mode=display">
+x(t)=K \sin(\omega t + \theta)</script><p>衰减的正弦信号</p>
+<script type="math/tex; mode=display">
+x(t)=\begin{cases}
+        K e^{-at} \sin(\omega t), \quad t \geqslant 0, a > 0 \\
+        \\
+        0, \quad \quad \quad \quad \quad \quad \quad t < 0
+
+    \end{cases}</script><p>虚指数信号</p>
+<script type="math/tex; mode=display">
+x(t) = e^{j \omega t}</script><p>正弦信号和余弦信号可以借助虚指数信号来表示。由<a href="https://marapython.com/posts/euler-formula/">欧拉公式</a>可知</p>
+<script type="math/tex; mode=display">
+\sin (\omega t)= \frac{1}{2j} (e^{j \omega t} - e^{-j \omega t})</script><script type="math/tex; mode=display">
+\cos (\omega t)= \frac{1}{2} (e^{j \omega t} + e^{-j \omega t})</script><h4 id="复指数信号"><a href="#复指数信号" class="headerlink" title="复指数信号"></a>复指数信号</h4><p>如果指数信号的指数因子为一复数，则称之为复指数信号，其数学表达式为</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+x(t) &=K e^{st} \\ 
+    &= K e^{(\sigma + j \omega) t} \\ 
+    &= K e^{\sigma t} \cdot  e^{ j \omega t} \\
+    &= K e^{\sigma t} \cos (\omega t) + j K e^{\sigma t} \sin (\omega t)
+\end{aligned}</script><p>虽然实际上不能产生复指数信号，即复指数信号在物理上是不可实现的，但是它概括了多种情况，可以利用复指数信号来描述各种基本信号。例如：</p>
 <ol>
-<li>
-<p>直流信号：当$σ=0$且$ω=0$，即$s=0$，即复指数信号的实部和虚部都与时间无关，成为直流信号；</p>
+<li><p>直流信号：当$σ=0$且$ω=0$，即$s=0$，即复指数信号的实部和虚部都与时间无关，成为直流信号；</p>
 </li>
-<li>
-<p>指数信号：当$ω=0$，即$s$为实数，则复指数信号成为一般的指数信号；</p>
+<li><p>指数信号：当$ω=0$，即$s$为实数，则复指数信号成为一般的指数信号；</p>
 </li>
-<li>
-<p>标准正弦或者余弦信号：当$σ=0$，即$s$为虚数，则原公式可写成虚指数信号形式，即为等幅正弦信号；</p>
+<li><p>标准正弦或者余弦信号：当$σ=0$，即$s$为虚数，则原公式可写成虚指数信号形式，即为等幅正弦信号；</p>
 </li>
-<li>
-<p>增长或衰减的正弦与余弦信号：（1）若$σ&gt;0$，复指数信号的实部、虚部为增幅正弦信号；（2）若$σ&lt;0$，复指数信号的实部、虚部为衰减正弦信号；</p>
+<li><p>增长或衰减的正弦与余弦信号：（1）若$σ&gt;0$，复指数信号的实部、虚部为增幅正弦信号；（2）若$σ&lt;0$，复指数信号的实部、虚部为衰减正弦信号；</p>
 </li>
 </ol>
 <p>所以复指数信号是一个优秀的信号函数模型。复指数信号的微分和积分仍然是复指数信号，利用复指数信号可使许多运算和分析得以简化。在信号分析理论中，复指数信号是一种非常重要的基本信号。在这里，欧拉公式是重要的转化桥梁，实现了指数函数到正余弦函数的相互转换。</p>
-<h4 id="抽样函数">抽样函数</h4>
-<p>定义表达式<br>
-$$<br>
-Sa(t)=\frac{\sin t}{t}<br>
-$$</p>
-<p>性质<br>
-$$<br>
-\int_0^{\infty} Sa(t)dt = \frac{\pi}{2}<br>
-$$</p>
-<p>$$<br>
-\int_{- \infty}^{+ \infty} Sa(t)dt = \pi<br>
-$$</p>
-<div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>如何证明？</p>
+<h4 id="抽样函数"><a href="#抽样函数" class="headerlink" title="抽样函数"></a>抽样函数</h4><p>定义表达式</p>
+<script type="math/tex; mode=display">
+Sa(t)=\frac{\sin t}{t}</script><p>性质</p>
+<script type="math/tex; mode=display">
+\int_0^{\infty} Sa(t)dt = \frac{\pi}{2}</script><script type="math/tex; mode=display">
+\int_{- \infty}^{+ \infty} Sa(t)dt = \pi</script><div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>如何证明？</p>
 </div>
-<h4 id="钟形信号">钟形信号</h4>
-<p>$$<br>
-x(t)=E e^{(-\frac{t}{\tau})^2}<br>
-$$</p>
-<h4 id="单位斜变信号">单位斜变信号</h4>
-<p>斜变信号也称斜坡信号或斜升信号，是指从某一时刻开始随时间正比例增长的信号。如果增长的变化率是1，就称作<strong>单位斜变信号</strong>，数学表示式为</p>
-<p>$$<br>
-r(t)=\begin{cases}<br>
-t, \quad t \geqslant 0 \<br>
-\<br>
-0, \quad t&lt;0</p>
-<pre><code>\end&#123;cases&#125;
-</code></pre>
-<p>$$<br>
-如果将起始点移至$t_0$，则对应的延迟单位斜变信号表达式为<br>
-$$<br>
-x(t-t_0)=\begin{cases}<br>
-t - t_0, \quad t \geqslant t_0 \<br>
-\<br>
-0, \quad \quad \quad t_0&lt;0</p>
-<pre><code>\end&#123;cases&#125;
-</code></pre>
-<p>$$</p>
-<h4 id="单位阶跃信号">单位阶跃信号</h4>
-<p>单位阶跃信号的数学表达式为<br>
-$$<br>
-u(t)=\begin{cases}<br>
-1, \quad t \gt 0 \<br>
-\<br>
-0, \quad t&lt;0</p>
-<pre><code>\end&#123;cases&#125;
-</code></pre>
-<p>$$</p>
-<p>在跳变点$t=0$处，函数值未定义。</p>
-<p>容易证明，单位斜变函数与单位阶跃函数互为积分和微分的关系，即<br>
-$$<br>
-\frac{r(t)}{dt} = u(t) \<br>
-r(t)= \int_0^t u(\tau) d \tau<br>
-$$</p>
-<p>单位阶跃函数的物理意义是，在$t=0$时刻对某一电路接入单位电源（可以是直流电压源或直流电流源），并且无限持续下去。</p>
-<p>如果接入电源时间延时到$t=t_0$时刻$(t_0&gt;0)$，则对应的单位阶跃函数称为<strong>延时单位阶跃函数</strong>，相应的数学表达式为<br>
-$$<br>
-u(t - t_0)=\begin{cases}<br>
-1, \quad t \gt t_0 \<br>
-\<br>
-0, \quad t&lt;t_0</p>
-<pre><code>\end&#123;cases&#125;
-</code></pre>
-<p>$$</p>
-<p>利用单位阶跃信号可以简化某些时域信号的表示。</p>
+<h4 id="钟形信号"><a href="#钟形信号" class="headerlink" title="钟形信号"></a>钟形信号</h4><script type="math/tex; mode=display">
+x(t)=E e^{(-\frac{t}{\tau})^2}</script><h4 id="单位斜变信号"><a href="#单位斜变信号" class="headerlink" title="单位斜变信号"></a>单位斜变信号</h4><p>斜变信号也称斜坡信号或斜升信号，是指从某一时刻开始随时间正比例增长的信号。如果增长的变化率是1，就称作<strong>单位斜变信号</strong>，数学表示式为</p>
+<script type="math/tex; mode=display">
+r(t)=\begin{cases}
+        t, \quad t \geqslant 0 \\
+        \\
+        0, \quad t<0
+
+    \end{cases}</script><p>如果将起始点移至$t_0$，则对应的延迟单位斜变信号表达式为</p>
+<script type="math/tex; mode=display">
+x(t-t_0)=\begin{cases}
+        t - t_0, \quad t \geqslant t_0 \\
+        \\
+        0, \quad \quad \quad t_0<0
+
+    \end{cases}</script><h4 id="单位阶跃信号"><a href="#单位阶跃信号" class="headerlink" title="单位阶跃信号"></a>单位阶跃信号</h4><p>单位阶跃信号的数学表达式为</p>
+<script type="math/tex; mode=display">
+u(t)=\begin{cases}
+        1, \quad t \gt 0 \\
+        \\
+        0, \quad t<0
+
+    \end{cases}</script><p>在跳变点$t=0$处，函数值未定义。</p>
+<p>容易证明，单位斜变函数与单位阶跃函数互为积分和微分的关系，即</p>
+<script type="math/tex; mode=display">
+\frac{r(t)}{dt} = u(t) \\
+r(t)= \int_0^t u(\tau) d \tau</script><p>单位阶跃函数的物理意义是，在$t=0$时刻对某一电路接入单位电源（可以是直流电压源或直流电流源），并且无限持续下去。</p>
+<p>如果接入电源时间延时到$t=t_0$时刻$(t_0&gt;0)$，则对应的单位阶跃函数称为<strong>延时单位阶跃函数</strong>，相应的数学表达式为</p>
+<script type="math/tex; mode=display">
+u(t - t_0)=\begin{cases}
+        1, \quad t \gt t_0 \\
+        \\
+        0, \quad t<t_0
+
+    \end{cases}</script><p>利用单位阶跃信号可以简化某些时域信号的表示。</p>
 <ol>
-<li>
-<p>矩形脉冲</p>
-<p>利用阶跃信号及其延时信号之差来表示<br>
-$$<br>
-G_{\tau}(t)= u \left( t+\frac{\tau}{2} \right) - u\left(t-\frac{\tau}{2} \right)<br>
-$$</p>
-</li>
-<li>
-<p>接入特性</p>
+<li><p>矩形脉冲</p>
+<p>利用阶跃信号及其延时信号之差来表示</p>
+<script type="math/tex; mode=display">
+G_{\tau}(t)= u \left( t+\frac{\tau}{2} \right) - u\left(t-\frac{\tau}{2} \right)</script></li>
+<li><p>接入特性</p>
 <p>阶跃信号鲜明地表现出信号的单边特性。即信号在某接入时刻$t_0$以前的幅度为零。利用阶跃信号这一特性，可以较方便地以数学表达式描述各种信号的接入特性。例如</p>
 <ul>
-<li>
-<p>从$0$时刻开始接入的正弦波可表示为<br>
-$$<br>
-x_1(t)=\sin(t) \cdot u(t)<br>
-$$</p>
-</li>
-<li>
-<p>从$0$时刻至$t_0$时刻接入的指数衰减波形可表示为<br>
-$$<br>
-x_2(t)=e^{-t} [u(t) - u(t-t_0)]<br>
-$$</p>
-</li>
+<li><p>从$0$时刻开始接入的正弦波可表示为</p>
+<script type="math/tex; mode=display">
+x_1(t)=\sin(t) \cdot u(t)</script></li>
+<li><p>从$0$时刻至$t_0$时刻接入的指数衰减波形可表示为</p>
+<script type="math/tex; mode=display">
+x_2(t)=e^{-t} [u(t) - u(t-t_0)]</script></li>
 </ul>
 </li>
-<li>
-<p>符号函数</p>
-<p>利用阶跃信号还可以表示“符号函数”。符号函数简写作$sgn(t)$，其定义为<br>
-$$<br>
-sgn(t)= \begin{cases}<br>
-1, \quad t&gt;0 \<br>
-\<br>
--1, \quad t&lt;0<br>
-\end{cases}<br>
-$$<br>
-与阶跃函数类似，符号函数在跳变点也不予定义。显然，可以利用阶跃信号来表示符号函数<br>
-$$<br>
-sgn(t)=2u(t)-1<br>
-$$</p>
-</li>
+<li><p>符号函数</p>
+<p>利用阶跃信号还可以表示“符号函数”。符号函数简写作$sgn(t)$，其定义为</p>
+<script type="math/tex; mode=display">
+sgn(t)= \begin{cases}
+            1, \quad t>0 \\
+            \\
+            -1, \quad t<0
+        \end{cases}</script><p>与阶跃函数类似，符号函数在跳变点也不予定义。显然，可以利用阶跃信号来表示符号函数</p>
+<script type="math/tex; mode=display">
+sgn(t)=2u(t)-1</script></li>
 </ol>
-<h4 id="单位冲激信号">单位冲激信号</h4>
-<p>某些物理现象需要用一个时间极短，但幅值极大的函数模型来描述，例如力学中瞬间作用的冲击力，电学中的雷击电闪，数字通信中的抽样脉冲等。“冲激函数”的概念就是以这类实际问题为背景而引出的。</p>
+<h4 id="单位冲激信号"><a href="#单位冲激信号" class="headerlink" title="单位冲激信号"></a>单位冲激信号</h4><p>某些物理现象需要用一个时间极短，但幅值极大的函数模型来描述，例如力学中瞬间作用的冲击力，电学中的雷击电闪，数字通信中的抽样脉冲等。“冲激函数”的概念就是以这类实际问题为背景而引出的。</p>
 <p><strong>定义</strong></p>
 <p>冲激函数可有不同的方式来定义。首先分析矩形脉冲如何演变为冲激函数。</p>
-<p>画出宽为$\tau$，高为$\frac{1}{\tau}$的矩形脉冲，当保持矩形脉冲面积$\tau \cdot \frac{1}{\tau}$不变，而使脉宽$\tau$趋近于零时，脉冲幅度$\frac{1}{\tau}$必趋于无穷大，此极限情况即为单位冲激函数，常记作$\delta(t)$，又称作“$\delta$函数”，即<br>
-$$<br>
-\delta(t) = \lim_{\tau \rightarrow 0} \frac{1}{\tau} \left[u \left(t+\frac{\tau}{2} \right) - u \left(t-\frac{\tau}{2} \right) \right]<br>
-$$</p>
-<p>规则函数系列的选取不限于矩形，也可换用其他形式。</p>
+<p>画出宽为$\tau$，高为$\frac{1}{\tau}$的矩形脉冲，当保持矩形脉冲面积$\tau \cdot \frac{1}{\tau}$不变，而使脉宽$\tau$趋近于零时，脉冲幅度$\frac{1}{\tau}$必趋于无穷大，此极限情况即为单位冲激函数，常记作$\delta(t)$，又称作“$\delta$函数”，即</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{\tau \rightarrow 0} \frac{1}{\tau} \left[u \left(t+\frac{\tau}{2} \right) - u \left(t-\frac{\tau}{2} \right) \right]</script><p>规则函数系列的选取不限于矩形，也可换用其他形式。</p>
 <ol>
-<li>
-<p>三角形脉冲<br>
-$$<br>
-\delta(t) = \lim_{\tau \rightarrow 0} \left[  \frac{1}{\tau} \left(1-\frac{|t|}{\tau} \right) \left[u \left(t+\tau \right) - u \left(t-\tau \right) \right] \right]<br>
-$$</p>
-</li>
-<li>
-<p>双边指数脉冲<br>
-$$<br>
-\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{2\tau} e^{-\frac{|t|}{\tau}}\right]<br>
-$$</p>
-</li>
-<li>
-<p>钟形信号（高斯信号）<br>
-$$<br>
-\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{\tau} e^{-( \frac{t}{\tau})^2} \right]<br>
-$$</p>
-<div class="note info flat"><p>如果严格按照$\delta(t)$函数在时域$(−∞,+∞)$上积分为1的定义，似乎应该再添加一个系数$\frac{1}{\sqrt{\pi}}$，变成<br>
-$$<br>
-\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{\tau \sqrt{\pi}} e^{-( \frac{t}{\tau})^2} \right]<br>
-$$<br>
-否则，由上述钟形信号所近似表示的$\delta(t)$函数在时域$(−∞,+∞)$上的积分结果就是$\sqrt{\pi}$。</p>
+<li><p>三角形脉冲</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{\tau \rightarrow 0} \left[  \frac{1}{\tau} \left(1-\frac{|t|}{\tau} \right) \left[u \left(t+\tau \right) - u \left(t-\tau \right) \right] \right]</script></li>
+<li><p>双边指数脉冲</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{2\tau} e^{-\frac{|t|}{\tau}}\right]</script></li>
+<li><p>钟形信号（高斯信号）</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{\tau} e^{-( \frac{t}{\tau})^2} \right]</script><div class="note info flat"><p>如果严格按照$\delta(t)$函数在时域$(−∞,+∞)$上积分为1的定义，似乎应该再添加一个系数$\frac{1}{\sqrt{\pi}}$，变成</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{\tau \sqrt{\pi}} e^{-( \frac{t}{\tau})^2} \right]</script><p>否则，由上述钟形信号所近似表示的$\delta(t)$函数在时域$(−∞,+∞)$上的积分结果就是$\sqrt{\pi}$。</p>
 </div>
-<div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>同理，再考察一下这个$\delta(t)$函数在时域$(−∞,+∞)$上积分为1吗？<br>
-$$<br>
-\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{\tau} e^{-\pi( \frac{t}{\tau})^2} \right]<br>
-$$</p>
-</div>
+<div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>同理，再考察一下这个$\delta(t)$函数在时域$(−∞,+∞)$上积分为1吗？</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{\tau \rightarrow 0}  \left[ \frac{1}{\tau} e^{-\pi( \frac{t}{\tau})^2} \right]</script></div>
 </li>
-<li>
-<p>$Sa(t)$信号（抽样信号）<br>
-$$<br>
-\delta(t) = \lim_{k \rightarrow \infty}  \left[ \frac{k}{\pi} Sa(kt) \right]<br>
-$$</p>
-</li>
+<li><p>$Sa(t)$信号（抽样信号）</p>
+<script type="math/tex; mode=display">
+\delta(t) = \lim_{k \rightarrow \infty}  \left[ \frac{k}{\pi} Sa(kt) \right]</script></li>
 </ol>
-<p>狄拉克给出了冲激函数的另一种定义方式，即<br>
-$$<br>
-\begin{cases}<br>
-\int_{-\infty}^{+\infty} \delta(t) dt = 1 \<br>
-\</p>
-<p>\delta(t) =0, \quad t \neq 0<br>
-\end{cases}<br>
-$$</p>
-<p>延时冲激函数，$t_0$时刻出现的冲激$\delta(t-t_0) $<br>
-$$<br>
-\begin{cases}<br>
-\int_{-\infty}^{+\infty} \delta(t-t_0) dt = 1 \<br>
-\</p>
-<p>\delta(t-t_0) =0, \quad t \neq t_0<br>
-\end{cases}<br>
-$$<br>
-<strong>性质</strong></p>
+<p>狄拉克给出了冲激函数的另一种定义方式，即</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+\int_{-\infty}^{+\infty} \delta(t) dt = 1 \\
+\\
+
+\delta(t) =0, \quad t \neq 0
+\end{cases}</script><p>延时冲激函数，$t_0$时刻出现的冲激$\delta(t-t_0) $</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+\int_{-\infty}^{+\infty} \delta(t-t_0) dt = 1 \\
+\\
+
+\delta(t-t_0) =0, \quad t \neq t_0
+\end{cases}</script><p><strong>性质</strong></p>
 <ol>
-<li>
-<p>筛选特性<br>
-$$<br>
-x(t)\delta(t-t_0)=x(t_0)\delta(t-t_0)<br>
-$$</p>
-</li>
-<li>
-<p>抽样特性<br>
-$$<br>
-\int_{-\infty}^{+\infty} x(t) \delta(t-t_0) dt = x(t_0)<br>
-$$</p>
-</li>
-<li>
-<p>展缩特性<br>
-$$<br>
-\delta(at)  = \frac{1}{|a|} \delta(t), \quad a \neq 0<br>
-$$<br>
-**推论1：**冲激信号是偶函数。</p>
-<p><strong>推论2：</strong><br>
-$$<br>
-\delta(at + b)  = \frac{1}{|a|} \delta \left(t + \frac{b}{a} \right), \quad a \neq 0<br>
-$$</p>
-<div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>其实，展缩特性是想表达怎么一个思想？它具有通俗的物理意义吗？</p>
-</div>
-</li>
-<li>
-<p>冲激信号与阶跃信号的关系</p>
-<p>冲激函数的积分等于阶跃函数，即<br>
-$$<br>
-\begin{cases}<br>
-\int_{-\infty}^{t} \delta(\tau) d \tau = 1, \quad t&gt;0 \<br>
-\</p>
-<p>\int_{-\infty}^{t} \delta(\tau) d \tau = 0, \quad t&lt;0<br>
-\end{cases}<br>
-$$<br>
-即<br>
-$$<br>
-\int_{-\infty}^{t} \delta(\tau) d \tau = u(t)<br>
-$$<br>
-反过来，阶跃函数的微分应等于冲激函数，即<br>
-$$<br>
-\frac{d}{dt} u(t) = \delta(t)<br>
-$$</p>
-</li>
+<li><p>筛选特性</p>
+<script type="math/tex; mode=display">
+x(t)\delta(t-t_0)=x(t_0)\delta(t-t_0)</script></li>
+<li><p>抽样特性</p>
+<script type="math/tex; mode=display">
+\int_{-\infty}^{+\infty} x(t) \delta(t-t_0) dt = x(t_0)</script></li>
+<li><p>展缩特性</p>
+<script type="math/tex; mode=display">
+\delta(at)  = \frac{1}{|a|} \delta(t), \quad a \neq 0</script><p><strong>推论1：</strong>冲激信号是偶函数。</p>
+<p><strong>推论2：</strong></p>
+<script type="math/tex; mode=display">
+\delta(at + b)  = \frac{1}{|a|} \delta \left(t + \frac{b}{a} \right), \quad a \neq 0</script><div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>其实，展缩特性是想表达怎么一个思想？它具有通俗的物理意义吗？</p>
+</div></li>
+<li><p>冲激信号与阶跃信号的关系</p>
+<p>冲激函数的积分等于阶跃函数，即</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+\int_{-\infty}^{t} \delta(\tau) d \tau = 1, \quad t>0 \\
+\\
+
+\int_{-\infty}^{t} \delta(\tau) d \tau = 0, \quad t<0
+\end{cases}</script><p>即</p>
+<script type="math/tex; mode=display">
+\int_{-\infty}^{t} \delta(\tau) d \tau = u(t)</script><p>反过来，阶跃函数的微分应等于冲激函数，即</p>
+<script type="math/tex; mode=display">
+\frac{d}{dt} u(t) = \delta(t)</script></li>
 </ol>
 <p>可见，引入冲激函数后，间断点的导数也存在。原因在于，阶跃函数在除$t=0$以外的各点都取固定值，其变化率都等于零，而在$t=0$有不连续点，跳变值为$1$，对其求导后，即产生强度为$1$ 的单位冲激信号$δ(t)$。这一结论适用于任意信号，即对信号求导时，信号在不连续点的导数为冲激信号或延时冲激信号，冲激信号的强度就是不连续点的跳变值。</p>
-<h4 id="冲激偶信号">冲激偶信号</h4>
-<p><strong>定义</strong></p>
-<p>对上面的单位冲激信号$δ(t)$逐次求时间导数，可得到一系列新的奇异信号，称为<strong>高阶冲激信号</strong>，即<br>
-$$<br>
-δ^{(n)}(t)=\frac{d^n}{dt^n}δ(t)<br>
-$$<br>
-当$n=1$时的冲激信号$δ’(t)$即为<strong>冲激偶信号</strong>。</p>
+<h4 id="冲激偶信号"><a href="#冲激偶信号" class="headerlink" title="冲激偶信号"></a>冲激偶信号</h4><p><strong>定义</strong></p>
+<p>对上面的单位冲激信号$δ(t)$逐次求时间导数，可得到一系列新的奇异信号，称为<strong>高阶冲激信号</strong>，即</p>
+<script type="math/tex; mode=display">
+δ^{(n)}(t)=\frac{d^n}{dt^n}δ(t)</script><p>当$n=1$时的冲激信号$δ’(t)$即为<strong>冲激偶信号</strong>。</p>
 <p>$δ’(t)$的概念可以借助三角形脉冲系列取极限得到解释。三角形脉冲$s(t)$其底宽为$2τ$，高度是$1/τ$，当$τ→0$时，$s(t)$成为单位冲激函数$δ(t)$。</p>
 <p>对$s(t)$分别在$t=0-$和$t=0+$时刻进行求导，画出$\frac{ds(t)}{dt}$波形，它将是正、负极性的两个矩形脉冲，称为<strong>脉冲偶对</strong>。其宽度都为$τ$，高度分别为$± 1/τ^2$，面积都是$1/τ$。随着$τ$减小，脉冲宽度变窄，幅度增高，面积为$1/τ$。当$τ→0$时$\frac{ds(t)}{dt}$是正、负极性的两个冲激函数，其强度均为无限大，这就是冲激偶$δ’(t)$.</p>
 <p><strong>性质</strong></p>
 <ol>
-<li>
-<p>筛选特性<br>
-$$<br>
-x(t)d(t-t_0)=-x(t_0)d(t-t_0) + x(t_0)d(t-t_0)<br>
-$$</p>
-</li>
-<li>
-<p>抽样特性<br>
-$$<br>
-\int_{-\infty}^{+\infty} x(t) \delta’(t) dt = -x’(0)<br>
-$$</p>
-<p>这里，$x(t)$在0点连续，$x’(0)$为$x(t)$导数在零点的取值。</p>
-<p><strong>证明：</strong><br>
-$$<br>
-\int_{-\infty}^{+\infty} x(t) \delta’(t) dt = \left[x(t)\delta(t) \right]<em>{-\infty}^{+\infty}-\int</em>{-\infty}^{+\infty} x’(t) \delta(t) dt \</p>
-<p>= -x’(0)<br>
-$$<br>
-对于延时$t_0$的冲激偶$d(t-t_0)$，同样有<br>
-$$<br>
-\int_{-\infty}^{+\infty} x(t) \delta’(t-t_0) dt = -x’(t_0)<br>
-$$</p>
-</li>
-<li>
-<p>展缩特性<br>
-已知冲激函数的展缩特性<br>
-$$<br>
-\delta(at+b)  = \frac{1}{|a|} \delta \left(t+\frac{b}{a} \right), \quad a \neq 0<br>
-$$<br>
-两边求导<br>
-$$<br>
-\delta’(at+b)  = \frac{1}{a|a|} \delta’ \left( t+\frac{b}{a} \right), \quad a \neq 0<br>
-$$<br>
-**推论1：**冲激偶信号$\delta’(t)$是奇函数。<br>
-$$<br>
-\int_{-\infty}^{+\infty}  \delta’(t) dt = 0<br>
-$$</p>
-</li>
-<li>
-<p>冲激偶信号与冲激信号的关系<br>
-$$<br>
-\delta’(t) = \frac{d}{dt} \delta(t)<br>
-$$</p>
-<p>$$<br>
-\int_{-\infty}^{t}  \delta’(\tau) d\tau = \delta(t)<br>
-$$</p>
-</li>
+<li><p>筛选特性</p>
+<script type="math/tex; mode=display">
+x(t)d(t-t_0)=-x(t_0)d(t-t_0) + x(t_0)d(t-t_0)</script></li>
+<li><p>抽样特性</p>
+<script type="math/tex; mode=display">
+\int_{-\infty}^{+\infty} x(t) \delta'(t) dt = -x'(0)</script><p>这里，$x(t)$在0点连续，$x’(0)$为$x(t)$导数在零点的取值。</p>
+<p><strong>证明：</strong></p>
+<script type="math/tex; mode=display">
+\int_{-\infty}^{+\infty} x(t) \delta'(t) dt = \left[x(t)\delta(t) \right]_{-\infty}^{+\infty}-\int_{-\infty}^{+\infty} x'(t) \delta(t) dt \\
+
+= -x'(0)</script><p>对于延时$t_0$的冲激偶$d(t-t_0)$，同样有</p>
+<script type="math/tex; mode=display">
+\int_{-\infty}^{+\infty} x(t) \delta'(t-t_0) dt = -x'(t_0)</script></li>
+<li><p>展缩特性<br>已知冲激函数的展缩特性</p>
+<script type="math/tex; mode=display">
+\delta(at+b)  = \frac{1}{|a|} \delta \left(t+\frac{b}{a} \right), \quad a \neq 0</script><p>两边求导</p>
+<script type="math/tex; mode=display">
+\delta'(at+b)  = \frac{1}{a|a|} \delta' \left( t+\frac{b}{a} \right), \quad a \neq 0</script><p><strong>推论1：</strong>冲激偶信号$\delta’(t)$是奇函数。</p>
+<script type="math/tex; mode=display">
+\int_{-\infty}^{+\infty}  \delta'(t) dt = 0</script></li>
+<li><p>冲激偶信号与冲激信号的关系</p>
+<script type="math/tex; mode=display">
+\delta'(t) = \frac{d}{dt} \delta(t)</script><script type="math/tex; mode=display">
+\int_{-\infty}^{t}  \delta'(\tau) d\tau = \delta(t)</script></li>
 </ol>
 <div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>注意，上述的冲激偶函数是借助三角脉冲函数取极限得到的解释。如果规则函数取其他形式，比如</p>
 <ol>
@@ -546,95 +397,43 @@ $$</p>
 <p>那么，冲激信号的定义和性质是否仍然保持一致？引入冲激偶信号有什么作用？</p>
 </div>
 <p>由典型信号的相互关系可知，<strong>复指数信号</strong>可以描述常用的基本信号，由<strong>单位冲激信号</strong>可以得到各种奇异信号，因此复指数信号和冲激信号是典型信号中的两个核心信号。</p>
-<h3 id="离散时间信号">离散时间信号</h3>
-<h4 id="单位样值序列">单位样值序列</h4>
-<h4 id="单位阶跃序列">单位阶跃序列</h4>
-<h4 id="矩形序列">矩形序列</h4>
-<h4 id="实指数序列">实指数序列</h4>
-<h4 id="正弦序列和虚指数序列">正弦序列和虚指数序列</h4>
-<h4 id="复指数序列">复指数序列</h4>
-<h2 id="信号的基本运算">信号的基本运算</h2>
-<h3 id="连续时间信号的基本运算">连续时间信号的基本运算</h3>
-<h4 id="相加和相乘">相加和相乘</h4>
-<h4 id="时移反褶与展缩">时移反褶与展缩</h4>
-<h4 id="微分和积分">微分和积分</h4>
-<h3 id="离散时间信号的基本运算">离散时间信号的基本运算</h3>
-<h4 id="序列相加">序列相加</h4>
-<h4 id="序列相乘">序列相乘</h4>
-<h4 id="序列移位">序列移位</h4>
-<h4 id="序列展缩">序列展缩</h4>
-<h2 id="信号的分解">信号的分解</h2>
-<h3 id="直流分量与交流分量">直流分量与交流分量</h3>
-<h3 id="偶分量与奇分量">偶分量与奇分量</h3>
-<h3 id="脉冲分量线性组合">脉冲分量线性组合</h3>
-<h3 id="实部分量与虚部分量">实部分量与虚部分量</h3>
-<h2 id="系统的概念">系统的概念</h2>
-<h3 id="系统的定义">系统的定义</h3>
-<h3 id="系统的描述">系统的描述</h3>
-<h3 id="系统的分类">系统的分类</h3>
-<h4 id="连续时间系统和离散时间系统">连续时间系统和离散时间系统</h4>
-<h4 id="线性系统和非线性系统">线性系统和非线性系统</h4>
-<h4 id="时变系统和时不变系统">时变系统和时不变系统</h4>
-<h4 id="因果系统和非因果系统">因果系统和非因果系统</h4>
-<h4 id="稳定系统和不稳定系统">稳定系统和不稳定系统</h4>
-<h2 id="信号与系统分析概述">信号与系统分析概述</h2>
-<h2 id="本章小结">本章小结</h2>
-<p>本章讨论了典型的信号及其基本运算、信号的分解，讨论了系统及其性质，是全书的基础部分。</p>
+<h3 id="离散时间信号"><a href="#离散时间信号" class="headerlink" title="离散时间信号"></a>离散时间信号</h3><h4 id="单位样值序列"><a href="#单位样值序列" class="headerlink" title="单位样值序列"></a>单位样值序列</h4><h4 id="单位阶跃序列"><a href="#单位阶跃序列" class="headerlink" title="单位阶跃序列"></a>单位阶跃序列</h4><h4 id="矩形序列"><a href="#矩形序列" class="headerlink" title="矩形序列"></a>矩形序列</h4><h4 id="实指数序列"><a href="#实指数序列" class="headerlink" title="实指数序列"></a>实指数序列</h4><h4 id="正弦序列和虚指数序列"><a href="#正弦序列和虚指数序列" class="headerlink" title="正弦序列和虚指数序列"></a>正弦序列和虚指数序列</h4><h4 id="复指数序列"><a href="#复指数序列" class="headerlink" title="复指数序列"></a>复指数序列</h4><h2 id="信号的基本运算"><a href="#信号的基本运算" class="headerlink" title="信号的基本运算"></a>信号的基本运算</h2><h3 id="连续时间信号的基本运算"><a href="#连续时间信号的基本运算" class="headerlink" title="连续时间信号的基本运算"></a>连续时间信号的基本运算</h3><h4 id="相加和相乘"><a href="#相加和相乘" class="headerlink" title="相加和相乘"></a>相加和相乘</h4><h4 id="时移反褶与展缩"><a href="#时移反褶与展缩" class="headerlink" title="时移反褶与展缩"></a>时移反褶与展缩</h4><h4 id="微分和积分"><a href="#微分和积分" class="headerlink" title="微分和积分"></a>微分和积分</h4><h3 id="离散时间信号的基本运算"><a href="#离散时间信号的基本运算" class="headerlink" title="离散时间信号的基本运算"></a>离散时间信号的基本运算</h3><h4 id="序列相加"><a href="#序列相加" class="headerlink" title="序列相加"></a>序列相加</h4><h4 id="序列相乘"><a href="#序列相乘" class="headerlink" title="序列相乘"></a>序列相乘</h4><h4 id="序列移位"><a href="#序列移位" class="headerlink" title="序列移位"></a>序列移位</h4><h4 id="序列展缩"><a href="#序列展缩" class="headerlink" title="序列展缩"></a>序列展缩</h4><h2 id="信号的分解"><a href="#信号的分解" class="headerlink" title="信号的分解"></a>信号的分解</h2><h3 id="直流分量与交流分量"><a href="#直流分量与交流分量" class="headerlink" title="直流分量与交流分量"></a>直流分量与交流分量</h3><h3 id="偶分量与奇分量"><a href="#偶分量与奇分量" class="headerlink" title="偶分量与奇分量"></a>偶分量与奇分量</h3><h3 id="脉冲分量线性组合"><a href="#脉冲分量线性组合" class="headerlink" title="脉冲分量线性组合"></a>脉冲分量线性组合</h3><h3 id="实部分量与虚部分量"><a href="#实部分量与虚部分量" class="headerlink" title="实部分量与虚部分量"></a>实部分量与虚部分量</h3><h2 id="系统的概念"><a href="#系统的概念" class="headerlink" title="系统的概念"></a>系统的概念</h2><h3 id="系统的定义"><a href="#系统的定义" class="headerlink" title="系统的定义"></a>系统的定义</h3><h3 id="系统的描述"><a href="#系统的描述" class="headerlink" title="系统的描述"></a>系统的描述</h3><h3 id="系统的分类"><a href="#系统的分类" class="headerlink" title="系统的分类"></a>系统的分类</h3><h4 id="连续时间系统和离散时间系统"><a href="#连续时间系统和离散时间系统" class="headerlink" title="连续时间系统和离散时间系统"></a>连续时间系统和离散时间系统</h4><h4 id="线性系统和非线性系统"><a href="#线性系统和非线性系统" class="headerlink" title="线性系统和非线性系统"></a>线性系统和非线性系统</h4><h4 id="时变系统和时不变系统"><a href="#时变系统和时不变系统" class="headerlink" title="时变系统和时不变系统"></a>时变系统和时不变系统</h4><h4 id="因果系统和非因果系统"><a href="#因果系统和非因果系统" class="headerlink" title="因果系统和非因果系统"></a>因果系统和非因果系统</h4><h4 id="稳定系统和不稳定系统"><a href="#稳定系统和不稳定系统" class="headerlink" title="稳定系统和不稳定系统"></a>稳定系统和不稳定系统</h4><h2 id="信号与系统分析概述"><a href="#信号与系统分析概述" class="headerlink" title="信号与系统分析概述"></a>信号与系统分析概述</h2><h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章讨论了典型的信号及其基本运算、信号的分解，讨论了系统及其性质，是全书的基础部分。</p>
 <ol>
-<li>
-<p>信号是消息的表现形式，消息则是信号的具体内容。</p>
+<li><p>信号是消息的表现形式，消息则是信号的具体内容。</p>
 </li>
-<li>
-<p>信号的分类方法很多，可从不同角度进行分类。如分为</p>
+<li><p>信号的分类方法很多，可从不同角度进行分类。如分为</p>
 <ul>
-<li>
-<p>确定信号与随机信号</p>
+<li><p>确定信号与随机信号</p>
 </li>
-<li>
-<p>连续时间信号与离散时间信号</p>
+<li><p>连续时间信号与离散时间信号</p>
 </li>
-<li>
-<p>周期性信号与非周期性信号</p>
+<li><p>周期性信号与非周期性信号</p>
 </li>
-<li>
-<p>能量信号与功率信号</p>
+<li><p>能量信号与功率信号</p>
 </li>
-<li>
-<p>因果信号和非因果信号</p>
+<li><p>因果信号和非因果信号</p>
 </li>
 </ul>
 </li>
-<li>
-<p>连续时间信号有普通信号与奇异信号两类。复指数信号和单位冲激信号是典型信号中的两个核心信号。</p>
+<li><p>连续时间信号有普通信号与奇异信号两类。复指数信号和单位冲激信号是典型信号中的两个核心信号。</p>
 </li>
-<li>
-<p>离散时间信号也称离散序列，其表示方法通常有函数解析式、图形和列表三种。</p>
+<li><p>离散时间信号也称离散序列，其表示方法通常有函数解析式、图形和列表三种。</p>
 </li>
-<li>
-<p>信号的基本运算有信号的移位（时移）、反褶、展缩、微分、积分以及信号的相加或相乘。</p>
+<li><p>信号的基本运算有信号的移位（时移）、反褶、展缩、微分、积分以及信号的相加或相乘。</p>
 </li>
-<li>
-<p>信号可分解为</p>
+<li><p>信号可分解为</p>
 <ul>
-<li>
-<p>直流分量与交流分量</p>
+<li><p>直流分量与交流分量</p>
 </li>
-<li>
-<p>偶分量与奇分量</p>
+<li><p>偶分量与奇分量</p>
 </li>
-<li>
-<p>脉冲分量线性组合</p>
-</li>
-<li>
-<p>实部分量与虚部分量</p>
-</li>
+<li>脉冲分量线性组合</li>
+<li>实部分量与虚部分量</li>
 </ul>
 </li>
-<li>
-<p>系统的描述方法主要有输入输出描述法和状态空间描述法。系统可用数学方程与方框图表示。</p>
+<li><p>系统的描述方法主要有输入输出描述法和状态空间描述法。系统可用数学方程与方框图表示。</p>
 </li>
-<li>
-<p>系统有多种分类方法，包括</p>
+<li><p>系统有多种分类方法，包括</p>
 <ul>
 <li>连续时间系统与离散时间系统</li>
 <li>线性系统和非线性系统</li>
@@ -645,9 +444,8 @@ $$</p>
 <p>本书主要研究<strong>线性时不变系统</strong>，Linear Time-Invariant Systems，也称LTI系统。</p>
 </li>
 </ol>
-<h2 id="参考资料-16">参考资料</h2>
-<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://max.book118.com/html/2017/0814/127824243.shtm">冲激信号δ(t)的三种定义与相关性质的简单讨论概要</a></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://marapython.com">Alowree XU</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://marapython.com/posts/signals-and-systems-overview/">https://marapython.com/posts/signals-and-systems-overview/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://image.marapython.com/Sound-Wallpaper.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/butterfly-v4/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-karolina-grabowska-4194852.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hexo站点Butterfly主题升级至4</div></div></a></div><div class="next-post pull-right"><a href="/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">连续时间系统的时域分析</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alowree XU</div><div class="author-info__description">Keep the Momentum</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/alowree"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/alowree" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:alowree@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">半路Coder，使用Python</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">信号的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%8F%8F%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">信号的定义与描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.2.</span> <span class="toc-text">信号的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A1%AE%E5%AE%9A%E4%BF%A1%E5%8F%B7%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.1.</span> <span class="toc-text">确定信号与随机信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.2.</span> <span class="toc-text">连续时间信号与离散时间信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%A8%E6%9C%9F%E6%80%A7%E4%BF%A1%E5%8F%B7%E4%B8%8E%E9%9D%9E%E5%91%A8%E6%9C%9F%E6%80%A7%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.3.</span> <span class="toc-text">周期性信号与非周期性信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E5%8A%9F%E7%8E%87%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.4.</span> <span class="toc-text">能量信号与功率信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%A0%E6%9E%9C%E4%BF%A1%E5%8F%B7%E4%B8%8E%E9%9D%9E%E5%9B%A0%E6%9E%9C%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.5.</span> <span class="toc-text">因果信号与非因果信号</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E5%8F%8A%E5%85%B6%E7%89%B9%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text">典型信号及其特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.</span> <span class="toc-text">连续时间信号</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E6%95%B0%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.1.</span> <span class="toc-text">指数信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%BC%A6%E4%BF%A1%E5%8F%B7%E5%92%8C%E8%99%9A%E6%8C%87%E6%95%B0%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.2.</span> <span class="toc-text">正弦信号和虚指数信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%8C%87%E6%95%B0%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.3.</span> <span class="toc-text">复指数信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%BD%E6%A0%B7%E5%87%BD%E6%95%B0"><span class="toc-number">3.1.4.</span> <span class="toc-text">抽样函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%92%9F%E5%BD%A2%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.5.</span> <span class="toc-text">钟形信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E6%96%9C%E5%8F%98%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.6.</span> <span class="toc-text">单位斜变信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.7.</span> <span class="toc-text">单位阶跃信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E5%86%B2%E6%BF%80%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.8.</span> <span class="toc-text">单位冲激信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%B2%E6%BF%80%E5%81%B6%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.9.</span> <span class="toc-text">冲激偶信号</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.2.</span> <span class="toc-text">离散时间信号</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E6%A0%B7%E5%80%BC%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.1.</span> <span class="toc-text">单位样值序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.2.</span> <span class="toc-text">单位阶跃序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E5%BD%A2%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.3.</span> <span class="toc-text">矩形序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E6%8C%87%E6%95%B0%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.4.</span> <span class="toc-text">实指数序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%BC%A6%E5%BA%8F%E5%88%97%E5%92%8C%E8%99%9A%E6%8C%87%E6%95%B0%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.5.</span> <span class="toc-text">正弦序列和虚指数序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%8C%87%E6%95%B0%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.6.</span> <span class="toc-text">复指数序列</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-number">4.</span> <span class="toc-text">信号的基本运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-number">4.1.</span> <span class="toc-text">连续时间信号的基本运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E5%8A%A0%E5%92%8C%E7%9B%B8%E4%B9%98"><span class="toc-number">4.1.1.</span> <span class="toc-text">相加和相乘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E7%A7%BB%E5%8F%8D%E8%A4%B6%E4%B8%8E%E5%B1%95%E7%BC%A9"><span class="toc-number">4.1.2.</span> <span class="toc-text">时移反褶与展缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AE%E5%88%86%E5%92%8C%E7%A7%AF%E5%88%86"><span class="toc-number">4.1.3.</span> <span class="toc-text">微分和积分</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-number">4.2.</span> <span class="toc-text">离散时间信号的基本运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E7%9B%B8%E5%8A%A0"><span class="toc-number">4.2.1.</span> <span class="toc-text">序列相加</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E7%9B%B8%E4%B9%98"><span class="toc-number">4.2.2.</span> <span class="toc-text">序列相乘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E7%A7%BB%E4%BD%8D"><span class="toc-number">4.2.3.</span> <span class="toc-text">序列移位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E5%B1%95%E7%BC%A9"><span class="toc-number">4.2.4.</span> <span class="toc-text">序列展缩</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%88%86%E8%A7%A3"><span class="toc-number">5.</span> <span class="toc-text">信号的分解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%B5%81%E5%88%86%E9%87%8F%E4%B8%8E%E4%BA%A4%E6%B5%81%E5%88%86%E9%87%8F"><span class="toc-number">5.1.</span> <span class="toc-text">直流分量与交流分量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%B6%E5%88%86%E9%87%8F%E4%B8%8E%E5%A5%87%E5%88%86%E9%87%8F"><span class="toc-number">5.2.</span> <span class="toc-text">偶分量与奇分量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%89%E5%86%B2%E5%88%86%E9%87%8F%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88"><span class="toc-number">5.3.</span> <span class="toc-text">脉冲分量线性组合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%83%A8%E5%88%86%E9%87%8F%E4%B8%8E%E8%99%9A%E9%83%A8%E5%88%86%E9%87%8F"><span class="toc-number">5.4.</span> <span class="toc-text">实部分量与虚部分量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">6.</span> <span class="toc-text">系统的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">6.1.</span> <span class="toc-text">系统的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8F%8F%E8%BF%B0"><span class="toc-number">6.2.</span> <span class="toc-text">系统的描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">6.3.</span> <span class="toc-text">系统的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E7%B3%BB%E7%BB%9F%E5%92%8C%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.1.</span> <span class="toc-text">连续时间系统和离散时间系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E5%92%8C%E9%9D%9E%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.2.</span> <span class="toc-text">线性系统和非线性系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%8F%98%E7%B3%BB%E7%BB%9F%E5%92%8C%E6%97%B6%E4%B8%8D%E5%8F%98%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.3.</span> <span class="toc-text">时变系统和时不变系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%A0%E6%9E%9C%E7%B3%BB%E7%BB%9F%E5%92%8C%E9%9D%9E%E5%9B%A0%E6%9E%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.4.</span> <span class="toc-text">因果系统和非因果系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A8%B3%E5%AE%9A%E7%B3%BB%E7%BB%9F%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.5.</span> <span class="toc-text">稳定系统和不稳定系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E6%A6%82%E8%BF%B0"><span class="toc-number">7.</span> <span class="toc-text">信号与系统分析概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="toc-number">8.</span> <span class="toc-text">本章小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-16"><span class="toc-number">9.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3233574096/" title="Sound Rise II 京东快车推广计划"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/background-2612256_640.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sound Rise II 京东快车推广计划"/></a><div class="content"><a class="title" href="/posts/3233574096/" title="Sound Rise II 京东快车推广计划">Sound Rise II 京东快车推广计划</a><time datetime="2022-06-07T08:10:32.000Z" title="发表于 2022-06-07 16:10:32">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3048244832/" title="Benefits of Nature Sounds"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/geometric-3037028_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Benefits of Nature Sounds"/></a><div class="content"><a class="title" href="/posts/3048244832/" title="Benefits of Nature Sounds">Benefits of Nature Sounds</a><time datetime="2022-06-07T01:18:55.000Z" title="发表于 2022-06-07 09:18:55">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-matthew-barra-812958.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ssh: connect to host ssh.github.com port 443: Connection refused"/></a><div class="content"><a class="title" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused">ssh: connect to host ssh.github.com port 443: Connection refused</a><time datetime="2022-06-04T02:31:25.000Z" title="发表于 2022-06-04 10:31:25">2022-06-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3022496535/" title="1000"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/abstract-1501710.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1000"/></a><div class="content"><a class="title" href="/posts/3022496535/" title="1000">1000</a><time datetime="2022-05-30T23:31:48.000Z" title="发表于 2022-05-31 07:31:48">2022-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3286567158/" title="京东引流"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/abstract-1501710.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东引流"/></a><div class="content"><a class="title" href="/posts/3286567158/" title="京东引流">京东引流</a><time datetime="2022-05-30T05:44:26.000Z" title="发表于 2022-05-30 13:44:26">2022-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Alowree XU</div><div class="footer_custom_text"><div id="heo-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Photoshop/" data-pjax-state="">Photoshop</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/categories/翻译内容/" data-pjax-state="">翻译内容</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://pan.zhheo.com/">海鸥云盘</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/rss/" data-pjax-state="">RSS订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://max.book118.com/html/2017/0814/127824243.shtm">冲激信号δ(t)的三种定义与相关性质的简单讨论概要</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://marapython.com">Alowree XU</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://marapython.com/posts/signals-and-systems-overview/">https://marapython.com/posts/signals-and-systems-overview/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://image.marapython.com/Sound-Wallpaper.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/butterfly-v4/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/colorful-2174045.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hexo站点Butterfly主题升级至4</div></div></a></div><div class="next-post pull-right"><a href="/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">连续时间系统的时域分析</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alowree XU</div><div class="author-info__description">Keep the Momentum</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/alowree"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/alowree" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:alowree@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">半路Coder，使用Python</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">信号的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%8F%8F%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">信号的定义与描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.2.</span> <span class="toc-text">信号的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A1%AE%E5%AE%9A%E4%BF%A1%E5%8F%B7%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.1.</span> <span class="toc-text">确定信号与随机信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.2.</span> <span class="toc-text">连续时间信号与离散时间信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%A8%E6%9C%9F%E6%80%A7%E4%BF%A1%E5%8F%B7%E4%B8%8E%E9%9D%9E%E5%91%A8%E6%9C%9F%E6%80%A7%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.3.</span> <span class="toc-text">周期性信号与非周期性信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E5%8A%9F%E7%8E%87%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.4.</span> <span class="toc-text">能量信号与功率信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%A0%E6%9E%9C%E4%BF%A1%E5%8F%B7%E4%B8%8E%E9%9D%9E%E5%9B%A0%E6%9E%9C%E4%BF%A1%E5%8F%B7"><span class="toc-number">2.2.5.</span> <span class="toc-text">因果信号与非因果信号</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E5%8F%8A%E5%85%B6%E7%89%B9%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text">典型信号及其特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.</span> <span class="toc-text">连续时间信号</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E6%95%B0%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.1.</span> <span class="toc-text">指数信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%BC%A6%E4%BF%A1%E5%8F%B7%E5%92%8C%E8%99%9A%E6%8C%87%E6%95%B0%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.2.</span> <span class="toc-text">正弦信号和虚指数信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%8C%87%E6%95%B0%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.3.</span> <span class="toc-text">复指数信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%BD%E6%A0%B7%E5%87%BD%E6%95%B0"><span class="toc-number">3.1.4.</span> <span class="toc-text">抽样函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%92%9F%E5%BD%A2%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.5.</span> <span class="toc-text">钟形信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E6%96%9C%E5%8F%98%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.6.</span> <span class="toc-text">单位斜变信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.7.</span> <span class="toc-text">单位阶跃信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E5%86%B2%E6%BF%80%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.8.</span> <span class="toc-text">单位冲激信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%B2%E6%BF%80%E5%81%B6%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.1.9.</span> <span class="toc-text">冲激偶信号</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.2.</span> <span class="toc-text">离散时间信号</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E6%A0%B7%E5%80%BC%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.1.</span> <span class="toc-text">单位样值序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.2.</span> <span class="toc-text">单位阶跃序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E5%BD%A2%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.3.</span> <span class="toc-text">矩形序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E6%8C%87%E6%95%B0%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.4.</span> <span class="toc-text">实指数序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%BC%A6%E5%BA%8F%E5%88%97%E5%92%8C%E8%99%9A%E6%8C%87%E6%95%B0%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.5.</span> <span class="toc-text">正弦序列和虚指数序列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%8C%87%E6%95%B0%E5%BA%8F%E5%88%97"><span class="toc-number">3.2.6.</span> <span class="toc-text">复指数序列</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-number">4.</span> <span class="toc-text">信号的基本运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-number">4.1.</span> <span class="toc-text">连续时间信号的基本运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E5%8A%A0%E5%92%8C%E7%9B%B8%E4%B9%98"><span class="toc-number">4.1.1.</span> <span class="toc-text">相加和相乘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E7%A7%BB%E5%8F%8D%E8%A4%B6%E4%B8%8E%E5%B1%95%E7%BC%A9"><span class="toc-number">4.1.2.</span> <span class="toc-text">时移反褶与展缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AE%E5%88%86%E5%92%8C%E7%A7%AF%E5%88%86"><span class="toc-number">4.1.3.</span> <span class="toc-text">微分和积分</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-number">4.2.</span> <span class="toc-text">离散时间信号的基本运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E7%9B%B8%E5%8A%A0"><span class="toc-number">4.2.1.</span> <span class="toc-text">序列相加</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E7%9B%B8%E4%B9%98"><span class="toc-number">4.2.2.</span> <span class="toc-text">序列相乘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E7%A7%BB%E4%BD%8D"><span class="toc-number">4.2.3.</span> <span class="toc-text">序列移位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E5%B1%95%E7%BC%A9"><span class="toc-number">4.2.4.</span> <span class="toc-text">序列展缩</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%88%86%E8%A7%A3"><span class="toc-number">5.</span> <span class="toc-text">信号的分解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%B5%81%E5%88%86%E9%87%8F%E4%B8%8E%E4%BA%A4%E6%B5%81%E5%88%86%E9%87%8F"><span class="toc-number">5.1.</span> <span class="toc-text">直流分量与交流分量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%B6%E5%88%86%E9%87%8F%E4%B8%8E%E5%A5%87%E5%88%86%E9%87%8F"><span class="toc-number">5.2.</span> <span class="toc-text">偶分量与奇分量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%89%E5%86%B2%E5%88%86%E9%87%8F%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88"><span class="toc-number">5.3.</span> <span class="toc-text">脉冲分量线性组合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%83%A8%E5%88%86%E9%87%8F%E4%B8%8E%E8%99%9A%E9%83%A8%E5%88%86%E9%87%8F"><span class="toc-number">5.4.</span> <span class="toc-text">实部分量与虚部分量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">6.</span> <span class="toc-text">系统的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">6.1.</span> <span class="toc-text">系统的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8F%8F%E8%BF%B0"><span class="toc-number">6.2.</span> <span class="toc-text">系统的描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">6.3.</span> <span class="toc-text">系统的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E7%B3%BB%E7%BB%9F%E5%92%8C%E7%A6%BB%E6%95%A3%E6%97%B6%E9%97%B4%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.1.</span> <span class="toc-text">连续时间系统和离散时间系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E5%92%8C%E9%9D%9E%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.2.</span> <span class="toc-text">线性系统和非线性系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%8F%98%E7%B3%BB%E7%BB%9F%E5%92%8C%E6%97%B6%E4%B8%8D%E5%8F%98%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.3.</span> <span class="toc-text">时变系统和时不变系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%A0%E6%9E%9C%E7%B3%BB%E7%BB%9F%E5%92%8C%E9%9D%9E%E5%9B%A0%E6%9E%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.4.</span> <span class="toc-text">因果系统和非因果系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A8%B3%E5%AE%9A%E7%B3%BB%E7%BB%9F%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.3.5.</span> <span class="toc-text">稳定系统和不稳定系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E6%A6%82%E8%BF%B0"><span class="toc-number">7.</span> <span class="toc-text">信号与系统分析概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="toc-number">8.</span> <span class="toc-text">本章小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">9.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3233574096/" title="京东快车商品推广计划"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-zhang-kaiyv-2672808.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东快车商品推广计划"/></a><div class="content"><a class="title" href="/posts/3233574096/" title="京东快车商品推广计划">京东快车商品推广计划</a><time datetime="2022-06-07T08:10:32.000Z" title="发表于 2022-06-07 16:10:32">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3048244832/" title="Sound Rise II 自然情景音箱"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/abstract-1501710.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sound Rise II 自然情景音箱"/></a><div class="content"><a class="title" href="/posts/3048244832/" title="Sound Rise II 自然情景音箱">Sound Rise II 自然情景音箱</a><time datetime="2022-06-07T01:18:55.000Z" title="发表于 2022-06-07 09:18:55">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/abstract-1501710.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ssh: connect to host ssh.github.com port 443: Connection refused"/></a><div class="content"><a class="title" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused">ssh: connect to host ssh.github.com port 443: Connection refused</a><time datetime="2022-06-04T02:31:25.000Z" title="发表于 2022-06-04 10:31:25">2022-06-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3022496535/" title="1000"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-bithin-raj-2763927.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1000"/></a><div class="content"><a class="title" href="/posts/3022496535/" title="1000">1000</a><time datetime="2022-05-30T23:31:48.000Z" title="发表于 2022-05-31 07:31:48">2022-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3286567158/" title="京东引流"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东引流"/></a><div class="content"><a class="title" href="/posts/3286567158/" title="京东引流">京东引流</a><time datetime="2022-05-30T05:44:26.000Z" title="发表于 2022-05-30 13:44:26">2022-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Alowree XU</div><div class="footer_custom_text"><div id="heo-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Photoshop/" data-pjax-state="">Photoshop</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/categories/翻译内容/" data-pjax-state="">翻译内容</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://pan.zhheo.com/">海鸥云盘</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/rss/" data-pjax-state="">RSS订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
