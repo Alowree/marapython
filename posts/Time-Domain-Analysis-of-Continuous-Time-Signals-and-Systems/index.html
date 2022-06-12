@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>连续时间系统的时域分析 | MaraPython</title><meta name="keywords" content="Python"><meta name="author" content="Alowree XU,alowree@hotmail.com"><meta name="copyright" content="Alowree XU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="引言本章主要讨论利用输入输出法对连续时间线性时不变系统进行时域分析。连续时间系统的时域分析法是指在给定系统结构、参数和输入信号的条件下，写出其一元$n$阶常系数微分方程表示式，直接求解系统的微分方程，求出满足初始状态的解，从而确定系统的响应。整个分析与计算过程全部在时间域内进行，且不涉及任何变换。这种方法具有直观、物理概念清楚等优点，也是学习各种变换域分析法的基础。 系统的时域分析法包括两种方法：">
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>连续时间系统的时域分析 | MaraPython</title><meta name="keywords" content="Python"><meta name="author" content="Alowree XU,alowree@hotmail.com"><meta name="copyright" content="Alowree XU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="引言 本章主要讨论利用输入输出法对连续时间线性时不变系统进行时域分析。连续时间系统的时域分析法是指在给定系统结构、参数和输入信号的条件下，写出其一元$n$阶常系数微分方程表示式，直接求解系统的微分方程，求出满足初始状态的解，从而确定系统的响应。整个分析与计算过程全部在时间域内进行，且不涉及任何变换。这种方法具有直观、物理概念清楚等优点，也是学习各种变换域分析法的基础。 系统的时域分析法包括两种方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="连续时间系统的时域分析">
 <meta property="og:url" content="https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/index.html">
 <meta property="og:site_name" content="MaraPython">
-<meta property="og:description" content="引言本章主要讨论利用输入输出法对连续时间线性时不变系统进行时域分析。连续时间系统的时域分析法是指在给定系统结构、参数和输入信号的条件下，写出其一元$n$阶常系数微分方程表示式，直接求解系统的微分方程，求出满足初始状态的解，从而确定系统的响应。整个分析与计算过程全部在时间域内进行，且不涉及任何变换。这种方法具有直观、物理概念清楚等优点，也是学习各种变换域分析法的基础。 系统的时域分析法包括两种方法：">
+<meta property="og:description" content="引言 本章主要讨论利用输入输出法对连续时间线性时不变系统进行时域分析。连续时间系统的时域分析法是指在给定系统结构、参数和输入信号的条件下，写出其一元$n$阶常系数微分方程表示式，直接求解系统的微分方程，求出满足初始状态的解，从而确定系统的响应。整个分析与计算过程全部在时间域内进行，且不涉及任何变换。这种方法具有直观、物理概念清楚等优点，也是学习各种变换域分析法的基础。 系统的时域分析法包括两种方法">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg">
 <meta property="article:published_time" content="2022-01-21T03:55:19.000Z">
@@ -143,32 +143,50 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css"><link rel="stylesheet" href="/css/custom.css" media="all"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/carousel-touch.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/mindmap.min.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="MaraPython" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MaraPython</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">连续时间系统的时域分析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-21T03:55:19.000Z" title="发表于 2022-01-21 11:55:19">2022-01-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-08T07:23:47.154Z" title="更新于 2022-06-08 15:23:47">2022-06-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/">信号与系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">9.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>36分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本章主要讨论利用输入输出法对连续时间线性时不变系统进行时域分析。连续时间系统的时域分析法是指在给定系统结构、参数和输入信号的条件下，写出其一元$n$阶常系数微分方程表示式，直接求解系统的微分方程，求出满足初始状态的解，从而确定系统的响应。整个分析与计算过程全部在时间域内进行，且不涉及任何变换。这种方法具有直观、物理概念清楚等优点，也是学习各种变换域分析法的基础。</p>
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">72</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MaraPython</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">连续时间系统的时域分析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-21T03:55:19.000Z" title="发表于 2022-01-21 11:55:19">2022-01-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-08T07:23:47.154Z" title="更新于 2022-06-08 15:23:47">2022-06-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/">信号与系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">9.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>36分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="引言-2">引言</h2>
+<p>本章主要讨论利用输入输出法对连续时间线性时不变系统进行时域分析。连续时间系统的时域分析法是指在给定系统结构、参数和输入信号的条件下，写出其一元$n$阶常系数微分方程表示式，直接求解系统的微分方程，求出满足初始状态的解，从而确定系统的响应。整个分析与计算过程全部在时间域内进行，且不涉及任何变换。这种方法具有直观、物理概念清楚等优点，也是学习各种变换域分析法的基础。</p>
 <p>系统的时域分析法包括两种方法：一是经典法，即利用高等数学中微分方程的理论求解动态方程，得到系统响应的函数表达式；二是双零法，即将系统响应分为零输入响应和零状态响应。本章在经典法求解微分方程的基础上，引入零输入响应和零状态响应的求解方法，从而得到系统的输出响应。其中，任意输入下的系统零状态响应的求解，可以采用卷积积分法。卷积分析法物理意义明确，便于利用计算机进行数值计算。而且，卷积定理可以将时域分析和变换域分析联系起来，为变换域分析提供明确的物理概念。</p>
-<h2 id="连续时间系统的描述及响应"><a href="#连续时间系统的描述及响应" class="headerlink" title="连续时间系统的描述及响应"></a>连续时间系统的描述及响应</h2><h3 id="连续时间LTI系统的数学模型"><a href="#连续时间LTI系统的数学模型" class="headerlink" title="连续时间LTI系统的数学模型"></a>连续时间LTI系统的数学模型</h3><p>进行连续时间 LTI 系统的时域分析，首先要在时域中建立系统的数学模型，写出描述其工作特性的数学表达式，然后分析并求解数学模型，并对所得到的数学解进行物理解释。对于连续时间 LTI 系统，系统数学模型的时域描述有两种形式：输入输出描述法和状态变量描述法。输入输出描述法的数学模型是一元$n$阶常系数微分方程，在微分方程中包含有激励和响应的时间函数，以及它们对时间的各阶导数的线性组合；而后者是$n$元一阶联立微分方程组。本章只讨论输入输出描述法。</p>
+<h2 id="连续时间系统的描述及响应">连续时间系统的描述及响应</h2>
+<h3 id="连续时间LTI系统的数学模型">连续时间LTI系统的数学模型</h3>
+<p>进行连续时间 LTI 系统的时域分析，首先要在时域中建立系统的数学模型，写出描述其工作特性的数学表达式，然后分析并求解数学模型，并对所得到的数学解进行物理解释。对于连续时间 LTI 系统，系统数学模型的时域描述有两种形式：输入输出描述法和状态变量描述法。输入输出描述法的数学模型是一元$n$阶常系数微分方程，在微分方程中包含有激励和响应的时间函数，以及它们对时间的各阶导数的线性组合；而后者是$n$元一阶联立微分方程组。本章只讨论输入输出描述法。</p>
 <p>对于电网络系统，建立微分方程的依据是电网络的元件约束特性和网络拓扑约束特性等电路基础理论。如果给定一个系统的具体电路结构和参数，可以根据元件约束特性和网络拓扑约束特性建立系统的数学模型，这个数学模型就是系统的微分方程。</p>
-<p>一般情况下，对于一个恒定集总参数线性系统<sup><a href="#fn_1" id="reffn_1">1</a></sup>，其输入激励信号$x(t)$与输出响应信号$y(t)$之间的关系，总可以用下列形式的微分方程式来描述。</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-& a_n \frac{d^{n} y(t)}{dt} + a_{n-1} \frac{d^{n-1} y(t)}{dt} + \cdots + a_1 \frac{dy(t)}{dt} + a_0 y(t) \\
-& = b_m \frac{d^m x(t)}{dt} + b_{m-1} \frac{d^{m-1} x(t)}{dt} + \cdots + b_1 \frac{dx(t)}{dt} + b_0 x(t) 
-\end{aligned}</script><p>或者简写为</p>
-<script type="math/tex; mode=display">
-\sum_{k=0}^n a_k \frac{d^k y(t)}{dt} = \sum_{k=0}^m a_k \frac{d^k x(t)}{dt} \quad (2.2)</script><p>上式中系数$a_k$、$b_k$均为常数，式（2.2）就是一个定常系数的$n$阶线性<strong>常系数微分方程</strong>，对此微分方程求解就可以得到系统的响应$y(t)$。</p>
+<p>一般情况下，对于一个恒定集总参数线性系统<a href="%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%80%BB%E5%8F%82%E6%95%B0%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F">^1</a>，其输入激励信号$x(t)$与输出响应信号$y(t)$之间的关系，总可以用下列形式的微分方程式来描述。</p>
+<p>$$<br>
+\begin{aligned}<br>
+&amp; a_n \frac{d^{n} y(t)}{dt} + a_{n-1} \frac{d^{n-1} y(t)}{dt} + \cdots + a_1 \frac{dy(t)}{dt} + a_0 y(t) \<br>
+&amp; = b_m \frac{d^m x(t)}{dt} + b_{m-1} \frac{d^{m-1} x(t)}{dt} + \cdots + b_1 \frac{dx(t)}{dt} + b_0 x(t)<br>
+\end{aligned}<br>
+$$</p>
+<p>或者简写为<br>
+$$<br>
+\sum_{k=0}^n a_k \frac{d^k y(t)}{dt} = \sum_{k=0}^m a_k \frac{d^k x(t)}{dt} \quad (2.2)<br>
+$$</p>
+<p>上式中系数$a_k$、$b_k$均为常数，式（2.2）就是一个定常系数的$n$阶线性<strong>常系数微分方程</strong>，对此微分方程求解就可以得到系统的响应$y(t)$。</p>
 <div class="markmap-container" style="height:100px">
                 <svg class="markmap-svg">{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"微分方程","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"常微分方程","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"线性微分方程","c":[{"t":"heading","d":4,"p":{"lines":[6,7]},"v":"齐次微分方程","c":[{"t":"heading","d":5,"p":{"lines":[8,9]},"v":"常系数线性齐次微分方程"}]},{"t":"heading","d":4,"p":{"lines":[10,11]},"v":"非齐次微分方程","c":[{"t":"heading","d":5,"p":{"lines":[12,13]},"v":"常系数线性非齐次微分方程"}]}]},{"t":"heading","d":3,"p":{"lines":[14,15]},"v":"非线性微分方程"}]},{"t":"heading","d":2,"p":{"lines":[16,17]},"v":"偏微分方程"}]}</svg>
               </div>
-<h3 id="常系数微分方程的求解"><a href="#常系数微分方程的求解" class="headerlink" title="常系数微分方程的求解"></a>常系数微分方程的求解</h3><p>在高等数学和电路分析理论学习中，我们知道，常系数线性微分方程的完全解由齐次解$y_h(t)$和特解$y_p(t)$两部分组成，即</p>
-<script type="math/tex; mode=display">
-y(t)=y_h(t)+y_p(t)</script><p>（1）齐次解<br>齐次解是当式（2.2）中的激励信号$x(t)$及各阶导数都等于零时的解，即齐次解应满足齐次微分方程</p>
-<script type="math/tex; mode=display">
-a_n \frac{d^{n} y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \cdots + a_1 \frac{dy(t)}{dt} + a_0 y(t) =0 \quad (2.4)</script><p>微分方程的特征方程为</p>
-<script type="math/tex; mode=display">
-a_nλ^n+a_{n-1}λ^{n-1}+a_{n-2}λ^{n-2}+\cdots+a_{2}λ^2+a_1λ+a_0=0 \quad (2.5)</script><p>特征方程的根$λ_1,λ_2,…,λ_n$称为微分方程的特征根。<br>在特征根为不相等实根的情况下，微分方程的齐次解为</p>
-<script type="math/tex; mode=display">
-y_h(t)=A_1e^{λ_1t}+A_2e^{λ_2t}+...+A_ne^{λ_nt} \quad (2.6)</script><p>这里$A_1,A_2,…,A_n$是由边界条件（在本书中称为初始条件）所决定的系数。<br>齐次解的形式仅取决于特征方程根的性质，而与激励信号无关，因此齐次解有时称为<strong>固有解</strong>（或称<strong>自由解</strong>），自由解也称为系统的<strong>自由响应</strong>。<u>齐次解的系数$A_1,A_2,…,A_n$与激励信号有关</u>。不同特征根所对应的齐次解总结如表2.1所示。</p>
+<h3 id="常系数微分方程的求解">常系数微分方程的求解</h3>
+<p>在高等数学和电路分析理论学习中，我们知道，常系数线性微分方程的完全解由齐次解$y_h(t)$和特解$y_p(t)$两部分组成，即<br>
+$$<br>
+y(t)=y_h(t)+y_p(t)<br>
+$$<br>
+（1）齐次解<br>
+齐次解是当式（2.2）中的激励信号$x(t)$及各阶导数都等于零时的解，即齐次解应满足齐次微分方程<br>
+$$<br>
+a_n \frac{d^{n} y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \cdots + a_1 \frac{dy(t)}{dt} + a_0 y(t) =0 \quad (2.4)<br>
+$$<br>
+微分方程的特征方程为<br>
+$$<br>
+a_nλ^n+a_{n-1}λ^{n-1}+a_{n-2}λ^{n-2}+\cdots+a_{2}λ^2+a_1λ+a_0=0 \quad (2.5)<br>
+$$<br>
+特征方程的根$λ_1,λ_2,…,λ_n$称为微分方程的特征根。<br>
+在特征根为不相等实根的情况下，微分方程的齐次解为<br>
+$$<br>
+y_h(t)=A_1e^{λ_1t}+A_2e^{λ_2t}+…+A_ne^{λ_nt} \quad (2.6)<br>
+$$<br>
+这里$A_1,A_2,…,A_n$是由边界条件（在本书中称为初始条件）所决定的系数。<br>
+齐次解的形式仅取决于特征方程根的性质，而与激励信号无关，因此齐次解有时称为<strong>固有解</strong>（或称<strong>自由解</strong>），自由解也称为系统的<strong>自由响应</strong>。<u>齐次解的系数$A_1,A_2,…,A_n$与激励信号有关</u>。不同特征根所对应的齐次解总结如表2.1所示。</p>
 <p><strong>表2.1 不同特征根所对应的齐次解（自由解）</strong></p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -183,7 +201,7 @@ y_h(t)=A_1e^{λ_1t}+A_2e^{λ_2t}+...+A_ne^{λ_nt} \quad (2.6)</script><p>这里$
 </tr>
 <tr>
 <td>$r$重实根</td>
-<td><script type="math/tex">(A_0+A_1t+...+A_{r-1}t^{r-1})e^{λt}</script></td>
+<td>$$(A_0+A_1t+…+A_{r-1}t^{r-1})e^{λt}$$</td>
 </tr>
 <tr>
 <td>一对共轭复根$λ_{1,2}=\alpha \pm \beta$</td>
@@ -191,16 +209,15 @@ y_h(t)=A_1e^{λ_1t}+A_2e^{λ_2t}+...+A_ne^{λ_nt} \quad (2.6)</script><p>这里$
 </tr>
 <tr>
 <td>$r$重共轭复根</td>
-<td><script type="math/tex">e^{\alpha t}[(A_0+A_1t+ \cdots + A_{r-1}t^{r-1})\cos\beta t + (B_0+B_1t+ \cdots + B_{r-1}t^{r-1}) \sin\beta t]</script>或<br /><script type="math/tex">A_{r-1}t^{r-1}e^{λt}\cos(\beta t - \theta_{r-1}) + A_{r-2}t^{r-2}e^{λt}\cos(\beta t - \theta_{r-2}) + \cdots</script><br /><script type="math/tex">+ A_1te^{λt}\cos(\beta t - \theta_{1}) + A_0e^{λt}\cos(\beta t - \theta_0)</script></td>
+<td>$$e^{\alpha t}[(A_0+A_1t+ \cdots + A_{r-1}t^{r-1})\cos\beta t + (B_0+B_1t+ \cdots + B_{r-1}t^{r-1}) \sin\beta t]$$或<br />$$A_{r-1}t^{r-1}e^{λt}\cos(\beta t - \theta_{r-1}) + A_{r-2}t^{r-2}e^{λt}\cos(\beta t - \theta_{r-2}) + \cdots$$<br />$$ + A_1te^{λt}\cos(\beta t - \theta_{1}) + A_0e^{λt}\cos(\beta t - \theta_0)$$</td>
 </tr>
 </tbody>
 </table>
-</div>
 <div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>齐次解不是在激励信号$x(t)=0$时微分方程的解吗？齐次解的系数怎么会跟激励信号$x(t)$相关？</p>
 </div>
-<p>（2）特解<br>系统微分方程式（2.2）的特解$y_p(t)$是由输入信号产生的，因此也被称为<strong>强迫解</strong>。特解必须满足非齐次微分方程，特解的形式与激励函数的形式有关。表 2.2 列出了几种典型激励函数$x(t)$对应的特解$y_p(t)$。由表 2.2 选定特解函数式后，代入原方程后求得特解函数式中的待定系数，即可求出特解。特解也称为系统的<strong>强迫响应</strong>。</p>
+<p>（2）特解<br>
+系统微分方程式（2.2）的特解$y_p(t)$是由输入信号产生的，因此也被称为<strong>强迫解</strong>。特解必须满足非齐次微分方程，特解的形式与激励函数的形式有关。表 2.2 列出了几种典型激励函数$x(t)$对应的特解$y_p(t)$。由表 2.2 选定特解函数式后，代入原方程后求得特解函数式中的待定系数，即可求出特解。特解也称为系统的<strong>强迫响应</strong>。</p>
 <p><strong>表2.2 与几种典型的激励函数相应的特解</strong></p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -211,7 +228,7 @@ y_h(t)=A_1e^{λ_1t}+A_2e^{λ_2t}+...+A_ne^{λ_nt} \quad (2.6)</script><p>这里$
 <tbody>
 <tr>
 <td>$E$常数</td>
-<td><script type="math/tex">B</script></td>
+<td>$$B$$</td>
 </tr>
 <tr>
 <td>$t^p$</td>
@@ -239,177 +256,270 @@ y_h(t)=A_1e^{λ_1t}+A_2e^{λ_2t}+...+A_ne^{λ_nt} \quad (2.6)</script><p>这里$
 </tr>
 </tbody>
 </table>
-</div>
 <p>注：</p>
 <ul>
-<li><p>表中$B$、$D$均为待定系数；</p>
+<li>
+<p>表中$B$、$D$均为待定系数；</p>
 </li>
-<li><p>若自由项有几种激励函数组合，则特解也为其相应的组合；</p>
+<li>
+<p>若自由项有几种激励函数组合，则特解也为其相应的组合；</p>
 </li>
-<li><p>若表中所列特解与齐次解重复，则应在特解中增加一项——$t$倍乘表中特解，若这种重复形有$k$次（即特征根为$k$重根），则依次增加倍乘$t,t^2,…,t^k$诸项。</p>
+<li>
+<p>若表中所列特解与齐次解重复，则应在特解中增加一项——$t$倍乘表中特解，若这种重复形有$k$次（即特征根为$k$重根），则依次增加倍乘$t,t^2,…,t^k$诸项。</p>
 </li>
 </ul>
-<p>（3）完全解<br>求得系统微分方程的齐次解和特解后，将齐次解$y_h(t)$和特解$y_p(t)$相加即可得到系统微分方程的完全解。下面通过例题说明经典法求解的全部过程。</p>
-<p><strong>例 2.1</strong> 已知微分方程</p>
-<script type="math/tex; mode=display">
-\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 6y(t) = 6 \cos2t \cdot u(t)</script><p>$y(0^+)=0$，$y’(0^+)=0$，求输出信号$y(t)$的表达式。</p>
+<p>（3）完全解<br>
+求得系统微分方程的齐次解和特解后，将齐次解$y_h(t)$和特解$y_p(t)$相加即可得到系统微分方程的完全解。下面通过例题说明经典法求解的全部过程。</p>
+<p><strong>例 2.1</strong> 已知微分方程<br>
+$$<br>
+\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 6y(t) = 6 \cos2t \cdot u(t)<br>
+$$<br>
+$y(0^+)=0$，$y’(0^+)=0$，求输出信号$y(t)$的表达式。</p>
 <details green><summary> 查看答案 </summary>
               <div class='content'>
-              <p><strong>解</strong>（1）求出齐次解<br>根据微分方程，写出特征方程</p><script type="math/tex; mode=display">λ^2 + 7λ + 6 = 0</script><p>解得特征根为</p><script type="math/tex; mode=display">λ_1=-1, \quad λ_2=-6</script><p>根据表2.1，则齐次解为</p><script type="math/tex; mode=display">y_h(t)=A_1 e^{-t} + A_2 e^{-6t}</script><p>（2）求特解<br>由微分方程，根据表2.2可知特解函数式为</p><script type="math/tex; mode=display">y_p(t)=B_1 \cos 2t + B_2 \sin 2t</script><p>对特解一次求导、两次求导可得</p><script type="math/tex; mode=display">y_p'(t)=-2B_1 \sin 2t + 2B_2 \cos 2t</script><script type="math/tex; mode=display">y_p''(t)=-4B_1 \cos 2t - 4B_2 \sin 2t</script><p>将$y_p(t),y_p’(t),y_p’’(t)$代入微分方程，得</p><script type="math/tex; mode=display">-4B_1 \cos 2t - 4B_2 \sin 2t -14B_1 \sin 2t + 14B_2 \cos 2t + 6B_1 \cos 2t + 6B_2 \sin 2t =6\cos2t \\</script><p>化简后得</p><script type="math/tex; mode=display">\begin{cases}2B_1+14B_2-6=0 \\\\2B_2-14B_1=0\end{cases}</script><p>解得</p><script type="math/tex; mode=display">\begin{cases}14B_1+98B_2-42=0 \\\\-14B_1+2B_2=0\end{cases}\rightarrow\begin{cases}B_1=\frac{3}{50} \\\\B_2=\frac{21}{50}\end{cases}</script><p>于是，特解为</p><script type="math/tex; mode=display">y_h(t)=\frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t</script><p>（3）求完全解<br>完全解为</p><script type="math/tex; mode=display">y(t)=A_1 e^{-t} + A_2 e^{-6t} + \frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t</script><p>下面确定待定系数$A_1,A_2$。<br>由初始条件$y(0^+)=0$，$y’(0^+)=0$，可以得到</p><script type="math/tex; mode=display">\begin{cases}y(0^+)=A_1 + A_2+\frac{3}{50} = 0 \\\\y'(0^+)=-A_1 - 6A_2 + \frac{42}{50} = 0\end{cases}</script><p>联立求解，可得</p><script type="math/tex; mode=display">\begin{cases}A_1 = -\frac{6}{25} \\\\A_2 = \frac{9}{50}\end{cases}</script><p>所以完全解为</p><script type="math/tex; mode=display">y(t)=-\frac{6}{25} e^{-t} + \frac{9}{50} e^{-6t} + \frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t</script><p>也可以用阶跃函数表示</p><script type="math/tex; mode=display">y(t)= \left( -\frac{6}{25} e^{-t} + \frac{9}{50} e^{-6t} + \frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t \right) \cdot u(t)</script>
+              <p><strong>解</strong>（1）求出齐次解<br>根据微分方程，写出特征方程<br>$$<br>λ^2 + 7λ + 6 = 0<br>$$<br>解得特征根为<br>$$<br>λ_1=-1, \quad λ_2=-6<br>$$<br>根据表2.1，则齐次解为<br>$$<br>y_h(t)=A_1 e^{-t} + A_2 e^{-6t}<br>$$<br>（2）求特解<br>由微分方程，根据表2.2可知特解函数式为<br>$$<br>y_p(t)=B_1 \cos 2t + B_2 \sin 2t<br>$$</p><p>对特解一次求导、两次求导可得<br>$$<br>y_p’(t)=-2B_1 \sin 2t + 2B_2 \cos 2t<br>$$</p><p>$$<br>y_p’'(t)=-4B_1 \cos 2t - 4B_2 \sin 2t<br>$$</p><p>将$y_p(t),y_p’(t),y_p’'(t)$代入微分方程，得</p><p>$$<br>-4B_1 \cos 2t - 4B_2 \sin 2t -14B_1 \sin 2t + 14B_2 \cos 2t + 6B_1 \cos 2t + 6B_2 \sin 2t =6\cos2t \<br>$$</p><p>化简后得<br>$$<br>\begin{cases}<br>2B_1+14B_2-6=0 \<br>\<br>2B_2-14B_1=0<br>\end{cases}<br>$$<br>解得<br>$$<br>\begin{cases}<br>14B_1+98B_2-42=0 \<br>\<br>-14B_1+2B_2=0<br>\end{cases}<br>\rightarrow</p><p>\begin{cases}</p><p>B_1=\frac{3}{50} \<br>\<br>B_2=\frac{21}{50}<br>\end{cases}<br>$$</p><p>于是，特解为<br>$$<br>y_h(t)=\frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t<br>$$<br>（3）求完全解<br>完全解为<br>$$<br>y(t)=A_1 e^{-t} + A_2 e^{-6t} + \frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t<br>$$<br>下面确定待定系数$A_1,A_2$。<br>由初始条件$y(0^+)=0$，$y’(0^+)=0$，可以得到<br>$$<br>\begin{cases}<br>y(0^+)=A_1 + A_2+\frac{3}{50} = 0 \<br>\<br>y’(0^+)=-A_1 - 6A_2 + \frac{42}{50} = 0<br>\end{cases}<br>$$<br>联立求解，可得<br>$$<br>\begin{cases}<br>A_1 = -\frac{6}{25} \<br>\<br>A_2 = \frac{9}{50}<br>\end{cases}<br>$$<br>所以完全解为<br>$$<br>y(t)=-\frac{6}{25} e^{-t} + \frac{9}{50} e^{-6t} + \frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t<br>$$<br>也可以用阶跃函数表示<br>$$<br>y(t)= \left( -\frac{6}{25} e^{-t} + \frac{9}{50} e^{-6t} + \frac{3}{50} \cos 2t + \frac{21}{50} \sin 2t \right) \cdot u(t)<br>$$</p>
               </div>
             </details>
-<h3 id="初始条件的确定"><a href="#初始条件的确定" class="headerlink" title="初始条件的确定"></a>初始条件的确定</h3><p>由微分方程的经典解法可知，要得到微分方程的完全解，需要确定完全解表达式中齐次解的待定系数$A_i(i=1,2,…,n)$，而要确定这些待定系数，则要首先确定求解区间内微分方程的一组边界条件。在系统分析中，常把响应区间确定为激励信号$x(t)$加入之后系统状态变化区间。一般激励$x(t)$都是从$t=0$时刻加入，这样系统的响应区间定为$0^+ \leqslant t&lt;∞$。一组边界条件可以给定为在此区间内任一时刻$t_0$，要求满足$y(t_0)$，$\frac{dy(t_0)}{dt}$，$\frac{dy^2(t_0)}{dt^2}$，…，$\frac{dy^n(t_0)}{dt^n}$的各值。一般取$t_0=0^+$，这样就可以对应确定系数$A_i(i=1,2,…,n)$.因此，我们称 </p>
-<script type="math/tex; mode=display">
-y^{(k)}(0^+)=\left[y(0^+),\frac{dy(0^+)}{dt},\frac{dy^2(0^+)}{dt^2},...,\frac{dy^{n-1}(0^+)}{dt^{n-1}} \right]</script><p>为初始条件（简称$0^+$状态，也称为“导出的起始状态”）。</p>
-<p>如果系统在激励信号加入之前瞬间有一组状态，定义为</p>
-<script type="math/tex; mode=display">
-y^{(k)}(0^-)=\left[y(0^-),\frac{dy(0^-)}{dt},\frac{dy^2(0^-)}{dt^2},...,\frac{dy^{n-1}(0^-)}{dt^{n-1}} \right]</script><p>这组状态被称为系统的起始状态（简称$0^−$状态），它包含了为计算未来响应的全部“过去”信息，对于一个具体的电网络，系统的$0^−$状态就是系统中储能元件的储能情况。在激励信号$x(t)$加入之后，由于受到激励的影响，这组状态从$t=0^−$到$t=0^+$时刻可能发生变化，导致</p>
-<script type="math/tex; mode=display">
-y(0^+),\frac{dy(0^+)}{dt},\frac{dy^2(0^+)}{dt^2}, \cdots, \frac{dy^{n-1}(0^+)}{dt^{n-1}}</script><p>不等于</p>
-<script type="math/tex; mode=display">
-y(0^-),\frac{dy(0^-)}{dt},\frac{dy^2(0^-)}{dt^2}, \cdots,\frac{dy^{n-1}(0^-)}{dt^{n-1}}</script><p>这种现象称为起始点的跳变。</p>
-<p>（1）起始点跳变的产生<br>对电容而言，由伏安关系</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-u_c(t) &=\frac{1}{C}Q \\
-&= \frac{1}{C}\int_{-\infty}^t i_C(\tau)d \tau \\
-&= \frac{1}{C}\int_{-\infty}^{0^-} i_C(\tau)d \tau + \frac{1}{C}\int_{0^-}^{0^+} i_C(\tau)d \tau + \frac{1}{C}\int_{0^+}^t i_C(\tau)d \tau\\
-&=u_C(0^-) + \frac{1}{C}\int_{0^-}^{0^+} i_C(\tau)d \tau + \frac{1}{C}\int_{0^+}^t i_C(\tau)d \tau\\
-\end{aligned}</script><p>令$t=0^+$，可得</p>
-<script type="math/tex; mode=display">
-u_C(0^+)=u_C(0^-) + \frac{1}{C}\int_{0^-}^{0^+} i_C(\tau)d \tau + 0</script><p>如果$i_C(t)$为有限值，则</p>
-<script type="math/tex; mode=display">
-\int_{0^-}^{0^+} i_C(\tau)d \tau =0</script><p>此时</p>
-<script type="math/tex; mode=display">
-u_C(0^+)=u_C(0^-)</script><p>如果$i_C(t)=δ(t)$，则</p>
-<script type="math/tex; mode=display">
-\int_{0^-}^{0^+} i_C(\tau)d \tau =1</script><p>此时</p>
-<script type="math/tex; mode=display">
-u_C(0^+)=u_C(0^-) + \frac{1}{C}</script><p>由上面的分析可以知道，当没有受到冲激电流（或阶跃电压）作用时，电容两端的电压$u_C(t)$不发生跳变，即满足换路定则；当受到冲激电流（或阶跃电压）作用时，电容两端的电压$u_C(t)$会发生跳变。</p>
+<h3 id="初始条件的确定">初始条件的确定</h3>
+<p>由微分方程的经典解法可知，要得到微分方程的完全解，需要确定完全解表达式中齐次解的待定系数$A_i(i=1,2,…,n)$，而要确定这些待定系数，则要首先确定求解区间内微分方程的一组边界条件。在系统分析中，常把响应区间确定为激励信号$x(t)$加入之后系统状态变化区间。一般激励$x(t)$都是从$t=0$时刻加入，这样系统的响应区间定为$0^+ \leqslant t&lt;∞$。一组边界条件可以给定为在此区间内任一时刻$t_0$，要求满足$y(t_0)$，$\frac{dy(t_0)}{dt}$，$\frac{dy^2(t_0)}{dt^2}$，…，$\frac{dy^n(t_0)}{dt^n}$的各值。一般取$t_0=0^+$，这样就可以对应确定系数$A_i(i=1,2,…,n)$.因此，我们称<br>
+$$<br>
+y^{(k)}(0^+)=\left[y(0^+),\frac{dy(0^+)}{dt},\frac{dy^2(0^+)}{dt^2},…,\frac{dy^{n-1}(0^+)}{dt^{n-1}} \right]<br>
+$$<br>
+为初始条件（简称$0^+$状态，也称为“导出的起始状态”）。</p>
+<p>如果系统在激励信号加入之前瞬间有一组状态，定义为<br>
+$$<br>
+y^{(k)}(0^-)=\left[y(0^-),\frac{dy(0^-)}{dt},\frac{dy^2(0^-)}{dt^2},…,\frac{dy^{n-1}(0^-)}{dt^{n-1}} \right]<br>
+$$<br>
+这组状态被称为系统的起始状态（简称$0^−$状态），它包含了为计算未来响应的全部“过去”信息，对于一个具体的电网络，系统的$0^−$状态就是系统中储能元件的储能情况。在激励信号$x(t)$加入之后，由于受到激励的影响，这组状态从$t=0^−$到$t=0^+$时刻可能发生变化，导致<br>
+$$<br>
+y(0^+),\frac{dy(0^+)}{dt},\frac{dy^2(0^+)}{dt^2}, \cdots, \frac{dy^{n-1}(0^+)}{dt^{n-1}}<br>
+$$</p>
+<p>不等于<br>
+$$<br>
+y(0^-),\frac{dy(0^-)}{dt},\frac{dy^2(0^-)}{dt^2}, \cdots,\frac{dy^{n-1}(0^-)}{dt^{n-1}}<br>
+$$<br>
+这种现象称为起始点的跳变。</p>
+<p>（1）起始点跳变的产生<br>
+对电容而言，由伏安关系<br>
+$$<br>
+\begin{aligned}<br>
+u_c(t) &amp;=\frac{1}{C}Q \<br>
+&amp;= \frac{1}{C}\int_{-\infty}^t i_C(\tau)d \tau \<br>
+&amp;= \frac{1}{C}\int_{-\infty}^{0^-} i_C(\tau)d \tau + \frac{1}{C}\int_{0^-}^{0^+} i_C(\tau)d \tau + \frac{1}{C}\int_{0^+}^t i_C(\tau)d \tau\<br>
+&amp;=u_C(0^-) + \frac{1}{C}\int_{0^-}^{0^+} i_C(\tau)d \tau + \frac{1}{C}\int_{0^+}^t i_C(\tau)d \tau\<br>
+\end{aligned}<br>
+$$<br>
+令$t=0^+$，可得<br>
+$$<br>
+u_C(0^+)=u_C(0^-) + \frac{1}{C}\int_{0^-}^{0^+} i_C(\tau)d \tau + 0<br>
+$$<br>
+如果$i_C(t)$为有限值，则<br>
+$$<br>
+\int_{0^-}^{0^+} i_C(\tau)d \tau =0<br>
+$$<br>
+此时<br>
+$$<br>
+u_C(0^+)=u_C(0^-)<br>
+$$<br>
+如果$i_C(t)=δ(t)$，则<br>
+$$<br>
+\int_{0^-}^{0^+} i_C(\tau)d \tau =1<br>
+$$<br>
+此时<br>
+$$<br>
+u_C(0^+)=u_C(0^-) + \frac{1}{C}<br>
+$$<br>
+由上面的分析可以知道，当没有受到冲激电流（或阶跃电压）作用时，电容两端的电压$u_C(t)$不发生跳变，即满足换路定则；当受到冲激电流（或阶跃电压）作用时，电容两端的电压$u_C(t)$会发生跳变。</p>
 <p>同样可以推导，对电感而言，当电感没有受到冲激电压（或阶跃电流）作用时，流过电感的电流$i_L(t)$不跳变，即满足换路定则。当电感受到冲激电压（或阶跃电流）作用时，流过电感的电流$i_L(t)$会发生跳变。</p>
-<p>（2）初始条件的确定<br>用经典法求解系统响应时，为确定自由响应部分的待定系数$A_i(i=1,2,…,n)$，还必须根据系统的$0^−$状态和激励信号$x(t)$情况求出$0^+$状态。在确定系统的初始条件时，<u>系统的$0^−$状态到$0^+$状态有没有跳变取决于微分方程右端激励项是否包含$δ(t)$及其各阶导数</u>。如果包含有$δ(t)$及其各阶导数，说明相应的$0^−$状态到$0^+$状态发生了跳变，即$y(0^+)≠ y(0^−)$或$y’(0^+)≠y’(0^−)$等等。为确定$y(0^+)$、$y’(0^+)$等$0^+$状态的值，可以使用冲激函数匹配法。它的基本原理是，$t=0$时刻微分方程左右两端的$δ(t)$及其各阶导数应该平衡相等。</p>
+<p>（2）初始条件的确定<br>
+用经典法求解系统响应时，为确定自由响应部分的待定系数$A_i(i=1,2,…,n)$，还必须根据系统的$0^−$状态和激励信号$x(t)$情况求出$0^+$状态。在确定系统的初始条件时，<u>系统的$0^−$状态到$0^+$状态有没有跳变取决于微分方程右端激励项是否包含$δ(t)$及其各阶导数</u>。如果包含有$δ(t)$及其各阶导数，说明相应的$0^−$状态到$0^+$状态发生了跳变，即$y(0^+)≠ y(0^−)$或$y’(0^+)≠y’(0^−)$等等。为确定$y(0^+)$、$y’(0^+)$等$0^+$状态的值，可以使用冲激函数匹配法。它的基本原理是，$t=0$时刻微分方程左右两端的$δ(t)$及其各阶导数应该平衡相等。</p>
 <p><strong>例 2.2</strong> 如果描述系统的微分方程为$\frac{dy(t)}{dt}+3y(t)=3δ’(t)$，给定$0^−$状态起始值为$y(0^−)$，确定它的$0^+$状态$y(0^+)$。</p>
 <details green><summary> 查看答案 </summary>
               <div class='content'>
-              <p><strong>解</strong>：由微分方程可知，方程右端含$δ’(t)$，为使方程平衡，等式左端也应有对应的$δ’(t)$函数，而且只能出现在最低阶项，否则，若在高阶项中出现$δ’(t)$函数，将导致低阶项中$δ’’(t)$函数的出现，将不能与右端平衡，故它一定是属于$y’(t)$，因此可以设</p><script type="math/tex; mode=display">y'(t)=aδ'(t)+bδ(t)+c \Delta u(t)</script><p>将上式从$0^−$到$0^+$积分一次，可得</p><script type="math/tex; mode=display">y(t)=aδ(t)+b \Delta u(t)</script><p>把上面两个式子代入原方程，可得</p><script type="math/tex; mode=display">aδ'(t)+bδ(t)+c \Delta u(t) +3[aδ(t)+b \Delta u(t)]=3δ'(t)</script><p>根据方程两端对应项系数相等，可以得到</p><script type="math/tex; mode=display">\begin{cases}a=3 \\b+3a=0 \\c+3b=0\end{cases}</script><p>求解可得$a=3$，$b=−9$，$c=27$，因此</p><script type="math/tex; mode=display">y(0^+)-y(0^-)=b=-9, \quad y(0^+)=-9+y(0^-)</script>
+              <p><strong>解</strong>：由微分方程可知，方程右端含$δ’(t)$，为使方程平衡，等式左端也应有对应的$δ’(t)$函数，而且只能出现在最低阶项，否则，若在高阶项中出现$δ’(t)$函数，将导致低阶项中$δ’‘(t)$函数的出现，将不能与右端平衡，故它一定是属于$y’(t)$，因此可以设<br>$$<br>y’(t)=aδ’(t)+bδ(t)+c \Delta u(t)<br>$$<br>将上式从$0^−$到$0^+$积分一次，可得<br>$$<br>y(t)=aδ(t)+b \Delta u(t)<br>$$<br>把上面两个式子代入原方程，可得<br>$$<br>aδ’(t)+bδ(t)+c \Delta u(t) +3[aδ(t)+b \Delta u(t)]=3δ’(t)<br>$$<br>根据方程两端对应项系数相等，可以得到<br>$$<br>\begin{cases}<br>a=3 \<br>b+3a=0 \<br>c+3b=0<br>\end{cases}<br>$$<br>求解可得$a=3$，$b=−9$，$c=27$，因此<br>$$<br>y(0^+)-y(0^-)=b=-9, \quad y(0^+)=-9+y(0^-)<br>$$</p>
               </div>
             </details>
 <p>需要说明的是，确定初始条件的方法还有奇异函数平衡法、微分特性法等，有兴趣的读者可以参考相关书籍。利用冲激函数匹配法确定初始条件的求解方法基本步骤如下。</p>
-<p>一般情况下，如果$t=0$时的微分方程为</p>
-<script type="math/tex; mode=display">
-C_n \frac{d^{n} y(t)}{dt^{n}} + C_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \cdots + C_1 \frac{dy(t)}{dt} + C_0 y(t) = b_m \frac{d^{m} δ(t)}{dt^m} + b_{m-1} \frac{d^{m-1} δ(t)}{dt^{m-1}} + \cdots + b_1 \frac{dδ(t)}{dt} + b_0 δ(t)</script><p>第一步，首先根据方程右边激励项中$δ(t)$的最高微分阶次，确定方程左边$y(t)$的最高微分次项的$δ(t)$的微分阶次，并构造相应的冲激函数形式，此时$t$在$0^−$到$0^+$区间，可得</p>
-<script type="math/tex; mode=display">
-\frac{d^{n} y(t)}{dt^n}  = a_m \frac{d^{m} δ(t)}{dt^m} + a_{m-1} \frac{d^{m-1} δ(t)}{dt^{m-1}} + \cdots + a_1 \frac{dδ(t)}{dt} + a_0 δ(t) + b \Delta u(t)</script><p>第二步，将上式通过一次或多次积分得到$y(t)$及其微分的冲激函数形式，即</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-\frac{d^{n-1} y(t)}{dt^{n-1}}  = a_{m} \frac{d^{m-1} δ(t)}{dt^{m-1}} + a_{m-1} \frac{d^{m-2} δ(t)}{dt^{m-2}} + \cdots + a_1 δ(t) + a_0 \Delta u(t) \\
-\frac{d^{n-2} y(t)}{dt^{n-2}}  = a_{m} \frac{d^{m-2} δ(t)}{dt^{m-2}} + a_{m-1} \frac{d^{m-3} δ(t)}{dt^{m-3}} + \cdots + a_1  \Delta u(t) \\
-\cdots \\
-y(t)= \cdots
-\end{cases}</script><div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>为什么所有的$\Delta u(t)$项次在积分之后都变成为零？</p>
+<p>一般情况下，如果$t=0$时的微分方程为<br>
+$$<br>
+C_n \frac{d^{n} y(t)}{dt^{n}} + C_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \cdots + C_1 \frac{dy(t)}{dt} + C_0 y(t) = b_m \frac{d^{m} δ(t)}{dt^m} + b_{m-1} \frac{d^{m-1} δ(t)}{dt^{m-1}} + \cdots + b_1 \frac{dδ(t)}{dt} + b_0 δ(t)<br>
+$$</p>
+<p>第一步，首先根据方程右边激励项中$δ(t)$的最高微分阶次，确定方程左边$y(t)$的最高微分次项的$δ(t)$的微分阶次，并构造相应的冲激函数形式，此时$t$在$0^−$到$0^+$区间，可得<br>
+$$<br>
+\frac{d^{n} y(t)}{dt^n}  = a_m \frac{d^{m} δ(t)}{dt^m} + a_{m-1} \frac{d^{m-1} δ(t)}{dt^{m-1}} + \cdots + a_1 \frac{dδ(t)}{dt} + a_0 δ(t) + b \Delta u(t)<br>
+$$<br>
+第二步，将上式通过一次或多次积分得到$y(t)$及其微分的冲激函数形式，即<br>
+$$<br>
+\begin{cases}<br>
+\frac{d^{n-1} y(t)}{dt^{n-1}}  = a_{m} \frac{d^{m-1} δ(t)}{dt^{m-1}} + a_{m-1} \frac{d^{m-2} δ(t)}{dt^{m-2}} + \cdots + a_1 δ(t) + a_0 \Delta u(t) \<br>
+\frac{d^{n-2} y(t)}{dt^{n-2}}  = a_{m} \frac{d^{m-2} δ(t)}{dt^{m-2}} + a_{m-1} \frac{d^{m-3} δ(t)}{dt^{m-3}} + \cdots + a_1  \Delta u(t) \<br>
+\cdots \<br>
+y(t)= \cdots<br>
+\end{cases}<br>
+$$</p>
+<div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>为什么所有的$\Delta u(t)$项次在积分之后都变成为零？</p>
 </div>
 <details green><summary> 查看答案 </summary>
               <div class='content'>
               <p>因为积分区间是从$0^−$到$0^+$的极短瞬间。</p>
               </div>
             </details>
-<p>第三步，将以上方程代入微分方程，平衡方程两边的$δ(t)$及其微分项，可以求得<script type="math/tex">a_m,a_{m−1},...,a_0,b</script>，则</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-\frac{d^{n} y(0^+)}{dt^{n}} - \frac{d^{n} y(0^-)}{dt^{n}} = b \\
-\frac{d^{n-1} y(0^+)}{dt^{n-1}} - \frac{d^{n-1} y(0^-)}{dt^{n-1}} = a_0 \\
-\frac{d^{n-2} y(0^+)}{dt^{n-2}} - \frac{d^{n-2} y(0^-)}{dt^{n-2}} = a_1 \\
-\cdots \\
-y(0^+) - y(0^-)= \cdots
-\end{cases}</script><p>因此$0^+$时</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-\frac{d^{n} y(0^+)}{dt^{n}} = \frac{d^{n} y(0^-)}{dt^{n}} + b \\
-\frac{d^{n-1} y(0^+)}{dt^{n-1}} = \frac{d^{n-1} y(0^-)}{dt^{n-1}} + a_0 \\
-\frac{d^{n-2} y(0^+)}{dt^{n-2}} = \frac{d^{n-2} y(0^-)}{dt^{n-2}} + a_1 \\
-\cdots \\
-y(0^+) = y(0^-)+  \cdots
-\end{cases}</script><p><strong>例2.3</strong> 用冲激函数匹配法求解系统完全响应，系统方程为</p>
-<script type="math/tex; mode=display">
-\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  \frac{d^{2} x(t)}{dt^2} + 6 \frac{d x(t)}{dt} + 4x(t)</script><p>假设电路中$x(t)$在$t=0$时刻由2V跳变到4V，且$y(0^-)=\frac{4}{5}$，$\frac{dy(0^-)}{dt}=0$。</p>
+<p>第三步，将以上方程代入微分方程，平衡方程两边的$δ(t)$及其微分项，可以求得$$a_m,a_{m−1},…,a_0,b$$，则<br>
+$$<br>
+\begin{cases}<br>
+\frac{d^{n} y(0^+)}{dt^{n}} - \frac{d^{n} y(0^-)}{dt^{n}} = b \<br>
+\frac{d^{n-1} y(0^+)}{dt^{n-1}} - \frac{d^{n-1} y(0^-)}{dt^{n-1}} = a_0 \<br>
+\frac{d^{n-2} y(0^+)}{dt^{n-2}} - \frac{d^{n-2} y(0^-)}{dt^{n-2}} = a_1 \<br>
+\cdots \<br>
+y(0^+) - y(0^-)= \cdots<br>
+\end{cases}<br>
+$$<br>
+因此$0^+$时<br>
+$$<br>
+\begin{cases}<br>
+\frac{d^{n} y(0^+)}{dt^{n}} = \frac{d^{n} y(0^-)}{dt^{n}} + b \<br>
+\frac{d^{n-1} y(0^+)}{dt^{n-1}} = \frac{d^{n-1} y(0^-)}{dt^{n-1}} + a_0 \<br>
+\frac{d^{n-2} y(0^+)}{dt^{n-2}} = \frac{d^{n-2} y(0^-)}{dt^{n-2}} + a_1 \<br>
+\cdots \<br>
+y(0^+) = y(0^-)+  \cdots<br>
+\end{cases}<br>
+$$</p>
+<p><strong>例2.3</strong> 用冲激函数匹配法求解系统完全响应，系统方程为<br>
+$$<br>
+\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  \frac{d^{2} x(t)}{dt^2} + 6 \frac{d x(t)}{dt} + 4x(t)<br>
+$$<br>
+假设电路中$x(t)$在$t=0$时刻由2V跳变到4V，且$y(0^-)=\frac{4}{5}$，$\frac{dy(0^-)}{dt}=0$。</p>
 <details green><summary> 查看答案 </summary>
               <div class='content'>
-              <p><strong>解：</strong>（1）求齐次解<br>系统的特征方程为</p><script type="math/tex; mode=display">λ^2 + 7λ + 10 = 0</script><p>特征根为</p><script type="math/tex; mode=display">λ_1=-2, \quad λ_2=-5</script><p>则齐次解为</p><script type="math/tex; mode=display">y_h(t)=A_1 e^{-2t} + A_2 e^{-5t}</script><p>（2）求特解<br>当$t&gt;0$时，$x(t)=4$，微分方程为</p><script type="math/tex; mode=display">\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  16</script><p>设特解为$y_p(t)=B$，代入上式，可得</p><script type="math/tex; mode=display">B=\frac{8}{5}</script><p>则系统的完全响应为</p><script type="math/tex; mode=display">y(t)=A_1 e^{-2t} + A_2 e^{-5t}+\frac{8}{5} \quad (2.8)</script><p>（3）求初始条件<br>根据给定的$x(t)$，考虑到$x(t)$在换路过程中的变化，在$t=0$时刻由2V跳变到4V，代入题中方程中，得到$t=0$时的微分方程为</p><script type="math/tex; mode=display">\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  \frac{d^{2} 2\Delta u(t)}{dt^2} + 6 \frac{d 2\Delta u(t)}{dt} + 4 \times 2 \Delta u(t)</script><p>即</p><script type="math/tex; mode=display">\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  2δ'(t) + 12 δ(t) + 8 \Delta u(t) \quad (2.9)</script><div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>跳变时刻的微分方程右侧部分如何得出？</p></div><p>由于微分方程右端的冲激函数项最高阶次是$δ’(t)$，因而可设</p><script type="math/tex; mode=display">\begin{cases}y''(t)=aδ'(t)+bδ(t)+c\Delta u(t) \\y'(t)=aδ(t)+b\Delta u(t) \\y(t)=a\Delta u(t) \\\end{cases}</script><p>代入式（2.9），得</p><script type="math/tex; mode=display">aδ'(t)+bδ(t)+c\Delta u(t)+7[aδ(t)+b\Delta u(t)] + 10a\Delta u(t)=2δ'(t) + 12 δ(t) + 8 \Delta u(t)</script><p>根据方程两端对应项系数相等，可以得到</p><script type="math/tex; mode=display">\begin{cases}a=2 \\b+7a=12 \\c+7b+10a=8\end{cases}</script><p>因而有</p><script type="math/tex; mode=display">\begin{cases}y(0^+)-y(0^-)=a=2 \\y'(0^+)-y'(0^-)=b=-2 \\y''(0^+)-y''(0^-)=c=2\end{cases}</script><p>则所求的初始条件即$0^+$状态为</p><script type="math/tex; mode=display">\begin{cases}y(0^+)=y(0^-)+2 =\frac{4}{5}+2=\frac{14}{5} \\\\y'(0^+)=y'(0^-)-2 =0-2=-2\\\end{cases}</script><p>（4）求全响应<br>当$t=0+$时，将上面所求的初始条件$y(0^+)$和$y’(0^+)$代入完全解表达式（2.8），可得</p><script type="math/tex; mode=display">\begin{cases}y(0^+)=A_1+A_2+\frac{8}{5}=\frac{14}{5} \\\\y'(0^+)=-2A_1-5A_2 =-2\\\end{cases}</script><p>求解可得$A_1=\frac{4}{3}$，$A_2=-\frac{2}{15}$则系统的完全响应为</p><script type="math/tex; mode=display">y(t)=\frac{4}{3}e^{-2t}-\frac{2}{15}e^{-5t}+\frac{8}{5} \quad \quad \quad t>0</script>
+              <p><strong>解：</strong>（1）求齐次解<br>系统的特征方程为<br>$$<br>λ^2 + 7λ + 10 = 0<br>$$<br>特征根为<br>$$<br>λ_1=-2, \quad λ_2=-5<br>$$<br>则齐次解为<br>$$<br>y_h(t)=A_1 e^{-2t} + A_2 e^{-5t}<br>$$<br>（2）求特解<br>当$t&gt;0$时，$x(t)=4$，微分方程为<br>$$<br>\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  16<br>$$<br>设特解为$y_p(t)=B$，代入上式，可得<br>$$<br>B=\frac{8}{5}<br>$$<br>则系统的完全响应为<br>$$<br>y(t)=A_1 e^{-2t} + A_2 e^{-5t}+\frac{8}{5} \quad (2.8)<br>$$<br>（3）求初始条件<br>根据给定的$x(t)$，考虑到$x(t)$在换路过程中的变化，在$t=0$时刻由2V跳变到4V，代入题中方程中，得到$t=0$时的微分方程为<br>$$<br>\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  \frac{d^{2} 2\Delta u(t)}{dt^2} + 6 \frac{d 2\Delta u(t)}{dt} + 4 \times 2 \Delta u(t)<br>$$<br>即<br>$$<br>\frac{d^{2} y(t)}{dt^2} + 7 \frac{d y(t)}{dt} + 10 y(t) =  2δ’(t) + 12 δ(t) + 8 \Delta u(t) \quad (2.9)<br>$$</p><div class="note orange icon flat"><i class="note-icon fas fa-question"></i><p>跳变时刻的微分方程右侧部分如何得出？</p></div><p>由于微分方程右端的冲激函数项最高阶次是$δ’(t)$，因而可设<br>$$<br>\begin{cases}<br>y’‘(t)=aδ’(t)+bδ(t)+c\Delta u(t) \<br>y’(t)=aδ(t)+b\Delta u(t) \<br>y(t)=a\Delta u(t) \<br>\end{cases}<br>$$<br>代入式（2.9），得<br>$$<br>aδ’(t)+bδ(t)+c\Delta u(t)+7[aδ(t)+b\Delta u(t)] + 10a\Delta u(t)=2δ’(t) + 12 δ(t) + 8 \Delta u(t)<br>$$<br>根据方程两端对应项系数相等，可以得到<br>$$<br>\begin{cases}<br>a=2 \<br>b+7a=12 \<br>c+7b+10a=8<br>\end{cases}<br>$$<br>因而有<br>$$<br>\begin{cases}<br>y(0^+)-y(0^-)=a=2 \<br>y’(0^+)-y’(0^-)=b=-2 \<br>y’‘(0^+)-y’'(0^-)=c=2<br>\end{cases}<br>$$</p><p>则所求的初始条件即$0^+$状态为<br>$$<br>\begin{cases}<br>y(0^+)=y(0^-)+2 =\frac{4}{5}+2=\frac{14}{5} \<br>\<br>y’(0^+)=y’(0^-)-2 =0-2=-2\<br>\end{cases}<br>$$<br>（4）求全响应<br>当$t=0+$时，将上面所求的初始条件$y(0^+)$和$y’(0^+)$代入完全解表达式（2.8），可得<br>$$<br>\begin{cases}<br>y(0^+)=A_1+A_2+\frac{8}{5}=\frac{14}{5} \<br>\<br>y’(0^+)=-2A_1-5A_2 =-2\<br>\end{cases}<br>$$<br>求解可得$A_1=\frac{4}{3}$，$A_2=-\frac{2}{15}$则系统的完全响应为<br>$$<br>y(t)=\frac{4}{3}e^{-2t}-\frac{2}{15}e^{-5t}+\frac{8}{5} \quad \quad \quad t&gt;0<br>$$</p>
               </div>
             </details>
-<p>由上面的例题可知，采用经典法求解连续时间LTI系统的微分方程的一般步骤如下。<br>（1）列写系统微分方程，并将联立微分方程化为一元高阶微分方程;<br>（2）求特征根，根据特征根写出含待定系数$A_k$的齐次解的形式;<br>（3）根据$t＞0$微分方程右边的形式，查表2.2求特解，从而得到完全解的表达式;<br>（4）根据起始条件和输入激励，确定初始条件，并将初始条件代入完全解的表达式中求解待定系数$A_k$，以得到系统的完全解。</p>
+<p>由上面的例题可知，采用经典法求解连续时间LTI系统的微分方程的一般步骤如下。<br>
+（1）列写系统微分方程，并将联立微分方程化为一元高阶微分方程;<br>
+（2）求特征根，根据特征根写出含待定系数$A_k$的齐次解的形式;<br>
+（3）根据$t＞0$微分方程右边的形式，查表2.2求特解，从而得到完全解的表达式;<br>
+（4）根据起始条件和输入激励，确定初始条件，并将初始条件代入完全解的表达式中求解待定系数$A_k$，以得到系统的完全解。</p>
 <p>综上所述，连续时间LTI系统的完全解由齐次解和特解组成。齐次解是自由响应、特解是强迫响应，系统的全响应为自由响应和强迫响应之和。从求解过程来看，强迫响应与激励信号有关，<u>自由响应的参数的系数不仅与起始状态有关，也与激励信号有关</u>。因此，如果微分方程中右边项比较复杂，则难以确定特解形式，因而也难以求取强迫响应。而且如果激励信号发生变化，则系统响应需要重新求取。特别需要指出的是，经典法来源于高等数学中微分方程的求解，是一种纯数学方法，无法突出响应的物理概念。因此，为了区分由起始状态引起的响应和由激励信号引起的响应，明晰物理概念，我们将连续时间 LTI 系统的响应分解为零输入响应和零状态响应。</p>
-<h2 id="零输入响应和零状态响应"><a href="#零输入响应和零状态响应" class="headerlink" title="零输入响应和零状态响应"></a>零输入响应和零状态响应</h2><p>对于连续时间LTI系统而言，系统的全响应可以分解为自由响应<script type="math/tex">y_h(t)</script>和强迫响应<script type="math/tex">y_p(t)</script>两部分，也可以分解为零输入响应<script type="math/tex">y_{zi}(t)</script>和零状态响应<script type="math/tex">y_{zs}(t)</script>之和，即</p>
-<script type="math/tex; mode=display">
-y(t)=y_h(t)+y_p(t)=y_{zi}(t)+y_{zs}(t) \quad (2.10)</script><h3 id="零输入响应"><a href="#零输入响应" class="headerlink" title="零输入响应"></a>零输入响应</h3><p>零输入响应是指输入为零，即没有外加激励信号的作用，只由起始状态（起始时刻系统的储能）所引起的响应，一般用$y_{zi}(t)$表示。</p>
-<p>零输入响应满足的微分方程为</p>
-<script type="math/tex; mode=display">
-a_n \frac{d^{n} y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \cdots + a_1 \frac{dy(t)}{dt} + a_0 y(t) =0 \quad (2.11)</script><p>这是一个齐次方程，其解的形式与齐次解相同，由特征根可写出解的不同形式，具体可查阅表2.1。为便于叙述，本小节只讨论特征根为单根的情况。若其特征根为单根，则解的形式为</p>
-<script type="math/tex; mode=display">
-y_{zi}(t)=\sum_{k=1}^n A_{zik}e^{\lambda_k t} \quad (2.12)</script><p>由于激励信号$x(t)=0$，系统在起始时刻不会产生跳变，所以$y^{(k)}(0^+)=y^{(k)}(0^−)$。因此，由边界条件确定的待定系数$A_{zik}$可以由起始状态$y^{(k)}(0^−)$确定。</p>
-<h3 id="零状态响应"><a href="#零状态响应" class="headerlink" title="零状态响应"></a>零状态响应</h3><p>零状态响应是指系统的起始状态为零，由外加激励信号作用而引起的响应，一般用$y_{zs}(t)$表示。<br>对于零状态响应，就是微分方程式（2.1）在系统的初始储能为零，即$y^{(k)}(0^−)=0$时的解。此时微分方程为非齐次微分方程，其解和微分方程（2.1）解类似，由自由响应和强迫响应构成，其中自由响应的形式由特征根确定，如表2.1所示；强迫响应的形式取决于激励的形式，如表2.2所示。同样，为便于叙述，本小节只讨论特征根为单根的情况。若其特征根为单根，则解的形式为</p>
-<script type="math/tex; mode=display">
-y_{zs}(t)=\sum_{k=1}^n A_{zsk}e^{\lambda_k t} + y_p(t) \quad (2.13)</script><p>将式（2.12）和式（2.13）代入式（2.10），可得系统全响应的表达式为</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-y(t)&= \underbrace{\sum_{k=1}^n A_{zik}e^{\lambda_k t} }_{零输入响应} + \underbrace{\sum_{k=1}^n A_{zsk}e^{\lambda_k t} + y_p(t)}_{零状态响应} \\
-&= \underbrace{\sum_{k=1}^n (A_{zik}+A_{zsk})e^{\lambda_k t}}_{自由响应} + \underbrace{y_p(t)}_{强迫响应} \\
-&= \underbrace{\sum_{k=1}^n A_ke^{\lambda_k t}}_{自由响应} + \underbrace{y_p(t)}_{强迫响应} \quad \quad \quad \quad (2.14)
-\end{aligned}</script><p>在零状态响应中，由于存在外加激励的作用，当$t=0$时，如果微分方程右端出现冲激函数及其各阶导数项，起始状态将发生跃变，此时，$y^{(k)}(0^+)≠ y^{(k)}(0^−)$。由式（2.14）可知，<script type="math/tex">A_k=A_{zik}+A_{zsk}</script>，<script type="math/tex">A_k</script>是由初始条件$y^{(k)}(0^+)$和外加激励共同决定的，因此，自由响应也可以分解为两部分，一部分由系统的起始储能产生，另一部分由激励信号产生。当系统的起始状态为零时，即前一部分为零时，后一部分仍可存在，亦即零输入响应和零状态响应的齐次解部分都仅为自由响应的一部分。而零输入响应表达式中的待定系数<script type="math/tex">A_{zik}</script>是由系统的起始条件$y^{(k)}(0^-)$决定，所以零状态响应表达式中的待定系数<script type="math/tex">A_{zsk}</script>由跳变量<script type="math/tex">y_{zs}^{(k)}(0^+)=y^{(k)}(0^+)-y^{(k)}(0^-)</script>和外加激励共同来确定。</p>
-<h2 id="冲激响应和阶跃响应"><a href="#冲激响应和阶跃响应" class="headerlink" title="冲激响应和阶跃响应"></a>冲激响应和阶跃响应</h2><p>卷积分析法求解连续时间 LTI 系统的零状态响应，能清楚地表现输入、系统和输出之间的时域关系，是一种重要的时域分析方法。由于任意信号可以分解为冲激信号或阶跃信号的组合，因此可以借助卷积分析法，根据系统的冲激响应或阶跃响应来分析系统的零状态响应。而且冲激响应仅仅取决于系统的内部结构和元件参数，是表征系统本身特性的重要物理量，它与系统函数及系统的稳定性等许多系统的特性有关。因而，冲激响应和阶跃响应是线性系统分析中两个重要的响应。</p>
-<h3 id="冲激响应"><a href="#冲激响应" class="headerlink" title="冲激响应"></a>冲激响应</h3><p>以单位冲激信号$δ(t)$作为激励，系统产生的零状态响应称为“<strong>单位冲激响应</strong>”，或简称“<strong>冲激响应</strong>”，通常用$h(t)$表示。<br>对于连续时间LTI系统，其冲激响应$h(t)$满足微分方程</p>
-<script type="math/tex; mode=display">
-a_n \frac{d^{n} h(t)}{dt^n} + a_{n-1} \frac{d^{n-1} h(t)}{dt^{n-1}} + \cdots + a_1 \frac{dh(t)}{dt} + a_0 h(t) = b_m \frac{d^{m} δ(t)}{dt^m} + b_{m-1} \frac{d^{m-1} δ(t)}{dt^{m-1}} + \cdots + b_1 \frac{dδ(t)}{dt} + b_0 δ(t)</script><p>及起始条件$h^{(k)}(0^−)=0(k=0,1,…n−1)$。由于方程的右端出现$δ(t)$及其各阶导数，为保证系统对应的微分方程式恒等，方程式两边所具有的冲激信号及其各阶导数必须相等，分3种情况。</p>
+<h2 id="零输入响应和零状态响应">零输入响应和零状态响应</h2>
+<p>对于连续时间LTI系统而言，系统的全响应可以分解为自由响应$$y_h(t)$$和强迫响应$$y_p(t)$$两部分，也可以分解为零输入响应$$y_{zi}(t)$$和零状态响应$$y_{zs}(t)$$之和，即<br>
+$$<br>
+y(t)=y_h(t)+y_p(t)=y_{zi}(t)+y_{zs}(t) \quad (2.10)<br>
+$$</p>
+<h3 id="零输入响应">零输入响应</h3>
+<p>零输入响应是指输入为零，即没有外加激励信号的作用，只由起始状态（起始时刻系统的储能）所引起的响应，一般用$y_{zi}(t)$表示。</p>
+<p>零输入响应满足的微分方程为<br>
+$$<br>
+a_n \frac{d^{n} y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \cdots + a_1 \frac{dy(t)}{dt} + a_0 y(t) =0 \quad (2.11)<br>
+$$<br>
+这是一个齐次方程，其解的形式与齐次解相同，由特征根可写出解的不同形式，具体可查阅表2.1。为便于叙述，本小节只讨论特征根为单根的情况。若其特征根为单根，则解的形式为<br>
+$$<br>
+y_{zi}(t)=\sum_{k=1}^n A_{zik}e^{\lambda_k t} \quad (2.12)<br>
+$$<br>
+由于激励信号$x(t)=0$，系统在起始时刻不会产生跳变，所以$y^{(k)}(0^+)=y^{(k)}(0^−)$。因此，由边界条件确定的待定系数$A_{zik}$可以由起始状态$y^{(k)}(0^−)$确定。</p>
+<h3 id="零状态响应">零状态响应</h3>
+<p>零状态响应是指系统的起始状态为零，由外加激励信号作用而引起的响应，一般用$y_{zs}(t)$表示。<br>
+对于零状态响应，就是微分方程式（2.1）在系统的初始储能为零，即$y^{(k)}(0^−)=0$时的解。此时微分方程为非齐次微分方程，其解和微分方程（2.1）解类似，由自由响应和强迫响应构成，其中自由响应的形式由特征根确定，如表2.1所示；强迫响应的形式取决于激励的形式，如表2.2所示。同样，为便于叙述，本小节只讨论特征根为单根的情况。若其特征根为单根，则解的形式为<br>
+$$<br>
+y_{zs}(t)=\sum_{k=1}^n A_{zsk}e^{\lambda_k t} + y_p(t) \quad (2.13)<br>
+$$<br>
+将式（2.12）和式（2.13）代入式（2.10），可得系统全响应的表达式为<br>
+$$<br>
+\begin{aligned}<br>
+y(t)&amp;= \underbrace{\sum_{k=1}^n A_{zik}e^{\lambda_k t} }<em>{零输入响应} + \underbrace{\sum</em>{k=1}^n A_{zsk}e^{\lambda_k t} + y_p(t)}<em>{零状态响应} \<br>
+&amp;= \underbrace{\sum</em>{k=1}^n (A_{zik}+A_{zsk})e^{\lambda_k t}}<em>{自由响应} + \underbrace{y_p(t)}</em>{强迫响应} \<br>
+&amp;= \underbrace{\sum_{k=1}^n A_ke^{\lambda_k t}}<em>{自由响应} + \underbrace{y_p(t)}</em>{强迫响应} \quad \quad \quad \quad (2.14)<br>
+\end{aligned}<br>
+$$<br>
+在零状态响应中，由于存在外加激励的作用，当$t=0$时，如果微分方程右端出现冲激函数及其各阶导数项，起始状态将发生跃变，此时，$y^{(k)}(0^+)≠ y^{(k)}(0^−)$。由式（2.14）可知，$$A_k=A_{zik}+A_{zsk}$$，$$A_k$$是由初始条件$y^{(k)}(0^+)$和外加激励共同决定的，因此，自由响应也可以分解为两部分，一部分由系统的起始储能产生，另一部分由激励信号产生。当系统的起始状态为零时，即前一部分为零时，后一部分仍可存在，亦即零输入响应和零状态响应的齐次解部分都仅为自由响应的一部分。而零输入响应表达式中的待定系数$$A_{zik}$$是由系统的起始条件$y^{(k)}(0^-)$决定，所以零状态响应表达式中的待定系数$$A_{zsk}$$由跳变量$$y_{zs}^{(k)}(0^+)=y^{(k)}(0^+)-y^{(k)}(0^-)$$和外加激励共同来确定。</p>
+<h2 id="冲激响应和阶跃响应">冲激响应和阶跃响应</h2>
+<p>卷积分析法求解连续时间 LTI 系统的零状态响应，能清楚地表现输入、系统和输出之间的时域关系，是一种重要的时域分析方法。由于任意信号可以分解为冲激信号或阶跃信号的组合，因此可以借助卷积分析法，根据系统的冲激响应或阶跃响应来分析系统的零状态响应。而且冲激响应仅仅取决于系统的内部结构和元件参数，是表征系统本身特性的重要物理量，它与系统函数及系统的稳定性等许多系统的特性有关。因而，冲激响应和阶跃响应是线性系统分析中两个重要的响应。</p>
+<h3 id="冲激响应">冲激响应</h3>
+<p>以单位冲激信号$δ(t)$作为激励，系统产生的零状态响应称为“<strong>单位冲激响应</strong>”，或简称“<strong>冲激响应</strong>”，通常用$h(t)$表示。<br>
+对于连续时间LTI系统，其冲激响应$h(t)$满足微分方程<br>
+$$<br>
+a_n \frac{d^{n} h(t)}{dt^n} + a_{n-1} \frac{d^{n-1} h(t)}{dt^{n-1}} + \cdots + a_1 \frac{dh(t)}{dt} + a_0 h(t) = b_m \frac{d^{m} δ(t)}{dt^m} + b_{m-1} \frac{d^{m-1} δ(t)}{dt^{m-1}} + \cdots + b_1 \frac{dδ(t)}{dt} + b_0 δ(t)<br>
+$$<br>
+及起始条件$h^{(k)}(0^−)=0(k=0,1,…n−1)$。由于方程的右端出现$δ(t)$及其各阶导数，为保证系统对应的微分方程式恒等，方程式两边所具有的冲激信号及其各阶导数必须相等，分3种情况。</p>
 <p>（1）当$n&lt;m$时，$h(t)$中将包含有$δ(t)$及$δ’(t)$，一直到$\frac{d^{m-n}δ(t)}{dt^{m-n}}$；</p>
 <p>（2）当$n=m$时，$h(t)$中将包含有$δ(t)$；</p>
 <p>（3）当$n&gt;m$时，方程右端最高阶次为$\frac{d^{m} δ(t)}{dt^m}$，为与之相平衡，则方程左端的$\frac{d^{n} h(t)}{dt^n}$中应包含有$\frac{d^{m} δ(t)}{dt^m}$，$\frac{d^{n-1} h(t)}{dt^{n-1}}$中应包含有$ \frac{d^{m-1} δ(t)}{dt^{m-1}}$，以此类推，$\frac{d^{n-m} h(t)}{dt^{n-m}}$将包含有$δ(t)$，而$\frac{d^{n-m-1} h(t)}{dt^{n-m-1}}$，…，$\frac{dh(t)}{dt}$，$h(t)$中将不包含有$δ(t)$函数。</p>
 <p>本节只讨论$n&gt;m$的情况。</p>
-<p>在$t\geqslant0^+$时，$δ(t)$及其各阶导数均为零，式（2.23）为齐次方程，这说明$δ(t)$的加入，在$t=0^+$时刻引起了系统储能的变化，建立了系统非零的初始条件。而在 $t&gt;0^+$以后，外部激励为零，只有系统储能起作用，故其解的形式与齐次解的形式相同，不包含特解。因此，求解冲激响应$h(t)$的实质是要确定$t=0^+$时的初始条件，并求该初始条件下的齐次解。同样，齐次解的形式由特征方程的特征根来决定，可以根据表2.1将特征根分为不等实根、重根、共轭复根等几种情况分别来设定。若系统的特征方程共有$n$个非重根，则<br>[插图]<br>剩下的问题是确定系数$A_k$。由于系统的起始状态为零，即$h(0^−)=h’(0^−)=···=h^{(n−1)}(0^−)$可以利用2.2.3小节所述的冲激函数匹配法求出初始条件$h(0^+),h’(0^+),…,h^{(n−1)}(0^+)$，然后代入式（2.24）来确定系数$A_k$。但这种方法求解过程比较麻烦，容易产生错误。下面我们介绍两种新方法来确定$A_k$。</p>
-<p>（1）奇异函数平衡法<br>奇异函数平衡法的基本做法是，将$h(t)$的表达式（2.24）及$h(t)$的各阶导数代入微分方程式（2.23），使微分方程两端奇异函数的系数相匹配，从而确定待定系数$A_k$。该方法可以避免求解初始条件$h(0^+),h’(0^+),…,h^{(n−1)}(0^+)$。下面将举例说明奇异函数平衡法求解冲激响应的过程。</p>
-<p><strong>例2.7</strong> 已知某连续时间LTI系统的微分方程为</p>
-<script type="math/tex; mode=display">
-\frac{d^{2} y(t)}{dt^2} + 4 \frac{d y(t)}{dt} + 3 y(t) =  \frac{d x(t)}{dt} + 2x(t), \quad t>0</script><p>试求系统的冲激响应。</p>
+<p>在$t\geqslant0^+$时，$δ(t)$及其各阶导数均为零，式（2.23）为齐次方程，这说明$δ(t)$的加入，在$t=0^+$时刻引起了系统储能的变化，建立了系统非零的初始条件。而在 $t&gt;0^+$以后，外部激励为零，只有系统储能起作用，故其解的形式与齐次解的形式相同，不包含特解。因此，求解冲激响应$h(t)$的实质是要确定$t=0^+$时的初始条件，并求该初始条件下的齐次解。同样，齐次解的形式由特征方程的特征根来决定，可以根据表2.1将特征根分为不等实根、重根、共轭复根等几种情况分别来设定。若系统的特征方程共有$n$个非重根，则<br>
+[插图]<br>
+剩下的问题是确定系数$A_k$。由于系统的起始状态为零，即$h(0^−)=h’(0^−)=···=h^{(n−1)}(0^−)$可以利用2.2.3小节所述的冲激函数匹配法求出初始条件$h(0^+),h’(0^+),…,h^{(n−1)}(0^+)$，然后代入式（2.24）来确定系数$A_k$。但这种方法求解过程比较麻烦，容易产生错误。下面我们介绍两种新方法来确定$A_k$。</p>
+<p>（1）奇异函数平衡法<br>
+奇异函数平衡法的基本做法是，将$h(t)$的表达式（2.24）及$h(t)$的各阶导数代入微分方程式（2.23），使微分方程两端奇异函数的系数相匹配，从而确定待定系数$A_k$。该方法可以避免求解初始条件$h(0^+),h’(0^+),…,h^{(n−1)}(0^+)$。下面将举例说明奇异函数平衡法求解冲激响应的过程。</p>
+<p><strong>例2.7</strong> 已知某连续时间LTI系统的微分方程为<br>
+$$<br>
+\frac{d^{2} y(t)}{dt^2} + 4 \frac{d y(t)}{dt} + 3 y(t) =  \frac{d x(t)}{dt} + 2x(t), \quad t&gt;0<br>
+$$<br>
+试求系统的冲激响应。</p>
 <details green><summary> 查看答案 </summary>
               <div class='content'>
-              <p><strong>解：</strong>冲激响应$h(t)$对应的微分方程为</p><script type="math/tex; mode=display">\frac{d^{2} h(t)}{dt^2} + 4 \frac{d h(t)}{dt} + 3 h(t) =  \frac{d δ(t)}{dt} + 2δ(t), \quad t>0 \quad (2.25)</script><p>其特征根为</p><script type="math/tex; mode=display">λ_1=−1,\quad λ_2=−3</script><p>于是有</p><script type="math/tex; mode=display">h(t)=(A_1e^{-t}+A_2e^{-3t})u(t)</script><p>对$h(t)$逐次求导得到</p><script type="math/tex; mode=display">h'(t)  = (-A_1e^{-t}-3A_2e^{-3t})u(t)+(A_1e^{-t}+A_2e^{-3t})δ(t)</script><p>根据冲激函数的筛选特性，上式的后半部分代入$t=0$可得</p><script type="math/tex; mode=display">h'(t)  = (-A_1e^{-t}-3A_2e^{-3t})u(t)+(A_1+A_2)δ(t) \quad (2.26)</script><p>继续求导</p><script type="math/tex; mode=display">h''(t)=(A_1e^{-t}+9A_2e^{-3t})u(t)+(-A_1e^{-t}-3A_2e^{-3t})δ(t)+(A_1+A_2)δ'(t)</script><p>同样地，根据冲激函数的筛选特性，上式的第二部分代入$t=0$可得</p><script type="math/tex; mode=display">h''(t)=(A_1e^{-t}+9A_2e^{-3t})u(t)+(-A_1-3A_2)δ(t)+(A_1+A_2)δ'(t) \quad (2.27)</script><p>将$h(t)$、$h’(t)$、$h’’(t)$代入微分方程，利用奇异函数平衡的原则，令左右两端对应的奇异函数项系数相等，可以得到</p><script type="math/tex; mode=display">\begin{cases}A_1+A_2=1 \\\\-A_1-3A_2+4A_1+4A_2=2\end{cases}</script><p>可以解得$A_1=\frac{1}{2}$，$A_2=\frac{1}{2}$ ，则系统的冲激响应为</p><script type="math/tex; mode=display">h(t)=\frac{1}{2}(e^{-t}+e^{-3t})u(t) \quad (2.28)</script><p>需要注意的是，式（2.26）、式（2.27）讨论的是$t=0$时的情况，所以$h’(t)$、$h’’(t)$包含有$δ(t)$及其微分；而式（2.28）表示的是$t&gt;0$时，$δ(t)$激励系统之后的响应，所以不包含$δ(t)$及其微分。</p>
+              <p>**解：**冲激响应$h(t)$对应的微分方程为<br>$$<br>\frac{d^{2} h(t)}{dt^2} + 4 \frac{d h(t)}{dt} + 3 h(t) =  \frac{d δ(t)}{dt} + 2δ(t), \quad t&gt;0 \quad (2.25)<br>$$<br>其特征根为<br>$$<br>λ_1=−1,\quad λ_2=−3<br>$$</p><p>于是有<br>$$<br>h(t)=(A_1e^{-t}+A_2e^{-3t})u(t)<br>$$<br>对$h(t)$逐次求导得到<br>$$<br>h’(t)  = (-A_1e^{-t}-3A_2e^{-3t})u(t)+(A_1e^{-t}+A_2e^{-3t})δ(t)<br>$$</p><p>根据冲激函数的筛选特性，上式的后半部分代入$t=0$可得<br>$$<br>h’(t)  = (-A_1e^{-t}-3A_2e^{-3t})u(t)+(A_1+A_2)δ(t) \quad (2.26)<br>$$<br>继续求导<br>$$<br>h’‘(t)=(A_1e^{-t}+9A_2e^{-3t})u(t)+(-A_1e^{-t}-3A_2e^{-3t})δ(t)+(A_1+A_2)δ’(t)<br>$$</p><p>同样地，根据冲激函数的筛选特性，上式的第二部分代入$t=0$可得<br>$$<br>h’‘(t)=(A_1e^{-t}+9A_2e^{-3t})u(t)+(-A_1-3A_2)δ(t)+(A_1+A_2)δ’(t) \quad (2.27)<br>$$</p><p>将$h(t)$、$h’(t)$、$h’‘(t)$代入微分方程，利用奇异函数平衡的原则，令左右两端对应的奇异函数项系数相等，可以得到<br>$$<br>\begin{cases}<br>A_1+A_2=1 \<br>\<br>-A_1-3A_2+4A_1+4A_2=2<br>\end{cases}<br>$$<br>可以解得$A_1=\frac{1}{2}$，$A_2=\frac{1}{2}$ ，则系统的冲激响应为<br>$$<br>h(t)=\frac{1}{2}(e^{-t}+e^{-3t})u(t) \quad (2.28)<br>$$<br>需要注意的是，式（2.26）、式（2.27）讨论的是$t=0$时的情况，所以$h’(t)$、$h’'(t)$包含有$δ(t)$及其微分；而式（2.28）表示的是$t&gt;0$时，$δ(t)$激励系统之后的响应，所以不包含$δ(t)$及其微分。</p>
               </div>
             </details>
 <p>通过上面的求解可以知道，冲激函数匹配法和奇异函数平衡法过程繁琐，只适合于低阶微分方程。</p>
-<p>（2）系统特性法<br>系统特性法的基本做法是，首先求解右边激励项为$δ(t)$时的单位冲激响应$h_0(t)$，再利用系统的线性时不变性求解所求激励的冲激响应。下面我们仍然以例2.7的求解来说明该方法的基本步骤。</p>
+<p>（2）系统特性法<br>
+系统特性法的基本做法是，首先求解右边激励项为$δ(t)$时的单位冲激响应$h_0(t)$，再利用系统的线性时不变性求解所求激励的冲激响应。下面我们仍然以例2.7的求解来说明该方法的基本步骤。</p>
 <details green><summary> 查看答案 </summary>
               <div class='content'>
-              <p><strong>解：</strong>令式（2.25）的右边为$δ(t)$，即</p><script type="math/tex; mode=display">\frac{d^{2} h(t)}{dt^2} + 4 \frac{d h(t)}{dt} + 3 h(t) = δ(t)</script><p>可得</p><script type="math/tex; mode=display">h_0(t)=(A_1e^{-t}+A_2e^{-3t})u(t)</script><p>显然方程左端最高阶微分项$h_0’’(t)$中必须包含$δ(t)$项，则在$h_0’(t)$中含有$u(t)$项。</p><p>设</p><script type="math/tex; mode=display">\begin{cases}h_0''(t)=aδ(t)+b \Delta u(t) \\h_0'(t)=a \Delta u(t)\end{cases}</script><script type="math/tex; mode=display">aδ(t)+b \Delta u(t) + 4 a \Delta u(t) + 0 = δ(t)</script><p>可解得$a=1$，求$a$的作用在于通过$h’(0^+)=h’(0^-)+a$确定$h’(0^+)=1$.</p><p>由于方程右边$δ(t)$的系数为1，由冲激函数匹配法可知，系统的初始条件为    $h_0’(0^+)=1$，$h_0(0^+)=0$，将其代入式（2.30）得</p><script type="math/tex; mode=display">\begin{cases}A_1+A_2=0 \\\\-A_1-3A_2=1\end{cases} \rightarrow\begin{cases}A_1=\frac{1}{2} \\\\A_2=-\frac{1}{2}\end{cases}</script><p>因此</p><script type="math/tex; mode=display">h_0(t)=\frac{1}{2}(e^{-t}-e^{-3t})u(t)</script><p>求导可得</p><script type="math/tex; mode=display">h_0'(t)=\frac{1}{2}(-e^{-t}+3e^{-3t})u(t)</script><p>当右边的激励项为$δ’(t)+2δ(t)$时，根据系统的线性，其冲激响应为</p><script type="math/tex; mode=display">h(t)=h_0'(t)+2h_0(t)=\frac{1}{2}(e^{-t}+e^{-3t})u(t)</script>
+              <p>**解：**令式（2.25）的右边为$δ(t)$，即<br>$$<br>\frac{d^{2} h(t)}{dt^2} + 4 \frac{d h(t)}{dt} + 3 h(t) = δ(t)<br>$$<br>可得<br>$$<br>h_0(t)=(A_1e^{-t}+A_2e^{-3t})u(t)<br>$$<br>显然方程左端最高阶微分项$h_0’‘(t)$中必须包含$δ(t)$项，则在$h_0’(t)$中含有$u(t)$项。</p><p>设<br>$$<br>\begin{cases}<br>h_0’‘(t)=aδ(t)+b \Delta u(t) \<br>h_0’(t)=a \Delta u(t)<br>\end{cases}<br>$$</p><p>$$<br>aδ(t)+b \Delta u(t) + 4 a \Delta u(t) + 0 = δ(t)<br>$$</p><p>可解得$a=1$，求$a$的作用在于通过$h’(0^+)=h’(0^-)+a$确定$h’(0^+)=1$.</p><p>由于方程右边$δ(t)$的系数为1，由冲激函数匹配法可知，系统的初始条件为	$h_0’(0^+)=1$，$h_0(0^+)=0$，将其代入式（2.30）得<br>$$<br>\begin{cases}<br>A_1+A_2=0 \<br>\<br>-A_1-3A_2=1<br>\end{cases}</p><p>\rightarrow</p><p>\begin{cases}<br>A_1=\frac{1}{2} \<br>\<br>A_2=-\frac{1}{2}<br>\end{cases}<br>$$<br>因此<br>$$<br>h_0(t)=\frac{1}{2}(e^{-t}-e^{-3t})u(t)<br>$$<br>求导可得<br>$$<br>h_0’(t)=\frac{1}{2}(-e^{-t}+3e^{-3t})u(t)<br>$$</p><p>当右边的激励项为$δ’(t)+2δ(t)$时，根据系统的线性，其冲激响应为<br>$$<br>h(t)=h_0’(t)+2h_0(t)=\frac{1}{2}(e^{-t}+e^{-3t})u(t)<br>$$</p>
               </div>
             </details>
-<p>系统特性法引入了一个中间步骤，但是简化了问题的分析，因而这种方法适合求解高阶微分方程所描述系统的冲激响应。<br>由于冲激响应$h(t)$为齐次解，是自由响应，因此它完全取决于系统的结构和参数。不同结构和参数的系统，将具有不同的冲激响应，因此冲激响应$h(t)$可以表征系统本身的特性，常用$h(t)$代表一个系统。</p>
-<h2 id="卷积积分及其应用"><a href="#卷积积分及其应用" class="headerlink" title="卷积积分及其应用"></a>卷积积分及其应用</h2><p>卷积积分，convolution integral，简称卷积，是一种数学运算。对于连续时间LTI系统，冲激响应$h(t)$相对易求，可以通过卷积方便地求取任意信号激励下的零状态响应，因此，卷积积分是计算系统零状态响应的基本方法，也是分析线性时不变系统的一个重要工具。随着信号与系统理论研究的深入以及计算机技术的发展，卷积积分得到了更为广泛的应用。</p>
-<h3 id="卷积的计算"><a href="#卷积的计算" class="headerlink" title="卷积的计算"></a>卷积的计算</h3><p>卷积积分是具有相同自变量的两个函数间的一种运算。设$x_1(t)$和$x_2(t)$是定义在区间$(−∞,+∞)$上的两个连续时间信号，其卷积的数学定义如下。</p>
-<script type="math/tex; mode=display">
-x(t)=x_1(t)*x_2(t)=\int_{−∞}^{+∞} x_1(\tau)x_2(t-\tau)d \tau \quad (2.39)</script><p>其中，符号<code>*</code>为卷积积分的运算符号，卷积的结果是产生一个具有相同自变量的新时间信号。<br>注意，积分限$(−∞～+∞)$是对一般函数的表达式。当$x_1(t)$和$x_2(t)$处在某种条件下，卷积积分的上下限可能有所变化。因此对于具体的函数，要根据具体函数的定义区间来选择积分限。</p>
+<p>系统特性法引入了一个中间步骤，但是简化了问题的分析，因而这种方法适合求解高阶微分方程所描述系统的冲激响应。<br>
+由于冲激响应$h(t)$为齐次解，是自由响应，因此它完全取决于系统的结构和参数。不同结构和参数的系统，将具有不同的冲激响应，因此冲激响应$h(t)$可以表征系统本身的特性，常用$h(t)$代表一个系统。</p>
+<h2 id="卷积积分及其应用">卷积积分及其应用</h2>
+<p>卷积积分，convolution integral，简称卷积，是一种数学运算。对于连续时间LTI系统，冲激响应$h(t)$相对易求，可以通过卷积方便地求取任意信号激励下的零状态响应，因此，卷积积分是计算系统零状态响应的基本方法，也是分析线性时不变系统的一个重要工具。随着信号与系统理论研究的深入以及计算机技术的发展，卷积积分得到了更为广泛的应用。</p>
+<h3 id="卷积的计算">卷积的计算</h3>
+<p>卷积积分是具有相同自变量的两个函数间的一种运算。设$x_1(t)$和$x_2(t)$是定义在区间$(−∞,+∞)$上的两个连续时间信号，其卷积的数学定义如下。<br>
+$$<br>
+x(t)=x_1(t)*x_2(t)=\int_{−∞}^{+∞} x_1(\tau)x_2(t-\tau)d \tau \quad (2.39)<br>
+$$<br>
+其中，符号<code>*</code>为卷积积分的运算符号，卷积的结果是产生一个具有相同自变量的新时间信号。<br>
+注意，积分限$(−∞～+∞)$是对一般函数的表达式。当$x_1(t)$和$x_2(t)$处在某种条件下，卷积积分的上下限可能有所变化。因此对于具体的函数，要根据具体函数的定义区间来选择积分限。</p>
 <ul>
-<li><p>若当$t＜0$时，$x_1(t)=0$，则当$τ＜0$时，$x_1(τ)x_2(t−τ)=0$，于是式（2.39）的积分限的下限应从零开始，于是</p>
-<script type="math/tex; mode=display">
-x_1(t)*x_2(t)=\int_{0}^{+∞} x_1(\tau)x_2(t-\tau)d \tau \quad (2.40)</script></li>
-<li><p>若$x_1(t)$不受到限制，即$x_1(t)$的范围为$(−∞～+∞)$，而当$t<0$时$x_2(t)=0$，即$τ>t$时，$x_2(t−τ)=0$，$x_1(τ)x_2(t−τ)=0$，于是式（2.39）的积分限的上限应到$t$为止，于是</p>
-<script type="math/tex; mode=display">
-x_1(t)*x_2(t)=\int_{−∞}^{t} x_1(\tau)x_2(t-\tau)d \tau \quad (2.41)</script></li>
-<li><p>若当$t&lt;0$时，$x_1(t)$和$x_2(t)$均为零，则积分限为$0～t$，于是</p>
-<script type="math/tex; mode=display">
-x_1(t)*x_2(t)=\int_{0}^{t} x_1(\tau)x_2(t-\tau)d \tau \quad (2.42)</script></li>
+<li>
+<p>若当$t＜0$时，$x_1(t)=0$，则当$τ＜0$时，$x_1(τ)x_2(t−τ)=0$，于是式（2.39）的积分限的下限应从零开始，于是<br>
+$$<br>
+x_1(t)*x_2(t)=\int_{0}^{+∞} x_1(\tau)x_2(t-\tau)d \tau \quad (2.40)<br>
+$$</p>
+</li>
+<li>
+<p>若$x_1(t)$不受到限制，即$x_1(t)$的范围为$(−∞～+∞)$，而当$t&lt;0$时$x_2(t)=0$，即$τ&gt;t$时，$x_2(t−τ)=0$，$x_1(τ)x_2(t−τ)=0$，于是式（2.39）的积分限的上限应到$t$为止，于是<br>
+$$<br>
+x_1(t)*x_2(t)=\int_{−∞}^{t} x_1(\tau)x_2(t-\tau)d \tau \quad (2.41)<br>
+$$</p>
+</li>
+<li>
+<p>若当$t&lt;0$时，$x_1(t)$和$x_2(t)$均为零，则积分限为$0～t$，于是<br>
+$$<br>
+x_1(t)*x_2(t)=\int_{0}^{t} x_1(\tau)x_2(t-\tau)d \tau \quad (2.42)<br>
+$$</p>
+</li>
 </ul>
 <p>从上面 3 种情况可以看出，卷积积分的积分限不仅要根据具体函数的定义域来确定，而且还要根据$t$的变化来改变积分限。</p>
-<p>计算两个函数的卷积可以直接通过定义式来计算。对于一些较简单的函数信号，如方波、三角波等，还可以利用图解法来计算。利用图解法计算，可以把抽象的概念形象化，有助于更直观地理解卷积的计算过程。从卷积的定义式可知，积分变量是$τ$，<script type="math/tex">x_2(t−τ)</script>可以通过反转和平移得到，<script type="math/tex">x_1(τ)x_2(t−τ)</script>可以通过相乘运算得到，$\int_{−∞}^{+∞} x_1(\tau)x_2(t-\tau)d \tau$可以通过对相乘运算的结果进行积分运算得到。因此，图解法计算卷积的步骤如下。<br>（1）将$x_1(t)$和$x_2(t)$中的自变量由$t$改为$τ$，$τ$成为函数的自变量；<br>（2）把其中一个信号翻转，一般情况下，选择$x_1(t)$和$x_2(t)$中较简单的进行运算，如将$x_2(τ)$翻转得$x_2(−τ)$；<br>（3）将$x_2(−τ)$平移$t$得到$x_2(t−τ)$；<br>（4）将$x_1(τ)$与$x_2(t−τ)$相乘，完成重叠部分相乘的图形积分。</p>
-<h3 id="卷积的性质"><a href="#卷积的性质" class="headerlink" title="卷积的性质"></a>卷积的性质</h3><h4 id="卷积的代数性质"><a href="#卷积的代数性质" class="headerlink" title="卷积的代数性质"></a>卷积的代数性质</h4><ul>
-<li>交换律<script type="math/tex">x_1(t)*x_2(t)=x_2(t)*x_1(t)</script></li>
-<li>分配律<script type="math/tex">x_1(t)*[x_2(t)+x_3(t)]=x_1(t)*x_2(t)+x_1(t)*x_3(t)</script></li>
-<li>结合律<script type="math/tex">x_1(t)*[x_2(t)*x_3(t)]=[x_1(t)*x_2(t)]*x_3(t)</script></li>
+<p>计算两个函数的卷积可以直接通过定义式来计算。对于一些较简单的函数信号，如方波、三角波等，还可以利用图解法来计算。利用图解法计算，可以把抽象的概念形象化，有助于更直观地理解卷积的计算过程。从卷积的定义式可知，积分变量是$τ$，$$x_2(t−τ)$$可以通过反转和平移得到，$$x_1(τ)x_2(t−τ)$$可以通过相乘运算得到，$\int_{−∞}^{+∞} x_1(\tau)x_2(t-\tau)d \tau$可以通过对相乘运算的结果进行积分运算得到。因此，图解法计算卷积的步骤如下。<br>
+（1）将$x_1(t)$和$x_2(t)$中的自变量由$t$改为$τ$，$τ$成为函数的自变量；<br>
+（2）把其中一个信号翻转，一般情况下，选择$x_1(t)$和$x_2(t)$中较简单的进行运算，如将$x_2(τ)$翻转得$x_2(−τ)$；<br>
+（3）将$x_2(−τ)$平移$t$得到$x_2(t−τ)$；<br>
+（4）将$x_1(τ)$与$x_2(t−τ)$相乘，完成重叠部分相乘的图形积分。</p>
+<h3 id="卷积的性质">卷积的性质</h3>
+<h4 id="卷积的代数性质">卷积的代数性质</h4>
+<ul>
+<li>交换律$$x_1(t)*x_2(t)=x_2(t)*x_1(t)$$</li>
+<li>分配律$$x_1(t)*[x_2(t)+x_3(t)]=x_1(t)*x_2(t)+x_1(t)*x_3(t)$$</li>
+<li>结合律$$x_1(t)*[x_2(t)*x_3(t)]=[x_1(t)*x_2(t)]*x_3(t)$$</li>
 </ul>
-<h4 id="卷积的微分与积分特性"><a href="#卷积的微分与积分特性" class="headerlink" title="卷积的微分与积分特性"></a>卷积的微分与积分特性</h4><ul>
-<li>微分特性：假设<script type="math/tex">y(t)=x_1(t)*x_2(t)</script>，则有<script type="math/tex">y'(t)=x_1(t)*x_2'(t)=x_1'(t)*x_2(t)</script></li>
-<li>积分特性：假设<script type="math/tex">y(t)=x_1(t)*x_2(t)</script>，则有<script type="math/tex">y^{(-1)}(t)=x_1(t)*x_2^{(-1)}(t)=x_1^{(-1)}(t)*x_2(t)</script></li>
-<li>微积分特性：假设<script type="math/tex">y(t)=x_1(t)*x_2(t)</script>，则有<script type="math/tex">y(t)=x_1^{(-1)}(t)*x_2'(t)=x_1'(t)*x_2^{(-1)}(t)</script></li>
+<h4 id="卷积的微分与积分特性">卷积的微分与积分特性</h4>
+<ul>
+<li>微分特性：假设$$y(t)=x_1(t)*x_2(t)$$，则有$$y’(t)=x_1(t)*x_2’(t)=x_1’(t)*x_2(t)$$</li>
+<li>积分特性：假设$$y(t)=x_1(t)*x_2(t)$$，则有$$y^{(-1)}(t)=x_1(t)*x_2^{(-1)}(t)=x_1^{(-1)}(t)*x_2(t)$$</li>
+<li>微积分特性：假设$$y(t)=x_1(t)*x_2(t)$$，则有$$y(t)=x_1^{(-1)}(t)*x_2’(t)=x_1’(t)*x_2^{(-1)}(t)$$</li>
 </ul>
-<h2 id="单位冲激响应表示的系统特性"><a href="#单位冲激响应表示的系统特性" class="headerlink" title="单位冲激响应表示的系统特性"></a>单位冲激响应表示的系统特性</h2><h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2>
+<h2 id="单位冲激响应表示的系统特性">单位冲激响应表示的系统特性</h2>
+<h2 id="本章小结-2">本章小结</h2>
+
   <style>.markmap-container{display:flex;justify-content:center;margin:0 auto;width:90%;height:500px}.markmap-container svg{width:100%;height:100%}@media(max-width:768px){.markmap-container{height:400px}}</style>
   <script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.7.4/dist/browser/view.min.js"></script>
@@ -418,7 +528,7 @@ x_1(t)*x_2(t)=\int_{0}^{t} x_1(\tau)x_2(t-\tau)d \tau \quad (2.42)</script></li>
     for(let mindmap of mindmaps) {
         markmap.markmap(mindmap, JSON.parse(mindmap.innerHTML));
     }
-  </script> </article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://marapython.com">Alowree XU</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/">https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/signals-and-systems-overview/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/Sound-Wallpaper.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">信号与系统概论</div></div></a></div><div class="next-post pull-right"><a href="/posts/Time-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/Sound-Wallpaper.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">离散时间系统的时域分析</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alowree XU</div><div class="author-info__description">Keep the Momentum</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/alowree"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/alowree" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:alowree@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">半路Coder，使用Python</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8F%8F%E8%BF%B0%E5%8F%8A%E5%93%8D%E5%BA%94"><span class="toc-number">2.</span> <span class="toc-text">连续时间系统的描述及响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4LTI%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.1.</span> <span class="toc-text">连续时间LTI系统的数学模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%B3%BB%E6%95%B0%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3"><span class="toc-number">2.2.</span> <span class="toc-text">常系数微分方程的求解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6%E7%9A%84%E7%A1%AE%E5%AE%9A"><span class="toc-number">2.3.</span> <span class="toc-text">初始条件的确定</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94%E5%92%8C%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94"><span class="toc-number">3.</span> <span class="toc-text">零输入响应和零状态响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94"><span class="toc-number">3.1.</span> <span class="toc-text">零输入响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94"><span class="toc-number">3.2.</span> <span class="toc-text">零状态响应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B2%E6%BF%80%E5%93%8D%E5%BA%94%E5%92%8C%E9%98%B6%E8%B7%83%E5%93%8D%E5%BA%94"><span class="toc-number">4.</span> <span class="toc-text">冲激响应和阶跃响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B2%E6%BF%80%E5%93%8D%E5%BA%94"><span class="toc-number">4.1.</span> <span class="toc-text">冲激响应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">卷积积分及其应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">5.1.</span> <span class="toc-text">卷积的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">5.2.</span> <span class="toc-text">卷积的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%BB%A3%E6%95%B0%E6%80%A7%E8%B4%A8"><span class="toc-number">5.2.1.</span> <span class="toc-text">卷积的代数性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E5%BE%AE%E5%88%86%E4%B8%8E%E7%A7%AF%E5%88%86%E7%89%B9%E6%80%A7"><span class="toc-number">5.2.2.</span> <span class="toc-text">卷积的微分与积分特性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E5%86%B2%E6%BF%80%E5%93%8D%E5%BA%94%E8%A1%A8%E7%A4%BA%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%89%B9%E6%80%A7"><span class="toc-number">6.</span> <span class="toc-text">单位冲激响应表示的系统特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">本章小结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3233574096/" title="京东快车商品推广计划"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-zhang-kaiyv-2672808.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东快车商品推广计划"/></a><div class="content"><a class="title" href="/posts/3233574096/" title="京东快车商品推广计划">京东快车商品推广计划</a><time datetime="2022-06-07T08:10:32.000Z" title="发表于 2022-06-07 16:10:32">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3048244832/" title="Sound Rise II 自然情景音箱"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/abstract-1501710.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sound Rise II 自然情景音箱"/></a><div class="content"><a class="title" href="/posts/3048244832/" title="Sound Rise II 自然情景音箱">Sound Rise II 自然情景音箱</a><time datetime="2022-06-07T01:18:55.000Z" title="发表于 2022-06-07 09:18:55">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/abstract-1501710.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ssh: connect to host ssh.github.com port 443: Connection refused"/></a><div class="content"><a class="title" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused">ssh: connect to host ssh.github.com port 443: Connection refused</a><time datetime="2022-06-04T02:31:25.000Z" title="发表于 2022-06-04 10:31:25">2022-06-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3022496535/" title="1000"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-bithin-raj-2763927.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1000"/></a><div class="content"><a class="title" href="/posts/3022496535/" title="1000">1000</a><time datetime="2022-05-30T23:31:48.000Z" title="发表于 2022-05-31 07:31:48">2022-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3286567158/" title="京东引流"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东引流"/></a><div class="content"><a class="title" href="/posts/3286567158/" title="京东引流">京东引流</a><time datetime="2022-05-30T05:44:26.000Z" title="发表于 2022-05-30 13:44:26">2022-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Alowree XU</div><div class="footer_custom_text"><div id="heo-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Photoshop/" data-pjax-state="">Photoshop</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/categories/翻译内容/" data-pjax-state="">翻译内容</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://pan.zhheo.com/">海鸥云盘</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/rss/" data-pjax-state="">RSS订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  </script> </article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://marapython.com">Alowree XU</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/">https://marapython.com/posts/Time-Domain-Analysis-of-Continuous-Time-Signals-and-Systems/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://image.marapython.com/sigmund-t-da_md1qMc-unsplash.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/signals-and-systems-overview/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/Sound-Wallpaper.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">信号与系统概论</div></div></a></div><div class="next-post pull-right"><a href="/posts/Time-Domain-Analysis-of-Discrete-Time-Signals-and-Systems/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/Sound-Wallpaper.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">离散时间系统的时域分析</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alowree XU</div><div class="author-info__description">Keep the Momentum</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">72</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">68</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/alowree"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/alowree" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:alowree@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">半路Coder，使用Python</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80-2"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8F%8F%E8%BF%B0%E5%8F%8A%E5%93%8D%E5%BA%94"><span class="toc-number">2.</span> <span class="toc-text">连续时间系统的描述及响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4LTI%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.1.</span> <span class="toc-text">连续时间LTI系统的数学模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%B3%BB%E6%95%B0%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3"><span class="toc-number">2.2.</span> <span class="toc-text">常系数微分方程的求解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6%E7%9A%84%E7%A1%AE%E5%AE%9A"><span class="toc-number">2.3.</span> <span class="toc-text">初始条件的确定</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94%E5%92%8C%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94"><span class="toc-number">3.</span> <span class="toc-text">零输入响应和零状态响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94"><span class="toc-number">3.1.</span> <span class="toc-text">零输入响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94"><span class="toc-number">3.2.</span> <span class="toc-text">零状态响应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B2%E6%BF%80%E5%93%8D%E5%BA%94%E5%92%8C%E9%98%B6%E8%B7%83%E5%93%8D%E5%BA%94"><span class="toc-number">4.</span> <span class="toc-text">冲激响应和阶跃响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B2%E6%BF%80%E5%93%8D%E5%BA%94"><span class="toc-number">4.1.</span> <span class="toc-text">冲激响应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">卷积积分及其应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">5.1.</span> <span class="toc-text">卷积的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">5.2.</span> <span class="toc-text">卷积的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%BB%A3%E6%95%B0%E6%80%A7%E8%B4%A8"><span class="toc-number">5.2.1.</span> <span class="toc-text">卷积的代数性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%B7%E7%A7%AF%E7%9A%84%E5%BE%AE%E5%88%86%E4%B8%8E%E7%A7%AF%E5%88%86%E7%89%B9%E6%80%A7"><span class="toc-number">5.2.2.</span> <span class="toc-text">卷积的微分与积分特性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E5%86%B2%E6%BF%80%E5%93%8D%E5%BA%94%E8%A1%A8%E7%A4%BA%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%89%B9%E6%80%A7"><span class="toc-number">6.</span> <span class="toc-text">单位冲激响应表示的系统特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93-2"><span class="toc-number">7.</span> <span class="toc-text">本章小结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2422286447/" title="Hexo博客文章插入视频"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo博客文章插入视频"/></a><div class="content"><a class="title" href="/posts/2422286447/" title="Hexo博客文章插入视频">Hexo博客文章插入视频</a><time datetime="2022-06-12T01:57:13.000Z" title="发表于 2022-06-12 09:57:13">2022-06-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3233574096/" title="京东快车商品推广计划"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-vlad-kovriga-339119.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东快车商品推广计划"/></a><div class="content"><a class="title" href="/posts/3233574096/" title="京东快车商品推广计划">京东快车商品推广计划</a><time datetime="2022-06-07T08:10:32.000Z" title="发表于 2022-06-07 16:10:32">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3048244832/" title="Sound Rise II 自然情景音箱"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/adult-1867665_640.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sound Rise II 自然情景音箱"/></a><div class="content"><a class="title" href="/posts/3048244832/" title="Sound Rise II 自然情景音箱">Sound Rise II 自然情景音箱</a><time datetime="2022-06-07T01:18:55.000Z" title="发表于 2022-06-07 09:18:55">2022-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-pixabay-268883.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ssh: connect to host ssh.github.com port 443: Connection refused"/></a><div class="content"><a class="title" href="/posts/1410468571/" title="ssh: connect to host ssh.github.com port 443: Connection refused">ssh: connect to host ssh.github.com port 443: Connection refused</a><time datetime="2022-06-04T02:31:25.000Z" title="发表于 2022-06-04 10:31:25">2022-06-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1000/" title="1000"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-btgl-3894157.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1000"/></a><div class="content"><a class="title" href="/posts/1000/" title="1000">1000</a><time datetime="2022-05-30T23:31:48.000Z" title="发表于 2022-05-31 07:31:48">2022-05-31</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Alowree XU</div><div class="footer_custom_text"><div id="heo-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Photoshop/" data-pjax-state="">Photoshop</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/categories/翻译内容/" data-pjax-state="">翻译内容</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://pan.zhheo.com/">海鸥云盘</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/rss/" data-pjax-state="">RSS订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
