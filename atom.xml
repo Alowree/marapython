@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-13T00:59:51.354Z</updated>
+  <updated>2022-06-13T04:17:35.367Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hexo博客文章插入视频</title>
-    <link href="https://marapython.com/posts/2422286447/"/>
-    <id>https://marapython.com/posts/2422286447/</id>
+    <link href="https://marapython.com/posts/html-video/"/>
+    <id>https://marapython.com/posts/html-video/</id>
     <published>2022-06-12T01:57:13.000Z</published>
-    <updated>2022-06-13T00:59:51.354Z</updated>
+    <updated>2022-06-13T04:17:35.367Z</updated>
     
     
       
@@ -29,7 +29,7 @@
         
         
     <summary type="html">&lt;p&gt;在HTML中，我们可以使用video元素来开发视频。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语法：&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
         
       
@@ -63,7 +63,7 @@
     <link href="https://marapython.com/posts/3048244832/"/>
     <id>https://marapython.com/posts/3048244832/</id>
     <published>2022-06-07T01:18:55.000Z</published>
-    <updated>2022-06-13T01:05:26.711Z</updated>
+    <updated>2022-06-13T01:37:53.594Z</updated>
     
     
       
