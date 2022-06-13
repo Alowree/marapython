@@ -1,5 +1,5 @@
 /* add footer navigation menu */
-#heo-footer {
+#marapython-footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -11,22 +11,22 @@
     padding: 0 1rem;
 }
 
-#heo-footer .footer-group {
+#marapython-footer .footer-group {
     min-width: 120px;
 }
 
-#heo-footer .footer-title {
-    color: var(--heo-secondtext); 
+#marapython-footer .footer-title {
+    color: var(--marapython-secondtext); 
     font-size: 1rem;
     text-align: left;
 }
 
-#heo-footer .footer-links {
+#marapython-footer .footer-links {
     display: flex;
     flex-direction: column;
 }
 
-#heo-footer .footer-item {
+#marapython-footer .footer-item {
     font-size: 1rem;
     margin-right: auto;
 }

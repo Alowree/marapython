@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://marapython.com/posts/shotcut/</loc>
+    
+    <lastmod>2022-06-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/hexo-markmap/</loc>
+    
+    <lastmod>2022-06-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/html-video/</loc>
     
     <lastmod>2022-06-13</lastmod>
@@ -32,15 +50,6 @@
     <loc>https://marapython.com/posts/3233574096/</loc>
     
     <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/shotcut/</loc>
-    
-    <lastmod>2022-06-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -488,15 +497,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/posts/hexo-markmap/</loc>
-    
-    <lastmod>2022-01-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/posts/hexo-github-vercel/</loc>
     
     <lastmod>2022-01-25</lastmod>
@@ -897,34 +897,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E7%BB%84%E5%90%88/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/Integrated-Marketing-Communication/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E6%95%B4%E5%90%88%E8%90%A5%E9%94%80%E4%BC%A0%E6%92%AD/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Parallel-Construction/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -989,6 +961,34 @@
   
   <url>
     <loc>https://marapython.com/tags/Another/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E7%BB%84%E5%90%88/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Integrated-Marketing-Communication/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E6%95%B4%E5%90%88%E8%90%A5%E9%94%80%E4%BC%A0%E6%92%AD/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1207,14 +1207,14 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/HTML/</loc>
+    <loc>https://marapython.com/categories/Git/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/Git/</loc>
+    <loc>https://marapython.com/categories/HTML/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1250,6 +1250,13 @@
   
   <url>
     <loc>https://marapython.com/categories/Python/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/categories/Video-Editing/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
