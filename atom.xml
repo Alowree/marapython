@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-14T07:58:54.732Z</updated>
+  <updated>2022-06-14T23:49:46.226Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Parallelogram</title>
+    <link href="https://marapython.com/posts/parallelogram/"/>
+    <id>https://marapython.com/posts/parallelogram/</id>
+    <published>2022-06-14T13:26:35.000Z</published>
+    <updated>2022-06-14T23:49:46.226Z</updated>
+    
+    
+    <summary type="html">A parallelogram is a flat shape with four straight, connected sides so that opposite sides are congruent and parallel.</summary>
+    
+    
+    
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Comprise</title>
@@ -411,29 +428,6 @@
     
     <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Gitee图床崩了</title>
-    <link href="https://marapython.com/posts/397582350/"/>
-    <id>https://marapython.com/posts/397582350/</id>
-    <published>2022-04-05T00:57:30.000Z</published>
-    <updated>2022-05-20T10:48:59.607Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最近忙于工作，许久未更新博客。三月底偶尔上来博客一看，我勒了去：图片全部断链，火箭掉了一地。随后的几天里留意到圈里的新闻说是由于Gitee添加了防盗链，不鼓励站外的博客主们继续将Gitee空间用作免费图床这种use</summary>
-        
-      
-    
-    
-    
-    
-    <category term="图床" scheme="https://marapython.com/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
