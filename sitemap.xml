@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://marapython.com/posts/1410468571/</loc>
+    
+    <lastmod>2022-06-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/3233574096/</loc>
     
     <lastmod>2022-06-14</lastmod>
@@ -248,15 +257,6 @@
     <loc>https://marapython.com/posts/euler-formula/</loc>
     
     <lastmod>2022-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/1410468571/</loc>
-    
-    <lastmod>2022-06-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -847,13 +847,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/SEO/</loc>
-    <lastmod>2022-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Github/</loc>
     <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -862,6 +855,13 @@
   
   <url>
     <loc>https://marapython.com/tags/Vercel/</loc>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/SEO/</loc>
     <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1029,20 +1029,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/%E6%94%BF%E6%B2%BB/</loc>
-    <lastmod>2022-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E7%BB%8F%E6%B5%8E/</loc>
-    <lastmod>2022-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/%E8%8B%B1%E6%96%87/</loc>
     <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1058,6 +1044,20 @@
   
   <url>
     <loc>https://marapython.com/tags/English/</loc>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E6%94%BF%E6%B2%BB/</loc>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E7%BB%8F%E6%B5%8E/</loc>
     <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
