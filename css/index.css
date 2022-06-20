@@ -1648,7 +1648,7 @@ figure.highlight pre .javascript .function {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: 'SF Mono', 'JetBrains Mono', consolas, Menlo !important;
+  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
 }
 #article-container code {
   padding: 2px 4px;
@@ -3218,8 +3218,6 @@ h1.page-title + .tag-cloud-list {
   background: #49b1f5;
   background-attachment: scroll;
   background-position: bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
 }
 #footer-wrap {
@@ -3248,8 +3246,6 @@ h1.page-title + .tag-cloud-list {
   width: 100%;
   background-color: #49b1f5;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all 0.5s;
@@ -4723,7 +4719,6 @@ mjx-container[display],
 .has-jax {
   overflow-x: auto;
   overflow-y: hidden;
-  line-height: normal !important;
 }
 .aplayer {
   color: #4c4948;

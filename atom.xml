@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-14T23:49:46.226Z</updated>
+  <updated>2022-06-19T01:46:15.987Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -17,77 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Parallelogram</title>
-    <link href="https://marapython.com/posts/parallelogram/"/>
-    <id>https://marapython.com/posts/parallelogram/</id>
-    <published>2022-06-14T13:26:35.000Z</published>
-    <updated>2022-06-14T23:49:46.226Z</updated>
+    <title>CSS3新增属性mix-blend-mode: difference</title>
+    <link href="https://marapython.com/posts/1266501290/"/>
+    <id>https://marapython.com/posts/1266501290/</id>
+    <published>2022-06-19T01:32:45.000Z</published>
+    <updated>2022-06-19T01:46:15.987Z</updated>
     
     
-    <summary type="html">A parallelogram is a flat shape with four straight, connected sides so that opposite sides are congruent and parallel.</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这里在 iCSS 前端趣闻公众号来看来的一篇 CSS 技巧文章，于是赶紧自己来实现一下。&lt;/p&gt;
+&lt;p&gt;原文示例代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
     
     
     
-    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    <category term="CSS" scheme="https://marapython.com/categories/CSS/"/>
     
     
   </entry>
   
   <entry>
-    <title>Comprise</title>
-    <link href="https://marapython.com/posts/comprise/"/>
-    <id>https://marapython.com/posts/comprise/</id>
-    <published>2022-06-14T03:17:28.000Z</published>
-    <updated>2022-06-14T07:58:54.732Z</updated>
+    <title>HTML Overview</title>
+    <link href="https://marapython.com/posts/html-overview/"/>
+    <id>https://marapython.com/posts/html-overview/</id>
+    <published>2022-06-19T01:18:14.000Z</published>
+    <updated>2022-06-19T01:22:33.721Z</updated>
     
     
-    <summary type="html">&lt;em&gt;Consist&lt;/em&gt;, &lt;em&gt;comprise&lt;/em&gt; and &lt;em&gt;compose&lt;/em&gt; are all verbs used to describe what something is &quot;made of&quot;.</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;HTML 指的是 HTML4.01，XHTML 是 XML 风格的 HTML4.01，它是 HTML 的过渡版本。而 HTML5 指的是下一代 HTML，也就是 HTML4.01 的升级版。&lt;/p&gt;
+&lt;h2 id=&quot;HTML4-01&quot;&gt;&lt;a</summary>
+        
+      
     
     
     
-    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
     
     
   </entry>
   
   <entry>
-    <title>Git refresh</title>
-    <link href="https://marapython.com/posts/282205488/"/>
-    <id>https://marapython.com/posts/282205488/</id>
-    <published>2022-06-14T01:56:33.000Z</published>
-    <updated>2022-06-14T04:10:12.733Z</updated>
+    <title>如何正确地更新主题</title>
+    <link href="https://marapython.com/posts/how-to-upgrade-butterfly/"/>
+    <id>https://marapython.com/posts/how-to-upgrade-butterfly/</id>
+    <published>2022-06-18T14:03:06.000Z</published>
+    <updated>2022-06-18T14:43:03.838Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;一、主分支master&lt;/p&gt;
-&lt;p&gt;代码仓库应该有且只有一个主分支。提供给用户的代码重大版本发布应该永远来自主分支。&lt;/p&gt;
-&lt;p&gt;二、开发分支develop&lt;/p&gt;
-&lt;p&gt;项目的迭代、演进不应该在master主分支上直接进行，而是应该在最新master分支另辟一个dev</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客文章插入视频</title>
-    <link href="https://marapython.com/posts/html-video/"/>
-    <id>https://marapython.com/posts/html-video/</id>
-    <published>2022-06-12T01:57:13.000Z</published>
-    <updated>2022-06-13T06:21:38.479Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在HTML中，我们可以使用video元素来开发视频。&lt;/p&gt;
-&lt;h2 id=&quot;语法&quot;&gt;语法&lt;/h2&gt;
+    <summary type="html">&lt;p&gt;之前，安装主题，都是按照官方指引，在Hexo根目录里&lt;/p&gt;
 &lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
         
       
@@ -100,14 +90,82 @@
   </entry>
   
   <entry>
+    <title>Parallelogram</title>
+    <link href="https://marapython.com/posts/parallelogram/"/>
+    <id>https://marapython.com/posts/parallelogram/</id>
+    <published>2022-06-14T02:08:07.000Z</published>
+    <updated>2022-06-19T01:01:14.538Z</updated>
+    
+    
+    <summary type="html">A &lt;strong&gt;parallelogram&lt;/strong&gt; is a flat shape with four straight, connected sides so that opposite sides are congruent and parallel. This means a parallelogram is a plane figure, a closed shape, and a quadrilateral.</summary>
+    
+    
+    
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Comprise</title>
+    <link href="https://marapython.com/posts/comprise/"/>
+    <id>https://marapython.com/posts/comprise/</id>
+    <published>2022-06-14T02:06:49.000Z</published>
+    <updated>2022-06-19T00:50:13.843Z</updated>
+    
+    
+    <summary type="html">&lt;em&gt;Consist&lt;/em&gt;, &lt;em&gt;comprise&lt;/em&gt; and &lt;em&gt;compose&lt;/em&gt; are all verbs used to describe what something is ‘made of’.</summary>
+    
+    
+    
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git refresh</title>
+    <link href="https://marapython.com/posts/2521731815/"/>
+    <id>https://marapython.com/posts/2521731815/</id>
+    <published>2022-06-14T02:05:38.000Z</published>
+    <updated>2022-06-18T02:16:41.801Z</updated>
+    
+    
+    <summary type="html">代码仓库应该有且只有一个主分支。提供给用户的代码重大版本发布应该永远来自主分支。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客文章插入视频</title>
+    <link href="https://marapython.com/posts/html-video/"/>
+    <id>https://marapython.com/posts/html-video/</id>
+    <published>2022-06-12T02:03:38.000Z</published>
+    <updated>2022-06-18T14:08:40.101Z</updated>
+    
+    
+    <summary type="html">在 HTML 中，我们可以使用 video 元素来开发视频。</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
+    
+    
+    <category term="Video Editing" scheme="https://marapython.com/tags/Video-Editing/"/>
+    
+  </entry>
+  
+  <entry>
     <title>京东快车商品推广计划</title>
-    <link href="https://marapython.com/posts/3233574096/"/>
-    <id>https://marapython.com/posts/3233574096/</id>
-    <published>2022-06-07T08:10:32.000Z</published>
-    <updated>2022-06-14T08:04:36.014Z</updated>
+    <link href="https://marapython.com/posts/689319105/"/>
+    <id>https://marapython.com/posts/689319105/</id>
+    <published>2022-06-07T02:01:29.000Z</published>
+    <updated>2022-06-18T02:16:41.811Z</updated>
     
     
-    <summary type="html">京东站内搜索流量，按CPC/CPM的付费方式实时竞价，通过关键词出价，将目标人群和潜在用户一网打尽。</summary>
+    <summary type="html">京东站内搜索流量，按 CPC/CPM 的付费方式实时竞价，通过关键词出价，将目标人群和潜在用户一网打尽。京东快车是精准的『人找货』付费推广模式。</summary>
     
     
     
@@ -117,67 +175,11 @@
   </entry>
   
   <entry>
-    <title>Sound Rise II 自然情景音箱</title>
-    <link href="https://marapython.com/posts/3048244832/"/>
-    <id>https://marapython.com/posts/3048244832/</id>
-    <published>2022-06-07T01:18:55.000Z</published>
-    <updated>2022-06-14T06:01:09.342Z</updated>
-    
-    
-    <summary type="html">大量的研究证据表明，自然情景声音可以改善健康、增加积极影响、降低压力和缓解情绪。</summary>
-    
-    
-    
-    
-    <category term="蓝牙音箱" scheme="https://marapython.com/tags/%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ssh: connect to host ssh.github.com port 443: Connection refused</title>
-    <link href="https://marapython.com/posts/1410468571/"/>
-    <id>https://marapython.com/posts/1410468571/</id>
-    <published>2022-06-04T02:31:25.000Z</published>
-    <updated>2022-06-14T08:30:32.718Z</updated>
-    
-    
-    <summary type="html">看来确实是Github被墙的原因。</summary>
-    
-    
-    
-    <category term="Git" scheme="https://marapython.com/categories/Git/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>1000</title>
-    <link href="https://marapython.com/posts/1000/"/>
-    <id>https://marapython.com/posts/1000/</id>
-    <published>2022-05-30T23:31:48.000Z</published>
-    <updated>2022-06-12T01:18:07.154Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;Alright, before we start, I have to give you an instruction on how to use the CSS Grid weapon. Otherwise, you might hurt yourself.</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>京东引流</title>
     <link href="https://marapython.com/posts/3286567158/"/>
     <id>https://marapython.com/posts/3286567158/</id>
-    <published>2022-05-30T05:44:26.000Z</published>
-    <updated>2022-06-07T08:36:05.800Z</updated>
+    <published>2022-05-30T01:59:25.000Z</published>
+    <updated>2022-06-18T02:16:41.805Z</updated>
     
     
       
@@ -196,43 +198,48 @@
   </entry>
   
   <entry>
-    <title>form</title>
-    <link href="https://marapython.com/posts/1384709455/"/>
-    <id>https://marapython.com/posts/1384709455/</id>
-    <published>2022-05-22T01:41:52.000Z</published>
-    <updated>2022-05-31T23:19:32.357Z</updated>
+    <title>form标签</title>
+    <link href="https://marapython.com/posts/html-form/"/>
+    <id>https://marapython.com/posts/html-form/</id>
+    <published>2022-05-22T01:04:03.000Z</published>
+    <updated>2022-06-19T01:51:45.834Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;表单的示例模板：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
-        
-      
+    <summary type="html">The HTML form tag is used to create an HTML form and it has following syntax</summary>
     
     
+    
+    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
     
     
   </entry>
   
   <entry>
-    <title>Shotcut</title>
+    <title>form标签</title>
+    <link href="https://marapython.com/posts/html-form/"/>
+    <id>https://marapython.com/posts/html-form/</id>
+    <published>2022-05-22T01:04:03.000Z</published>
+    <updated>2022-06-19T07:04:52.276Z</updated>
+    
+    
+    <summary type="html">The HTML form tag is used to create an HTML form and it has following syntax</summary>
+    
+    
+    
+    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Shotcut Notes</title>
     <link href="https://marapython.com/posts/shotcut/"/>
     <id>https://marapython.com/posts/shotcut/</id>
-    <published>2022-05-07T04:02:08.000Z</published>
-    <updated>2022-06-13T08:10:08.196Z</updated>
+    <published>2022-05-07T01:56:56.000Z</published>
+    <updated>2022-06-19T00:46:38.436Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;Shotcut&lt;/strong&gt; is a free, open source, cross-platform video editor.&lt;/p&gt;
-&lt;p&gt;This article consists of a beginner’s notes about</summary>
-        
-      
+    <summary type="html">&lt;strong&gt;Shotcut&lt;/strong&gt; is a free, open source, cross-platform video editor. This article consists of a beginner’s notes about some very basic operations of Shotcup.</summary>
     
     
     
@@ -243,160 +250,34 @@
   
   <entry>
     <title>About CSS font-family</title>
-    <link href="https://marapython.com/posts/2014480274/"/>
-    <id>https://marapython.com/posts/2014480274/</id>
-    <published>2022-04-23T23:45:06.000Z</published>
-    <updated>2022-06-07T00:00:02.021Z</updated>
+    <link href="https://marapython.com/posts/css-font-family/"/>
+    <id>https://marapython.com/posts/css-font-family/</id>
+    <published>2022-04-24T01:53:48.000Z</published>
+    <updated>2022-06-18T01:55:28.545Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;CSS</summary>
-        
-      
+    <summary type="html">The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.</summary>
     
     
     
     <category term="CSS" scheme="https://marapython.com/categories/CSS/"/>
-    
-    
-    <category term="CSS" scheme="https://marapython.com/tags/CSS/"/>
-    
-    <category term="font-family" scheme="https://marapython.com/tags/font-family/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>公众号的自动回复</title>
-    <link href="https://marapython.com/posts/3438299793/"/>
-    <id>https://marapython.com/posts/3438299793/</id>
-    <published>2022-04-21T13:14:33.000Z</published>
-    <updated>2022-05-01T12:58:55.080Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于font标签</title>
-    <link href="https://marapython.com/posts/3606577980/"/>
-    <id>https://marapython.com/posts/3606577980/</id>
-    <published>2022-04-19T23:34:38.000Z</published>
-    <updated>2022-05-01T12:58:55.080Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何开通京东全球售</title>
-    <link href="https://marapython.com/posts/4171434976/"/>
-    <id>https://marapython.com/posts/4171434976/</id>
-    <published>2022-04-19T00:28:33.000Z</published>
-    <updated>2022-05-01T12:58:55.080Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何测试京挑客是否适合店铺产品推广</title>
-    <link href="https://marapython.com/posts/1971507105/"/>
-    <id>https://marapython.com/posts/1971507105/</id>
-    <published>2022-04-19T00:06:43.000Z</published>
-    <updated>2022-05-30T04:28:35.556Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;什么是&lt;a href=&quot;https://union.jd.com/searchResultDetail?articleId=46263&quot;&gt;京东联盟&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;京东联盟是联合广大媒体合作伙伴帮助京东推广商品、扩大品牌知名度的合作平台。</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>TikTok品牌出海</title>
-    <link href="https://marapython.com/posts/738948579/"/>
-    <id>https://marapython.com/posts/738948579/</id>
-    <published>2022-04-18T12:31:53.000Z</published>
-    <updated>2022-05-20T12:01:35.572Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Apollo&lt;/p&gt;
-&lt;p&gt;TikTok也只是一种营销方式，在进行之前还是需要想清楚自己的品牌想要达到什么目标。&lt;/p&gt;
-&lt;p&gt;TikTok也是一种电商渠道，应该与其他电商渠道结合进行。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;amazon&lt;/li&gt;
-&lt;li&gt;shopee&lt;/li&gt;
-&lt;l</summary>
-        
-      
-    
-    
     
     
   </entry>
   
   <entry>
     <title>CSS的三种引入方式</title>
-    <link href="https://marapython.com/posts/667864835/"/>
-    <id>https://marapython.com/posts/667864835/</id>
-    <published>2022-04-17T10:23:30.000Z</published>
-    <updated>2022-05-01T13:24:45.749Z</updated>
+    <link href="https://marapython.com/posts/css-inject/"/>
+    <id>https://marapython.com/posts/css-inject/</id>
+    <published>2022-04-17T01:29:26.000Z</published>
+    <updated>2022-06-19T01:31:14.198Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Inline-CSS&quot;&gt;Inline CSS&lt;/h2&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="CSS" scheme="https://marapython.com/categories/CSS/"/>
-    
-    
-    <category term="CSS" scheme="https://marapython.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS3新增属性mix-blend-mode: difference</title>
-    <link href="https://marapython.com/posts/1266501290/"/>
-    <id>https://marapython.com/posts/1266501290/</id>
-    <published>2022-04-17T09:00:45.000Z</published>
-    <updated>2022-05-01T12:58:55.064Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这里在iCSS前端趣闻公众号来看来的一篇CSS技巧文章，于是赶紧自己来实现一下。&lt;/p&gt;
-&lt;p&gt;原文示例代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+    <summary type="html">&lt;h2 id=&quot;Inline-CSS&quot;&gt;&lt;a href=&quot;#Inline-CSS&quot; class=&quot;headerlink&quot; title=&quot;Inline CSS&quot;&gt;&lt;/a&gt;Inline CSS&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
         
       
     
@@ -408,25 +289,133 @@
   </entry>
   
   <entry>
-    <title>HTML</title>
-    <link href="https://marapython.com/posts/787223889/"/>
-    <id>https://marapython.com/posts/787223889/</id>
-    <published>2022-04-12T00:14:23.000Z</published>
-    <updated>2022-05-01T12:58:55.064Z</updated>
+    <title>Python 字面量</title>
+    <link href="https://marapython.com/posts/python-literals/"/>
+    <id>https://marapython.com/posts/python-literals/</id>
+    <published>2022-03-06T01:32:11.000Z</published>
+    <updated>2022-06-19T00:48:13.348Z</updated>
+    
+    
+    <summary type="html">In Python, &lt;strong&gt;literals&lt;/strong&gt; refer to the data that is specified in a variable or constant. So, literal basically corresponds to a short and easy way to specify a value.</summary>
+    
+    
+    
+    <category term="Python" scheme="https://marapython.com/categories/Python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>概率论与数理统计之中英对照</title>
+    <link href="https://marapython.com/posts/probability-and-stastistics-key-concepts/"/>
+    <id>https://marapython.com/posts/probability-and-stastistics-key-concepts/</id>
+    <published>2022-03-05T01:42:43.000Z</published>
+    <updated>2022-06-19T02:08:59.503Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;HTML指的是HTML4.01，XHTML是XML风格的HTML4.01，它是HTML的过渡版本。而HTML5指的是下一代HTML，也就是HTML4.01的升级版。&lt;/p&gt;
-&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;absolute risk　绝对风险&lt;br&gt;Additional Law　加法定理&lt;br&gt;airline</summary>
         
       
     
     
     
-    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    
+    
+    <category term="中英对照" scheme="https://marapython.com/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fragile Lives</title>
+    <link href="https://marapython.com/posts/fragile-lives/"/>
+    <id>https://marapython.com/posts/fragile-lives/</id>
+    <published>2022-03-05T01:38:50.000Z</published>
+    <updated>2022-06-19T02:08:49.272Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Fragile Lives - A heart surgeon’s stories of life and death on the operating table，中文译名《打开一颗心》，是英国心外科医生 Stephen Westaby</summary>
+        
+      
+    
+    
+    
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    
+    
+    <category term="中英对照" scheme="https://marapython.com/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022政府工作报告</title>
+    <link href="https://marapython.com/posts/2022-gov-report/"/>
+    <id>https://marapython.com/posts/2022-gov-report/</id>
+    <published>2022-03-05T01:36:34.000Z</published>
+    <updated>2022-06-19T02:09:13.436Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;3 月 5 日上午 9 时，第十三届全国人民代表大会第五次会议开幕会在人民大会堂举行。国务院总理李克强代表国务院作政府工作报告。双语要点如下：&lt;/p&gt;
+&lt;h2 id=&quot;一、去年工作回顾&quot;&gt;&lt;a href=&quot;#一、去年工作回顾&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
+    
+    
+    <category term="中英对照" scheme="https://marapython.com/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高等数学 第四章 微分方程</title>
+    <link href="https://marapython.com/posts/differential-equations/"/>
+    <id>https://marapython.com/posts/differential-equations/</id>
+    <published>2022-01-28T01:18:38.000Z</published>
+    <updated>2022-06-20T02:45:34.128Z</updated>
+    
+    
+    <summary type="html">In Mathematics, a &lt;strong&gt;differential equation&lt;/strong&gt; is an equation that contains one or more functions with its derivatives.</summary>
+    
+    
+    
+    <category term="高等数学" scheme="https://marapython.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>欧拉公式</title>
+    <link href="https://marapython.com/posts/euler-formula/"/>
+    <id>https://marapython.com/posts/euler-formula/</id>
+    <published>2022-01-21T23:27:01.000Z</published>
+    <updated>2022-06-19T11:57:30.980Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;什么是欧拉公式？&lt;/p&gt;
+&lt;p&gt;这里是使用行内公式表示的欧拉公式 $e^{j x}=\cos x + j \sin</summary>
+        
+      
+    
+    
     
     
   </entry>
