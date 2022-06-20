@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-19T01:46:15.987Z</updated>
+  <updated>2022-06-20T13:21:12.971Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -18,21 +18,13 @@
   
   <entry>
     <title>CSS3新增属性mix-blend-mode: difference</title>
-    <link href="https://marapython.com/posts/1266501290/"/>
-    <id>https://marapython.com/posts/1266501290/</id>
+    <link href="https://marapython.com/posts/mix-blend-mode/"/>
+    <id>https://marapython.com/posts/mix-blend-mode/</id>
     <published>2022-06-19T01:32:45.000Z</published>
-    <updated>2022-06-19T01:46:15.987Z</updated>
+    <updated>2022-06-20T13:21:12.971Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这里在 iCSS 前端趣闻公众号来看来的一篇 CSS 技巧文章，于是赶紧自己来实现一下。&lt;/p&gt;
-&lt;p&gt;原文示例代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
+    <summary type="html">The &lt;code&gt;mix-blend-mode&lt;/code&gt; property defines how an element’s content should blend with its background.</summary>
     
     
     
@@ -43,10 +35,10 @@
   
   <entry>
     <title>如何正确地更新 Hexo 主题</title>
-    <link href="https://marapython.com/posts/how-to-upgrade-hexo-theme/"/>
-    <id>https://marapython.com/posts/how-to-upgrade-hexo-theme/</id>
+    <link href="https://marapython.com/posts/how-to-update/"/>
+    <id>https://marapython.com/posts/how-to-update/</id>
     <published>2022-06-18T14:03:06.000Z</published>
-    <updated>2022-06-20T03:34:19.797Z</updated>
+    <updated>2022-06-20T06:01:12.345Z</updated>
     
     
     <summary type="html">现在有更好的方法来科学地更新 butterfly 主题了。</summary>
@@ -69,7 +61,7 @@
     <link href="https://marapython.com/posts/parallelogram/"/>
     <id>https://marapython.com/posts/parallelogram/</id>
     <published>2022-06-14T02:08:07.000Z</published>
-    <updated>2022-06-19T01:01:14.538Z</updated>
+    <updated>2022-06-20T04:51:51.439Z</updated>
     
     
     <summary type="html">A &lt;strong&gt;parallelogram&lt;/strong&gt; is a flat shape with four straight, connected sides so that opposite sides are congruent and parallel. This means a parallelogram is a plane figure, a closed shape, and a quadrilateral.</summary>
@@ -78,6 +70,10 @@
     
     <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
     
+    
+    <category term="GMAT" scheme="https://marapython.com/tags/GMAT/"/>
+    
+    <category term="Maths" scheme="https://marapython.com/tags/Maths/"/>
     
   </entry>
   
@@ -113,9 +109,9 @@
     <category term="Git" scheme="https://marapython.com/categories/Git/"/>
     
     
-    <category term="Git" scheme="https://marapython.com/tags/Git/"/>
-    
     <category term="Good Practices" scheme="https://marapython.com/tags/Good-Practices/"/>
+    
+    <category term="Git" scheme="https://marapython.com/tags/Git/"/>
     
   </entry>
   
@@ -157,19 +153,13 @@
   
   <entry>
     <title>京东引流</title>
-    <link href="https://marapython.com/posts/3286567158/"/>
-    <id>https://marapython.com/posts/3286567158/</id>
+    <link href="https://marapython.com/posts/drive-traffic/"/>
+    <id>https://marapython.com/posts/drive-traffic/</id>
     <published>2022-05-30T01:59:25.000Z</published>
-    <updated>2022-06-18T02:16:41.805Z</updated>
+    <updated>2022-06-20T13:15:18.208Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在京麦后台，按照&lt;code&gt;京东商智 流量分析 店铺来源</summary>
-        
-      
+    <summary type="html">An online business without steady traffic is not going to succeed. You need a growing stream of new and returning customers to your website in order to convert and make a profit.</summary>
     
     
     
@@ -179,31 +169,14 @@
   </entry>
   
   <entry>
-    <title>form标签</title>
+    <title>HMTL 之 form 标签</title>
     <link href="https://marapython.com/posts/html-form/"/>
     <id>https://marapython.com/posts/html-form/</id>
     <published>2022-05-22T01:04:03.000Z</published>
-    <updated>2022-06-19T01:51:45.834Z</updated>
+    <updated>2022-06-20T07:08:28.617Z</updated>
     
     
-    <summary type="html">The HTML form tag is used to create an HTML form and it has following syntax</summary>
-    
-    
-    
-    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>form标签</title>
-    <link href="https://marapython.com/posts/html-form/"/>
-    <id>https://marapython.com/posts/html-form/</id>
-    <published>2022-05-22T01:04:03.000Z</published>
-    <updated>2022-06-19T07:04:52.276Z</updated>
-    
-    
-    <summary type="html">The HTML form tag is used to create an HTML form and it has following syntax</summary>
+    <summary type="html">The HTML &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form and it has following syntax -</summary>
     
     
     
@@ -214,10 +187,10 @@
   
   <entry>
     <title>Shotcut Notes</title>
-    <link href="https://marapython.com/posts/shotcut/"/>
-    <id>https://marapython.com/posts/shotcut/</id>
+    <link href="https://marapython.com/posts/shotcut-notes/"/>
+    <id>https://marapython.com/posts/shotcut-notes/</id>
     <published>2022-05-07T01:56:56.000Z</published>
-    <updated>2022-06-19T00:46:38.436Z</updated>
+    <updated>2022-06-20T06:44:47.776Z</updated>
     
     
     <summary type="html">&lt;strong&gt;Shotcut&lt;/strong&gt; is a free, open source, cross-platform video editor. This article consists of a beginner’s notes about some very basic operations of Shotcup.</summary>
@@ -251,17 +224,10 @@
     <link href="https://marapython.com/posts/html-overview/"/>
     <id>https://marapython.com/posts/html-overview/</id>
     <published>2022-04-19T01:18:14.000Z</published>
-    <updated>2022-06-20T03:06:18.261Z</updated>
+    <updated>2022-06-20T13:06:29.378Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTML 指的是 HTML4.01，XHTML 是 XML 风格的 HTML4.01，它是 HTML 的过渡版本。而 HTML5 指的是下一代 HTML，也就是 HTML4.01 的升级版。&lt;/p&gt;
-&lt;h2 id=&quot;HTML4-01&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">HTML (Hypertext Markup Language) is a web markup language that allows you to create web pages. HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.</summary>
     
     
     
@@ -272,19 +238,13 @@
   
   <entry>
     <title>CSS的三种引入方式</title>
-    <link href="https://marapython.com/posts/css-inject/"/>
-    <id>https://marapython.com/posts/css-inject/</id>
+    <link href="https://marapython.com/posts/getting-started-with-css/"/>
+    <id>https://marapython.com/posts/getting-started-with-css/</id>
     <published>2022-04-17T01:29:26.000Z</published>
-    <updated>2022-06-19T01:31:14.198Z</updated>
+    <updated>2022-06-20T13:02:46.162Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Inline-CSS&quot;&gt;&lt;a href=&quot;#Inline-CSS&quot; class=&quot;headerlink&quot; title=&quot;Inline CSS&quot;&gt;&lt;/a&gt;Inline CSS&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
-        
-      
+    <summary type="html">CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood?</summary>
     
     
     
@@ -421,6 +381,21 @@
       
     
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>系统的状态变量分析</title>
+    <link href="https://marapython.com/posts/35532648/"/>
+    <id>https://marapython.com/posts/35532648/</id>
+    <published>2022-01-21T03:58:48.000Z</published>
+    <updated>2022-06-18T00:45:04.072Z</updated>
+    
+    
+    
+    
+    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
