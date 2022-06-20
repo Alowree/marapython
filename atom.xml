@@ -42,50 +42,25 @@
   </entry>
   
   <entry>
-    <title>HTML Overview</title>
-    <link href="https://marapython.com/posts/html-overview/"/>
-    <id>https://marapython.com/posts/html-overview/</id>
-    <published>2022-06-19T01:18:14.000Z</published>
-    <updated>2022-06-19T01:22:33.721Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTML 指的是 HTML4.01，XHTML 是 XML 风格的 HTML4.01，它是 HTML 的过渡版本。而 HTML5 指的是下一代 HTML，也就是 HTML4.01 的升级版。&lt;/p&gt;
-&lt;h2 id=&quot;HTML4-01&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何正确地更新主题</title>
-    <link href="https://marapython.com/posts/how-to-upgrade-butterfly/"/>
-    <id>https://marapython.com/posts/how-to-upgrade-butterfly/</id>
+    <title>如何正确地更新 Hexo 主题</title>
+    <link href="https://marapython.com/posts/how-to-upgrade-hexo-theme/"/>
+    <id>https://marapython.com/posts/how-to-upgrade-hexo-theme/</id>
     <published>2022-06-18T14:03:06.000Z</published>
-    <updated>2022-06-18T14:43:03.838Z</updated>
+    <updated>2022-06-20T03:34:19.797Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;之前，安装主题，都是按照官方指引，在Hexo根目录里&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
+    <summary type="html">现在有更好的方法来科学地更新 butterfly 主题了。</summary>
     
     
     
     <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
+    
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
+    
+    <category term="Butterfly" scheme="https://marapython.com/tags/Butterfly/"/>
+    
+    <category term="Good Practices" scheme="https://marapython.com/tags/Good-Practices/"/>
     
   </entry>
   
@@ -124,17 +99,23 @@
   </entry>
   
   <entry>
-    <title>git refresh</title>
-    <link href="https://marapython.com/posts/2521731815/"/>
-    <id>https://marapython.com/posts/2521731815/</id>
+    <title>Git Good Practices</title>
+    <link href="https://marapython.com/posts/git-good-practices/"/>
+    <id>https://marapython.com/posts/git-good-practices/</id>
     <published>2022-06-14T02:05:38.000Z</published>
-    <updated>2022-06-18T02:16:41.801Z</updated>
+    <updated>2022-06-20T03:07:51.299Z</updated>
     
     
     <summary type="html">代码仓库应该有且只有一个主分支。提供给用户的代码重大版本发布应该永远来自主分支。</summary>
     
     
     
+    <category term="Git" scheme="https://marapython.com/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://marapython.com/tags/Git/"/>
+    
+    <category term="Good Practices" scheme="https://marapython.com/tags/Good-Practices/"/>
     
   </entry>
   
@@ -261,6 +242,30 @@
     
     
     <category term="CSS" scheme="https://marapython.com/categories/CSS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HTML Overview</title>
+    <link href="https://marapython.com/posts/html-overview/"/>
+    <id>https://marapython.com/posts/html-overview/</id>
+    <published>2022-04-19T01:18:14.000Z</published>
+    <updated>2022-06-20T03:06:18.261Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;HTML 指的是 HTML4.01，XHTML 是 XML 风格的 HTML4.01，它是 HTML 的过渡版本。而 HTML5 指的是下一代 HTML，也就是 HTML4.01 的升级版。&lt;/p&gt;
+&lt;h2 id=&quot;HTML4-01&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
     
     
   </entry>

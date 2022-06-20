@@ -11,6 +11,33 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/posts/how-to-upgrade-hexo-theme/</loc>
+    
+    <lastmod>2022-06-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/git-good-practices/</loc>
+    
+    <lastmod>2022-06-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/html-overview/</loc>
+    
+    <lastmod>2022-06-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/differential-equations/</loc>
     
     <lastmod>2022-06-20</lastmod>
@@ -101,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/posts/html-overview/</loc>
-    
-    <lastmod>2022-06-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/posts/parallelogram/</loc>
     
     <lastmod>2022-06-19</lastmod>
@@ -140,15 +158,6 @@
     <loc>https://marapython.com/posts/shotcut/</loc>
     
     <lastmod>2022-06-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/how-to-upgrade-butterfly/</loc>
-    
-    <lastmod>2022-06-18</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -192,15 +201,6 @@
   
   <url>
     <loc>https://marapython.com/posts/3286567158/</loc>
-    
-    <lastmod>2022-06-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/2521731815/</loc>
     
     <lastmod>2022-06-18</lastmod>
     
@@ -698,6 +698,27 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/tags/Font-Awesome/</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/icon/</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/iconfont/</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/tags/Hexo/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -733,27 +754,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/Font-Awesome/</loc>
-    <lastmod>2022-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/icon/</loc>
-    <lastmod>2022-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/iconfont/</loc>
-    <lastmod>2022-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Tag-Plugin/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -776,6 +776,13 @@
   
   <url>
     <loc>https://marapython.com/tags/SEO/</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Good-Practices/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1092,14 +1099,14 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/Git/</loc>
+    <loc>https://marapython.com/categories/HTML/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/HTML/</loc>
+    <loc>https://marapython.com/categories/Git/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
