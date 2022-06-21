@@ -68,3 +68,53 @@ blockquote {
     border-left: .3em solid #ddd;
     background-color:#fafbfc;
 }
+
+/*
+#recent-posts>.post-card-large {
+  height: 20em!important;
+}
+*/
+#recent-posts > .post-card-large >.recent-post-info > .content{
+  -webkit-line-clamp: 5!important;
+}
+
+#footer-banner {
+    padding: 1rem;
+    color: gray;
+    margin-top: 1rem;
+    background: #fff;
+    display: flex;
+    overflow: hidden;
+    z-index: 1002;
+    transition: .3s;
+    border-top: lightgrey;
+}
+
+#footer-banner .footer-banner-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#footer-banner .footer-banner-left {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 32px;
+}
+
+.footer-banner-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer-banner .footer-banner-link {
+    margin-right: 1rem;
+    color: gray;
+    font-size: .8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
