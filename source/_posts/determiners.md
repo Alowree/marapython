@@ -7,10 +7,10 @@ date: 2021-09-29 18:41:22
 updated:
 tags:
 keywords:
-description: 
+description: In grammar, a member of a class of words functioning in a noun phrase to identify or distinguish a referent without describing or modifying it. 
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-pixabay-268883.jpg
+cover: 
 toc:
 copyright:
 copyright_author:

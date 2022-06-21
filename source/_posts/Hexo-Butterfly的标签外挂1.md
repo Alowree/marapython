@@ -3,8 +3,8 @@ title: Hexo Butterfly的标签外挂（一）
 tags:
   - Hexo
   - Butterfly
-  - Tag Plugin
-categories: [Hexo, Butterfly]
+  - Tag Plugins
+categories: Hexo
 toc_number: true
 abbrlink: hexo-tag-plugins-1
 date: 2021-09-16 07:33:44
@@ -13,7 +13,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-sofie-vanborm-731891.jpg
+cover: 
 toc:
 copyright:
 copyright_author:

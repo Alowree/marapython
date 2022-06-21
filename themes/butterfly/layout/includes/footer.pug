@@ -1,6 +1,4 @@
 #footer-wrap
-  if theme.footer.custom_text
-    .footer_custom_text!=`${theme.footer.custom_text}`
   if theme.footer.owner.enable
     - var now = new Date()
     - var nowYear = now.getFullYear()
@@ -15,6 +13,5 @@
       span.footer-separator |
       span= _p('footer.theme') + ' '
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
-  if theme.ICP.enable
-    .icp
-      a(href='https://beian.miit.gov.cn/')= '粤ICP备20043865号'
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`

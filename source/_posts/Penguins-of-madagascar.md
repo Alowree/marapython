@@ -7,10 +7,10 @@ date: 2021-11-19 20:21:11
 updated:
 tags:
 keywords:
-description:
+description: Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it.
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/jessica-knowlden-uUySeXRQqA4-unsplash.jpg
+cover: 
 toc:
 copyright:
 copyright_author:

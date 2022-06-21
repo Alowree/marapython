@@ -11,7 +11,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/kai-dahms-aQJX9mZ0pIQ-unsplash.jpg
+cover: 
 toc:
 toc_number: true
 copyright:
@@ -33,7 +33,7 @@ swiper_index:
 
 1. 到必应[Microsoft Bing Webmaster Tools](https://www.bing.com/webmasters/)添加自己的网站，选择`手动添加网站`
 
-   ![](https://gitee.com/Alowree/img/raw/master/AddYourSite.png)
+   ![](https://image.marapython.com/AddYourSite.png)
 
 2. 添加并验证网站，选择一种验证方法，选第一种`XML文件`
 
@@ -43,7 +43,7 @@ swiper_index:
 
    - 将 CNAME 记录添加到 DNS 中
 
-   ![image-20210909200110938](https://gitee.com/Alowree/img/raw/master/image-20210909200110938.png)
+   ![XML文件](https://image.marapython.com/XML.png)
 
 3. 下载`BingSiteAuth.xml`文件并把它添加到网站根目录下
 
@@ -57,17 +57,17 @@ swiper_index:
 
 1. 到谷歌[Google Search Console](https://search.google.com/search-console)通过`添加资源`添加自己的网站
 
-   ![](https://gitee.com/Alowree/img/raw/master/GoogleAddResource.png)
+   ![添加资源](https://image.marapython.com/GoogleAddResource.png)
 
 2. 选择资源类型，使用右边的`网址前级`这个选项，填入自己的网址然后点击`继续`
 
-   ![](https://gitee.com/Alowree/img/raw/master/GoogleSitePrefix.png)
+   ![网址前缀](https://image.marapython.com/GoogleSitePrefix.png)
 
 3. 验证所有权，推荐的验证方法，HTML文件
 
    按照指引，首先**下载**HMTL文件，然后把下载的`googlefba9766889e0cb6e.html`放在`source`文件中。
 
-   ![](https://gitee.com/Alowree/img/raw/master/GoogleHTMLFile.png)
+   ![验证所有权](https://image.marapython.com/GoogleHTMLFile.png)
 
 4. 在`Hexo`站点配置文件`_config.yml`中配置`skip_render`信息
    ```yml
@@ -80,13 +80,13 @@ swiper_index:
 
 5. 通过`hexo d`部署网站
 
-   这一步相当于将下载的`googlefba9766889e0cb6e.html`**上传**至[https://alowree.gitee.io](https://alowree.gitee.io)，以此来证明你对网站拥有的所有权或操作权。注意，如果是像我一样布置在`Gitee`上的，记得先去`https://gitee.com/用户名/用户名/pages`手动点击更新站点，之后再回到谷歌[Google Search Console](https://search.google.com/search-console)点击`验证`按钮。
+   这一步相当于将下载的`googlefba9766889e0cb6e.html`**上传**至[MaraPython](https://marapython.com/)，以此来证明你对网站拥有的所有权或操作权。注意，如果是像我一样布置在`Gitee`上的，记得先去`https://gitee.com/用户名/用户名/pages`手动点击更新站点，之后再回到谷歌[Google Search Console](https://search.google.com/search-console)点击`验证`按钮。
 
 6. 验证成功
 
 如果漏掉上面第4步，未在配置文件`_config.yml`中配置`skip_render`信息，将出现所有权验证失败的提示信息：
 
-![](https://gitee.com/Alowree/img/raw/master/GoogleSiteVerificationFailure.png)
+![所有权验证失败](https://image.marapython.com/GoogleSiteVerificationFailure.png)
 
 原因就在于，`Hexo`对`source`文件夹中的HTML文件进行了渲染，导致渲染生成的文件内容跟下载的原始HTML文件内容有所不同，所以无法通过验证。
 
@@ -98,7 +98,7 @@ swiper_index:
 
 3. 验证所有权，选择`其他验证方法`，HTML标记。
 
-   ![](https://gitee.com/Alowree/img/raw/master/GoogleSiteVerificationHTML.png)
+   ![](https://image.marapython.com/GoogleSiteVerificationHTML.png)
 
 4. 我们按提示将元标记复制出来，只提取`content`后面的文本内容，粘贴至主题配置文件`_config.butterfly.yml`中的`site_verification`对应位置。
 
@@ -119,7 +119,7 @@ swiper_index:
 
 7. 正常情况下，到这一步已经验证成功了。但是我试了几次，都仍然验证失败，出现下图提示信息。
 
-   ![image-20210910105957627](https://gitee.com/Alowree/img/raw/master/image-20210910105957627.png)
+   ![image-20210910105957627](https://image.marapython.com/image-20210910105957627.png)
 
 8. 这说明，网站头部添加的元标记和谷歌给出的原始元标记存在差异。通过把两个位置的元标记分别复制粘贴在同一个记事本里比照，结果发现
 

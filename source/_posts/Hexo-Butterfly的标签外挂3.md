@@ -1,6 +1,6 @@
 ---
 title: Hexo Butterfly的标签外挂（三）
-categories: [Hexo, Butterfly]
+categories: Hexo
 keywords:
   - Hexo
   - Butterfly
@@ -12,7 +12,7 @@ tags:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-karolina-grabowska-4622892.jpg
+cover: 
 toc:
 toc_number: true
 copyright:

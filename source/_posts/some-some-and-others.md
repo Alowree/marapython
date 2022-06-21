@@ -2,15 +2,15 @@
 title: Some..., some..., and others...
 toc_number: true
 categories: GMAT
-description: To disucss
-abbrlink: 279186413
+description: <strong>Some</strong> are carrying water, <strong>some</strong> are cleaning the windows, <strong>and others</strong> are sweeping the floor.
+abbrlink: some-some-and-others
 date: 2021-09-29 09:15:09
 updated:
 tags: [Parallelism, Parallel Construction, Parallel Structure, Other, The Other, Another]
 keywords:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/Pt96RG.jpg
+cover: https://image.marapython.com/pexels-fiona-art-3208282.jpg
 toc:
 copyright:
 copyright_author:
@@ -27,7 +27,7 @@ swiper_index:
 
 最近在跟安喆一起学习短文Passage 22，发现里面有个句子，语法结构似乎有点问题，于是提出来探讨一下。
 
-![](https://gitee.com/Alowree/img/raw/master/some%20some%20others.jpg)
+![Some-and-some-and-others](https://image.marapython.com/some-and-some-and-others.jpg)
 
 ## 三个分句
 

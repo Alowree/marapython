@@ -3,15 +3,15 @@ title: Butterfly主题之Markdown样式预览
 tags:
   - Markdown
 categories:
-  - Hexo
-  - Butterfly
+  - Hexo  
 keywords:
   - Markdown
+  - Butterfly
 description: [This post is used for testing markdown style, including headers, blockquotes, lists, and etc., along with some HTML tags.]
 top_img: 
-cover: https://gitee.com/Alowree/img/raw/master/pexels-chris-f-6664375.jpg
-swiper_index: 1
-abbrlink: markdown-style-preview
+cover: 
+swiper_index: 
+abbrlink: markdown-styles
 date: 2021-07-09 10:09:14
 updated:
 comments:
@@ -131,22 +131,22 @@ Ordered list
 对应的HTML代码：`<img src="图片链接" alt="图片alt" title="图片title">`
 
 ```markdown
-![一张来自Matery主题的图片](https://gitee.com/Alowree/img/raw/master/cover.jpg "Banner Image from Matery Theme")
+![](https://image.marapython.com/pexels-frank-cone-2495173.jpg)
 ```
 
 渲染效果如下：
 
-![一张来自Matery主题的图片](https://gitee.com/Alowree/img/raw/master/cover.jpg "Banner Image from Matery Theme")
+![](https://image.marapython.com/pexels-frank-cone-2495173.jpg)
 
-给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。这其实是图片+链接的混合使用方法。
+给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。在HTML中，这相当于把图片img元素内嵌于锚点a元素之中。
 
 ```markdown
-[![Matery主题的Banner图片一](https://gitee.com/Alowree/img/raw/master/0.jpg)](http://blinkfox.com/)
+[![螺旋图片](https://image.marapython.com/pexels-frank-cone-3573555.jpg)](https://marapython.com/)
 ```
 
 渲染效果如下：
 
-[![Matery主题的Banner图片一](https://gitee.com/Alowree/img/raw/master/0.jpg)](http://blinkfox.com/)
+[![螺旋图片](https://image.marapython.com/pexels-frank-cone-3573555.jpg)](https://marapython.com/)
 
 ## Codes
 

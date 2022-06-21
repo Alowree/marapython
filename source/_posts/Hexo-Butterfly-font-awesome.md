@@ -1,19 +1,19 @@
 ---
-title: 如何在Hexo站点Butterfly主题使用Font Awesome图标
+title: 在 Hexo 使用 Font Awesome 图标
 tags:
   - Font Awesome
   - icon
   - iconfont
 categories: Hexo
 top_img: 
-cover: https://gitee.com/Alowree/img/raw/master/pexels-felix-mittermeier-957024.jpg
+cover: https://image.marapython.com/pexels-iva-muškić-691710.jpg
 toc_number: true
 swiper_index: 2
 abbrlink: font-awesome
 date: 2021-06-30 07:47:03
 updated:
 keywords:
-description:
+description: Font Awesome is a font and icon toolkit based on CSS and Less. As of 2020, Font Awesome was used by 38% of sites that use third-party font scripts, placing Font Awesome in second place after Google Fonts.
 comments:
 toc:
 copyright:

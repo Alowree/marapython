@@ -1,16 +1,16 @@
 ---
-title: 闻鸡起舞 Rise at Cockcrow to Practice the Sword
+title: Rise at Cockcrow to Practice the Sword
 toc_number: true
 categories: GMAT
-abbrlink: 1792540153
+abbrlink: rise-at-cockcrow
 date: 2021-10-28 13:30:21
 updated:
 tags:
 keywords:
-description:
+description: Zu Ti and Liu Kun were from the Eastern Jin Dynasty. They were both diligent and ambitious young men.
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/914433.jpg
+cover: 
 toc:
 copyright:
 copyright_author:

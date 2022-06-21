@@ -1,5 +1,4 @@
-/* add footer navigation menu */
-#heo-footer {
+#marapython-footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -11,51 +10,33 @@
     padding: 0 1rem;
 }
 
-#heo-footer .footer-group {
+#marapython-footer .footer-group {
     min-width: 120px;
 }
 
-#heo-footer .footer-title {
-    color: var(--heo-secondtext); 
+#marapython-footer .footer-title {
+    color: var(--marapython-secondtext);
     font-size: 1rem;
     text-align: left;
 }
 
-#heo-footer .footer-links {
+#marapython-footer .footer-links {
     display: flex;
     flex-direction: column;
 }
 
-#heo-footer .footer-item {
+#marapython-footer .footer-item {
     font-size: 1rem;
+    color: var(--marapython-fontcolor);
     margin-right: auto;
 }
 
-
-/* Adjust font-size of each title */
-article h2 {
-    font-size: 1.8em;
-    border-left: 6px solid #D56464;
-    margin: 20px 0px 14px -45px;
-    padding: 3px 20px 7px 38px;
+tbody tr:nth-child(2n) {
+  background: rgba(158,188,226,0.12);
 }
-article h3 {
-    font-size: 1.4em;
+tr:hover {
+  background: #efefef;
 }
-
-article h4 {
-    font-size: 1.2em;
-    border-bottom: 1px solid #EEEEEE;
-}
-
-/* adjust H2 location under mobile screen */
-@media screen and (max-width: 768px) {
-  article h2 {
-    margin: 20px 0px 14px -20px;
-    padding: 5px 20px 5px 14px;
-    }
-}
-
 
 /*哔哩哔哩视频适配*/
 .aspect-ratio {position: relative;width: 100%;height: 0;padding-bottom: 75%;margin: 3% auto;text-align: center;}      
@@ -67,15 +48,23 @@ article h4 {
     top: 0;
 }
 
-/*
-thead tr {
-  background: #49B1F5;
-  color: #ffffff;
+
+/* add h2-h3 format after Beautify Effect being disabled */
+.post-content h2 {
+    margin: 1.8em auto 1.2em;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00c4b6;
 }
-tbody tr:nth-child(2n) {
-  background: rgba(158,188,226,0.12);
+.post-content h3 {
+    font-size: 1.4em;
+    line-height: 1.43;
+    margin: 1.6em auto 1.2em;
+    padding-left: 9px;
+    border-left: 5px solid #00c4b6;
 }
-tbody tr:hover {
-  background: #efefef;
+
+blockquote {
+    border: 1px solid #ddd;
+    border-left: .3em solid #ddd;
+    background-color:#fafbfc;
 }
-*/

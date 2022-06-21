@@ -2,15 +2,15 @@
 title: 英文写作中的排比
 toc_number: true
 categories: GMAT
-abbrlink: parallelism
+abbrlink: parallel-construction
 date: 2021-10-02 19:22:28
 updated:
 tags: [Parallel Construction, parallelism, 排比, 平行结构, 并列结构]
 keywords: 
-description:
+description: <strong>Parallel construction</strong>, also called <em>Parallelism</em> and <em>Parallel structure</em>, means using the same pattern of words to show that two or more ideas have the same level of importance.
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-pixabay-459301.jpg
+cover: 
 toc:
 copyright:
 copyright_author:

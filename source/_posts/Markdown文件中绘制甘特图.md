@@ -1,5 +1,5 @@
 ---
-title: Markdown文件中绘制甘特图
+title: 使用 Markdown 绘制甘特图
 toc_number: true
 categories: Markdown
 keywords:
@@ -12,10 +12,10 @@ abbrlink: gantt-chart
 date: 2021-11-30 09:05:15
 updated:
 tags:
-description:
+description: A Gantt chart is a type of bar chart, first developed by Karol Adamiecki in 1896, and independently by Henry Gantt in the 1910s, that illustrates a project schedule and the amount of time it would take for any one project to finish. 
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-mia-von-steinkirch-3689659.jpg
+cover: 
 toc:
 copyright:
 copyright_author:

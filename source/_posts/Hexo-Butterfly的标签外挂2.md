@@ -4,12 +4,12 @@ abbrlink: hexo-tag-plugins-2
 date: 2021-09-16 07:34:13
 updated:
 tags: [Hexo, Butterfly, Tag Plugins]
-categories: [Hexo, Butterfly]
+categories: Hexo
 keywords:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/clement-falize-oOgPgMqTL8A-unsplash.jpg
+cover: 
 toc:
 toc_number: true
 copyright:

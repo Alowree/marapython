@@ -1,6 +1,6 @@
 ---
-title: Hexo Butterfly已安装插件
-categories: [Hexo, Butterfly]
+title: Hexo 已安装插件
+categories: Hexo
 abbrlink: plug-ins
 date: 2021-09-27 12:25:20
 updated:
@@ -9,7 +9,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://gitee.com/Alowree/img/raw/master/pexels-ag-zn-4075452.jpg
+cover: 
 toc:
 toc_number:
 copyright:
@@ -76,6 +76,9 @@ swiper_index:
 <div align=center class="aspect-ratio">
     <iframe src="//player.bilibili.com/player.html?bvid=BV1fq4y1A7nq&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
+问题：
+
+在Typora里面使用iframe可以直接看到视频，使用video则无法直接看到视频。为什么？应该如何解决？
 
 ## 固定链接
 
@@ -131,3 +134,103 @@ permalink: :year/:month/:day/:title/
 经过以上配置，在`hexo new post "文章标题"`、`hexo generate`之后，在文章头部的`Front Matter`位置会生成类似于`abbrlink: 1155088082`这样的内容，那这篇文章的URL也就自然地成为了`https://marapython.com/posts/1155088082/`这样的格式。
 
 如果我们觉得类似`1155088082`这样的数字没有什么实际意义，也可以手动地在文章头部的`Front Matter`位置把这串数字更改为包含实际意义的英文单词。比如我们把`1155088082`更改为`seo`以后，那这篇文章在重新生成以后，其URL就会自动变成`https://marapython.com/posts/seo/`了。
+
+## 博客目录备份至远程仓库
+
+1. 安装插件
+
+   ```bash
+   npm install hexo-git-backup --save
+   ```
+
+2. 到 Hexo 博客根目录的 `_config.yml` 配置文件里添加以下配置：
+
+   ```yml
+   backup:
+     type: git
+     theme: butterfly
+     message: To back up my locale Hexo production folder to a remote repository
+     repository:
+       github: git@github.com:Alowree/marapython.git,production
+   ```
+
+   参数解释：
+
+   - theme：博客目录里可能已经安装了多个主题，这里只填你正在使用、需要备份的主题名称即可。
+   - message：自定义提交信息
+   - repository：博客的远程仓库名，注意仓库地址后面要添加一个分支名，比如我创建了一个production分支。这样master分支用来部署静态博客，而production分支用来备份生产环境。
+
+3. 最后使用以下命令备份你的博客：
+
+   ```bash
+   hexo backup
+   ```
+
+   在未添加production备份分支时，仓库原来只有一个master分支；在运行完`hexo backup`命令、成功添加production分支以后，在仓库可以查看到多了一个production分支。同时，`bash`的命令提示行上部，当前目录的后面，也添加了`(master)`信息。
+
+4. 下一步，如果有需要（比如说更换工作电脑以后），我们可以从仓库随时拉取这个`production`分支到新的电脑，那今天的备份工作就算成功了。
+
+## 从远程仓库拉取备份
+
+这个需要在新电脑上试运行。
+
+在新电脑D盘创建一个新的工作目录`Blogsite20220121`，进入`Blogsite202201021`鼠标右击选中`Get Bash Here`打开`bash`命令行，运行下面命令，克隆复制备份资料到新电脑。
+
+```bash
+git clone -b production https://github.com/Alowree/marapython.git MaraPython
+```
+
+将生产环境拉取至本地电脑之后，再在新电脑上安装Hexo：
+
+```bash
+cd MaraPython
+```
+
+```bash
+npm install hexo-cli
+```
+
+```bash
+hexo -v
+```
+
+```bash
+npm install
+```
+
+```bash
+npm install hexo-deployer-git --save
+```
+
+```bash
+hexo cl
+hexo g
+hexo s
+```
+
+本地预览成功。
+
+
+
+## 思考问题
+
+或许将备份存放在同一仓库的`production`分支并不是一个好主意？为什么不存放在一个单独的仓库比如`marapython-production-backup`？
+
+经测试，如果更改上述第2步中的远程仓库设置：
+
+```yml
+backup:
+  type: git
+  theme: butterfly
+  message: To back up my locale Hexo production folder to a remote repository
+  repository:
+    github: git@github.com:Alowree/marapython-production-backup.git
+```
+
+再使用`hexo b`命令，这时并不能将生产目录成功备份至远程仓库`marapython-production-backup`，而是直接将生产目录更新到博客仓库`marapython`的`master`分支，并且覆盖和擦除了原来`hexo d`所部署的博客内容。This is weird. 可能插件本身就是按照设定的使用逻辑所开发出来，不能向单独的仓库进行备份，只能向博客仓库的另外一个分支备份吧。Anyway, forget it.
+
+## 参考资料
+
+[使用 Hexo-Git-Backup 插件备份你的 Hexo 博客](https://www.itrhx.com/2019/09/29/A53-hexo-backup/)
+
+[hexo-git-backup 博客备份及恢复](https://xiaoliblog.cn/page/hexobackup.html)
