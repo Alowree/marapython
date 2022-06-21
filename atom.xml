@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-20T13:21:12.971Z</updated>
+  <updated>2022-06-21T01:01:43.960Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客文章插入音频</title>
+    <link href="https://marapython.com/posts/html-audio/"/>
+    <id>https://marapython.com/posts/html-audio/</id>
+    <published>2022-06-21T00:02:47.000Z</published>
+    <updated>2022-06-21T01:01:43.960Z</updated>
+    
+    
+    <summary type="html">The HTML &lt;code&gt;audio&lt;/code&gt; element is used to play an audio file on a web page.</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CSS3新增属性mix-blend-mode: difference</title>
@@ -120,7 +135,7 @@
     <link href="https://marapython.com/posts/html-video/"/>
     <id>https://marapython.com/posts/html-video/</id>
     <published>2022-06-12T02:03:38.000Z</published>
-    <updated>2022-06-18T14:08:40.101Z</updated>
+    <updated>2022-06-21T00:11:40.950Z</updated>
     
     
     <summary type="html">在 HTML 中，我们可以使用 video 元素来开发视频。</summary>
@@ -130,7 +145,11 @@
     <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
-    <category term="Video Editing" scheme="https://marapython.com/tags/Video-Editing/"/>
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
+    
+    <category term="HTML5" scheme="https://marapython.com/tags/HTML5/"/>
+    
+    <category term="video" scheme="https://marapython.com/tags/video/"/>
     
   </entry>
   
@@ -381,21 +400,6 @@
       
     
     
-    
-    
-  </entry>
-  
-  <entry>
-    <title>系统的状态变量分析</title>
-    <link href="https://marapython.com/posts/35532648/"/>
-    <id>https://marapython.com/posts/35532648/</id>
-    <published>2022-01-21T03:58:48.000Z</published>
-    <updated>2022-06-18T00:45:04.072Z</updated>
-    
-    
-    
-    
-    <category term="信号与系统" scheme="https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
