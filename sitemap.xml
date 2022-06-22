@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://marapython.com/posts/html-form/</loc>
+    
+    <lastmod>2022-06-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/html-audio/</loc>
     
     <lastmod>2022-06-22</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/posts/689319105/</loc>
+    <loc>https://marapython.com/posts/drive-traffic/</loc>
     
     <lastmod>2022-06-22</lastmod>
     
@@ -20,7 +29,16 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/posts/drive-traffic/</loc>
+    <loc>https://marapython.com/posts/parallelogram/</loc>
+    
+    <lastmod>2022-06-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/689319105/</loc>
     
     <lastmod>2022-06-22</lastmod>
     
@@ -308,15 +326,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/posts/html-form/</loc>
-    
-    <lastmod>2022-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/posts/re/</loc>
     
     <lastmod>2022-06-20</lastmod>
@@ -372,15 +381,6 @@
   
   <url>
     <loc>https://marapython.com/posts/how-to-update/</loc>
-    
-    <lastmod>2022-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/parallelogram/</loc>
     
     <lastmod>2022-06-20</lastmod>
     
@@ -648,6 +648,20 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/tags/HTML/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/video/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/tags/Markdown/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -725,21 +739,7 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/video/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Good-Practices/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/SEO/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -754,6 +754,13 @@
   
   <url>
     <loc>https://marapython.com/tags/Vercel/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/SEO/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -851,6 +858,13 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/tags/regular-expressions/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -873,13 +887,6 @@
   
   <url>
     <loc>https://marapython.com/tags/character-class/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/regular-expressions/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

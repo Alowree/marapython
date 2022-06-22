@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-22T06:33:22.910Z</updated>
+  <updated>2022-06-22T06:50:16.782Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://marapython.com/posts/html-audio/"/>
     <id>https://marapython.com/posts/html-audio/</id>
     <published>2022-06-21T00:02:47.000Z</published>
-    <updated>2022-06-22T06:33:22.910Z</updated>
+    <updated>2022-06-22T06:50:16.782Z</updated>
     
     
     <summary type="html">The HTML &lt;code&gt;audio&lt;/code&gt; element is used to play an audio file on a web page.</summary>
@@ -30,6 +30,14 @@
     
     <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
+    
+    <category term="HTML" scheme="https://marapython.com/tags/HTML/"/>
+    
+    <category term="video" scheme="https://marapython.com/tags/video/"/>
+    
+    <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
+    
+    <category term="HTML5" scheme="https://marapython.com/tags/HTML5/"/>
     
   </entry>
   
@@ -78,7 +86,7 @@
     <link href="https://marapython.com/posts/parallelogram/"/>
     <id>https://marapython.com/posts/parallelogram/</id>
     <published>2022-06-14T02:08:07.000Z</published>
-    <updated>2022-06-20T04:51:51.439Z</updated>
+    <updated>2022-06-22T06:42:12.764Z</updated>
     
     
     <summary type="html">A &lt;strong&gt;parallelogram&lt;/strong&gt; is a flat shape with four straight, connected sides so that opposite sides are congruent and parallel. This means a parallelogram is a plane figure, a closed shape, and a quadrilateral.</summary>
@@ -147,11 +155,11 @@
     <category term="Hexo" scheme="https://marapython.com/categories/Hexo/"/>
     
     
+    <category term="video" scheme="https://marapython.com/tags/video/"/>
+    
     <category term="Hexo" scheme="https://marapython.com/tags/Hexo/"/>
     
     <category term="HTML5" scheme="https://marapython.com/tags/HTML5/"/>
-    
-    <category term="video" scheme="https://marapython.com/tags/video/"/>
     
   </entry>
   
@@ -177,7 +185,7 @@
     <link href="https://marapython.com/posts/drive-traffic/"/>
     <id>https://marapython.com/posts/drive-traffic/</id>
     <published>2022-05-30T01:59:25.000Z</published>
-    <updated>2022-06-22T00:41:53.763Z</updated>
+    <updated>2022-06-22T06:43:02.891Z</updated>
     
     
     <summary type="html">An online business without steady traffic is not going to succeed. You need a growing stream of new and returning customers to your website in order to convert and make a profit.</summary>
@@ -194,15 +202,19 @@
     <link href="https://marapython.com/posts/html-form/"/>
     <id>https://marapython.com/posts/html-form/</id>
     <published>2022-05-22T01:04:03.000Z</published>
-    <updated>2022-06-20T07:08:28.617Z</updated>
+    <updated>2022-06-22T07:25:29.909Z</updated>
     
     
-    <summary type="html">The HTML &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form and it has following syntax -</summary>
+    <summary type="html">The HTML &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form and there are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.</summary>
     
     
     
     <category term="HTML" scheme="https://marapython.com/categories/HTML/"/>
     
+    
+    <category term="HTML" scheme="https://marapython.com/tags/HTML/"/>
+    
+    <category term="video" scheme="https://marapython.com/tags/video/"/>
     
   </entry>
   
