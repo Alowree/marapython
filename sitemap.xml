@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://marapython.com/posts/html-form/</loc>
+    <loc>https://marapython.com/posts/html-audio/</loc>
     
     <lastmod>2022-06-22</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/posts/html-audio/</loc>
+    <loc>https://marapython.com/posts/html-form/</loc>
     
     <lastmod>2022-06-22</lastmod>
     
@@ -746,6 +746,13 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/tags/SEO/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/tags/Github/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -754,13 +761,6 @@
   
   <url>
     <loc>https://marapython.com/tags/Vercel/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/SEO/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -858,13 +858,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/regular-expressions/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -887,6 +880,13 @@
   
   <url>
     <loc>https://marapython.com/tags/character-class/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/regular-expressions/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
