@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-22T07:48:17.302Z</updated>
+  <updated>2022-06-27T01:02:44.890Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Digital Audio Fundamentals</title>
+    <link href="https://marapython.com/posts/3913771399/"/>
+    <id>https://marapython.com/posts/3913771399/</id>
+    <published>2022-06-24T07:20:34.000Z</published>
+    <updated>2022-06-27T01:02:44.890Z</updated>
+    
+    
+    <summary type="html">This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they&#39;re converted and transformed and the advantages of working with digital signals. We&#39;ll cover concepts of sampling theorem, sample rates, aliasing, bit depth, quantization, dither, pulse code modulation, sigma delta modulation, noise shaping and all that good stuff.</summary>
+    
+    
+    
+    <category term="Digital Audio Fundamentals" scheme="https://marapython.com/categories/Digital-Audio-Fundamentals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Audio Bit Rate</title>
+    <link href="https://marapython.com/posts/1920491821/"/>
+    <id>https://marapython.com/posts/1920491821/</id>
+    <published>2022-06-22T10:52:49.000Z</published>
+    <updated>2022-06-23T07:20:50.684Z</updated>
+    
+    
+    <summary type="html">In telecommunications and computing, bit rate is the number of bits that are conveyed or processed per unit of time. The bit rate is expressed in the unit &lt;strong&gt;bit per second&lt;/strong&gt;, often in conjunction with an SI prefix such as kilo, mega, giga or tera.</summary>
+    
+    
+    
+    <category term="Audio" scheme="https://marapython.com/categories/Audio/"/>
+    
+    
+    <category term="Audio" scheme="https://marapython.com/tags/Audio/"/>
+    
+    <category term="Digital Audio" scheme="https://marapython.com/tags/Digital-Audio/"/>
+    
+    <category term="Audio Bit Rate" scheme="https://marapython.com/tags/Audio-Bit-Rate/"/>
+    
+    <category term="Bitrate" scheme="https://marapython.com/tags/Bitrate/"/>
+    
+    <category term="Bit Depth" scheme="https://marapython.com/tags/Bit-Depth/"/>
+    
+    <category term="Sample Rate" scheme="https://marapython.com/tags/Sample-Rate/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客文章插入音频</title>
     <link href="https://marapython.com/posts/html-audio/"/>
     <id>https://marapython.com/posts/html-audio/</id>
     <published>2022-06-21T00:02:47.000Z</published>
-    <updated>2022-06-22T07:48:17.302Z</updated>
+    <updated>2022-06-22T11:22:34.072Z</updated>
     
     
     <summary type="html">The HTML &lt;code&gt;audio&lt;/code&gt; element is used to play an audio file on a web page.</summary>
@@ -376,45 +422,6 @@
     
     
     <category term="中英对照" scheme="https://marapython.com/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高等数学 第四章 微分方程</title>
-    <link href="https://marapython.com/posts/differential-equations/"/>
-    <id>https://marapython.com/posts/differential-equations/</id>
-    <published>2022-01-28T01:18:38.000Z</published>
-    <updated>2022-06-20T02:45:34.128Z</updated>
-    
-    
-    <summary type="html">In Mathematics, a &lt;strong&gt;differential equation&lt;/strong&gt; is an equation that contains one or more functions with its derivatives.</summary>
-    
-    
-    
-    <category term="高等数学" scheme="https://marapython.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>欧拉公式</title>
-    <link href="https://marapython.com/posts/euler-formula/"/>
-    <id>https://marapython.com/posts/euler-formula/</id>
-    <published>2022-01-21T23:27:01.000Z</published>
-    <updated>2022-06-19T11:57:30.980Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;什么是欧拉公式？&lt;/p&gt;
-&lt;p&gt;这里是使用行内公式表示的欧拉公式 $e^{j x}=\cos x + j \sin</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
