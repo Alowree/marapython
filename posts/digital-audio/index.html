@@ -1,0 +1,498 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Digital Audio Fundamentals | MaraPython</title><meta name="keywords" content="Audio,Digital Audio,Digital Audio Fundamentals,Audio Transformation,Audio Processing,Digital Signal Processing"><meta name="author" content="Alowree XU,alowree@hotmail.com"><meta name="copyright" content="Alowree XU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they&#39;re converted and transformed and the advantages of working with digital si">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Digital Audio Fundamentals">
+<meta property="og:url" content="https://marapython.com/posts/digital-audio/index.html">
+<meta property="og:site_name" content="MaraPython">
+<meta property="og:description" content="This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they&#39;re converted and transformed and the advantages of working with digital si">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image.marapython.com/americana-1512910.png">
+<meta property="article:published_time" content="2022-06-24T07:20:34.000Z">
+<meta property="article:modified_time" content="2022-06-29T02:52:14.918Z">
+<meta property="article:author" content="Alowree XU">
+<meta property="article:tag" content="Audio">
+<meta property="article:tag" content="Digital Audio">
+<meta property="article:tag" content="Digital Audio Fundamentals">
+<meta property="article:tag" content="Audio Transformation">
+<meta property="article:tag" content="Audio Processing">
+<meta property="article:tag" content="Digital Signal Processing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image.marapython.com/americana-1512910.png"><link rel="shortcut icon" href="/img/favicon-32x32.png"><link rel="canonical" href="https://marapython.com/posts/digital-audio/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu_site_verification" content="code-a5Xk3ddsv2"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Digital Audio Fundamentals',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-06-29 10:52:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css"><link rel="stylesheet" href="/css/custom.css" media="all"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/carousel-touch.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/mindmap.min.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="MaraPython" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">65</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">71</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://image.marapython.com/americana-1512910.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MaraPython</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tasks/"><i class="fa-fw fas fa-tasks"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Digital Audio Fundamentals</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-24T07:20:34.000Z" title="发表于 2022-06-24 15:20:34">2022-06-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-29T02:52:14.918Z" title="更新于 2022-06-29 10:52:14">2022-06-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Digital-Audio/">Digital Audio</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>30分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>The best video tutorials about Digital Audio Fundamentals on Youtube. This sophisticated series of animations were created using <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.adobe.com/products/aftereffects.html">Adobe After Effects</a> by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.akashmurthy.com/">Akash Murthy</a> from Dublin, Ireland. </p>
+<p>Find the full playlist here: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.youtube.com/playlist?list=PLbqhA-NKGP6B6V_AiS-jbvSzdd7nbwwCw">https://www.youtube.com/playlist?list=PLbqhA-NKGP6B6V_AiS-jbvSzdd7nbwwCw</a></p>
+<p>This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they’re converted and transformed and the advantages of working with digital signals. We’ll cover concepts of sampling theorem, sample rates, aliasing, bit depth, quantization, dither, pulse code modulation, sigma delta modulation, noise shaping and all that good stuff.</p>
+<h2 id="1-Signal-Paths"><a href="#1-Signal-Paths" class="headerlink" title="1. Signal Paths"></a>1. Signal Paths</h2><p>This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they’re converted and transformed and the limitations of working with digital signals. The first video in the series talks about signal paths and how audio exists in different forms.  </p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>What was once an elaborate, time consuming and generally expensive discipline of engineering has seen a major shift towards digitization, which has made itself widely available to essentially everybody. </p>
+<p>Back when there were no computers or digital systems, analog audio signals had to be recorded onto <u>magnetic tapes</u><sup><a href="#fn_1" id="reffn_1">1</a></sup>. Any effects or processing were electronic circuits that modified the signal, and these had to be placed beforehand in the signal chain and the effects would be irreversible once recorded. </p>
+<p>And if you had to edit or trim the end result, you’d have to take a pair of scissors, and carefully slice the tape reel, and reattach it by gluing it to a different section of the tape. And if you wanted to save the audio recording safely for a long time, you’d etch the analog footprint of the signal onto a <u>vinyl disk</u><sup><a href="#fn_2" id="reffn_2">2</a></sup>, for example.</p>
+<h3 id="Advent-of-Digital-Systems"><a href="#Advent-of-Digital-Systems" class="headerlink" title="Advent of Digital Systems"></a>Advent of Digital Systems</h3><p>With the advent of digital systems and the personal computers, engineers devised ways of converting the analog signals into a form that these systems could operate over. This proved incredibly resilient and flexible because it provided control and manipulation capabilities in ways they could never have achieved before.</p>
+<p>It gave them fine control over every aspect of the signal, right from processing to storage. You could now record several audio signals straight into your computer, apply effects when needed, store internally into a hard drive, and come back to it the next day and press <kbd>Ctrl + v</kbd> to undo everything.</p>
+<p>The digital world was born, but underneath it all, it’s just a layer of abstraction for really complicated arrangement of electrical pathways. A good example to quote is the saying that everything in the universe boils down to physics, and everything in physics boils down to mathematics. </p>
+<p>When we talk about signals in the digital domain, we’ve abstracted away the complexity by introducing new terms like memory or bits and bytes.</p>
+<p>DIGITAL ABSTRACTION $\rightarrow$ ANALOG IMPLEMENTATION</p>
+<p>But underneath the hood, it’s just really complicated paths electrical signals can take through diodes and transistors. The digital domain offers a much higher vantage point, where you can talk about complicated concepts like input, output, and buffers and memory, without needing to understand the underlying complexity. But the digital representation of analog signals, though they sound really convenient, come with a cost, and a set of limitations.</p>
+<p>For better for for worse, we are deeply seated in the digital world today, and understanding the digital domain is key when you are setting up a project to record on a DAW (Digital Audio Workstation) software, or when designing signal processing algorithms for a certain effect, or when just making choices that could either make or break your signal path. </p>
+<h3 id="Signal-Path-Audio-Processing-vs-Transformation"><a href="#Signal-Path-Audio-Processing-vs-Transformation" class="headerlink" title="Signal Path - Audio Processing vs Transformation"></a>Signal Path - Audio Processing vs Transformation</h3><p>So let’s start there, the <strong>signal path</strong>. </p>
+<p>It’s a path that a signal takes before reaching its intended target, usually our ears. The simplest signal path is the one that doesn’t contain any transformation or processing of the audio signal.</p>
+<p>Audio can existing in one form or another in 3 broad domains: physical domain, analog domain and digital domain. </p>
+<p>In the physical world where we live and breathe, audio exists as physical disturbances of a medium or more simply as pressure waves. These pressure waves are the only way for us to experience the auditory sensation of hearing. In the analog and digital domains, audio exists as information via electrical signals. These signals would need to be converted or transformed back into the physical domain for us to hear it, and until then, it’s merely just information and nothing else. </p>
+<p>Conversion would need to happen at each step of transforming a pressure wave from the physical domain, to signals in the analog and then to  signals in the digital domain, and similar conversion would need to occur in the opposite direction when transforming the signal back into physical waves.</p>
+<h4 id="Audio-Transformation"><a href="#Audio-Transformation" class="headerlink" title="Audio Transformation"></a>Audio Transformation</h4><ol>
+<li>PHYSICAL: pressure waves</li>
+<li>ANALOG: continuous voltage signal</li>
+<li>DIGITAL: discrete data signal</li>
+</ol>
+<p>Each step of transformation has a cost associated with it, and none of these steps can offer lossless conversion. Meaning that the audio quality will be degraded and there will be a loss of resolution at each stage, and it’s unavoidable. </p>
+<p>The scale of degradation however depends on a lot of factors, which we’ll look at later. But we generally want to avoid unnecessary transformation stages. </p>
+<h4 id="Audio-Processing"><a href="#Audio-Processing" class="headerlink" title="Audio Processing"></a>Audio Processing</h4><p>Audio processing on the other hand is the modification of audio within the same domain, mainly within either the analog or digital domains. </p>
+<p>Examples of audio signal processing are amplification where you boost the strength of the signal, or filtering where you attenuate or remove certain bands of frequencies from the signal. </p>
+<ul>
+<li>Amplification</li>
+<li>Filtering</li>
+</ul>
+<p>In a lot of the cases, this processing is lossless and reversible. </p>
+<h3 id="Signal-Path"><a href="#Signal-Path" class="headerlink" title="Signal Path"></a>Signal Path</h3><p>Let’s get back on track with signal paths. I’ll present 3 scenarios where varying levels of transformation is needed.</p>
+<h4 id="Scenario-1"><a href="#Scenario-1" class="headerlink" title="Scenario 1"></a>Scenario 1</h4><p>In scenario 1, the simplest scenario, a natural source produces sound, and we hear it.</p>
+<p>Sound source $\rightarrow$ Human ears</p>
+<p>The sound exists purely in the physical domain, and no transformation is applied.</p>
+<h4 id="Scenario-2"><a href="#Scenario-2" class="headerlink" title="Scenario 2"></a>Scenario 2</h4><p>Moving on to scenario 2, a person is singing into a microphone on a stage, and her voice is being heard to several people through an array of speakers. </p>
+<p>Vocalist  $\rightarrow$  Microphone  $\rightarrow$  Pre-amp  $\rightarrow$  Powered speaker</p>
+<p>Here, the vibration of her voice is converted into electric analog signals through an input transducer, in this case a microphone, the signal is then fed to a pre amplifier where the signal from the microphone is boosted up and then fed into an output transducer, in this case a powered speaker, which tries to faithfully convert the analog signal into physical pressure waves by vibrating its cone.</p>
+<p>So all in all, there are 2 stages of conversion. </p>
+<p>Physical  $\rightarrow$  Analog  $\rightarrow$  Physical</p>
+<h4 id="Scenario-3"><a href="#Scenario-3" class="headerlink" title="Scenario 3"></a>Scenario 3</h4><p>Scenario 3, let’s imagine the same vocalist, is in a studio trying to record herself. </p>
+<p>Vocalist  $\rightarrow$  Microphone  $\rightarrow$  Audio interface (Pre-amp, ADC)  $\rightarrow$  Computer + Hard Drive  $\rightarrow$  Audio interface (Pre-amp, DAC)  $\rightarrow$  Powered studio monitors for playback</p>
+<p>There are 4 stages of conversion in all, 2 stages to get the physical wave into a digital form and another 2 in the other direction. </p>
+<p>Since this module is focused towards audio in the digital domain, we’ll stick to exploring just that. Specifically the analog to digital conversion, the crux of the transformation and all the nuances associated with it. Let’s see what we need to do to convert analog voltage into discrete data.</p>
+<p>Alright, let’s get into it, let’s see what we need to do to transform voltage into data.</p>
+<blockquote id="fn_1">
+<sup>1</sup>. <strong>Magnetic tape</strong> is a medium for magnetic storage, made of a thin, magnetizable coating on a long, narrow strip of plastic film. It was developed in Germany in 1928, based on magnetic wire recording. Devices that record and playback audio and video using magnetic tape are tape recorders and video tape recorders respectively. A device that stores computer data on magnetic tape is known as a tape drive.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. A <strong>phonograph record</strong> (also known as a <strong>gramophone record</strong>, especially in British English), or simply a <strong>record</strong>, is an analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove. The groove usually starts near the periphery and ends near the center of the disc. At first, the discs were commonly made from shellac, with earlier records having a fine abrasive filler mixed in. Starting in the 1940s polyvinyl chloride became common, hence the name “vinyl”.<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
+<h2 id="2-Sampling-Theorem"><a href="#2-Sampling-Theorem" class="headerlink" title="2. Sampling Theorem"></a>2. Sampling Theorem</h2><p>In this video, we take the first step at the process of converting a continuous signal into a discrete signal for processing within the digital domain, and take a stab at the Nyquist Shannon Sampling Theorem which dictates how often a continuous signal needs to be sampled to accurately recreate it back. There is a lot of misconceptions regarding sample rate and its implications, and this video should hopefully help in clear them up by looking at sampling rates more objectively, or at least give you a starting point for more exploration.  </p>
+<h3 id="Continuous-vs-Discrete-Signals"><a href="#Continuous-vs-Discrete-Signals" class="headerlink" title="Continuous vs Discrete Signals"></a>Continuous vs Discrete Signals</h3><p>To simplify our understanding of the conversion from analog to digital signals, we’ll start from the simplest periodic analog signal, the humble sine wave. </p>
+<script type="math/tex; mode=display">
+y(t)=Asin(2\pi ft + \Phi)</script><p>The sine wave is in essence a 1 dimensional function. Though I may have represented the sine wave as a squiggle shape on a 2 dimensional plane, it’s actually a single valued spatial point at any given time, if you don’t consider time as a dimension of course. </p>
+<p>As you progress time, we can imagine that the sine wave acquires a different value. </p>
+<p>A clear advantage of digital signals over analog signals is in its storage capabilities. </p>
+<p>Analog to digital conversion</p>
+<p>Continuous function $\rightarrow$ discrete function</p>
+<p>Infinite many  $\rightarrow$ finite</p>
+<p>The process of transforming an analog signal to a digital one begins here, by asking the question </p>
+<ul>
+<li><p>How often do we want to measure the signal?</p>
+</li>
+<li><p>How many samples do we want to have within a given interval of time?</p>
+</li>
+</ul>
+<p>What’s the right number? How many samples are enough to accurately represent this wave then?</p>
+<h3 id="Nyquist-Shannon-Sampling-Theorem"><a href="#Nyquist-Shannon-Sampling-Theorem" class="headerlink" title="Nyquist Shannon Sampling Theorem"></a>Nyquist Shannon Sampling Theorem</h3><p>Well thankfully, it’s not as arbitrary as you think. Continuous to discrete signal conversion is governed by the Nyquist Shannon Sampling Theorem.</p>
+<p>Nyquist Shannon Sampling Theorem states that any <strong>band limited</strong> continuous-time signal can be accurately converted to and from digital signals when <strong>sampled at a rate, at least twice as high as the highest frequency</strong> component of the waveform.</p>
+<p>The sampling theorem states 2 important facts.</p>
+<ol>
+<li><p>That to represent an analog signal in the digital domain, the number of samples that we would need for each second of the signal should be more than twice the highest frequency represented by the signal. </p>
+</li>
+<li><p>It also states that the analog signal needs to be bandlimited to the highest frequency and cannot contain any frequency above that.</p>
+</li>
+</ol>
+<p>Let’s put a pin on the second point, and just talk about the first.</p>
+<p>In our case, we had a 1Hz sine wave. This is a constant 1Hz wave, and 1Hz is the highest frequency that this wave function will ever produce. </p>
+<script type="math/tex; mode=display">
+y(t)=sin(2 \pi t)</script><p>The sampling theorem states that, do digitally represent this wave, we need at least more than 2 sample points. Let’s say 3. Any more if fine as well, but the minimum required is 3. We can say that the sample rate is 3Hz.</p>
+<ul>
+<li><p>Frequency component (cycles per second)</p>
+</li>
+<li><p>Sample rate (samples per second)</p>
+</li>
+</ul>
+<p>This is how a 1Hz wave could be sampled using 3 sample points, measured at $t=0, \frac{2\pi}{3}, \frac{4\pi}{3}$.</p>
+<p>The absolute beauty of the sampling theorem is that is proves mathematically that both the 3Hz sampled waveform and 40Hz sampled waveform of a 1Hz wave, when reconverted back into its analog form doesn’t just produce the same output signal, but produces a signal which is indistinguishable from the original analog input signal before conversion. The input and output signals would be essentially carbon copies of each other with no loss in resolution. </p>
+<p>This seems really  strange, because you are essentially stripping out information and discarding it when converting it into a digital signal, and then when you reconvert it back, how is the missing information magically reappearing?</p>
+<p>Well this is where the second point comes into effect, the signal would need to be band limited. </p>
+<h3 id="Bandlimiting-using-Low-Pass-Filter"><a href="#Bandlimiting-using-Low-Pass-Filter" class="headerlink" title="Bandlimiting using Low Pass Filter"></a>Bandlimiting using Low Pass Filter</h3><p>Bandlimiting is the limiting of a signal’s frequency domain representation to zero above a certain finite frequency. A signal is said to be band-limited if the amplitude of its spectrum goes to zero for all frequencies beyond some threshold called the cutoff frequency.</p>
+<p>Analog Input Signal $\rightarrow$ Bandlimiter (Maximum representable frequency: 1Hz) $\rightarrow$ ADC</p>
+<p>This means that an input signal going into the conversion process is stripped of all frequency components above the maximum of 1Hz and the digital signal once reconverted, is again stripped of all frequency components higher than the maximum of 1Hz. </p>
+<p>Analog Output Signal $\leftarrow$ Bandlimiter (Maximum representable frequency: 1Hz) $\leftarrow$ Sampled Digital Signal</p>
+<p>This can be accomplished by using low pass filters. A theoretical low pass filter would only allow the passage of frequencies lower than a set threshhold, and would block all frequencies higher than the threshhold. I mentioned a theoretical low pass filter here, since practical filters can’t simply cut off abruptly at a certain frequency but rather ramp down smoothly. </p>
+<p>Allowed frequencies - Attenuated frequencies - Blocked frequencies</p>
+<p>More about this later. But let’s now look at a more audible example. </p>
+<h3 id="Sampling-examples-in-Audacity"><a href="#Sampling-examples-in-Audacity" class="headerlink" title="Sampling examples in Audacity"></a>Sampling examples in Audacity</h3><h4 id="Demo-1"><a href="#Demo-1" class="headerlink" title="Demo 1"></a>Demo 1</h4><p>Project sampling rate: 8k Hz</p>
+<p>Maximum representable frequency: 4k Hz</p>
+<p>1k Hz working good</p>
+<p>Now, let’s explore the fringe of possible frequencies, 4k Hz. Exactly half the sampling rate.</p>
+<p>Project sampling rate: 8k Hz</p>
+<p>Maximum representable frequency: 4k Hz</p>
+<p>If we were to create a 4k Hz pure tone, with 8K Hz sampling rate that means we will have two sample points per periodic cycle, namely at $t=0, \pi$,  with both amplitude values being zero.  So, naturally this is interpreted as no signal at all. Therefore when reconstructed, the original 4k Hz pure tone wave is gone. </p>
+<p>But increase the phase offset of the signal by just a bit, and suddenly the wave comes to life. So this is the reason why the sampling theorem states that all frequencies lower than half the sampling rate can be represented accurately, and doesn’t say anything about exactly half the sample rate, because it wouldn’t be an accurate representation for all scenarios. </p>
+<h4 id="Demo-2"><a href="#Demo-2" class="headerlink" title="Demo 2"></a>Demo 2</h4><p>What about 3.999k Hz?</p>
+<p>Sample rate: 8k Hz</p>
+<p>Signal frequency: 3.999k Hz</p>
+<p>Conclusion: The 3.999k Hz can be reproduced, but with aliasing artifacts called beating.</p>
+<h4 id="Demo-3"><a href="#Demo-3" class="headerlink" title="Demo 3"></a>Demo 3</h4><p>Sample rate: 11.255k Hz</p>
+<p>Signal frequency: 3.999k Hz</p>
+<p>Conclusion: The 3.999k Hz can be reproduced, nice and clean, without aliasing.</p>
+<h4 id="Demo-4"><a href="#Demo-4" class="headerlink" title="Demo 4"></a>Demo 4</h4><p>Sample rate: 44.1k Hz</p>
+<p>Signal frequency: 3.999k Hz</p>
+<p>Conclusion: The 3.999k Hz can be reproduced, nice and clean. without aliasing. However, note that to increase the sampling rate further won’t help with the quality of signal reconstruction. </p>
+<h3 id="Re-conversion-of-Digital-Signals-to-Analog-Signals"><a href="#Re-conversion-of-Digital-Signals-to-Analog-Signals" class="headerlink" title="Re-conversion of Digital Signals to Analog Signals"></a>Re-conversion of Digital Signals to Analog Signals</h3><p>Now, when the time arrives when this digital signal needs to be converted into an analog signal for us to listen to it, it goes through a series of electronic circuits. </p>
+<p>Resistor Ladder Circuit, it produces a stair step pattern of an intermediate analog signal. This isn’t the final output signal yet. In this form, the analog signal has a lot of super high frequency components, some would even be ultra sonic frequency components which we can’t even hear.</p>
+<p>The obvious thing to do now would be to cut off these excess frequencies and discard them. And the most obvious place to start would be all the frequencies above half the sampling rate, from which point on will be referred to as the Nyquist frequency. </p>
+<div class="note green no-icon flat"><p>Analog Input Signal $\rightarrow$ Bandlimiter (Cut off at Nyquist frequency) + ADC $\rightarrow$ Sampled Digital Signal</p>
+</div>
+<p>This is because we promised that the input signal would be band limited when it first arrived at analog to digital conversion stage by putting a low pass filter on it with its cutoff as the Nyquist Frequency. </p>
+<div class="note green no-icon flat"><p>Analog Output Signal $\leftarrow$ Bandlimiter (Cut off at Nyquist frequency) + DAC  $\leftarrow$ Sampled Digital Signal</p>
+</div>
+<p>Clearly the output signal would need to adhere to the same rules and the same low pass cut off at the Nyquist Frequency as well. </p>
+<p>And when the filter is applied, the intermediate signal is transformed into this, which is essentially a smoothed out version, which intersects all the points that were previously sampled. And this is where things get interesting. <u>The signal produced that goes through all these points, is a mathematically unique solution.</u> </p>
+<p>Intermediate output signal vs Final output signal after bandlimiting (mathematically unique)</p>
+<p>There can only be one band limited signal than can pass through all these points, and it is the input signal itself. So, the input signal passed through the analog to digital conversion step, is the only possible signal that can be produced at the output stage of the digital to analog conversion. </p>
+<p>If the output signal were to deviate even slightly from the input signal, it means that it would have to contain frequencies higher than the Nyquist frequency and it would fail to meet the criteria put forth by the sampling theorem about band limiting.  The conversion is mathematically lossless. </p>
+<p>ANALOG - DIGITAL (DIGITAL - ANALOG?) CONVERSION IS MATHEMATICALLY LOSSLESS </p>
+<p>when no additional processing is done in the digital domain</p>
+<p>Of course, analog components are never noise free and the whole process would add a little bit of noise into the signal, but if the number of conversions are kept to a minimum, it’s never noise that can be heard by our ears. </p>
+<p>and you don’t have an on off switch to switch off the filtering.</p>
+<p>But what you can see if the output analog waveform.</p>
+<p>Do you remember that I mentioned that the low pass filters cannot cut off frequencies exactly at the Nyquist, but would require a smooth ramp. For this reason we need a bit of buffer between the highest frequency that we want to represent and the Nyquist frequency we need to completely cut off at. </p>
+<p>Highest representable frequency $\longleftrightarrow$ Buffer $\longleftrightarrow$ Nyquist frequency (0.5 $f_s$)</p>
+<h3 id="Aliasing-Artifacts"><a href="#Aliasing-Artifacts" class="headerlink" title="Aliasing Artifacts"></a>Aliasing Artifacts</h3><p>This gives us a clue about what could have gone wrong with the 8kHz sampling of the 3999Hz that was amplitude modulating.</p>
+<p>Let’s imagine the cut off frequency being implemented by Audacity is at 4kHz or the </p>
+<p>Required frequencies, Frequencies to block</p>
+<p>Control signal - 3999Hz, Nyquist frequency 4kHz</p>
+<p>Intermediate high frequencies</p>
+<p>The practical limitations would not allow it to simply cut off all frequencies above that, and there wil be some spill over. We know that there will be extra high frequency content, because the intermediate signal will look like this - a stair step pattern. There will be a gradual reduction of frequency content above the Nyquist, but they’ll still be there.</p>
+<p>This is in direct violation with the sampling theorem which requires there to be no frequencies above the Nyquist. But what happens when there is?</p>
+<p>We get the folding of the high frequencies at and above the Nyquist, back on the original signal spectrum, due to a phenomenon called aliasing. Clearly aliasing puts additional frequencies into the output signal which didn’t exist previously to begin with, and this is a bad thing and we want to avoid aliasing artifacts.</p>
+<p>These extra closely represented high frequency signals folded back on to the original signal is what causes the interfering amplitude changes. </p>
+<p>Audacity Demo</p>
+<p>400Hz vs 401Hz</p>
+<p>What we can see here and hear, is an acoustical phenomenon called beating. </p>
+<p>Beating</p>
+<p>It’s an interference pattern between two sounds of slightly different frequencies, perceived as a periodic variation in volume. More about this in a module on acoustic. </p>
+<p>Analog output signal + Analog Electrical noise</p>
+<p>Why sampling rate in Demo 3 is already good enough to reconstruct the analog signal?</p>
+<p>Digital signal: discrete data points</p>
+<p>Digital to Analog conversion stage</p>
+<p>A stair step pattern of an intermediate analog signal: note this is an analog signal though it’s being plotted simply by connecting all the data points of our digital signal above. So our discrete data points are turned into an continuous analog signal which looks like this. </p>
+<p>Why these rough data points could be perfectly resembled back to a 3.999k Hz sine wave? What’s the convergence algorithm behind all this? And how to prove that this sine wave is the only possible solution? The reconstruction of a signal from its samples can be accomplished using the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://en.wikipedia.org/wiki/Whittaker–Shannon_interpolation_formula">Whittaker–Shannon interpolation formula</a>.</p>
+<h3 id="Practical-Sampling-Rate-and-Outro"><a href="#Practical-Sampling-Rate-and-Outro" class="headerlink" title="Practical Sampling Rate and Outro"></a>Practical Sampling Rate and Outro</h3><p>So for all practical intents and purposes, we want to modify the sampling theorem to suggest that instead of sampling at 2 times of the highest representable frequency, we want to increase that to 2.5 times the highest representable frequency, commonly called the Engineering Nyquist theorem, not because of the mathematical limitations, but practical electronic limitations. </p>
+<h2 id="3-Common-Audio-Sample-Rates"><a href="#3-Common-Audio-Sample-Rates" class="headerlink" title="3. Common Audio Sample Rates"></a>3. Common Audio Sample Rates</h2><p>In this video, we take what we learnt from the previous video on the Nyquist Shannon Sampling Theorem and apply it to real world audio signals. We discover some of the commonly used sample rates used in audio consumption and transmission and the advantages and disadvantages of using them. We look at the difference between bandwidth in the context of signal and the context of transmission, and discuss why lower rates are ideal for consumption, and higher rates are only required during signal processing.   </p>
+<h3 id="Intro-to-Sampling-Theory"><a href="#Intro-to-Sampling-Theory" class="headerlink" title="Intro to Sampling Theory"></a>Intro to Sampling Theory</h3><p>Human hearing range 20Hz - 20kHz</p>
+<p>Sample rate $\approx$ 2.5 * 20kHz</p>
+<p>Nyquist frequency = 0.5 * sample rate</p>
+<h3 id="Common-Audio-Sample-Rates"><a href="#Common-Audio-Sample-Rates" class="headerlink" title="Common Audio Sample Rates"></a>Common Audio Sample Rates</h3><p>Sample rate = 44.1kHz</p>
+<p>Nyquist frequency = 22.05kHz</p>
+<p>Guard band = 2.05kHz</p>
+<p>Sample rate = 48kHz</p>
+<p>Nyquist frequency = 24kHz</p>
+<p>Guard band = 4kHz</p>
+<p>Sample rate = 96kHz</p>
+<p>Nyquist frequency = 48kHz</p>
+<p>Guard band = 28kHz</p>
+<h3 id="Bandwidth"><a href="#Bandwidth" class="headerlink" title="Bandwidth"></a>Bandwidth</h3><p>In the context of signals in general, it means a range of frequencies.</p>
+<p>Take 44.1k Hz sampling rate for example. This sample rate can theoretically represent frequencies from 0Hz to 22050Hz. Its range or bandwidth is said to be 22050Hz.</p>
+<p>But bandwidth in the context of transmission has a slightly different implication.</p>
+<p>But in this context, it’s the maximum rate at which information can be flooded through the medium. You can think of it as the information rate or data rate.  This rate has a tendency to affect the choice of audio bandwidth that we select, but is generally dependent on the application.</p>
+<p>For example if you want to transmit audio to your speakers through an amplifier in your own home, even conventional copper cables like coaxial cables have a bandwidth of several hundred megahertz. </p>
+<p>Bandwidth: 10MHz / 500Mbps (how to compute?)</p>
+<p>When comparing that to even the most generous sample rate chosen for audio, transmitting multichannel audio through these cables is a breeze, with a lot of bandwidth of spare.</p>
+<p>Single channel digital audio</p>
+<p>Sampled at 96kHz / 24bit:</p>
+<p>Bit rate = 230400bps = 2.3Mbps</p>
+<h3 id="8kHz"><a href="#8kHz" class="headerlink" title="8kHz"></a>8kHz</h3><p>Phone lines - Efficiency, low cost vs audio quality</p>
+<p>Audio Sample Rate = 8kHz</p>
+<p>Intelligibility of human speech 300Hz -  3.4kHz</p>
+<p>Bandwidth: 3.1kHz</p>
+<p>AuNyquist Frequency 4kHz</p>
+<p>Guard band 0.6kHz</p>
+<h3 id="Sampling-with-Audacity"><a href="#Sampling-with-Audacity" class="headerlink" title="Sampling with Audacity"></a>Sampling with Audacity</h3><h3 id="16kHz"><a href="#16kHz" class="headerlink" title="16kHz"></a>16kHz</h3><p>Applications in VOIP (Voice Over Internet Protocol) such as Skype and Whatsapp</p>
+<h3 id="44-1kHz"><a href="#44-1kHz" class="headerlink" title="44.1kHz"></a>44.1kHz</h3><p>Full representation of all audible frequencies</p>
+<h3 id="48kHz"><a href="#48kHz" class="headerlink" title="48kHz"></a>48kHz</h3><p>Predominantly used along with video</p>
+<h3 id="Higher-Sampling-Rates"><a href="#Higher-Sampling-Rates" class="headerlink" title="Higher Sampling Rates"></a>Higher Sampling Rates</h3><p>Are higher sampling rates unnecessary? Not at all. </p>
+<p>If you are interested in hardware design, or signal processing, or into building applications, and writing plugins, you are likely to use higher sampling rates by means of oversample in the digital domain to avoid aliasing. </p>
+<p>Are filters capable of achieving this cut-off? Why filtering at the input stage is needed to begin with? We need to look at aliasing in further detail. </p>
+<h2 id="4-Understanding-Aliasing"><a href="#4-Understanding-Aliasing" class="headerlink" title="4. Understanding Aliasing"></a>4. Understanding Aliasing</h2><p>In this video, we demistify and take a stab at understanding aliasing in audio signals. We start off the discussion by looking at how aliasing could occur in video signals by looking at the wagon wheel effect and how the aliasing pattern that you visually see can be applied to understand the concept of aliasing in audio signals. We force aliasing to occur in the digital domain by using the Nyquist programming language, draw a pattern, and derive a formula for predicting the aliased frequencies. We illustrate the process of sampling and see how a low sampling rate coupled with high frequencies can cause aliasing. We take the discussion towards real world observations of aliasing in square waves, and how to counter them manually using oversampling and downsampling.</p>
+<h3 id="Wagon-Wheel-Effect"><a href="#Wagon-Wheel-Effect" class="headerlink" title="Wagon Wheel Effect"></a>Wagon Wheel Effect</h3><p>It exisits because any analog or digital video that we are used to in the conventional form, is not continuous by any means. It’s a series of still pictures projected on a screen in rapid succession. </p>
+<p>24 frames per second</p>
+<p>24 still images, distributed within  a span of 1 second. <strong>What happens when we try to capture something fast?</strong> You get a lot of visual artifacts and the wagon wheel effect is one of them. I happens when the successive frames of images conincide with the previous frame’s position after the rotation. </p>
+<p>The rotational speed required to achieve a standstill illusion depends of the general shape of the wheel and the number of spokes it has. But simplifying the wheel to just 1 spoke, we can see that when the rotation of the body is </p>
+<ol>
+<li>less than 12 rotations per second, $f &lt; \frac{1}{2}f_s$, we can generally make out the direction of rotation based on these individual frames. </li>
+<li>at exactly 12 rotations per second, $f = \frac{1}{2}f_s$, not much can be determined</li>
+<li>beyond 12 rotations per second, $f &gt; \frac{1}{2}f_s$, we can see that the individual frames tell a different story. </li>
+</ol>
+<p>When given this set of still images, rendered at the right speed, there is only one possible conclusion we can draw, that the rotation is in the opposite direction. The still frames are essentially portraying a false perception of direction, because we broke the boundary above which we don’t have enough frames to accurately depict that true picture, and this phenomenon is called temporal aliasing. </p>
+<p>This seems awfully familiar to our earlier discussions on aliasing within audio signals. </p>
+<h3 id="Temporal-Aliasing"><a href="#Temporal-Aliasing" class="headerlink" title="Temporal Aliasing"></a>Temporal Aliasing</h3><p>We can almost substitute the same terminology here, and say that the video is sampled at 24 frames a second, and that 12 frames is the Nyquist limit we need to abide by. </p>
+<p>sample rate: 48kHz $\rightarrow$ frames per second: 24</p>
+<p>Nyquist rate: 24kHz $\rightarrow$ rotations per second: &gt;12</p>
+<p>In fact aliasing doesn’t just occur in audio and video signals, it occurs in any form of signal which is discrete and is constrained by some sampling parameters.</p>
+<p>Let’s get into temporal aliasing in audio signals. Before we delve into illustrating how a low sampling rate coupled with high frequencies can cause aliasing, we’ll first listen to what aliasing sounds like. And this is generally harder than it seems, because modern signal paths are really good at eliminating aliasing. When an analog signal passes through an analog to digital converter, if filters out all frequencies above the Nyquist rate, and when the sampled digital signal passes through a digital to analog converter, essentially the same process of filtering occurs. </p>
+<p>modern analog components are good: low pass filter, cut off at the Nyquist frequency</p>
+<p>We can’t bypass these steps to force aliasing, because they are baked into the analog circuitry. Our only hope is to introduce higher frequencies within the signal in the digital domain. Even then, modern commercial applications and plugins such as pitch shifters, compressors and ring modulators, which actually create higher frequencies within our digital audio signals, are aware that aliasing is a possibility when the signal is processed, and they account for it by internally oversampling the signal. Sometimes this mechanism is transparent, and you wouldn’t even know that it’s happening, and sometimes they give you the option to choose they degree of oversampling. </p>
+<p>modern analog components are good, so are software plugins</p>
+<p>As a producer of music then, you are well insulated from the effects of aliasing in most cases. But as a developer, battling the effects of aliasing could be daunting. The aim of this video is to just give enough clarity and understanding of aliasing, irrespective of what you plan to do, and hopefully you can continue the investigation further depending on your needs and use cases. </p>
+<h3 id="Forcing-Aliasing-in-Audacity"><a href="#Forcing-Aliasing-in-Audacity" class="headerlink" title="Forcing Aliasing in Audacity"></a>Forcing Aliasing in Audacity</h3><h3 id="Sampling-Illustrated"><a href="#Sampling-Illustrated" class="headerlink" title="Sampling Illustrated"></a>Sampling Illustrated</h3><h3 id="Aliasing-from-Square-Waves"><a href="#Aliasing-from-Square-Waves" class="headerlink" title="Aliasing from Square Waves"></a>Aliasing from Square Waves</h3><h3 id="Solutions-for-avoid-Aliasing"><a href="#Solutions-for-avoid-Aliasing" class="headerlink" title="Solutions for avoid Aliasing"></a>Solutions for avoid Aliasing</h3><h2 id="5-Quantization"><a href="#5-Quantization" class="headerlink" title="5. Quantization"></a>5. Quantization</h2><h2 id="6-Bit-Depth"><a href="#6-Bit-Depth" class="headerlink" title="6. Bit Depth"></a>6. Bit Depth</h2><h2 id="7-Dithering-Explained"><a href="#7-Dithering-Explained" class="headerlink" title="7. Dithering Explained"></a>7. Dithering Explained</h2><h2 id="8-Dither-Types"><a href="#8-Dither-Types" class="headerlink" title="8. Dither Types"></a>8. Dither Types</h2><h2 id="9-Noise-Shaping"><a href="#9-Noise-Shaping" class="headerlink" title="9. Noise Shaping"></a>9. Noise Shaping</h2><h2 id="10-Pulse-Code-Modulation"><a href="#10-Pulse-Code-Modulation" class="headerlink" title="10. Pulse Code Modulation"></a>10. Pulse Code Modulation</h2><h2 id="11-Multiplexing-and-Error-Correction"><a href="#11-Multiplexing-and-Error-Correction" class="headerlink" title="11. Multiplexing and Error Correction"></a>11. Multiplexing and Error Correction</h2><h2 id="12-Containers-and-File-Formats"><a href="#12-Containers-and-File-Formats" class="headerlink" title="12. Containers and File Formats"></a>12. Containers and File Formats</h2><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.electronicdesign.com/technologies/analog/article/21806048/the-front-end-filtering-or-bandlimiting">https://www.electronicdesign.com/technologies/analog/article/21806048/the-front-end-filtering-or-bandlimiting</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://marapython.com">Alowree XU</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://marapython.com/posts/digital-audio/">https://marapython.com/posts/digital-audio/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Audio/">Audio</a><a class="post-meta__tags" href="/tags/Digital-Audio/">Digital Audio</a><a class="post-meta__tags" href="/tags/Digital-Audio-Fundamentals/">Digital Audio Fundamentals</a><a class="post-meta__tags" href="/tags/Audio-Transformation/">Audio Transformation</a><a class="post-meta__tags" href="/tags/Audio-Processing/">Audio Processing</a><a class="post-meta__tags" href="/tags/Digital-Signal-Processing/">Digital Signal Processing</a></div><div class="post_share"><div class="social-share" data-image="https://image.marapython.com/americana-1512910.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/1920491821/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Audio Bit Rate</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/1920491821/" title="Audio Bit Rate"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-22</div><div class="title">Audio Bit Rate</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alowree XU</div><div class="author-info__description">Keep the Momentum</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">65</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">71</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/alowree"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/alowree" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:alowree@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">半路Coder，使用Python</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Signal-Paths"><span class="toc-text">1. Signal Paths</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Advent-of-Digital-Systems"><span class="toc-text">Advent of Digital Systems</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Signal-Path-Audio-Processing-vs-Transformation"><span class="toc-text">Signal Path - Audio Processing vs Transformation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Audio-Transformation"><span class="toc-text">Audio Transformation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Audio-Processing"><span class="toc-text">Audio Processing</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Signal-Path"><span class="toc-text">Signal Path</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scenario-1"><span class="toc-text">Scenario 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scenario-2"><span class="toc-text">Scenario 2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scenario-3"><span class="toc-text">Scenario 3</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Sampling-Theorem"><span class="toc-text">2. Sampling Theorem</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Continuous-vs-Discrete-Signals"><span class="toc-text">Continuous vs Discrete Signals</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Nyquist-Shannon-Sampling-Theorem"><span class="toc-text">Nyquist Shannon Sampling Theorem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bandlimiting-using-Low-Pass-Filter"><span class="toc-text">Bandlimiting using Low Pass Filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sampling-examples-in-Audacity"><span class="toc-text">Sampling examples in Audacity</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Demo-1"><span class="toc-text">Demo 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Demo-2"><span class="toc-text">Demo 2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Demo-3"><span class="toc-text">Demo 3</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Demo-4"><span class="toc-text">Demo 4</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Re-conversion-of-Digital-Signals-to-Analog-Signals"><span class="toc-text">Re-conversion of Digital Signals to Analog Signals</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Aliasing-Artifacts"><span class="toc-text">Aliasing Artifacts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Practical-Sampling-Rate-and-Outro"><span class="toc-text">Practical Sampling Rate and Outro</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Common-Audio-Sample-Rates"><span class="toc-text">3. Common Audio Sample Rates</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Intro-to-Sampling-Theory"><span class="toc-text">Intro to Sampling Theory</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Common-Audio-Sample-Rates"><span class="toc-text">Common Audio Sample Rates</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bandwidth"><span class="toc-text">Bandwidth</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8kHz"><span class="toc-text">8kHz</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sampling-with-Audacity"><span class="toc-text">Sampling with Audacity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16kHz"><span class="toc-text">16kHz</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#44-1kHz"><span class="toc-text">44.1kHz</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#48kHz"><span class="toc-text">48kHz</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Higher-Sampling-Rates"><span class="toc-text">Higher Sampling Rates</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Understanding-Aliasing"><span class="toc-text">4. Understanding Aliasing</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Wagon-Wheel-Effect"><span class="toc-text">Wagon Wheel Effect</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Temporal-Aliasing"><span class="toc-text">Temporal Aliasing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Forcing-Aliasing-in-Audacity"><span class="toc-text">Forcing Aliasing in Audacity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sampling-Illustrated"><span class="toc-text">Sampling Illustrated</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Aliasing-from-Square-Waves"><span class="toc-text">Aliasing from Square Waves</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solutions-for-avoid-Aliasing"><span class="toc-text">Solutions for avoid Aliasing</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Quantization"><span class="toc-text">5. Quantization</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Bit-Depth"><span class="toc-text">6. Bit Depth</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-Dithering-Explained"><span class="toc-text">7. Dithering Explained</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-Dither-Types"><span class="toc-text">8. Dither Types</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-Noise-Shaping"><span class="toc-text">9. Noise Shaping</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-Pulse-Code-Modulation"><span class="toc-text">10. Pulse Code Modulation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-Multiplexing-and-Error-Correction"><span class="toc-text">11. Multiplexing and Error Correction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-Containers-and-File-Formats"><span class="toc-text">12. Containers and File Formats</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-text">References</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/digital-audio/" title="Digital Audio Fundamentals"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/americana-1512910.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Digital Audio Fundamentals"/></a><div class="content"><a class="title" href="/posts/digital-audio/" title="Digital Audio Fundamentals">Digital Audio Fundamentals</a><time datetime="2022-06-24T07:20:34.000Z" title="发表于 2022-06-24 15:20:34">2022-06-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1920491821/" title="Audio Bit Rate"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Audio Bit Rate"/></a><div class="content"><a class="title" href="/posts/1920491821/" title="Audio Bit Rate">Audio Bit Rate</a><time datetime="2022-06-22T10:52:49.000Z" title="发表于 2022-06-22 18:52:49">2022-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/html-audio/" title="Hexo博客文章插入音频"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/colorful-2174045.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo博客文章插入音频"/></a><div class="content"><a class="title" href="/posts/html-audio/" title="Hexo博客文章插入音频">Hexo博客文章插入音频</a><time datetime="2022-06-21T00:02:47.000Z" title="发表于 2022-06-21 08:02:47">2022-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/mix-blend-mode/" title="CSS3新增属性mix-blend-mode: difference"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-vlad-kovriga-339119.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS3新增属性mix-blend-mode: difference"/></a><div class="content"><a class="title" href="/posts/mix-blend-mode/" title="CSS3新增属性mix-blend-mode: difference">CSS3新增属性mix-blend-mode: difference</a><time datetime="2022-06-19T01:32:45.000Z" title="发表于 2022-06-19 09:32:45">2022-06-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/how-to-update/" title="如何正确地更新 Hexo 主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-aleksandar-pasaric-2068411.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何正确地更新 Hexo 主题"/></a><div class="content"><a class="title" href="/posts/how-to-update/" title="如何正确地更新 Hexo 主题">如何正确地更新 Hexo 主题</a><time datetime="2022-06-18T14:03:06.000Z" title="发表于 2022-06-18 22:03:06">2022-06-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><div id="marapython-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/VS-Code/" data-pjax-state="">VS Code</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/tags/中英对照/" data-pjax-state="">中英对照</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://soundfreaq.jd.com/">奇响旗舰店</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/tasks/" data-pjax-state="">工作清单</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div></div></div><div id="footer-banner"><div class="footer-banner-links"><div class="footer-banner-left"><span id="footer-banner-tips"></span><script type="text/javascript" src="https://cdn.bootcss.com/typed.js/2.0.5/typed.js"></script><script type="text/javascript">var typed = new Typed("#footer-banner-tips", {
+            strings: ['The key to success? Do stuff.','Be stronger than your excuses.','Wake up, kick ass, REPEAT.','Be a warrior, not a worrier.','Dream It.  Wish It.  Do It.','Be brave, take risks.','Genius is 10% inspiration, 90% perspiration.','Be positive patient and persistent.'],
+            startDelay: 200,
+            backDelay: 2000,
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 20
+            })
+</script></div><div class="footer-banner-right"><a class="footer-banner-link" href="/rss/" data-pjax-state="data-pjax-state">订阅</a><a class="footer-banner-link" href="/update/" data-pjax-state="data-pjax-state">主题</a><a class="footer-banner-link" href="https://www.beian.miit.gov.cn/" rel="external nofollow noreferrer" target="_blank">粤ICP备20043865号</a></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'ajuJLGXlPqFtm3MLk83sF0l5-gzGzoHsz',
+      appKey: 'RN8c6YqdlC8Y8VdQUJSYMTfC',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script defer src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/hexo-tag-plugins@latest/lib/mindmap.min.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
