@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/posts/26789996/</loc>
+    
+    <lastmod>2022-06-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/1920491821/</loc>
     
     <lastmod>2022-06-27</lastmod>
@@ -722,13 +731,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/Markdown/</loc>
-    <lastmod>2022-06-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Font-Awesome/</loc>
     <lastmod>2022-06-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -744,6 +746,13 @@
   
   <url>
     <loc>https://marapython.com/tags/iconfont/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Markdown/</loc>
     <lastmod>2022-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -884,6 +893,48 @@
   
   <url>
     <loc>https://marapython.com/tags/Sample-Rate/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Oxford-Comma/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Serial-Comma/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/AP-Stylebook/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Comma-Splice/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Comma-Fault/</loc>
+    <lastmod>2022-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Conjunction/</loc>
     <lastmod>2022-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
