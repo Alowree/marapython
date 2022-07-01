@@ -6,7 +6,7 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-29T04:29:48.785Z</updated>
+  <updated>2022-06-29T08:35:15.341Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://marapython.com/posts/26789996/"/>
     <id>https://marapython.com/posts/26789996/</id>
     <published>2022-06-29T03:06:50.000Z</published>
-    <updated>2022-06-29T04:29:48.785Z</updated>
+    <updated>2022-06-29T08:35:15.341Z</updated>
     
     
     <summary type="html">There is only one situation where you always need a comma before “and.” Any time you use “and” to connect two independent clauses (parts of a sentence that stand alone as a complete unit), you must use a comma before it.</summary>
@@ -50,10 +50,10 @@
     <link href="https://marapython.com/posts/digital-audio/"/>
     <id>https://marapython.com/posts/digital-audio/</id>
     <published>2022-06-24T07:20:34.000Z</published>
-    <updated>2022-06-29T08:34:33.725Z</updated>
+    <updated>2022-07-01T00:23:15.859Z</updated>
     
     
-    <summary type="html">This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they&#39;re converted and transformed and the advantages of working with digital signals. We&#39;ll cover concepts of sampling theorem, sample rates, aliasing, bit depth, quantization, dither, pulse code modulation, sigma delta modulation, noise shaping and all that good stuff.</summary>
+    <summary type="html">This video series explains the fundamentals of digital audio, how audio signals are expressed in the digital domain, how they&#39;re converted and transformed and the advantages of working with digital signals. </summary>
     
     
     
@@ -79,14 +79,14 @@
     <link href="https://marapython.com/posts/1920491821/"/>
     <id>https://marapython.com/posts/1920491821/</id>
     <published>2022-06-22T10:52:49.000Z</published>
-    <updated>2022-06-27T01:30:41.391Z</updated>
+    <updated>2022-06-30T09:14:17.333Z</updated>
     
     
     <summary type="html">In telecommunications and computing, bit rate is the number of bits that are conveyed or processed per unit of time. The bit rate is expressed in the unit &lt;strong&gt;bit per second&lt;/strong&gt;, often in conjunction with an SI prefix such as kilo, mega, giga or tera.</summary>
     
     
     
-    <category term="Audio" scheme="https://marapython.com/categories/Audio/"/>
+    <category term="Digital Audio" scheme="https://marapython.com/categories/Digital-Audio/"/>
     
     
     <category term="Audio" scheme="https://marapython.com/tags/Audio/"/>
