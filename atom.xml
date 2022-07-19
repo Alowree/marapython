@@ -6,15 +6,39 @@
   <link href="https://marapython.com/atom.xml" rel="self"/>
   
   <link href="https://marapython.com/"/>
-  <updated>2022-06-29T08:35:15.341Z</updated>
+  <updated>2022-07-19T03:05:40.766Z</updated>
   <id>https://marapython.com/</id>
   
   <author>
-    <name>Alowree XU</name>
+    <name>AX</name>
     <email>alowree@hotmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wordpress Notes</title>
+    <link href="https://marapython.com/posts/228567411/"/>
+    <id>https://marapython.com/posts/228567411/</id>
+    <published>2022-07-14T00:40:56.000Z</published>
+    <updated>2022-07-19T03:05:40.766Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用Wordpress建站，面向国外的C端客户。&lt;/p&gt;
+&lt;h2 id=&quot;本地站点&quot;&gt;&lt;a href=&quot;#本地站点&quot; class=&quot;headerlink&quot; title=&quot;本地站点&quot;&gt;&lt;/a&gt;本地站点&lt;/h2&gt;&lt;h2 id=&quot;本地安装XAMPP&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Wordpress" scheme="https://marapython.com/categories/Wordpress/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>When to use a comma before &quot;and&quot;</title>
@@ -403,31 +427,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;absolute risk　绝对风险&lt;br&gt;Additional Law　加法定理&lt;br&gt;airline</summary>
-        
-      
-    
-    
-    
-    <category term="GMAT" scheme="https://marapython.com/categories/GMAT/"/>
-    
-    
-    <category term="中英对照" scheme="https://marapython.com/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fragile Lives</title>
-    <link href="https://marapython.com/posts/fragile-lives/"/>
-    <id>https://marapython.com/posts/fragile-lives/</id>
-    <published>2022-03-05T01:38:50.000Z</published>
-    <updated>2022-06-19T02:08:49.272Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Fragile Lives - A heart surgeon’s stories of life and death on the operating table，中文译名《打开一颗心》，是英国心外科医生 Stephen Westaby</summary>
         
       
     

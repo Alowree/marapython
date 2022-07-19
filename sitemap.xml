@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://marapython.com/posts/simplified-marketing/</loc>
+    
+    <lastmod>2022-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/228567411/</loc>
+    
+    <lastmod>2022-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/digital-audio/</loc>
     
     <lastmod>2022-07-07</lastmod>
@@ -210,15 +228,6 @@
   
   <url>
     <loc>https://marapython.com/posts/gantt-chart/</loc>
-    
-    <lastmod>2022-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/simplified-marketing/</loc>
     
     <lastmod>2022-06-20</lastmod>
     
@@ -661,7 +670,7 @@
 
   <url>
     <loc>https://marapython.com/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -669,539 +678,539 @@
   
   <url>
     <loc>https://marapython.com/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Audio/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Digital-Audio/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Digital-Audio-Fundamentals/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Audio-Transformation/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Audio-Processing/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Digital-Signal-Processing/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/HTML/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/video/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Markdown/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Font-Awesome/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/icon/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/iconfont/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Hexo/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Butterfly/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Tag-Plugins/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/HTML5/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/SEO/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E9%A1%B5%E8%84%9A/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/footer/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/Github/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/Vercel/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <loc>https://marapython.com/tags/HTML5/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Good-Practices/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/SEO/</loc>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Github/</loc>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Vercel/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Typora/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E5%88%86%E8%B4%9D/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E5%A3%B0%E9%9F%B3/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Sound-Pressure-Level/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Audio-Bit-Rate/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Bitrate/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Bit-Depth/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Sample-Rate/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Oxford-Comma/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Serial-Comma/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/AP-Stylebook/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Comma-Splice/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Comma-Fault/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Conjunction/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Git/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/GMAT/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Maths/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Parallel-Construction/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/parallelism/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E6%8E%92%E6%AF%94/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E5%B9%B3%E8%A1%8C%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E5%B9%B6%E5%88%97%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/regular-expressions/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/regular-expression/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E5%AD%97%E7%AC%A6%E7%BB%84/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/character-class/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/regular-expressions/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Parallelism/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Parallel-Structure/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Other/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/The-Other/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Another/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E7%BB%84%E5%90%88/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/Integrated-Marketing-Communication/</loc>
-    <lastmod>2022-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E6%95%B4%E5%90%88%E8%90%A5%E9%94%80%E4%BC%A0%E6%92%AD/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E7%9B%B4%E9%80%9A%E8%BD%A6/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/</loc>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E7%BB%84%E5%90%88/</loc>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Integrated-Marketing-Communication/</loc>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E6%95%B4%E5%90%88%E8%90%A5%E9%94%80%E4%BC%A0%E6%92%AD/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/cumulative-distributive-function/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/probability-density-function/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/univariate-normal-distribution/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/expectation/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/mean/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/variance/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/standard-deviation/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/bivariate-normal-distribution/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/multivariate-normal-distribution/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/covariance-matrix/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E6%B7%B7%E5%90%88%E9%AB%98%E6%96%AF%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/GMM/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/tags/Gaussian-Mixture-Model/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -1209,106 +1218,113 @@
 
   
   <url>
-    <loc>https://marapython.com/categories/GMAT/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <loc>https://marapython.com/categories/CSS/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/CSS/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <loc>https://marapython.com/categories/GMAT/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/Digital-Audio/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/HTML/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/Hexo/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/Markdown/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/%E5%A3%B0%E5%AD%A6/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/Git/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/Python/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/Video-Editing/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <loc>https://marapython.com/categories/Wordpress/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/E-commerce/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/categories/%E6%96%B0%E9%9B%B6%E5%94%AE/</loc>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://marapython.com/categories/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
