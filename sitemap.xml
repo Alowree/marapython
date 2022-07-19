@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://marapython.com/posts/butterfly-v4/</loc>
+    
+    <lastmod>2022-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/how-to-update/</loc>
+    
+    <lastmod>2022-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/posts/digital-audio/</loc>
+    
+    <lastmod>2022-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/simplified-marketing/</loc>
     
     <lastmod>2022-07-19</lastmod>
@@ -14,15 +41,6 @@
     <loc>https://marapython.com/posts/228567411/</loc>
     
     <lastmod>2022-07-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/digital-audio/</loc>
-    
-    <lastmod>2022-07-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -86,15 +104,6 @@
     <loc>https://marapython.com/posts/689319105/</loc>
     
     <lastmod>2022-06-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/butterfly-v4/</loc>
-    
-    <lastmod>2022-06-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -408,15 +417,6 @@
   
   <url>
     <loc>https://marapython.com/posts/git-get-started/</loc>
-    
-    <lastmod>2022-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/how-to-update/</loc>
     
     <lastmod>2022-06-20</lastmod>
     
@@ -1218,14 +1218,14 @@
 
   
   <url>
-    <loc>https://marapython.com/categories/CSS/</loc>
+    <loc>https://marapython.com/categories/GMAT/</loc>
     <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/GMAT/</loc>
+    <loc>https://marapython.com/categories/CSS/</loc>
     <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
