@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://marapython.com/posts/gaussian-mixture-model/</loc>
+    
+    <lastmod>2022-08-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://marapython.com/posts/digital-audio/</loc>
     
     <lastmod>2022-07-29</lastmod>
@@ -192,15 +201,6 @@
   
   <url>
     <loc>https://marapython.com/posts/hmm/</loc>
-    
-    <lastmod>2022-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/posts/gaussian-mixture-model/</loc>
     
     <lastmod>2022-06-20</lastmod>
     
@@ -684,20 +684,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/HTML/</loc>
-    <lastmod>2022-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/video/</loc>
-    <lastmod>2022-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Digital-Audio/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -720,6 +706,20 @@
   
   <url>
     <loc>https://marapython.com/tags/Digital-Signal-Processing/</loc>
+    <lastmod>2022-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/HTML/</loc>
+    <lastmod>2022-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/video/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -845,27 +845,6 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/tags/%E5%88%86%E8%B4%9D/</loc>
-    <lastmod>2022-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/%E5%A3%B0%E9%9F%B3/</loc>
-    <lastmod>2022-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://marapython.com/tags/Sound-Pressure-Level/</loc>
-    <lastmod>2022-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/tags/Audio/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -937,6 +916,27 @@
   
   <url>
     <loc>https://marapython.com/tags/Conjunction/</loc>
+    <lastmod>2022-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%88%86%E8%B4%9D/</loc>
+    <lastmod>2022-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/%E5%A3%B0%E9%9F%B3/</loc>
+    <lastmod>2022-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/tags/Sound-Pressure-Level/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1211,13 +1211,6 @@
 
   
   <url>
-    <loc>https://marapython.com/categories/GMAT/</loc>
-    <lastmod>2022-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://marapython.com/categories/CSS/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -1225,7 +1218,7 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/HTML/</loc>
+    <loc>https://marapython.com/categories/GMAT/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1233,6 +1226,13 @@
   
   <url>
     <loc>https://marapython.com/categories/Digital-Audio/</loc>
+    <lastmod>2022-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://marapython.com/categories/HTML/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1281,14 +1281,14 @@
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/Wordpress/</loc>
+    <loc>https://marapython.com/categories/E-commerce/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://marapython.com/categories/E-commerce/</loc>
+    <loc>https://marapython.com/categories/Wordpress/</loc>
     <lastmod>2022-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
