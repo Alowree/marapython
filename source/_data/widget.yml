@@ -1,0 +1,17 @@
+# top: 創建的 widget 會出現在非 sticky 區域（即所有頁面都會顯示)
+top:
+    # - class_name:
+    #   id_name:
+    #   name:
+    #   icon:
+    #   order:
+    #   html:
+
+# bottom: 創建的 widget 會出現在 sticky 區域（除了文章頁都會顯示)
+bottom:
+    - class_name: user-map
+      id_name: user-map
+      name: 访客地图
+      icon: fas fa-users
+      order:
+      html: '<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=56JaZfHoBTtqBQ4b6ruUtZrR9_5qx5HGgB6dI0aAN18"></script>'

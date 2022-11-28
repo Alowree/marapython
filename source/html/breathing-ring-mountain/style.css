@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: black;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+.rings {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: relative;
+  perspective: 400px;
+  transform: rotateX(-30deg);
+}
+.rings .ring {
+  --ratio: calc(1 / var(--t));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transform: translateZ(calc(var(--i) * 0.8rem)) scale(calc(var(--i) * var(--ratio)));
+}
+.rings .ring::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 2px solid white;
+  border-radius: inherit;
+  -webkit-animation: scale-out-in 4s calc(var(--i) * 0.05s) both var(--ease-out-cubic) infinite;
+          animation: scale-out-in 4s calc(var(--i) * 0.05s) both var(--ease-out-cubic) infinite;
+}
+
+@-webkit-keyframes scale-out-in {
+  0% {
+    transform: scale(1);
+  }
+  33%, 66% {
+    transform: scale(2);
+  }
+  66%, 100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-out-in {
+  0% {
+    transform: scale(1);
+  }
+  33%, 66% {
+    transform: scale(2);
+  }
+  66%, 100% {
+    transform: scale(1);
+  }
+}

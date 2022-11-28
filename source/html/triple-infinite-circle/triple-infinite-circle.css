@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101010;
+}
+
+/* vmin uses the ratio of the smallest side. */
+/* If the height of the browser window is less than its width, */
+/* 1vmin will be equivalent to 1vh.  */
+/* If the width of the browser is less than it’s height,  */
+/* 1vmin is equvialent to 1vw. */
+
+.content {
+  width: 50vmin;
+  height: 50vmin;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 2s linear 0s infinite;
+  border-radius: 100%;
+}
+
+.content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content::before,
+.content::after {
+  content: "";
+  border: 3vmin solid #fff0;
+  width: 70%;
+  height: 70%;
+  border-radius: 100%; /* Any diff btw 100% and 50%? */
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  box-shadow: 0vmin 2vmin 1vmin 0vmin #000, 0vmin 0vmin 1vmin 0 #000 inset;
+  z-index: 1;
+  border-left-color: #fff;
+  transform: rotate(-45deg);
+  border-bottom-color: #fff;
+}
+
+.content::after {
+  width: 85%;
+  height: 85%;
+  z-index: 0;
+}
+
+.circle {
+  --inner: 70%;
+  border: 3vmin solid #fff;
+  width: var(--inner);
+  height: var(--inner);
+  border-radius: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  box-shadow: 1vmin 1vmin 1vmin 0 #000, 1vmin 1vmin 1vmin 0 #000 inset;
+}
+
+.circle:nth-child(2) {
+  --inner: 85%;
+}
+
+.circle:nth-child(3) {
+  --inner: 100%;
+}
+.circle:nth-child(4) {
+  clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+  box-shadow: none;
+  --inner: 85%;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  /* The CSS place-items shorthand property allows you */
+  /* to align items along both the block and inline directions at once */
+  /* i.e. the align-items and justify-items properties) */
+  /* in a relevant layout system such as Grid or Flexbox. */
+  /* If the second value is not set, the first value is also used for it. */
+  place-items: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Lato, sans-serif;
+  font-size: 26px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+input[type="checkbox"] + label::before {
+  content: '\a0';
+  display: inline-block;
+  position: relative;
+  top: .4em;
+  vertical-align: .2em;
+  width: .8em;
+  height: .8em;
+  background: silver;
+  text-indent: .15em;
+  line-height: 1;
+}
+input[type="checkbox"]:checked + label::before {
+  content: '\2713';
+  background: yellowgreen;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 .1em .1em #58a;
+}

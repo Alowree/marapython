@@ -1,0 +1,73 @@
+:root {
+  --pulse-width: 10vw;
+  --pulse-color-white: white;
+  --pulse-border-width: 15px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: black;
+}
+
+.pulse {
+  position: relative;
+  width: var(--pulse-width);
+  height: var(--pulse-width);
+  /* transform: rotateX(60deg); */
+}
+.pulse::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  /* border: var(--pulse-border-width) solid var(--pulse-color); */
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  animation: pulse 1s infinite;
+}
+/* In vscode-preview-server, both 1st and 2nd child are missing, */
+/* but previews in both Chrome and Edge are correct */
+.pulse:nth-child(1)::before {
+  animation-delay: .2s;
+  border: var(--pulse-border-width) solid white;
+}
+.pulse:nth-child(2)::before {
+  animation-delay: .4s;
+  border: var(--pulse-border-width) solid red;
+}
+.pulse:nth-child(3)::before {
+  animation-delay: .6s;
+  border: var(--pulse-border-width) solid blue;
+}
+.pulse:nth-child(4)::before {
+  animation-delay: .8s;
+  border: var(--pulse-border-width) solid yellow;
+}
+.pulse:nth-child(5)::before {
+  border: var(--pulse-border-width) solid pink;
+  animation-delay: 1s;
+}
+.pulse:nth-child(6)::before {
+  border: var(--pulse-border-width) solid hotpink;
+  animation-delay: 1.2s;
+}
+.pulse:nth-child(7)::before {
+  border: var(--pulse-border-width) solid green;
+  animation-delay: 1.4s;
+}
+
+
+@keyframes pulse {
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

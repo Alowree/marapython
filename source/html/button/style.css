@@ -1,0 +1,10 @@
+button {
+  --border-width: 2px;
+  --border-radius: 22px;
+  --color-1: #f19f39;
+  --color-2: #de222c;
+}
+
+button {
+  font-weight: bold;
+}

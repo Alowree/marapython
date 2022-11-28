@@ -1,0 +1,13 @@
+body {
+  font-family: system-ui;
+  background: linear-gradient(to bottom, hotpink, #ff1d8e);
+  color: white;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+h3 {
+  font-family: YouYuan;
+  letter-spacing: 10px;
+}

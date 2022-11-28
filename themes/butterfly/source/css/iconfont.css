@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2663193 */
+  src: url('//at.alicdn.com/t/c/font_2663193_c9aggq4ok3.woff2?t=1662536830409') format('woff2'),
+       url('//at.alicdn.com/t/c/font_2663193_c9aggq4ok3.woff?t=1662536830409') format('woff'),
+       url('//at.alicdn.com/t/c/font_2663193_c9aggq4ok3.ttf?t=1662536830409') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-system:before {
+  content: "\e6a9";
+}
+
+.icon-wave:before {
+  content: "\e724";
+}
+
+.icon-hexo:before {
+  content: "\e656";
+}
+
+.icon-a-Sound-wave3:before {
+  content: "\e7ff";
+}
+
+.icon-a-Sound-wave31:before {
+  content: "\e81f";
+}
+
+.icon-bluetooth1:before {
+  content: "\e64d";
+}
+
+.icon-clock:before {
+  content: "\e819";
+}
+
+.icon-radio1:before {
+  content: "\e678";
+}
+
+.icon-waveform_circle:before {
+  content: "\e8be";
+}
+
+.icon-waveform_circle_fill:before {
+  content: "\e8d6";
+}
+
+.icon-waveform_circle_fill1:before {
+  content: "\e6e6";
+}
+
+.icon-chanxueyanhezuo:before {
+  content: "\e61a";
+}
+
+.icon-speaker3:before {
+  content: "\e73e";
+}
+
+.icon-Speaker-:before {
+  content: "\e627";
+}
+
+.icon-AirHumidifier3x:before {
+  content: "\e610";
+}
+
+.icon-AirPurifier3x:before {
+  content: "\e611";
+}
+
+.icon-time1:before {
+  content: "\e7ce";
+}
+
+.icon-lock1:before {
+  content: "\e61f";
+}
+
+.icon-usb-cord:before {
+  content: "\e8b1";
+}
+
+.icon-lock2:before {
+  content: "\e6c0";
+}
+
+.icon-sun1:before {
+  content: "\e642";
+}
+
+.icon-usb-c:before {
+  content: "\e8ba";
+}
+
+.icon-Wave:before {
+  content: "\e613";
+}
+
+.icon-home:before {
+  content: "\e61b";
+}
+
+.icon-radio:before {
+  content: "\ea28";
+}
+
+.icon-bolt:before {
+  content: "\e654";
+}
+
+.icon-bluetooth:before {
+  content: "\e8d4";
+}
+
+.icon-time:before {
+  content: "\e620";
+}
+
+.icon-usb-c-cord:before {
+  content: "\e8b2";
+}
+
+.icon-USBPort:before {
+  content: "\e6e4";
+}
+
+.icon-lock:before {
+  content: "\e605";
+}
+
+.icon-sun:before {
+  content: "\e6d2";
+}
+
