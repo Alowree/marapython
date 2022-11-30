@@ -27,6 +27,44 @@ swiper_index:
 
 本文的主要目的在于记录Butterfly主题下，已经安装使用的各种插件。
 
+在博客根目录下，使用bash命令`npm ls -dept 0`，可以查看当前博客已安装插件：
+
+```BASH
+$ npm ls -dept 0
+hexo-site@0.0.0 D:\MaraPython
+├── acorn@8.8.0
+├── co@4.6.0
+├── hexo-abbrlink@2.2.1
+├── hexo-blog-encrypt@3.1.6
+├── hexo-deployer-git@3.0.0
+├── hexo-filter-nofollow@2.0.2
+├── hexo-generator-archive@1.0.0
+├── hexo-generator-category@1.0.0
+├── hexo-generator-feed@3.0.0
+├── hexo-generator-index@2.0.0
+├── hexo-generator-search@2.4.3
+├── hexo-generator-sitemap@3.0.1
+├── hexo-generator-tag@1.0.0
+├── hexo-git-backup@0.1.3
+├── hexo-ipynb@0.2.4
+├── hexo-jupyter-notebook@0.0.3
+├── hexo-markmap@1.1.3
+├── hexo-migrator-wordpress@2.1.2
+├── hexo-renderer-ejs@2.0.0
+├── hexo-renderer-kramed@0.1.4
+├── hexo-renderer-pug@3.0.0
+├── hexo-renderer-stylus@2.1.0
+├── hexo-server@3.0.0
+├── hexo-tag-plugins@1.0.5
+├── hexo-theme-landscape@0.0.3
+├── hexo-wordcount@6.0.1
+├── hexo@6.2.0
+├── pandoc@0.2.0
+└── upgrade@1.1.0
+```
+
+
+
 ## 文章加密
 
 1. 安装插件
@@ -180,7 +218,7 @@ permalink: :year/:month/:day/:title/
 git clone -b production https://github.com/Alowree/marapython.git MaraPython
 ```
 
-将生产环境拉取至本地电脑之后，再在新电脑上安装Hexo：
+将生产环境拉取至本地电脑之后，再在新电脑上安装 Hexo：
 
 ```bash
 cd MaraPython

@@ -339,3 +339,15 @@ p .img-alt {
 ol, ul {
     padding-left: 1.2em;
 }
+
+/* footer link style 
+#nav .menus_items .menus_item:hover {
+  background: #49b1f5;
+  color: var(--white);
+}
+
+#nav .menus_items .menus_item .menus_item_child li:hover {
+  background: #49b1f5;
+  color: var(--white);
+}
+*/
