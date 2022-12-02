@@ -4,7 +4,7 @@
 
 menu:
   首页: / || fas fa-home
-  文章||fas fa-graduation-cap:
+  文章|| fas fa-graduation-cap:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
@@ -111,7 +111,7 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: true
+disable_top_img: false
 
 # The banner image of home page
 index_img:
@@ -508,9 +508,9 @@ theme_color:
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
   toc_color: "#00c4b6"
-  blockquote_padding_color: "#49b1f5"
-  blockquote_background_color: "#49b1f5"
-  scrollbar_color: "var(--marapython-scrollbar)" #49b1f5"
+  blockquote_padding_color: "#49B1F5"
+  blockquote_background_color: "#49B1F5"
+  scrollbar_color: "var(--marapython-scrollbar)" #49b1f5
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -826,7 +826,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -891,7 +891,7 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css" media="all">
     - <link rel="stylesheet" href="/css/iconfont.css">
   bottom:
-    - <script src="/js/custom.js"></script>
+    - <script data-pjax src="/js/custom.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

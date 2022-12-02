@@ -204,7 +204,11 @@ Twikoo 评论管理
 
 ## 头部导航菜单
 
-主题再次升级至 4.4 版。这次参考 [关于 Butterfly 的导航栏的一些教程 | LYX の小破站 (yisous.xyz)](https://yisous.xyz/posts/895003b5/)，来调整一下导航菜单。
+主题再次升级至 4.5.1 版。这次参考 [关于 Butterfly 的导航栏的一些教程 | LYX の小破站 (yisous.xyz)](https://yisous.xyz/posts/895003b5/)，来调整一下导航菜单。
+
+首先，在`_config.butterfly.yml`里面配置，顶部导航主菜单，取消图标，保留文字；二级菜单，维持原状，仍然保留图标。
+
+
 
 ```diff
 nav#nav
