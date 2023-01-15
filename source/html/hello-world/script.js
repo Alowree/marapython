@@ -1,1 +1,1 @@
-document.write("My first JavaScript program");
+document.write("My first JavaScript - content written by JavaScript");

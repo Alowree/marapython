@@ -190,7 +190,7 @@ Twikoo 评论管理
       include includes/pagination.pug
 ```
 
-2、`MaraPython\themes\butterfly\source\csscustom.css`文件内，添加
+2、`MaraPython\themes\butterfly\source\css\custom.css`文件内，添加
 
 ```css
 #tag #tag-page-tags {
@@ -208,32 +208,111 @@ Twikoo 评论管理
 
 首先，在`_config.butterfly.yml`里面配置，顶部导航主菜单，取消图标，保留文字；二级菜单，维持原状，仍然保留图标。
 
+第二，在`MaraPython\themes\butterfly\source\js\custom.css`添加自定义js，获取页面的标题：
 
+```javascript
+// 返回顶部 显示网页阅读进度
+window.onscroll = percent; // 执行函数
+// 页面百分比
+function percent() {
+  let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度
+    b =
+      Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.body.clientHeight,
+        document.documentElement.clientHeight
+      ) - document.documentElement.clientHeight, // 整个网页高度 减去 可视高度
+    result = Math.round((a / b) * 100), // 计算百分比
+    btn = document.querySelector("#percent"); // 获取图标
 
-```diff
+  result <= 99 || (result = 99), (btn.innerHTML = result);
+}
+
+document.getElementById("page-name").innerText = document.title.split(" | MaraPython")[0];
+```
+
+第三，main.js也改一下：
+
+```javascript
+  window.scrollCollect = () => {
+        return btf.throttle(function (e) {
+          const currentTop = window.scrollY || document.documentElement.scrollTop
+          const isDown = scrollDirection(currentTop)
+          if (currentTop > 56) {
++           $header.classList.add('is-top-bar')
+            if (isDown) {
+              if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
+              if (isChatBtnShow && isChatShow === true) {
+                chatBtnHide()
+                isChatShow = false
+              }
+            } else {
+              if (!$header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
+              if (isChatBtnHide && isChatShow === false) {
+                chatBtnShow()
+                isChatShow = true
+              }
+            }
+            $header.classList.add('nav-fixed')
+            if (window.getComputedStyle($rightside).getPropertyValue('opacity') === '0') {
+              $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
+            }
+          } else {
+            if (currentTop === 0) {
+-             $header.classList.remove('nav-fixed', 'nav-visible')
++             $header.classList.remove('is-top-bar')
+            }
+            $rightside.style.cssText = "opacity: ''; transform: ''"
+          }
+
+          if (document.body.scrollHeight <= innerHeight) {
+            $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
+          }
+        }, 200)()
+      }
+```
+
+第四，修改`themes/butterfly/layout/includes/header/index.pug`，其中`nav-visible`可以控制默认显示的是站点标题还是导航栏菜单。
+
+```pug
+  if top_img !== false
+    - var imgSource = top_img && top_img.indexOf('/') !== -1 ? `background-image: url('${url_for(top_img)}')` : `background: ${top_img}`
+    - var bg_img = top_img ? imgSource : ''
+    - var site_title = page.title || page.tag || page.category || config.title
+-   - var isHomeClass = is_home() ? 'full_page' : 'not-home-page'
++   - var isHomeClass = is_home() ? 'full_page nav-fixed nav-visible' : 'not-home-page'
+    - is_post() ? isHomeClass = 'post-bg' : isHomeClass
+  else
+    - var isHomeClass = 'not-top-img'
+```
+
+第五，修改`themes/butterfly/layout/includes/header/nav.pug`，代码中的`btf.scrollToDest(0, 500)`方法，在点击标题之后，可以使视口回滚至页面顶部。
+
+```pug
 nav#nav
   span#blog_name
     a#site-name(href=url_for('/')) #[=config.title]
+
+  div.mask-name-container
+    center(id="name-container")
+      a(id="page-name" href="javascript:btf.scrollToDest(0, 500)") PAGE_NAME
     
   #menus
--    if (theme.algolia_search.enable || theme.local_search.enable)
--      #search-button
--        a.site-page.social-icon.search
--          i.fas.fa-search.fa-fw
--          span=' '+_p('search.title')
-  !=partial('includes/header/menu_item', {}, {cache: true})
-  #nav-right
-+    if (theme.algolia_search.enable || theme.local_search.enable)
-+      #search-button
-+        a.site-page.social-icon.search
-+          i.fas.fa-search.fa-fw
--    #toggle-menu
--      a.site-page
--        i.fas.fa-bars.fa-fw
-+      #toggle-menu
-+        a.site-page
-+          i.fas.fa-bars.fa-fw
+    !=partial('includes/header/menu_item', {}, {cache: true})
+    if (theme.algolia_search.enable || theme.local_search.enable)
+      #search-button
+        a.site-page.social-icon.search
+          i.fas.fa-search.fa-fw
+
+    #toggle-menu
+      a.site-page
+        i.fas.fa-bars.fa-fw
 ```
+
+最后，调整一下`MaraPython\themes\butterfly\source\css\custom.css`的格式代码，全部都是控制导航菜单的样式。
 
 ## 页脚导航菜单
 
