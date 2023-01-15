@@ -1,6 +1,6 @@
 mixin postUI(posts)
   each article , index in page.posts.data
-    //.recent-post-item
+    // .recent-post-item
     .recent-post-item(class= (article.large === true) ? 'post-card-large' : '')
       -
         let link = article.link || article.path

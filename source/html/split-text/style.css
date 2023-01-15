@@ -1,0 +1,48 @@
+:root {
+  --split: 0%;
+}
+
+body {
+  background-color: #0ff;
+  font-family: "Bebas Neue", arial;
+  margin-top: 4em;
+}
+
+.heading {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(2rem, 20vw, 10rem);
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 0.3em 0em;
+  background-image: linear-gradient(90deg,
+      #d9a87e 0%,
+      #d9a87e var(--split),
+      #8c4c35 var(--split));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1::before {
+  content: "";
+  background-color: #8c4c35;
+  width: 3px;
+  height: 100%;
+  top: 0%;
+  left: var(--split);
+  position: absolute;
+}
+
+h1 span {
+  font-size: 0.3em;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  display: block;
+}

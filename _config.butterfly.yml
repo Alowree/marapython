@@ -3,29 +3,26 @@
 # --------------------------------------
 
 menu:
-  首页: / || fas fa-home
-  文章|| fas fa-graduation-cap:
-    归档: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
+  # 首页: / || fas fa-home
+  文库|| : #fas fa-graduation-cap:
+    文章列表: /archives/ || fas fa-archive
+    全部分类: /categories/ || fas fa-folder-open
+    全部标签: /tags/ || fas fa-tags
+    
   # 工具||fas fa-hammer:
   #   归档: /archives/ || fas fa-archive
   #   标签: /tags/ || fas fa-tags
   #   分类: /categories/ || fas fa-folder-open
-  清单|| fas fa-tasks:
+  专栏|| : #fas fa-tasks:
     Hexo 站点: /tasks/ || iconfont icon-hexo
     信号与系统: /tags/Signals-and-Systems || iconfont icon-system
     数字音频: /tags/Digital-Audio || iconfont icon-waveform_circle_fill1
 
-  # Products|| fas fa-list:
-  #   Humidifiers: /humidifiers/ || iconfont icon-AirHumidifier3x
-  #   Purifiers: /purifiers/ || iconfont icon-AirPurifier3x
-    # Lamps: /lamps/ || fas fa-solar-panel
-    # Speakers: /speakers/ || iconfont icon-Speaker-
-  留言: /message/ || fas fa-comment
+
+  # 留言: /message/ || #fas fa-comment
   # Contact: /contact/ || fas fa-envelope
-  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  # 友链: /link/ || #fas fa-link
+  关于: /about/ || #fas fa-heart
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
@@ -33,7 +30,7 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
+  实验: /link/ || #fas fa-link
   # About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -203,8 +200,14 @@ index_post_content:
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
-# when you scroll in post, the URL will update according to header id.
-anchor: true
+# when you scroll in post , the url will update according to header id.
+anchor:
+  button:
+    enable: true
+    always_show: false
+    icon: # the unicode value of Font Awesome icon, such as '\3423'
+  auto_update: true # when you scroll in post, the URL will update according to header id.
+
 
 # Post
 # --------------------------------------
@@ -248,7 +251,7 @@ related_post:
   limit: 6 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
-# figcaption (圖片描述文字)
+# figcaption (圖片描述文字) 優先顯示圖片的 title 屬性，然後是 alt 屬性
 photofigcaption: true
 
 # post_pagination (分頁)
@@ -433,7 +436,7 @@ crisp:
 # --------------------------------------
 footer:
   owner:
-    enable: true
+    enable: false
     since: 2020
   custom_text: <div id="marapython-footer"><div class="footer-group"><h3 class="footer-title">产品</h3><div class="footer-links"><a class="footer-item" href="/tags/蓝牙音箱/" data-pjax-state="">蓝牙音箱</a><a class="footer-item" href="/tags/Soundbar/" data-pjax-state="">Soundbar</a><a class="footer-item" href="/tags/Party-Speaker/" data-pjax-state="">Party Speaker</a></div></div><div class="footer-group"><h3 class="footer-title">设计</h3><div class="footer-links"><a class="footer-item" href="/tags/HTMLHTML/" data-pjax-state="">HTML</a><a class="footer-item" href="/tags/CSS/" data-pjax-state="">CSS</a><a class="footer-item" href="/tags/JavaScript/" data-pjax-state="">JavaScript</a><a class="footer-item" href="/tags/Python/" data-pjax-state="">Python</a><a class="footer-item" href="/tags/Figma/" data-pjax-state="">Figma教程</a></div></div><div class="footer-group"><h3 class="footer-title">开发</h3><div class="footer-links"><a class="footer-item" href="/tags/Hexo/" data-pjax-state="">Hexo魔改</a><a class="footer-item" href="/tags/Git/" data-pjax-state="">Git教程</a><a class="footer-item" href="/tags/Typora/" data-pjax-state="">Typora</a><a class="footer-item" href="/tags/Sublime-Text/" data-pjax-state="">Sublime Text</a><a class="footer-item" href="/tags/VS-Code/" data-pjax-state="">VS Code</a></div></div><div class="footer-group"><h3 class="footer-title">生活</h3><div class="footer-links"><a class="footer-item" href="/musiclist/" data-pjax-state="">音乐榜单</a><a class="footer-item" href="/movies/" data-pjax-state="">我的电影</a><a class="footer-item" href="/tags/读书笔记/" data-pjax-state="">读书笔记</a><a class="footer-item" href="/essay/" data-pjax-state="">即刻短文</a><a class="footer-item" href="/tags/混剪/" data-pjax-state="">视频剪辑</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/新零售/" data-pjax-state="">新零售</a><a class="footer-item" href="/categories/资源中心/" data-pjax-state="">资源中心</a><a class="footer-item" href="/tags/中英对照/" data-pjax-state="">中英对照</a><a class="footer-item" href="/categories/我的开发/" data-pjax-state="">我的开发</a><a class="footer-item" href="/categories/" data-pjax-state="">全部分类</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/tlink/" data-pjax-state="">在线工具</a><a class="footer-item" href="/link/#友链文章" data-pjax-state="">友链文章</a><a class="footer-item" href="/tasks/" data-pjax-state="">工作清单</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a></div></div></div>
   copyright: false # Copyright of theme and framework
@@ -502,7 +505,7 @@ theme_color:
   paginator: "#00c4b6"
   button_hover: "#FF7242"
   text_selection: "var(--marapython-fontcolor)"
-  link_color: "#99a9bf"
+  link_color: "#49B1F5"
   meta_color: "#858585"
   hr_color: "#A4D8FA"
   code_foreground: "#F47466"
@@ -630,7 +633,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
@@ -887,8 +890,10 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css"> #same as 4th item, but is an online version
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3570527_dthoqrrv2tv.css"> #other's iconfont resource
     - <link rel="stylesheet" href="/css/custom.css" media="all">
+    # - <link rel="stylesheet" href="/css/nav_menu.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/iconfont.css">
   bottom:
     - <script data-pjax src="/js/custom.js"></script>

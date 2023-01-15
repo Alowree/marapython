@@ -1,0 +1,26 @@
+body, main::before {
+  background: url(IMG_20210604_115924.jpg) 0 / cover fixed;
+}
+
+main {
+  background: hsla(0, 0%, 100%, .4);
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.5;
+  /* filter: blur(2px); */
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(255, 0, 0, .5); */
+  z-index: -1; /* to stack pseudo element under its hosting element */
+  filter: blur(10px);
+  margin: -15px;
+}

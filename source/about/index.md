@@ -1,5 +1,5 @@
 ---
-title: 关于博主
+title: About Me
 date: 2021-09-12 19:37:53
 updated:
 type:
@@ -27,17 +27,22 @@ highlight_shrink:
 ## New Roles and Endeavors
 
 - B2C
+- Sales and Marketing
 - Brand Building
-- Channel Building
-- Product Portfolio
-- 新零售 
-  - eCommerce 淘宝/京东
-  - 内容电商 
-  - 社交电商 
+- Retail Business 
+  - eCommerce
+  - Channel Building
+
+## New Skills Acquiring
+
+- Git and Github
+- Web Scrapping
+- HTML5
+- CSS3
+- Javascript
 
 ## Leisure Time Hobbies
 
-- 微信读书
-- 慢跑10公里
-- Pythonic Codes
-- Coaching Kids aged 3-8 in English Language and Computer Science
+- Reading
+- Jogging
+- Coaching Kids for English Language and Computer Science
