@@ -1,0 +1,1450 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo 站点 Butterfly 主题配置使用指南 | MaraPython</title><meta name="keywords" content="Hexo,Butterfly"><meta name="author" content="Alowree,alowree@hotmail.com"><meta name="copyright" content="Alowree"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo 站点 Butterfly 主题配置使用指南"><meta name="application-name" content="Hexo 站点 Butterfly 主题配置使用指南"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="bookmark" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="192x192" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="512x512" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-startup-image" media="screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1136x640.png"><link rel="apple-touch-startup-image" media="screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_640x1136.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2688x1242.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1792x828.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_1125x2436.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_828x1792.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2436x1125.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_1242x2208.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2208x1242.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1334x750.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_750x1334.png"><link rel="apple-touch-startup-image" media="screen and (device-width:1024px) and (device-height:1366px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2732x2048.png"><meta name="description" content="在熟练掌握 Git 之前，这是一种不断地升级、魔改 butterfly 主题的笨办法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 站点 Butterfly 主题配置使用指南">
+<meta property="og:url" content="https://marapython.com/posts/butterfly-config/index.html">
+<meta property="og:site_name" content="MaraPython">
+<meta property="og:description" content="在熟练掌握 Git 之前，这是一种不断地升级、魔改 butterfly 主题的笨办法。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image.marapython.com/geometric-3037028_640.png">
+<meta property="article:published_time" content="2022-01-18T04:08:10.000Z">
+<meta property="article:modified_time" content="2023-05-08T06:52:07.593Z">
+<meta property="article:author" content="Alowree">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Butterfly">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image.marapython.com/geometric-3037028_640.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://marapython.com/posts/butterfly-config/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-a5Xk3ddsv2"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@6.3.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  navMusic: true,
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo 站点 Butterfly 主题配置使用指南',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-08 14:52:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/"><div class="title">MaraPython</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><center id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></center></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-127px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="rm.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo 站点 Butterfly 主题配置使用指南</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-18T04:08:10.000Z" title="发表于 2022-01-18 12:08:10">2022-01-18</time><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-08T06:52:07.593Z" title="更新于 2023-05-08 14:52:07">2023-05-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">前端开发</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.8k</span><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>21分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo 站点 Butterfly 主题配置使用指南"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://image.marapython.com/geometric-3037028_640.png"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="首次安装"><a href="#首次安装" class="headerlink" title="首次安装"></a>首次安装</h2><p>首次安装博客主题，只需在根目录下打开 bash，然后运行命令：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></tbody></table></figure>
+<p>三个月过去了，Butterfly 主题终于又迎来了一次重大升级。在备份了下面四份重要配置文件之后，抄起家伙准备开始升级。至于为什么选择保存这四个文件，这是因为博客所有个性化的设计，都是在这几个文件内进行配置的，如果升级时不小心搞砸了，还可以再倒回到升级之前的保存状态。</p>
+<ul>
+<li><code>_config.yml</code></li>
+<li><code>_config.butterfly.yml</code></li>
+<li><code>themes\butterfly\source\css\custom.css</code></li>
+<li><code>themes\butterfly\layout\includes\footer.pug</code></li>
+</ul>
+<p>按照 Butterfly 主题官网 <a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/21cfbf15/#%E5%AE%89%E8%A3%9D">安装指引</a>，在博客目录 <code>themes\butterfly</code> 下，调出 <code>bash</code> 命令行，使用 <code>git pull</code> 命令，正常情况下就可以直接升级了。然而，试过几次后，无奈 <code>bash</code> 的输出一直提示 <code>Already up to date</code>。发现使用 <code>git pull</code> 无法正常升级，选择将 <code>butterfly</code> 文件夹直接删除，再在 Hexo 博客根目录克隆安装最新版本。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="引入-CSS-和-js-文件"><a href="#引入-CSS-和-js-文件" class="headerlink" title="引入 CSS 和 js 文件"></a>引入 CSS 和 js 文件</h2><p>在博客根目录 <code>\themes\butterfly\source\css</code> 下新建一个 custom.css 文件，在博客根目录 <code>\themes\butterfly\source\js</code> 下新建一个 custom.js 文件，分别填入自定义内容。</p>
+<p>修改主题配置文件 <code>_config.butterfly.yml</code>，分别引入：</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel="stylesheet"</span> <span class="string">href="//at.alicdn.com/t/font_2663193_81cv7cus1jo.css"&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel="stylesheet"</span> <span class="string">href="/css/custom.css"</span> <span class="string">media="all"&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel="stylesheet"</span> <span class="string">href="/css/iconfont.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="custom.js"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p>此时的 js 文件内容暂时为空。</p>
+<h2 id="站点-logo-动态显示"><a href="#站点-logo-动态显示" class="headerlink" title="站点 logo 动态显示"></a>站点 logo 动态显示</h2><p>在 <code>D:\MaraPython\themes\butterfly\layout\includes\header\nav.pug</code> 文件内，注释掉第 3 行，添加第 4-14 行：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">nav#nav</span><br><span class="line">  span#blog_name</span><br><span class="line">    // a#site-name(href=url_for('/')) #[=config.title]</span><br><span class="line">    a#site-name(href=url_for('/'))</span><br><span class="line">      label M</span><br><span class="line">      span a</span><br><span class="line">      span r</span><br><span class="line">      span a</span><br><span class="line">      label P</span><br><span class="line">      span y</span><br><span class="line">      span t</span><br><span class="line">      span h</span><br><span class="line">      span o</span><br><span class="line">      span n</span><br></pre></td></tr></tbody></table></figure>
+<p>在 <code>themes\butterfly\source\css\custom.css</code> 文件内，添加：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span> {</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-<span class="number">50%</span>);</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#1565c0</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">width</span>: auto;</span><br><span class="line">    <span class="attribute">transition</span>: .<span class="number">5s</span>;</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span> <span class="selector-tag">label</span><span class="selector-class">.lbl-d</span>,<span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span> <span class="selector-tag">label</span><span class="selector-pseudo">:first</span>-child {</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">    <span class="attribute">display</span>: inline-block</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span> <span class="selector-tag">span</span> {</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">visibility</span>: hidden;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translateX</span>(-<span class="number">20px</span>);</span><br><span class="line">    <span class="comment">/*font-size: .75em*/</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span> {</span><br><span class="line">    <span class="attribute">transition</span>: .<span class="number">5s</span> ease-out;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">visibility</span>: visible;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:first</span>-child {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">1s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">2s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">3s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">4</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">4s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">5</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">5s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">6</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">6s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">7</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">7s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">8</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">8s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">9</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: .<span class="number">9s</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#blog_name</span> <span class="selector-id">#site-name</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">10</span>) {</span><br><span class="line">    <span class="attribute">transition-delay</span>: <span class="number">1s</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="配置-Twikoo-评论"><a href="#配置-Twikoo-评论" class="headerlink" title="配置 Twikoo 评论"></a>配置 Twikoo 评论</h2><ol>
+<li>配置 MongoDB</li>
+<li> 配置 Vercel</li>
+<li> 配置<code>_config.butterfly.yml</code> </li>
+<li>因为 <a target="_blank" rel="noopener" href="https://twikoo-pi-two.vercel.app/">twikoo-pi-two.vercel.app</a> 国内被墙，为在 Vercel 上部署的项目添加自定义域名，可以使用主站的子域名，例如 <code>twikoo.marapython.com</code>，并在域名服务商添加一条域名解析记录 </li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://twikoo.js.org/">Twikoo 文档</a></p>
+<p>Twikoo 评论管理</p>
+<p>1、即时微信通知，未配置成功</p>
+<p>2、IP 归属地显示</p>
+<h2 id="标签页"><a href="#标签页" class="headerlink" title="标签页"></a>标签页</h2><p>在标签页正文的头部位置，添加现时所有的标签内容。</p>
+<p>1、<code>Marapython\themes\butterfly\layout\tag.pug</code> 文件内，添加第 2-4 行的代码</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#tag</span><br><span class="line">  #tag-page-tags</span><br><span class="line">    .tag-cloud-list</span><br><span class="line">      !=cloudTags({source: site.tags, minfontsize: 1.2, maxfontsize: 2.1, limit: 0, unit: 'em'})</span><br><span class="line">  .article-sort-title= _p('page.tag') + ' - ' + page.tag</span><br><span class="line">  +articleSort(page.posts)</span><br><span class="line">  include includes/pagination.pug</span><br></pre></td></tr></tbody></table></figure>
+<p>2、<code>MaraPython\themes\butterfly\source\css\custom.css</code> 文件内，添加</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#tag</span> <span class="selector-id">#tag-page-tags</span> {</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-flow</span>: row wrap;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0px</span> -<span class="number">0.75rem</span> <span class="number">1rem</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>待解问题：如何限定正文头部位置显示的标签数量为 Top 20?</p>
+<h2 id="头部导航菜单"><a href="#头部导航菜单" class="headerlink" title="头部导航菜单"></a>头部导航菜单</h2><p>主题再次升级至 4.5.1 版。这次参考 <a target="_blank" rel="noopener" href="https://yisous.xyz/posts/895003b5/">关于 Butterfly 的导航栏的一些教程 | LYX の小破站 (yisous.xyz)</a>，来调整一下导航菜单。</p>
+<p>首先，在<code>_config.butterfly.yml</code> 里面配置，顶部导航主菜单，取消图标，保留文字；二级菜单，维持原状，仍然保留图标。</p>
+<p>第二，在 <code>MaraPython\themes\butterfly\source\js\custom.css</code> 添加自定义 js，获取页面的标题：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回顶部 显示网页阅读进度</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">onscroll</span> = percent; <span class="comment">// 执行函数</span></span><br><span class="line"><span class="comment">// 页面百分比</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">percent</span>(<span class="params"></span>) {</span><br><span class="line">  <span class="keyword">let</span> a = <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">scrollTop</span> || <span class="variable language_">window</span>.<span class="property">pageYOffset</span>, <span class="comment">// 卷去高度</span></span><br><span class="line">    b =</span><br><span class="line">      <span class="title class_">Math</span>.<span class="title function_">max</span>(</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">scrollHeight</span>,</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">scrollHeight</span>,</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">offsetHeight</span>,</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">offsetHeight</span>,</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">clientHeight</span>,</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">clientHeight</span></span><br><span class="line">      ) - <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">clientHeight</span>, <span class="comment">// 整个网页高度 减去 可视高度</span></span><br><span class="line">    result = <span class="title class_">Math</span>.<span class="title function_">round</span>((a / b) * <span class="number">100</span>), <span class="comment">// 计算百分比</span></span><br><span class="line">    btn = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">"#percent"</span>); <span class="comment">// 获取图标</span></span><br><span class="line"></span><br><span class="line">  result &lt;= <span class="number">99</span> || (result = <span class="number">99</span>), (btn.<span class="property">innerHTML</span> = result);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">"page-name"</span>).<span class="property">innerText</span> = <span class="variable language_">document</span>.<span class="property">title</span>.<span class="title function_">split</span>(<span class="string">" | MaraPython"</span>)[<span class="number">0</span>];</span><br></pre></td></tr></tbody></table></figure>
+<p>第三，main.js 也改一下：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">  <span class="variable language_">window</span>.<span class="property">scrollCollect</span> = <span class="function">() =&gt;</span> {</span><br><span class="line">        <span class="keyword">return</span> btf.<span class="title function_">throttle</span>(<span class="keyword">function</span> (<span class="params">e</span>) {</span><br><span class="line">          <span class="keyword">const</span> currentTop = <span class="variable language_">window</span>.<span class="property">scrollY</span> || <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">scrollTop</span></span><br><span class="line">          <span class="keyword">const</span> isDown = <span class="title function_">scrollDirection</span>(currentTop)</span><br><span class="line">          <span class="keyword">if</span> (currentTop &gt; <span class="number">56</span>) {</span><br><span class="line">+           $header.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">'is-top-bar'</span>)</span><br><span class="line">            <span class="keyword">if</span> (isDown) {</span><br><span class="line">              <span class="keyword">if</span> ($header.<span class="property">classList</span>.<span class="title function_">contains</span>(<span class="string">'nav-visible'</span>)) $header.<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">'nav-visible'</span>)</span><br><span class="line">              <span class="keyword">if</span> (isChatBtnShow &amp;&amp; isChatShow === <span class="literal">true</span>) {</span><br><span class="line">                <span class="title function_">chatBtnHide</span>()</span><br><span class="line">                isChatShow = <span class="literal">false</span></span><br><span class="line">              }</span><br><span class="line">            } <span class="keyword">else</span> {</span><br><span class="line">              <span class="keyword">if</span> (!$header.<span class="property">classList</span>.<span class="title function_">contains</span>(<span class="string">'nav-visible'</span>)) $header.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">'nav-visible'</span>)</span><br><span class="line">              <span class="keyword">if</span> (isChatBtnHide &amp;&amp; isChatShow === <span class="literal">false</span>) {</span><br><span class="line">                <span class="title function_">chatBtnShow</span>()</span><br><span class="line">                isChatShow = <span class="literal">true</span></span><br><span class="line">              }</span><br><span class="line">            }</span><br><span class="line">            $header.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">'nav-fixed'</span>)</span><br><span class="line">            <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="title function_">getComputedStyle</span>($rightside).<span class="title function_">getPropertyValue</span>(<span class="string">'opacity'</span>) === <span class="string">'0'</span>) {</span><br><span class="line">              $rightside.<span class="property">style</span>.<span class="property">cssText</span> = <span class="string">'opacity: 0.8; transform: translateX(-58px)'</span></span><br><span class="line">            }</span><br><span class="line">          } <span class="keyword">else</span> {</span><br><span class="line">            <span class="keyword">if</span> (currentTop === <span class="number">0</span>) {</span><br><span class="line">-             $header.<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">'nav-fixed'</span>, <span class="string">'nav-visible'</span>)</span><br><span class="line">+             $header.<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">'is-top-bar'</span>)</span><br><span class="line">            }</span><br><span class="line">            $rightside.<span class="property">style</span>.<span class="property">cssText</span> = <span class="string">"opacity: ''; transform: ''"</span></span><br><span class="line">          }</span><br><span class="line"></span><br><span class="line">          <span class="keyword">if</span> (<span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">scrollHeight</span> &lt;= innerHeight) {</span><br><span class="line">            $rightside.<span class="property">style</span>.<span class="property">cssText</span> = <span class="string">'opacity: 0.8; transform: translateX(-58px)'</span></span><br><span class="line">          }</span><br><span class="line">        }, <span class="number">200</span>)()</span><br><span class="line">      }</span><br></pre></td></tr></tbody></table></figure>
+<p>第四，修改 <code>themes/butterfly/layout/includes/header/index.pug</code>，其中 <code>nav-visible</code> 可以控制默认显示的是站点标题还是导航栏菜单。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">  if top_img !== false</span><br><span class="line">    - var imgSource = top_img &amp;&amp; top_img.indexOf('/') !== -1 ? `background-image: url('${url_for(top_img)}')` : `background: ${top_img}`</span><br><span class="line">    - var bg_img = top_img ? imgSource : ''</span><br><span class="line">    - var site_title = page.title || page.tag || page.category || config.title</span><br><span class="line">-   - var isHomeClass = is_home() ? 'full_page' : 'not-home-page'</span><br><span class="line">+   - var isHomeClass = is_home() ? 'full_page nav-fixed nav-visible' : 'not-home-page'</span><br><span class="line">    - is_post() ? isHomeClass = 'post-bg' : isHomeClass</span><br><span class="line">  else</span><br><span class="line">    - var isHomeClass = 'not-top-img'</span><br></pre></td></tr></tbody></table></figure>
+<p>第五，修改 <code>themes/butterfly/layout/includes/header/nav.pug</code>，代码中的 <code>btf.scrollToDest(0, 500)</code> 方法，在点击标题之后，可以使视口回滚至页面顶部。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">nav#nav</span><br><span class="line">  span#blog_name</span><br><span class="line">    a#site-name(href=url_for('/')) #[=config.title]</span><br><span class="line"></span><br><span class="line">  div.mask-name-container</span><br><span class="line">    center(id="name-container")</span><br><span class="line">      a(id="page-name" href="javascript:btf.scrollToDest(0, 500)") PAGE_NAME</span><br><span class="line">    </span><br><span class="line">  #menus</span><br><span class="line">    !=partial('includes/header/menu_item', {}, {cache: true})</span><br><span class="line">    if (theme.algolia_search.enable || theme.local_search.enable)</span><br><span class="line">      #search-button</span><br><span class="line">        a.site-page.social-icon.search</span><br><span class="line">          i.fas.fa-search.fa-fw</span><br><span class="line"></span><br><span class="line">    #toggle-menu</span><br><span class="line">      a.site-page</span><br><span class="line">        i.fas.fa-bars.fa-fw</span><br></pre></td></tr></tbody></table></figure>
+<p>最后，调整一下 <code>MaraPython\themes\butterfly\source\css\custom.css</code> 的格式代码，全部都是控制导航菜单的样式。</p>
+<h2 id="页脚导航菜单"><a href="#页脚导航菜单" class="headerlink" title="页脚导航菜单"></a>页脚导航菜单</h2><p>版本 3.8.4 还支持直接在<code>_config.butterfly.yml</code> 里面直接配置 <code>ICP</code> 选项，以此来设置网站的备案信息。</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">ICP:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>  <span class="comment"># 是否启用 ICP</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://www.beian.miit.gov.cn/</span>  <span class="comment"># 点击后的链接地址</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">粤</span> <span class="string">ICP</span> <span class="string">备</span> <span class="number">20043865</span> <span class="string">号</span>  <span class="comment"># 备案号</span></span><br><span class="line">  <span class="attr">icon:</span>    <span class="comment"># 图标</span></span><br></pre></td></tr></tbody></table></figure>
+<p>新版本 4.0.1 中相关设置入口已经关闭，因为复制上面来自 3.8.4 版本<code>_config.butterfly.yml</code> 的设置已经不再生效，网站底部原有的备案信息不再正常显示。</p>
+<p>解决办法如下：</p>
+<p>打开 <code>themes\butterfly\source\css\_layout\footer.pug</code>，在与现有的三个 <code>if</code> 分句后面并列的位置，添加第四个 <code>if</code> 分句：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if theme.ICP.enable</span><br><span class="line">  .icp</span><br><span class="line">    a(href='https://beian.miit.gov.cn/')= '粤 ICP 备 20043865 号'</span><br></pre></td></tr></tbody></table></figure>
+<p>网站的备案信息现在可以正常显示，问题得到解决。</p>
+<p>2022-6-20 最新解决办法，直接在<code>_config.butterfly.yml</code> 里面添加 HTML 文本，并且在 <code>themes\butterfly\source\css\custom.css</code> 里面添加 CSS 样式：</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">owner:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">since:</span> <span class="number">2020</span></span><br><span class="line">  <span class="attr">custom_text:</span> <span class="string">&lt;div</span> <span class="string">id="marapython-footer"&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;产品&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/蓝牙音箱/"</span> <span class="string">data-pjax-state=""&gt;蓝牙音箱&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Soundbar/"</span> <span class="string">data-pjax-state=""&gt;Soundbar&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Party-Speaker/"</span> <span class="string">data-pjax-state=""&gt;Party</span> <span class="string">Speaker&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;设计&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/HTMLHTML/"</span> <span class="string">data-pjax-state=""&gt;HTML&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/CSS/"</span> <span class="string">data-pjax-state=""&gt;CSS&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/JavaScript/"</span> <span class="string">data-pjax-state=""&gt;JavaScript&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Python/"</span> <span class="string">data-pjax-state=""&gt;Python&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Figma/"</span> <span class="string">data-pjax-state=""&gt;Figma</span> <span class="string">教程&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;开发&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Hexo/"</span> <span class="string">data-pjax-state=""&gt;Hexo</span> <span class="string">魔改&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Git/"</span> <span class="string">data-pjax-state=""&gt;Git</span> <span class="string">教程&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Typora/"</span> <span class="string">data-pjax-state=""&gt;Typora&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/Sublime-Text/"</span> <span class="string">data-pjax-state=""&gt;Sublime</span> <span class="string">Text&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/VS-Code/"</span> <span class="string">data-pjax-state=""&gt;VS</span> <span class="string">Code&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;生活&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/musiclist/"</span> <span class="string">data-pjax-state=""&gt;音乐榜单&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/movies/"</span> <span class="string">data-pjax-state=""&gt;我的电影&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/读书笔记/"</span> <span class="string">data-pjax-state=""&gt;读书笔记&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/essay/"</span> <span class="string">data-pjax-state=""&gt;即刻短文&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/混剪/"</span> <span class="string">data-pjax-state=""&gt;视频剪辑&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;分类&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/categories/新零售/"</span> <span class="string">data-pjax-state=""&gt;新零售&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/categories/资源中心/"</span> <span class="string">data-pjax-state=""&gt;资源中心&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tags/中英对照/"</span> <span class="string">data-pjax-state=""&gt;中英对照&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/categories/我的开发/"</span> <span class="string">data-pjax-state=""&gt;我的开发&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/categories/"</span> <span class="string">data-pjax-state=""&gt;全部分类&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;导航&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/link/"</span> <span class="string">data-pjax-state=""&gt;友情链接&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tlink/"</span> <span class="string">data-pjax-state=""&gt;在线工具&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">target="_blank"</span> <span class="string">rel="noopener</span> <span class="string">external</span> <span class="string">nofollow</span> <span class="string">noreferrer"</span> <span class="string">href="https://soundfreaq.jd.com/"&gt;奇响旗舰店&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/link/#友链文章"</span> <span class="string">data-pjax-state=""&gt;友链文章&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/tasks/"</span> <span class="string">data-pjax-state=""&gt;工作清单&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div</span> <span class="string">class="footer-group"&gt;&lt;h3</span> <span class="string">class="footer-title"&gt;协议&lt;/h3&gt;&lt;div</span> <span class="string">class="footer-links"&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/privacy/"</span> <span class="string">data-pjax-state=""&gt;隐私协议&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/cookies/"</span> <span class="string">data-pjax-state=""&gt;Cookies&lt;/a&gt;&lt;a</span> <span class="string">class="footer-item"</span> <span class="string">href="/cc/"</span> <span class="string">data-pjax-state=""&gt;版权协议&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a</span> <span class="string">href="http://www.beian.miit.gov.cn/"</span> <span class="string">style="color:#fff"</span> <span class="string">target="_blank"&gt;粤</span> <span class="string">ICP</span> <span class="string">备</span> <span class="number">20043865</span> <span class="string">号&lt;/a&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="H2-标题的格式设定"><a href="#H2-标题的格式设定" class="headerlink" title="H2 标题的格式设定"></a>H2 标题的格式设定</h2><p>在<code>_config.butterfly.yml</code> 里面，取消美化：</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Beautify （美化頁面顯示）</span></span><br><span class="line"><span class="attr">beautify:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span> <span class="comment"># site/post</span></span><br><span class="line">  <span class="attr">title-prefix-icon:</span> <span class="comment"># '\f863' # '\f0c1'</span></span><br><span class="line">  <span class="attr">title-prefix-icon-color:</span> <span class="comment"># '#F47466'</span></span><br></pre></td></tr></tbody></table></figure>
+<p>再在 <code>themes\butterfly\source\css\custom.css</code> 里面，取消了各级标题之前旋转小风车的各项 CSS 配置，重新简化设置了标题的格式，尤其是 H2 在手机屏幕下的格式。</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add h2-h3 format after Beautify Effect being disabled */</span></span><br><span class="line"><span class="selector-class">.post-content</span> <span class="selector-tag">h2</span> {</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">1.8em</span> auto <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.8em</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#00c4b6</span>;</span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.post-content</span> <span class="selector-tag">h3</span> {</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.4em</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.43</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">1.6em</span> auto <span class="number">1.2em</span>;</span><br><span class="line">    <span class="attribute">padding-left</span>: <span class="number">9px</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">5px</span> solid <span class="number">#00c4b6</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="评论中的默认提示语"><a href="#评论中的默认提示语" class="headerlink" title="评论中的默认提示语"></a>评论中的默认提示语</h2><p>4.0.1 版本对评论的设置进行了简化，原先 <code>Valine</code> 的 <code>placeholder</code> 选项在<code>_config.butterfly.yml</code> 里面也被关闭了。原先设置的提示语现在变成了默认的一句 <code>Just Go Go</code>，因找不到修改入口，放弃治疗。</p>
+<h2 id="行内公式的水平滚动条"><a href="#行内公式的水平滚动条" class="headerlink" title="行内公式的水平滚动条"></a>行内公式的水平滚动条</h2><p>根本原因在 <code>MaraPython\themes\butterfly\source\css\_layout\third-party.styl</code> 的第 86 行 <code>overflow-x: auto</code></p>
+<figure class="highlight styl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Mathjax</span></span><br><span class="line"><span class="selector-class">.mathjax-overflow</span></span><br><span class="line">  <span class="attribute">overflow-x</span>: auto</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">span</span><span class="selector-class">.mathjax-overflow</span></span><br><span class="line">  <span class="attribute">display</span>: inline-block</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">2px</span></span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">100%</span></span><br><span class="line">  <span class="attribute">vertical-align</span>: bottom</span><br></pre></td></tr></tbody></table></figure>
+<p>为方便日后主题升级，不直接在主题原始文件内修改，而在 <code>Marapython\themes\butterfly\source\css\custom.css</code> 里面添加代码进行样式覆盖：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* To remove scrollbar for mathjax formula */</span></span><br><span class="line"><span class="selector-class">.mathjax-overflow</span> {</span><br><span class="line">  <span class="attribute">overflow-x</span>: hidden;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>这样，原本出现在行内公式的水平滚动条就可消除不见了。</p>
+<h2 id="公式块内部的不换行"><a href="#公式块内部的不换行" class="headerlink" title="公式块内部的不换行"></a>公式块内部的不换行</h2><p>直接在公式块里面使用 <code>\\</code> 的话，在 Typora 里面可以使公式换行，但在 Hexo + Butterfly 里面却不能使公式换行，例如：</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">∠W+∠X=180° \\ </span><br><span class="line">∠X+∠Y=180° \\ </span><br><span class="line">∠Y+∠Z=180° \\ </span><br><span class="line">∠Z+∠W=180°</span><br><span class="line">$$</span><br></pre></td></tr></tbody></table></figure>
+<p>Hexo + Butterfly 渲染后的显示效果如下：</p>
+<script type="math/tex; mode=display">
+∠W+∠X=180° \\ 
+∠X+∠Y=180° \\ 
+∠Y+∠Z=180° \\ 
+∠Z+∠W=180°</script><p>可以看到，本应该分四段显示的公式却连成了一行。这不是我们想要的结果。</p>
+<p>我们尝试在公式内容的首尾分别添加 <code>\begin{aligned}</code> 和 <code>\end{aligned}</code>，即可以解决在 Hexo + Butterfly 里面公式块内的不换行问题。</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin{aligned}</span><br><span class="line">∠W+∠X=180° \\ </span><br><span class="line">∠X+∠Y=180° \\ </span><br><span class="line">∠Y+∠Z=180° \\ </span><br><span class="line">∠Z+∠W=180°</span><br><span class="line">\end{aligned}</span><br><span class="line">$$</span><br></pre></td></tr></tbody></table></figure>
+<p>此时的显示效果如下：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+∠W+∠X=180° \\ 
+∠X+∠Y=180° \\ 
+∠Y+∠Z=180° \\ 
+∠Z+∠W=180°
+\end{aligned}</script><p>可以证明这时公式块的换行代码得到正常执行。</p>
+<h2 id="摘要卡片中的数学公式"><a href="#摘要卡片中的数学公式" class="headerlink" title="摘要卡片中的数学公式"></a>摘要卡片中的数学公式</h2><script type="math/tex; mode=display">
+e^{j x}=\cos x + j \sin x</script><p>在博客文章中，数学公式可以正常渲染。但是在 Hexo 自动生成首页的摘要卡片上，文章标题和文章摘要内的数学公式，都无法正常渲染，如下图所示：</p>
+<p><a target="_blank" rel="noopener" href="https://image.marapython.com/image-20220606085455899.png"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/image-20220606085455899.png" alt="img"></a></p>
+<p>本文主要记录，使用 Butterfly 主题的 Hexo 站点，为什么站点首页文章摘要中的数学公式没有正常渲染，以及应该如何解决。</p>
+<p>首先，需要指出的是，摘要中的数学公式不渲染，似乎是主题作者刻意为之的设计。比如，以 <code>hexo-theme-fluid</code> 的作者回应部分用户的问询为例：<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/issues/351">首页摘要中没有渲染 LaTeX 数学公式</a></p>
+<blockquote>
+<blockquote>
+<p>首页摘要是无法显示任何样式的，因为无法预测公式的高度会造成样式错乱<br>请自己手动指定摘要，避免掉公式部分</p>
+</blockquote>
+<p>很好理解，因为不是所有公式都只有一行，况且在生成页面的时候也不知道公式会显示出几行，所以不会进行渲染，其他的样式效果同理。如果遇到有更好的解决办法，也欢迎提供思路</p>
+</blockquote>
+<p>无独有偶，<a target="_blank" rel="noopener" href="https://github.com/chachabai/hexo-theme-butterfly">hexo-theme-butterfly</a> 的作者也在其官方指引中特别提醒：</p>
+<blockquote>
+<p>不要在標題裏使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼</p>
+</blockquote>
+<p>明白了主题作者的设计意图，下面我们再来有针对性地寻找问题的解决办法。</p>
+<p>1、根据 <a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/ceeb73f/#Math-數學">官方教程</a>，安装插件</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></tbody></table></figure>
+<p>2、配置 Hexo 根目录的配置文件</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">kramed:</span></span><br><span class="line">  <span class="attr">gfm:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">pedantic:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">sanitize:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tables:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">smartLists:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">smartypants:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+<p>3、参考 chachabai 文章，更改配置文件 <code>themes/butterfly/layout/includes/third-party/math/index.pug</code> 中的代码。更改前的代码，仅限页面和博文渲染：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">if theme.mathjax &amp;&amp; theme.mathjax.enable</span><br><span class="line">  if theme.mathjax.per_page    </span><br><span class="line">    if is_post() || is_page()</span><br><span class="line">      include ./mathjax.pug</span><br><span class="line">  else</span><br><span class="line">    if page.mathjax</span><br><span class="line">      include ./mathjax.pug</span><br><span class="line"></span><br><span class="line">if theme.katex &amp;&amp; theme.katex.enable</span><br><span class="line">  if theme.katex.per_page</span><br><span class="line">    if is_post() || is_page()</span><br><span class="line">      include ./katex.pug</span><br><span class="line">  else</span><br><span class="line">    if page.katex</span><br><span class="line">      include ./katex.pug</span><br><span class="line"></span><br><span class="line">if theme.mermaid.enable</span><br><span class="line">  include ./mermaid.pug</span><br></pre></td></tr></tbody></table></figure>
+<p>去掉仅限页面和博文渲染的条件限制，即：注释掉第 3 行，同时减少第 4 行的 1 个缩进。更改后的代码：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">if theme.mathjax &amp;&amp; theme.mathjax.enable</span><br><span class="line">  if theme.mathjax.per_page    </span><br><span class="line">    include ./mathjax.pug</span><br><span class="line">  else</span><br><span class="line">    if page.mathjax</span><br><span class="line">      include ./mathjax.pug</span><br><span class="line"></span><br><span class="line">if theme.katex &amp;&amp; theme.katex.enable</span><br><span class="line">  if theme.katex.per_page</span><br><span class="line">    include ./katex.pug</span><br><span class="line">  else</span><br><span class="line">    if page.katex</span><br><span class="line">      include ./katex.pug</span><br><span class="line"></span><br><span class="line">if theme.mermaid.enable</span><br><span class="line">  include ./mermaid.pug</span><br></pre></td></tr></tbody></table></figure>
+<p>4、在主题配置文件<code>_config.butterfly.yml</code> 中，将 <code>mathjax</code> 和 <code>per_page</code> 同时设置为 <code>true</code>：</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">YML</span></span><br><span class="line"><span class="comment"># Math （數學）</span></span><br><span class="line"><span class="comment"># --------------------------------------</span></span><br><span class="line"><span class="comment"># About the per_page</span></span><br><span class="line"><span class="comment"># if you set it to true, it will load mathjax/katex script in each page (true 表示每一頁都加載 js)</span></span><br><span class="line"><span class="comment"># if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' in page's front-matter)</span></span><br><span class="line"><span class="comment"># (false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># MathJax</span></span><br><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># KaTeX</span></span><br><span class="line"><span class="attr">katex:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">hide_scrollbar:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+<p>经过以上配置以后，自动生成在博客首页的摘要卡片上，文章标题和文章摘要内的数学公式，均可正常渲染啦。</p>
+<h2 id="摘要卡片中的样式不生效"><a href="#摘要卡片中的样式不生效" class="headerlink" title="摘要卡片中的样式不生效"></a>摘要卡片中的样式不生效</h2><ul>
+<li>首页卡片 Markdown 语法（例如加粗字体）不渲染</li>
+</ul>
+<p>解决办法：</p>
+<p>在 front-matter 的 description 里面手动添加的文章摘要内容，直接在复制博文中的 Markdown 文本以后，在有语法格式的地方改用 HTML 标签。此时，如果首页卡片里如果使用了自动摘要，那么来自文章主体的块状公式内容将仍然无法渲染，因为主题作者的设计本意即是如此。</p>
+<p>另外在 front-matter 的 description 里面手动添加摘要内容时，应该避免使用英文冒号，否则会渲染报错。使用 HTML 转义字符来代替英文冒号。</p>
+<h2 id="摘要卡片中的文本行数"><a href="#摘要卡片中的文本行数" class="headerlink" title="摘要卡片中的文本行数"></a>摘要卡片中的文本行数</h2><p>首页默认的文章节选内容长度太短，只有 2 行，根本无法完整显示 front matter 里面 description 设置的内容。解决办法：</p>
+<h3 id="修改源文件"><a href="#修改源文件" class="headerlink" title="修改源文件"></a>修改源文件</h3><p>编辑 <code>themes/butterfly/layout/includes/mixins/post-ui.pug</code>，注释掉第 3 行，添加第 4 行，如下：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mixin postUI(posts)</span><br><span class="line">  each article , index in page.posts.data</span><br><span class="line">    // .recent-post-item</span><br><span class="line">    .recent-post-item(class= (article.large === true) ? 'post-card-large' : '')</span><br></pre></td></tr></tbody></table></figure>
+<p>只是在<code>.recent-post-item</code> 后面加一个三元运算符的判断，当 <code>large</code> 参数为 <code>true</code> 时，添加一个 <code>class：post-card-large</code>。</p>
+<h3 id="修改-CSS"><a href="#修改-CSS" class="headerlink" title="修改 CSS"></a>修改 CSS</h3><p>在 <code>themes\butterfly\source\css\custom.css</code> 里面添加卡片高度，如下：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#recent-posts &gt; .post-card-large &gt;.recent-post-info &gt; .content{</span><br><span class="line">  -webkit-line-clamp: 5!important;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="修改博文模板"><a href="#修改博文模板" class="headerlink" title="修改博文模板"></a>修改博文模板</h3><p>在 <code>scaffolds\post.md</code> 的 front matter 里面添加</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">large: true</span><br></pre></td></tr></tbody></table></figure>
+<p>这样，每次生成新的博文时，都会自动拉高首页上卡片高度，显示 5 行的节选内容。配置完毕，仍然强烈建议在 front matter 里面 description 设置摘要内容，不然默认生成的自动摘要，样式拉跨，问题多多。</p>
+<h2 id="打字机效果"><a href="#打字机效果" class="headerlink" title="打字机效果"></a>打字机效果</h2><p>在 <code>themes/butterfly/layout/includes/footer.pug</code> 里添加：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">#footer-banner</span><br><span class="line">      .footer-banner-links</span><br><span class="line">        .footer-banner-left</span><br><span class="line">          span#footer-banner-tips</span><br><span class="line">          script(type='text/javascript', src='https://cdn.bootcss.com/typed.js/2.0.5/typed.js')</span><br><span class="line">          script(type='text/javascript').</span><br><span class="line">            </span><br><span class="line">            var typed = new Typed("#footer-banner-tips", {</span><br><span class="line">                        strings: ['The key to success? Do stuff','Be stronger than your excuses.','Wake up, kick ass, REPEAT','Be a warrior, not a worrier.','Dream It.  Wish It.  Do It.','Be brave, take risks.','Genius is 10% inspiration, 90% perspiration.','Be positive patient and persistent.'],</span><br><span class="line">                        startDelay: 200,</span><br><span class="line">                        backDelay: 2000,</span><br><span class="line">                        typeSpeed: 100,</span><br><span class="line">                        loop: true,</span><br><span class="line">                        backSpeed: 20</span><br><span class="line">                        })</span><br><span class="line">            </span><br><span class="line">        .footer-banner-right</span><br><span class="line">          a.footer-banner-link(href='/rss/', data-pjax-state) 订阅</span><br><span class="line">          a.footer-banner-link(href='/update/', data-pjax-state) 主题</span><br><span class="line">          a.footer-banner-link(href='https://www.beian.miit.gov.cn/', target='_blank') 粤 ICP 备 20043865 号</span><br></pre></td></tr></tbody></table></figure>
+<p>如果第一句内容没有打字出来，而是先停顿一段时间，然后从第二句开始打字出来，那么就是盒子是块级标签，必须得转换成行内标签 。第 4 行代码，即是将原来的 div 元素更改成了 span 元素。</p>
+<h2 id="安装苹方字体"><a href="#安装苹方字体" class="headerlink" title="安装苹方字体"></a>安装苹方字体</h2><p>2022/11/03 update</p>
+<p>This complete package has been downloaded from <a target="_blank" rel="noopener" href="http://www.ddooo.com/softdown/125598.htm">多多软件站</a> and then unzipped and copied to <code>C:/Windows/Fonts</code> for implementation.</p>
+<p>When refered to in CSS files, please use the each file name under this folder. </p>
+<p>Tested in Typora theme and proved working. </p>
+<p>MaraPython site-wise also starts to show a completely different font style, but not sure which code section is pulling the strings, <code>-apple-system</code>, <code>BlinkMacSystemFont</code>, or <code>PingFang SC</code>. To be investigated. </p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> {</span><br><span class="line">    <span class="attribute">font-family</span>: -apple-system, BlinkMacSystemFont, <span class="string">'Segoe UI'</span>, <span class="string">'Helvetica Neue'</span>, Lato, Roboto, <span class="string">'PingFang SC'</span>, <span class="string">'Microsoft YaHei'</span>, sans-serif;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly/issues/305">https://github.com/jerryc127/hexo-theme-butterfly/issues/305</a></p>
+<p><a target="_blank" rel="noopener" href="https://chachabai.github.io/butterfly/">https://chachabai.github.io/butterfly/</a></p>
+<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/ceeb73f/#Math-數學">https://butterfly.js.org/posts/ceeb73f/#Math - 數學</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wzhecnu.cn/2021/08/31/blog/math-tex/">https://www.wzhecnu.cn/2021/08/31/blog/math-tex/</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.zhheo.com/p/77ebd8b5.html">https://blog.zhheo.com/p/77ebd8b5.html</a></p>
+<p><a target="_blank" rel="noopener" href="http://cheng.lolku.cn/html/typed.html">typed.js 打字机效果</a></p>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="/img/wechat_pay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat_pay.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay_pay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay_pay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://marapython.com/posts/butterfly-config/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=Hexo 站点 Butterfly 主题配置使用指南&amp;url=https://marapython.com/posts/butterfly-config/&amp;pic=https://image.marapython.com/geometric-3037028_640.png" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/Hexo/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Hexo<span class="tagsPageCount">16</span></a><a class="post-meta__box__tags" href="/tags/Butterfly/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Butterfly<span class="tagsPageCount">7</span></a></div></div></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://marapython.com/posts/butterfly-config/">原创</a><a class="post-copyright-title"><span>Hexo 站点 Butterfly 主题配置使用指南</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://marapython.com">Alowree</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://marapython.com/posts/butterfly-config/">https://marapython.com/posts/butterfly-config/</a></span><span class="copy-button" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://marapython.com" target="_blank">MaraPython</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/poisson-distribution/"><img class="prev-cover" src="https://image.marapython.com/americana-1512910.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">泊松分布</div></div></a></div><div class="next-post pull-right"><a href="/posts/signals-and-systems-overview/"><img class="next-cover" src="https://image.marapython.com/background-2612256_640.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">信号与系统概论</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/plug-ins/" title="Hexo 已安装插件"><img class="cover" src="https://image.marapython.com/colorful-2174045.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2021-09-27</div><div class="title">Hexo 已安装插件</div></div></a></div><div><a href="/posts/hexo-butterfly-tag-plugins-plus/" title="Hexo Butterfly 的标签外挂（三）"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2021-09-16</div><div class="title">Hexo Butterfly 的标签外挂（三）</div></div></a></div><div><a href="/posts/footer-nav/" title="Hexo 站点添加页脚导航菜单"><img class="cover" src="https://image.marapython.com/geometric-3037028_640.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2021-09-07</div><div class="title">Hexo 站点添加页脚导航菜单</div></div></a></div><div><a href="/posts/hexo-tag-plugins-1/" title="Hexo Butterfly 的标签外挂（一）"><img class="cover" src="https://image.marapython.com/colorful-2174045.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2021-09-16</div><div class="title">Hexo Butterfly 的标签外挂（一）</div></div></a></div><div><a href="/posts/how-to-update/" title="如何正确地更新 Hexo 主题"><img class="cover" src="https://image.marapython.com/americana-1512910.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2022-06-18</div><div class="title">如何正确地更新 Hexo 主题</div></div></a></div><div><a href="/posts/hexo-tag-plugins-2/" title="Hexo Butterfly 的标签外挂（二）"><img class="cover" src="https://image.marapython.com/background-2612256_640.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2021-09-16</div><div class="title">Hexo Butterfly 的标签外挂（二）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a></div><div class="comment-tips" id="comment-tips"><span>你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div><div class="comment-barrage"></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author-info-top"> <div class="card-info-avatar"></div></div><div class="author-info__sayhi" id="author-info__sayhi"></div><h1 class="author-info__name">Alowree</h1><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/about/&quot;)"><span class="banner-button-text">了解更多</span><i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem"></i></a></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/11/631ddb7c9b250.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/11/631ddeb0900b7.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E6%AC%A1%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">首次安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E5%85%A5-CSS-%E5%92%8C-js-%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">引入 CSS 和 js 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%99%E7%82%B9-logo-%E5%8A%A8%E6%80%81%E6%98%BE%E7%A4%BA"><span class="toc-number">3.</span> <span class="toc-text">站点 logo 动态显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-Twikoo-%E8%AF%84%E8%AE%BA"><span class="toc-number">4.</span> <span class="toc-text">配置 Twikoo 评论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E9%A1%B5"><span class="toc-number">5.</span> <span class="toc-text">标签页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E9%83%A8%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95"><span class="toc-number">6.</span> <span class="toc-text">头部导航菜单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E8%84%9A%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95"><span class="toc-number">7.</span> <span class="toc-text">页脚导航菜单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#H2-%E6%A0%87%E9%A2%98%E7%9A%84%E6%A0%BC%E5%BC%8F%E8%AE%BE%E5%AE%9A"><span class="toc-number">8.</span> <span class="toc-text">H2 标题的格式设定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E6%8F%90%E7%A4%BA%E8%AF%AD"><span class="toc-number">9.</span> <span class="toc-text">评论中的默认提示语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E6%9D%A1"><span class="toc-number">10.</span> <span class="toc-text">行内公式的水平滚动条</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F%E5%9D%97%E5%86%85%E9%83%A8%E7%9A%84%E4%B8%8D%E6%8D%A2%E8%A1%8C"><span class="toc-number">11.</span> <span class="toc-text">公式块内部的不换行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81%E5%8D%A1%E7%89%87%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">12.</span> <span class="toc-text">摘要卡片中的数学公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81%E5%8D%A1%E7%89%87%E4%B8%AD%E7%9A%84%E6%A0%B7%E5%BC%8F%E4%B8%8D%E7%94%9F%E6%95%88"><span class="toc-number">13.</span> <span class="toc-text">摘要卡片中的样式不生效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81%E5%8D%A1%E7%89%87%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E8%A1%8C%E6%95%B0"><span class="toc-number">14.</span> <span class="toc-text">摘要卡片中的文本行数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%BA%90%E6%96%87%E4%BB%B6"><span class="toc-number">14.1.</span> <span class="toc-text">修改源文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-CSS"><span class="toc-number">14.2.</span> <span class="toc-text">修改 CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%8D%9A%E6%96%87%E6%A8%A1%E6%9D%BF"><span class="toc-number">14.3.</span> <span class="toc-text">修改博文模板</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%AD%97%E6%9C%BA%E6%95%88%E6%9E%9C"><span class="toc-number">15.</span> <span class="toc-text">打字机效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%8B%B9%E6%96%B9%E5%AD%97%E4%BD%93"><span class="toc-number">16.</span> <span class="toc-text">安装苹方字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number">17.</span> <span class="toc-text">References</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/57763/" title="Hexo 主题 AnZhiYu 使用指南"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-zhang-kaiyv-2672808.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo 主题 AnZhiYu 使用指南"/></a><div class="content"><a class="title" href="/posts/57763/" title="Hexo 主题 AnZhiYu 使用指南">Hexo 主题 AnZhiYu 使用指南</a><time datetime="2023-05-06T06:47:49.000Z" title="发表于 2023-05-06 14:47:49">2023-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/60001/" title="CSS 复合选择器"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/triangles-1430105_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS 复合选择器"/></a><div class="content"><a class="title" href="/posts/60001/" title="CSS 复合选择器">CSS 复合选择器</a><time datetime="2023-05-05T07:12:44.000Z" title="发表于 2023-05-05 15:12:44">2023-05-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/36777/" title="git stash 封存现有的更改"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/geometric-3037028_640.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="git stash 封存现有的更改"/></a><div class="content"><a class="title" href="/posts/36777/" title="git stash 封存现有的更改">git stash 封存现有的更改</a><time datetime="2023-03-17T03:53:21.000Z" title="发表于 2023-03-17 11:53:21">2023-03-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/61670/" title="Selenium 提交包裹追踪号码并查询物流轨迹"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/pexels-vlad-kovriga-339119.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Selenium 提交包裹追踪号码并查询物流轨迹"/></a><div class="content"><a class="title" href="/posts/61670/" title="Selenium 提交包裹追踪号码并查询物流轨迹">Selenium 提交包裹追踪号码并查询物流轨迹</a><time datetime="2023-03-17T00:06:59.000Z" title="发表于 2023-03-17 08:06:59">2023-03-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6369/" title="PowerShell 常用命令汇总"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.marapython.com/colorful-2174045.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PowerShell 常用命令汇总"/></a><div class="content"><a class="title" href="/posts/6369/" title="PowerShell 常用命令汇总">PowerShell 常用命令汇总</a><time datetime="2023-03-06T02:58:13.000Z" title="发表于 2023-03-06 10:58:13">2023-03-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Alowree</div><div id="workboard"><img class="workSituationImg boardsign" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://anzhiy.cn/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div></footer><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" src="/img/avatar.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+let loadingPercentageTimer = setInterval(function() {
+  var progressBar = document.querySelector(".pace-progress");
+  if (!progressBar) return
+  var currentValue = progressBar.getAttribute("data-progress-text");
+  if (currentValue !== loadingPercentage.textContent) {
+    loadingPercentage.textContent = currentValue;
+    if (currentValue === "100%") {
+      clearInterval(loadingPercentageTimer);
+    }
+  }
+}, 100);
+const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/progress_bar/progress_bar.css"/><script async="async" src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">83</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">110</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-127px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><a id="switch_commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="center-console" type="button" title="中控台"><i class="anzhiyufont anzhiyu-icon-fish"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><div id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()">播放音乐</div><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="console"><div class="close-btn" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-xmark" style="font-size: 35px;"></i></div><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/img/wechat_pay.jpg" target="_blank"><img class="post-qr-code-img" alt="wechat" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat_pay.jpg"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay_pay.jpg" target="_blank"><img class="post-qr-code-img" alt="alipay" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay_pay.jpg"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> <span>最新评论</span></span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AnZhiYu/" style="font-size: 1.15em; color: rgb(27, 88, 139)">AnZhiYu<sup>1</sup></a><a href="/tags/BEM%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/" style="font-size: 1.15em; color: rgb(131, 10, 27)">BEM命名规范<sup>1</sup></a><a href="/tags/Butterfly/" style="font-size: 1.4em; color: rgb(30, 99, 34)">Butterfly<sup>7</sup></a><a href="/tags/CSS/" style="font-size: 1.4em; color: rgb(5, 38, 192)">CSS<sup>7</sup></a><a href="/tags/Excel/" style="font-size: 1.15em; color: rgb(144, 2, 1)">Excel<sup>1</sup></a><a href="/tags/Font-Awesome/" style="font-size: 1.15em; color: rgb(138, 73, 27)">Font Awesome<sup>1</sup></a><a href="/tags/Gantt-Chart/" style="font-size: 1.15em; color: rgb(14, 21, 172)">Gantt Chart<sup>1</sup></a><a href="/tags/Git/" style="font-size: 1.3em; color: rgb(126, 39, 197)">Git<sup>4</sup></a><a href="/tags/Github/" style="font-size: 1.15em; color: rgb(15, 190, 88)">Github<sup>1</sup></a><a href="/tags/HTML/" style="font-size: 1.2em; color: rgb(187, 17, 1)">HTML<sup>2</sup></a><a href="/tags/HTML5/" style="font-size: 1.2em; color: rgb(103, 13, 4)">HTML5<sup>2</sup></a><a href="/tags/Hexo/" style="font-size: 1.45em; color: rgb(33, 154, 41)">Hexo<sup>16</sup></a><a href="/tags/Jupyter-Notebook/" style="font-size: 1.15em; color: rgb(36, 188, 109)">Jupyter Notebook<sup>1</sup></a><a href="/tags/Markdown/" style="font-size: 1.25em; color: rgb(123, 194, 111)">Markdown<sup>3</sup></a><a href="/tags/Mermaid/" style="font-size: 1.15em; color: rgb(154, 58, 58)">Mermaid<sup>1</sup></a><a href="/tags/PowerShell/" style="font-size: 1.15em; color: rgb(141, 4, 131)">PowerShell<sup>1</sup></a><a href="/tags/SEO/" style="font-size: 1.15em; color: rgb(85, 53, 39)">SEO<sup>1</sup></a><a href="/tags/Typora/" style="font-size: 1.2em; color: rgb(59, 95, 25)">Typora<sup>2</sup></a><a href="/tags/VBA/" style="font-size: 1.15em; color: rgb(26, 86, 197)">VBA<sup>1</sup></a><a href="/tags/Vercel/" style="font-size: 1.15em; color: rgb(110, 47, 129)">Vercel<sup>1</sup></a><a href="/tags/audio/" style="font-size: 1.15em; color: rgb(155, 146, 73)">audio<sup>1</sup></a><a href="/tags/footer/" style="font-size: 1.15em; color: rgb(150, 33, 15)">footer<sup>1</sup></a><a href="/tags/form/" style="font-size: 1.15em; color: rgb(25, 44, 31)">form<sup>1</sup></a><a href="/tags/markmap/" style="font-size: 1.15em; color: rgb(2, 27, 141)">markmap<sup>1</sup></a><a href="/tags/mindmap/" style="font-size: 1.15em; color: rgb(136, 100, 79)">mindmap<sup>1</sup></a><a href="/tags/video/" style="font-size: 1.15em; color: rgb(96, 197, 57)">video<sup>1</sup></a><a href="/tags/%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/" style="font-size: 1.25em; color: rgb(17, 106, 50)">中英对照<sup>3</sup></a><a href="/tags/%E4%BC%AA%E5%85%83%E7%B4%A0/" style="font-size: 1.15em; color: rgb(129, 65, 143)">伪元素<sup>1</sup></a><a href="/tags/%E5%85%A5%E9%97%A8/" style="font-size: 1.35em; color: rgb(192, 186, 71)">入门<sup>5</sup></a><a href="/tags/%E5%9B%BE%E6%A0%87/" style="font-size: 1.15em; color: rgb(17, 86, 160)">图标<sup>1</sup></a><a href="/tags/%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 1.15em; color: rgb(74, 31, 50)">基础选择器<sup>1</sup></a><a href="/tags/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 1.15em; color: rgb(171, 135, 183)">复合选择器<sup>1</sup></a><a href="/tags/%E5%AD%97%E4%BD%93/" style="font-size: 1.15em; color: rgb(170, 75, 72)">字体<sup>1</sup></a><a href="/tags/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/" style="font-size: 1.15em; color: rgb(21, 160, 170)">导航菜单<sup>1</sup></a><a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 1.3em; color: rgb(149, 178, 30)">插件<sup>4</sup></a><a href="/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7/" style="font-size: 1.15em; color: rgb(30, 132, 11)">数字信号<sup>1</sup></a><a href="/tags/%E7%94%98%E7%89%B9%E5%9B%BE/" style="font-size: 1.15em; color: rgb(30, 142, 87)">甘特图<sup>1</sup></a><a href="/tags/%E7%BB%84%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 1.15em; color: rgb(86, 127, 63)">组合选择器<sup>1</sup></a><a href="/tags/%E8%A1%A8%E5%8D%95/" style="font-size: 1.15em; color: rgb(185, 165, 119)">表单<sup>1</sup></a><a href="/tags/%E9%A1%B5%E8%84%9A/" style="font-size: 1.15em; color: rgb(47, 23, 137)">页脚<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history" onclick="anzhiyu.hideConsole()"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">十二月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="rm.switchDarkMode()" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.1.8/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.1.8/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.1.8/source/js/tw_cn.js"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@5.1.1/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/vanilla-lazyload@17.3.1/dist/lazyload.iife.min.js"></script><script src="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  console.log(1)
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Alowree 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("04/01/2021 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      img.src = "https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg";
+      img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+      img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.1.8/source/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      // scale: 1.2
+      scale: 1.0
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://npm.elemecdn.com/mathjax@3.2.2/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://npm.elemecdn.com/mermaid@9.1.7/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.marapython.com',
+      region: 'ap-shanghai',
+      onCommentLoaded: function () {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.marapython.com',
+      region: 'ap-shanghai',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://npm.elemecdn.com/twikoo@1.6.11/dist/twikoo.all.min.js').then(runFn)
+  }
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.marapython.com',
+        region: 'ap-shanghai',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://npm.elemecdn.com/twikoo@1.6.11/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick}</span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "visitor@anzhiy.cn";</script><script>//动态标题
+let leaveTitle = 'w(ﾟДﾟ)w 不要走！再看看嘛！';
+let backTitle = '♪(^∇^*)欢迎肥来！';
+let OriginTitile = document.title
+let titleTime
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    //离开当前页面时标签显示内容
+    document.title = leaveTitle
+    clearTimeout(titleTime)
+  } else {
+    //返回当前页面时标签显示内容
+    document.title = backTitle + OriginTitile
+    //两秒后变回正常标题
+    titleTime = setTimeout(function () {
+      document.title = OriginTitile
+    }, 2000)
+  }
+})</script><script data-pjax="true">if (document.querySelector(".comment-barrage")){
+  var commentBarrageConfig = {
+    maxBarrage: 1,
+    barrageTime: 4000,
+    twikooUrl: "https://twikoo.marapython.com",
+    accessToken: "",
+    pageUrl: window.location.pathname,
+    barrageTimer: [],
+    barrageList: [],
+    barrageIndex: 0,
+    dom: document.querySelector(".comment-barrage"),
+  };
+  var commentInterval = null;
+  var hoverOnCommentBarrage = false;
+  
+  document.querySelector(".comment-barrage").addEventListener("mouseenter", function() {
+    hoverOnCommentBarrage = true;
+    console.log("热评悬浮");
+  });
+  document.querySelector(".comment-barrage").addEventListener("mouseleave", function() {
+    hoverOnCommentBarrage = false;
+    console.log("停止悬浮");
+  });
+
+  function initCommentBarrage() {
+    if (!commentBarrageConfig.dom) return;
+
+    var data = JSON.stringify({
+      event: "COMMENT_GET",
+      "commentBarrageConfig.accessToken": commentBarrageConfig.accessToken,
+      url: commentBarrageConfig.pageUrl,
+    });
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4 && this.responseText) {
+        commentBarrageConfig.barrageList = commentLinkFilter(JSON.parse(this.responseText).data);
+        commentBarrageConfig.dom.innerHTML = "";
+      }
+    });
+    xhr.open("POST", commentBarrageConfig.twikooUrl);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(data);
+
+    clearInterval(commentInterval);
+    commentInterval = null;
+
+    commentInterval = setInterval(() => {
+      if (commentBarrageConfig.barrageList.length && !hoverOnCommentBarrage) {
+        popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
+        commentBarrageConfig.barrageIndex += 1;
+        commentBarrageConfig.barrageIndex %= commentBarrageConfig.barrageList.length;
+      }
+      if (
+        commentBarrageConfig.barrageTimer.length >
+          (commentBarrageConfig.barrageList.length > commentBarrageConfig.maxBarrage
+            ? commentBarrageConfig.maxBarrage
+            : commentBarrageConfig.barrageList.length) &&
+        !hoverOnCommentBarrage
+      ) {
+        removeCommentBarrage(commentBarrageConfig.barrageTimer.shift());
+      }
+    }, commentBarrageConfig.barrageTime);
+  }
+
+  function commentLinkFilter(data) {
+    data.sort((a, b) => {
+      return a.created - b.created;
+    });
+    let newData = [];
+    data.forEach(item => {
+      newData.push(...getCommentReplies(item));
+    });
+    return newData;
+  }
+
+  function getCommentReplies(item) {
+    if (item.replies) {
+      let replies = [item];
+      item.replies.forEach(item => {
+        replies.push(...getCommentReplies(item));
+      });
+      return replies;
+    } else {
+      return [];
+    }
+  }
+
+  function popCommentBarrage(data) {
+    let barrage = document.createElement("div");
+    barrage.className = "comment-barrage-item";
+    barrage.innerHTML = `
+        <div class="barrageHead">
+          <a class="barrageTitle ${
+            data.mailMd5 === "d338f432ad0bf2f61e5fe4ad1642725d" ? "barrageBloggerTitle" : ""
+          }" href="javascript:anzhiyu.scrollTo('#post-comment')"">
+            ${data.mailMd5 === "d338f432ad0bf2f61e5fe4ad1642725d" ? "博主" : "热评"}
+          </a>
+          <div class="barrageNick">${data.nick}</div>
+          <img class="nolazyload barrageAvatar" src="https://cravatar.cn/avatar/${data.mailMd5}"/>
+          <a class="comment-barrage-close" href="javascript:anzhiyu.switchCommentBarrage()"><i class="anzhiyufont anzhiyu-icon-xmark"></i></a>
+        </div>
+        <a class="barrageContent" href="#${data.id}">
+          <object>${data.comment}</object>
+        </a>
+      `;
+    commentBarrageConfig.barrageTimer.push(barrage);
+    commentBarrageConfig.dom.append(barrage);
+  }
+
+  function removeCommentBarrage(barrage) {
+    barrage.className = "comment-barrage-item out";
+
+    setTimeout(() => {
+      if (commentBarrageConfig.dom && commentBarrageConfig.dom.contains(barrage)) {
+        commentBarrageConfig.dom.removeChild(barrage);
+      }
+      }, 1000);
+    }
+
+    // 自动隐藏
+    document.addEventListener("scroll", anzhiyu.throttle(function () {
+      var a = (window.scrollY, document.querySelector(".comment-barrage-item")),
+      t = document.getElementById("post-comment");
+      t && a && 768 < document.body.clientWidth && (a.style.bottom = !anzhiyu.isInViewPortOfOne(t) ? "0" : "-200px");
+    }, 200), { passive: true });
+
+    initCommentBarrage();
+
+    if (localStorage.getItem("commentBarrageSwitch") !== "false") {
+      document.querySelector(".comment-barrage").style.display = "block";
+      document.querySelector(".menu-commentBarrage-text").textContent = "关闭热评";
+    } else {
+      document.querySelector(".comment-barrage").style.display = "none";
+      document.querySelector(".menu-commentBarrage-text").textContent = "显示热评";
+    }
+
+    document.addEventListener("pjax:send", function () {
+      clearInterval(commentInterval);
+    });
+
+  }</script><script data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/catalog-bar/catalog-bar.js"></script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/categoryBar/categoryBar.js"></script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script>// 初始化函数
+let rm = {};
+
+//禁止图片拖拽
+let imgElements = document.getElementsByTagName("img");
+for (let i = 0; i < imgElements.length; i++) {
+  imgElements[i].addEventListener("dragstart", function (event) {
+    event.preventDefault();
+  });
+}
+
+// 显示菜单
+rm.showRightMenu = function (isTrue, x = 0, y = 0) {
+  console.info(x, y)
+  let rightMenu = document.getElementById("rightMenu");
+  rightMenu.style.top = x + "px";
+  rightMenu.style.left = y + "px";
+  if (isTrue) {
+    rightMenu.style.display = "block";
+    stopMaskScroll();
+  } else {
+    rightMenu.style.display = "none";
+  }
+};
+
+// 隐藏菜单
+rm.hideRightMenu = function () {
+  rm.showRightMenu(false);
+  let rightMenuMask = document.querySelector("#rightmenu-mask");
+  rightMenuMask.style.display = "none";
+};
+
+// 尺寸
+let rmWidth = document.getElementById("rightMenu").offsetWidth;
+let rmHeight = document.getElementById("rightMenu").offsetHeight;
+
+// 重新定义尺寸
+rm.reloadrmSize = function () {
+  rightMenu.style.visibility = "hidden";
+  rightMenu.style.display = "block";
+  // 获取宽度和高度
+  rmWidth = document.getElementById("rightMenu").offsetWidth;
+  rmHeight = document.getElementById("rightMenu").offsetHeight;
+  rightMenu.style.visibility = "visible";
+};
+
+// 获取点击的href
+let domhref = "";
+let domImgSrc = "";
+let globalEvent = null;
+
+// 监听右键初始化
+window.oncontextmenu = function (event) {
+  if (document.body.clientWidth > 768) {
+    let pageX = event.clientX + 10; //加10是为了防止显示时鼠标遮在菜单上
+    let pageY = event.clientY;
+
+    //其他额外菜单
+    const $rightMenuOther = document.querySelector(".rightMenuOther");
+    const $rightMenuPlugin = document.querySelector(".rightMenuPlugin");
+    const $rightMenuCopyText = document.querySelector("#menu-copytext");
+    const $rightMenuPasteText = document.querySelector("#menu-pastetext");
+    const $rightMenuCommentText = document.querySelector("#menu-commenttext");
+    const $rightMenuNewWindow = document.querySelector("#menu-newwindow");
+    const $rightMenuNewWindowImg = document.querySelector("#menu-newwindowimg");
+    const $rightMenuCopyLink = document.querySelector("#menu-copylink");
+    const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
+    const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
+    const $rightMenuSearch = document.querySelector("#menu-search");
+    const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
+    const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
+    const $rightMenuMusicBack = document.querySelector("#menu-music-back");
+    const $rightMenuMusicForward = document.querySelector("#menu-music-forward");
+    const $rightMenuMusicPlaylist = document.querySelector("#menu-music-playlist");
+    const $rightMenuMusicCopyMusicName = document.querySelector("#menu-music-copyMusicName");
+
+    let href = event.target.href;
+    let imgsrc = event.target.currentSrc;
+
+    // 判断模式 扩展模式为有事件
+    let pluginMode = false;
+    $rightMenuOther.style.display = "block";
+    globalEvent = event;
+
+    // 检查是否需要复制 是否有选中文本
+    if (selectTextNow && window.getSelection()) {
+      pluginMode = true;
+      $rightMenuCopyText.style.display = "block";
+      $rightMenuCommentText.style.display = "block";
+      $rightMenuSearch.style.display = "block";
+      $rightMenuSearchBaidu.style.display = "block";
+    } else {
+      $rightMenuCopyText.style.display = "none";
+      $rightMenuCommentText.style.display = "none";
+      $rightMenuSearchBaidu.style.display = "none";
+      $rightMenuSearch.style.display = "none";
+    }
+
+    //检查是否右键点击了链接a标签
+    if (href) {
+      pluginMode = true;
+      $rightMenuNewWindow.style.display = "block";
+      $rightMenuCopyLink.style.display = "block";
+      domhref = href;
+    } else {
+      $rightMenuNewWindow.style.display = "none";
+      $rightMenuCopyLink.style.display = "none";
+    }
+
+    //检查是否需要复制图片
+    if (imgsrc) {
+      pluginMode = true;
+      $rightMenuCopyImg.style.display = "block";
+      $rightMenuDownloadImg.style.display = "block";
+      $rightMenuNewWindowImg.style.display = "block";
+      document.getElementById("rightMenu").style.width="12rem"
+      domImgSrc = imgsrc;
+    } else {
+      $rightMenuCopyImg.style.display = "none";
+      $rightMenuDownloadImg.style.display = "none";
+      $rightMenuNewWindowImg.style.display = "none";
+    }
+
+    // 判断是否为输入框
+    if (event.target.tagName.toLowerCase() === "input" || event.target.tagName.toLowerCase() === "textarea") {
+      pluginMode = true;
+      $rightMenuPasteText.style.display = "block";
+    } else {
+      $rightMenuPasteText.style.display = "none";
+    }
+    const navMusicEl = document.querySelector("#nav-music");
+    //判断是否是音乐
+    if (navMusicEl && navMusicEl.contains(event.target)) {
+      pluginMode = true;
+      $rightMenuMusicToggle.style.display = "block";
+      $rightMenuMusicBack.style.display = "block";
+      $rightMenuMusicForward.style.display = "block";
+      $rightMenuMusicPlaylist.style.display = "block";
+      $rightMenuMusicCopyMusicName.style.display = "block";
+    } else {
+      $rightMenuMusicToggle.style.display = "none";
+      $rightMenuMusicBack.style.display = "none";
+      $rightMenuMusicForward.style.display = "none";
+      $rightMenuMusicPlaylist.style.display = "none";
+      $rightMenuMusicCopyMusicName.style.display = "none";
+    }
+
+    // 如果不是扩展模式则隐藏扩展模块
+    if (pluginMode) {
+      $rightMenuOther.style.display = "none";
+      $rightMenuPlugin.style.display = "block";
+    } else {
+      $rightMenuPlugin.style.display = "none";
+    }
+
+    rm.reloadrmSize();
+
+    // 鼠标默认显示在鼠标右下方，当鼠标靠右或靠下时，将菜单显示在鼠标左方\上方
+    if (pageX + rmWidth > window.innerWidth) {
+      pageX -= rmWidth + 10;
+    }
+    if (pageY + rmHeight > window.innerHeight) {
+      pageY -= pageY + rmHeight - window.innerHeight;
+    }
+
+    rm.showRightMenu(true, pageY, pageX);
+    document.getElementById("rightmenu-mask").style.display = "flex";
+    return false;
+  }
+};
+
+// 下载图片状态
+rm.downloadimging = false;
+
+// 复制图片到剪贴板
+rm.writeClipImg = function (imgsrc) {
+  console.log("按下复制");
+  rm.hideRightMenu();
+  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  if (rm.downloadimging == false) {
+    rm.downloadimging = true;
+    setTimeout(function () {
+      copyImage(imgsrc);
+      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      rm.downloadimging = false;
+    }, "10000");
+  }
+};
+
+function imageToBlob(imageURL) {
+  const img = new Image();
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob(
+        blob => {
+          // here the image is a blob
+          resolve(blob);
+        },
+        "image/png",
+        0.75
+      );
+    };
+  });
+}
+
+async function copyImage(imageURL) {
+  const blob = await imageToBlob(imageURL);
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
+}
+
+rm.switchDarkMode = function () {
+  // Switch Between Light And Dark Mode
+  const nowMode = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  if (nowMode === "light") {
+    activateDarkMode();
+    saveToLocal.set("theme", "dark", 2);
+    GLOBAL_CONFIG.Snackbar !== undefined && anzhiyu.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night);
+    document.querySelector(".menu-darkmode-text").textContent = "浅色模式";
+  } else {
+    activateLightMode();
+    saveToLocal.set("theme", "light", 2);
+    GLOBAL_CONFIG.Snackbar !== undefined && anzhiyu.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day);
+    document.querySelector(".menu-darkmode-text").textContent = "深色模式";
+  }
+  // handle some cases
+  typeof runMermaid === "function" && window.runMermaid();
+  rm.hideRightMenu();
+  anzhiyu.darkModeStatus();
+};
+
+rm.copyUrl = function (id) {
+  const input = document.createElement("input"); // Create a new <input> element
+  input.id = "copyVal"; // Set the id of the new element to "copyVal"
+  document.body.appendChild(input); // Append the new element to the end of the <body> element
+  
+  const text = id;
+  input.value = text;
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("copy");
+  
+  input.remove(); // Remove the <input> element from the DOM
+};
+
+function stopMaskScroll() {
+  if (document.getElementById("rightmenu-mask")) {
+    let xscroll = document.getElementById("rightmenu-mask");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      false
+    );
+  }
+  if (document.getElementById("rightMenu")) {
+    let xscroll = document.getElementById("rightMenu");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      false
+    );
+  }
+}
+
+rm.rightmenuCopyText = function (txt) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt);
+  }
+  rm.hideRightMenu();
+};
+
+rm.copyPageUrl = function () {
+  var url = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+rm.sharePage = function () {
+  var content = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+// 复制当前选中文本
+var selectTextNow = "";
+document.onmouseup = document.ondblclick = selceText;
+
+function selceText() {
+  var txt;
+  if (document.selection) {
+    txt = document.selection.createRange().text;
+  } else {
+    txt = window.getSelection().toString();
+  }
+  selectTextNow = txt !== "" ? txt : "";
+}
+
+// 读取剪切板
+rm.readClipboard = function () {
+  if (navigator.clipboard) {
+    navigator.clipboard.readText().then(clipText => rm.insertAtCaret(globalEvent.target, clipText));
+  }
+};
+
+// 粘贴文本到焦点
+rm.insertAtCaret = function (elemt, value) {
+  const startPos = elemt.selectionStart,
+    endPos = elemt.selectionEnd;
+  if (document.selection) {
+    elemt.focus();
+    var sel = document.selection.createRange();
+    sel.text = value;
+    elemt.focus();
+  } else {
+    if (startPos || startPos == "0") {
+      var scrollTop = elemt.scrollTop;
+      elemt.value = elemt.value.substring(0, startPos) + value + elemt.value.substring(endPos, elemt.value.length);
+      elemt.focus();
+      elemt.selectionStart = startPos + value.length;
+      elemt.selectionEnd = startPos + value.length;
+      elemt.scrollTop = scrollTop;
+    } else {
+      elemt.value += value;
+      elemt.focus();
+    }
+  }
+};
+
+//粘贴文本
+rm.pasteText = function () {
+  const result = rm.readClipboard() || "";
+  rm.hideRightMenu();
+};
+
+//引用到评论
+rm.rightMenuCommentText = function (txt) {
+  rm.hideRightMenu();
+  const postCommentDom = document.getElementById("post-comment");
+  var domTop = postCommentDom.offsetTop;
+  window.scrollTo(0, domTop - 80);
+  if (txt == "undefined" || txt == "null") txt = "好棒！";
+  function setText() {
+    setTimeout(() => {
+      var input = document.getElementsByClassName("el-textarea__inner")[0];
+      if (!input) setText();
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("input", true, true);
+      let inputValue = replaceAll(txt, "\n", "\n> ");
+      input.value = "> " + inputValue + "\n\n";
+      input.dispatchEvent(evt);
+      input.focus();
+      input.setSelectionRange(-1, -1);
+      if (document.getElementById("comment-tips")) {
+        document.getElementById("comment-tips").classList.add("show");
+      }
+    }, 100);
+  }
+  setText();
+};
+
+//替换所有内容
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+// 百度搜索
+rm.searchBaidu = function () {
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  setTimeout(function () {
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
+  }, "2000");
+  rm.hideRightMenu();
+};
+
+//分享链接
+rm.copyLink = function () {
+  rm.rightmenuCopyText(domhref);
+  anzhiyu.snackbarShow("已复制链接地址");
+};
+
+function addRightMenuClickEvent() {
+  // 添加点击事件
+  document.getElementById("menu-backward").addEventListener("click", function () {
+  window.history.back();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-forward").addEventListener("click", function () {
+    window.history.forward();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-refresh").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  document.getElementById("menu-top").addEventListener("click", function () {
+    anzhiyu.scrollToDest(0, 500);
+    rm.hideRightMenu();
+  });
+
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", rm.hideRightMenu);
+  });
+
+  document.getElementById("menu-darkmode").addEventListener("click", rm.switchDarkMode);
+
+  document.getElementById("menu-home") && document.getElementById("menu-home").addEventListener("click", function () {
+    window.location.href = window.location.origin;
+  });
+
+  document.getElementById("menu-randomPost").addEventListener("click", function () {
+    toRandomPost();
+  });
+
+  document.getElementById("menu-commentBarrage").addEventListener("click", anzhiyu.switchCommentBarrage);
+
+  document.getElementById("rightmenu-mask").addEventListener("click", rm.hideRightMenu);
+
+  document.getElementById("rightmenu-mask").addEventListener("contextmenu", function (event) {
+    rm.hideRightMenu();
+    event.preventDefault(); // Prevent the default context menu from appearing
+  });
+
+  document.getElementById("menu-copy").addEventListener("click", rm.copyPageUrl);
+
+  document.getElementById("menu-pastetext").addEventListener("click", rm.pasteText);
+
+  document.getElementById("menu-copytext").addEventListener("click", function () {
+    rm.rightmenuCopyText(selectTextNow);
+    anzhiyu.snackbarShow("复制成功，复制和转载请标注本文地址");
+  });
+
+  document.getElementById("menu-commenttext").addEventListener("click", function () {
+    rm.rightMenuCommentText(selectTextNow);
+  });
+
+  document.getElementById("menu-newwindow").addEventListener("click", function () {
+    window.open(domhref);
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copylink").addEventListener("click", rm.copyLink);
+
+  document.getElementById("menu-downloadimg").addEventListener("click", function () {
+    anzhiyu.downloadImage(domImgSrc, "anzhiyu");
+  });
+
+  document.getElementById("menu-newwindowimg").addEventListener("click", function () {
+    window.open(domImgSrc);
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copyimg").addEventListener("click", function () {
+    rm.writeClipImg(domImgSrc);
+  });
+
+  document.getElementById("menu-searchBaidu").addEventListener("click", rm.searchBaidu);
+
+  //音乐
+  document.getElementById("menu-music-toggle").addEventListener("click", anzhiyu.musicToggle);
+
+  document.getElementById("menu-music-back").addEventListener("click", anzhiyu.musicSkipBack);
+
+  document.getElementById("menu-music-forward").addEventListener("click", anzhiyu.musicSkipForward);
+
+  document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
+    rm.rightmenuCopyText(anzhiyu.musicGetName());
+    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+  });
+
+}
+
+addRightMenuClickEvent();</script><script data-pjax>var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+var pageHeaderEl = document.getElementById("page-header");
+var navMusicEl = document.getElementById("nav-music");
+var consoleEl = document.getElementById("console");
+// 已随机的歌曲
+var selectRandomSong = [];
+// 音乐默认声音大小
+var musicVolume = 0.8;
+// 是否切换了周杰伦音乐列表
+var changeMusicListFlag = false;
+// 当前默认播放列表
+var defaultPlayMusicList = [];
+
+// document.getElementById("page-name").innerText = document.title.split(" | 安知鱼")[0];
+document.getElementById("page-name").innerText = document.title.split(" | MaraPython")[0];
+anzhiyu.initIndexEssay();
+anzhiyu.changeTimeInEssay();
+anzhiyu.removeBodyPaceClass();
+anzhiyu.qrcodeCreate();
+anzhiyu.changeTimeInAlbumDetail();
+anzhiyu.reflashEssayWaterFall();
+anzhiyu.sayhi();
+anzhiyu.stopImgRightDrag();
+anzhiyu.addNavBackgroundInit();
+anzhiyu.setValueToBodyType();
+
+anzhiyu.getCustomPlayList();
+anzhiyu.addEventListenerConsoleMusicList(false);</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.6/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://npm.elemecdn.com/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+  window.anzhiyuScrollFnToDo && window.removeEventListener('scroll', anzhiyuScrollFnToDo)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

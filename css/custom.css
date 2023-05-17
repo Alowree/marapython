@@ -1,0 +1,33 @@
+:root {
+  --anzhiyu-code-stress: #f8f8f8;
+  --anzhiyu-code-color: #222;
+  --anzhiyu-atext-color: #3676ab;
+  --anzhiyu-ahover-color: #619ccd;
+}
+
+
+#article-container a:not([data-pjax-state]):not([data-fancybox="gallery"]):not(.headerlink):not(.cf-friends-link):not(.tag-Link):not(.btn-anzhiyu):not(.no-text-decoration) {
+  color: var(--anzhiyu-atext-color);
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+#article-container a:not([data-pjax-state]):not([data-fancybox="gallery"]):not(.headerlink):not(.cf-friends-link):not(.tag-Link):not(.btn-anzhiyu):not(.no-text-decoration):hover {
+  color: var(--anzhiyu-ahover-color);
+  background: none;
+}
+
+#article-container code {
+  color: inherit;
+}
+
+#article-container.post-content h2 {
+  border-top: 1px dashed var(--anzhiyu-theme-op);
+  padding-top: 1.5rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+  color: inherit;
+}
