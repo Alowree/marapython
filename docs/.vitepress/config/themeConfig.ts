@@ -5,7 +5,7 @@ import search from "./search";
 import sidebar from "./sidebar";
 import socialLinks from "./socialLinks";
 export default <ThemeConfig>{
-  logo: "/images/index/ghost.gif",
+  logo: "/images/index/logo.png",
   nav,
   sidebar: generateSidebar(sidebar),
   search,

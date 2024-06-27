@@ -29,12 +29,33 @@ Sound Rise II is an ideal beside alarm clock and wireless speaker to complement 
 - Single Alarm Clock with Ascending Alarm and 12/24 hour setting
 - Sleep Timer
 - Display Dimmer
-- DST (Dayight Saving Time) Setting
+- DST (Daylight Saving Time) Setting
 - 3.5mm AUX-in jack
 - Security lanyard and Rear port cover
 - **Safe touch** — Antimicrobial plastics for keypad and controls
 - **Metal speaker grill** for easy disinfection
 - **Fire-retarded plastic** casing for safety
+
+Configurable for Hotel / Home use
+Choose to wake up to Bluetooth, FM radio or Built-in alarm chime
+Single Alarm Clock with Ascending Alarm and 12/24 hour setting
+Sleep Timer
+Display Dimmer
+DST (Day Light Saving Time) Setting
+3.5mm AUX-in jack
+Full alarm clock features with snooze and gradual wake up volume
+Security lanyard and Rear port cover(Hotel use only)
+Safe touch-Antimicrobial plastics for keypad and controls
+Metal speaker grill for easy disinfection
+Fire-retarded plastic casing for safety
+Digital FM Radio with pre-set stations
+Bluetooth Wireless Speaker to stream music from your mobile devices
+Dual top-facing high power USB smart charging ports (Type-C and Type-A)
+QC 3.0 compliant rear USB port for quick charging of connected devices
+Nature Sound- producing soothing sound for relaxing, focus and deep sleep
+Rotary Knobs for convenient volume control, tuning and alarm setting
+(Bird, Forest, Ocean, Rain, Urban and Chime)
+Battery-free backup for clock time and user settings
 
 ## Worldwide Installations
 

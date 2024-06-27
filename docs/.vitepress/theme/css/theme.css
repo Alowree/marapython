@@ -76,7 +76,7 @@
 .vp-doc table p,
 .vp-doc ul,
 .vp-doc ol {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 .vp-doc tr:nth-child(2n) {
   background-color: var(--table-evenrow-color);
@@ -118,6 +118,18 @@
 
 .vp-doc h2 {
   border-top: 1px dashed var(--vp-c-divider);
+}
+
+.vp-doc h3::before {
+  font-family: var(--fa-style-family,"Font Awesome 6 Free");
+  content: "\f5fd";
+  color: skyblue;
+  margin-right: 0.4rem;
+}
+
+.vp-doc h4 {
+  font-size: 18px;
+  color: var(--zero-theme);
 }
 
 .vp-doc blockquote {
