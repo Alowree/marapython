@@ -1,7 +1,7 @@
 ---
 title: 软件配置
 date: 2024-05-15 23:38:25
-order: 2
+order: 
 ---
 
 ## 配置 Windows Terminal 的步骤

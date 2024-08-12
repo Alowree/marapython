@@ -1,7 +1,7 @@
 ---
 title: SFQ-18 Sound Spot II
 date: 2024-05-21 21:00:00
-order: 2
+order:
 ---
 
 # {{ $frontmatter.title }}
@@ -33,4 +33,3 @@ Sound Spot II is an ideal Bluetooth wireless speaker to complement a modern life
 - **Security** — Security lanyard and Anti-theft brackets for PSU
 - **Safe touch** — Antimicrobial treated control keypad
 - **Metal speaker grill** for easy disinfection
-

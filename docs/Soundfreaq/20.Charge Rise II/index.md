@@ -1,7 +1,7 @@
 ---
 title: SFQ-20 Charge Rise II
 date: 2024-05-22 09:41:14
-order: 2
+order:
 ---
 
 # {{ $frontmatter.title }}

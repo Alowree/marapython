@@ -1,7 +1,7 @@
 ---
 title: IDEA 插件
 date: 2024-05-15 23:46:59
-order: 6
+order: 
 ---
 
 | 插件                               | 作用                                                 |

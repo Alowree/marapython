@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "MaraPython"
-  text: "凌晨三点的修🐶"
+  text: ""
   tagline: CLEAR WRITING IS THE KEY TO CLEAR THINKING
   image:
     src: /images/index/ghost.png
