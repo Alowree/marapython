@@ -1,10 +1,10 @@
 export default {
   text: "工具",
   items: [
-    { text: "软件配置", link: "/tool/software/" },
-    { text: "开发工具", link: "/tool/devtools/" },
-    { text: "数据结构与算法", link: "/tool/algorithm/" },
-    { text: "LeetCode", link: "/tool/leetcode/" },
-    { text: "设计模式", link: "/tool/design-pattern/" },
+    { text: "PowerShell", link: "/tool/01.PowerShell/" },
+    { text: "Vim 9.1", link: "/tool/02.Vim/" },
+    { text: "Git", link: "/tool/03.Git/" },
+    { text: "Typora", link: "/tool/04.Tpypora/" },
+    { text: "VS Code", link: "/tool/05.VS Code/" },
   ],
 };

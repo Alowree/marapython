@@ -21,13 +21,15 @@ Vim is rock stable and is continuously being developed to become even better. Am
 ## Vim 能做什么
 
 - 可以使用 Vim 来写 Markdown 吗？
-  - YES, you can choose to install the vim-markdown plugin
+  - vim-markdown 插件
 - 可以使用 Vim 来管理文件夹项目吗？
-  - YES, you can choose to install the NEEDTree plugin
+  - 内置的 Netrw 文件管理器
+  - 启用了 `wildmenu` 的 `:e` 命令
+  - NEEDTree
+  - Vinegar
+  - CtrlP 插件
 
-YES, it CAN.
-
-这可能是当你问起任何关于“Vim 能做...吗？”的答案。
+Yes, it can. 这可能是当你问起任何关于“Vim 能做...吗？”的答案。
 
 ## 安装 Vim
 
@@ -146,6 +148,15 @@ https://www.cnblogs.com/komean/p/12700100.html
 ### Speed up your key repeat
 
 https://www.thewindowsclub.com/keyboard-repeat-rate-and-repeat-delay-in-windows-10
+
+## Learning Paths
+
+1. Practical Vim (Second Edition), Drew Neil, 2015
+
+   - The Vim Way
+   - Normal Mode
+
+2. Modern Vim, Drew Neil, 2018
 
 ## 参考资料
 
