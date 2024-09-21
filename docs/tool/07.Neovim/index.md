@@ -28,6 +28,8 @@ In Neovim, you have the following instead:
 :echo $VIMRUNTIME    " C:\Program Files\Neovim\share\nvim\runtime
 ```
 
+The following steps are just a follow through from this video [Windows11 里定制个性 PowerShell + Neovim 全程音乐不废话 ！](https://www.bilibili.com/video/BV1Gz421D7Qr/)
+
 1. 创建 `C:\Users\Alowr\AppData\Local\nvim\init.vim` 配置文件，复制并粘贴 Bek Brace 的配置文件，作为配置的起点
 2. 在 Windows PowerShell 内安装插件管理器 vim-plug
    ```ps
@@ -36,7 +38,7 @@ In Neovim, you have the following instead:
    ```
 3. 在 Neovim 内运行 `:PlugInstall` 以安装配置文件内的各种插件
 4. 安装完成后重启 Neovim，很多插件已经可以使用
-5. Prettier formatter for coc.nvim, Run vim command:
+5. Prettier formatter for coc.nvim, run vim command:
    ```vim
    :CocInstall coc-prettier
    ```
@@ -58,3 +60,9 @@ In Neovim, you have the following instead:
    ```
 
 到这一步，Markdown 文档在保存时已经可以自动格式化了。
+
+另外，这个视频的另外一个重要之外，是教你配置 PowerShell 的历史命令菜单，好用。
+
+## Other thoughts
+
+- PowerShell 环境变量，`Get-ChildItem env:*`

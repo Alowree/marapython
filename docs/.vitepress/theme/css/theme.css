@@ -121,7 +121,7 @@
 }
 
 .vp-doc h3::before {
-  font-family: var(--fa-style-family,"Font Awesome 6 Free");
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
   content: "\f5fd";
   color: skyblue;
   margin-right: 0.4rem;
