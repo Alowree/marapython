@@ -23,7 +23,7 @@ export default <ThemeConfig>{
     next: "下一页",
   },
   editLink: {
-    pattern: "https://github.com/alowree/vitepress/edit/main/docs/:path",
+    pattern: "https://github.com/alowree/marapython/edit/main/docs/:path",
     text: "在 GitHub 上编辑此页面",
   },
 };
