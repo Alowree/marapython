@@ -6,6 +6,8 @@ order:
 
 ## Neovim 是什么
 
+Neovim 是 Vim 的最新替代品。
+
 ## 安装
 
 ## 配置

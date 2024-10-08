@@ -18,7 +18,8 @@ export async function setFrontmatter() {
       tag = true;
     }
 
-    !data.title && (data.title = path.basename(postPath, path.extname(postPath)));
+    !data.title &&
+      (data.title = path.basename(postPath, path.extname(postPath)));
     data.date = formatDate(new Date());
     !data.order && (data.order = "");
 
@@ -26,6 +27,7 @@ export async function setFrontmatter() {
       const fmData = `---
 title: ${data.title}
 date: ${data.date}
+tags: ${data.tags}
 order: ${data.order}
 ---`;
 
