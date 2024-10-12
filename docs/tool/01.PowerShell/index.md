@@ -44,6 +44,24 @@ Example:
 oh-my-posh init pwsh --config 'C:\Users\Alowr\AppData\Local\Programs\oh-my-posh\themes\jandedobbeleer.omp.json' | Invoke-Expression
 ```
 
+## Custom configuration
+
+You can export the current theme (default, or set via `--config`) to the format you like (`json`, `yaml`, or `toml`) which can be used to tweak and store as your own custom configuration.
+
+```ps
+oh-my-posh config export --output $env:POSH_THEMES_PATH/.mytheme.omp.json
+```
+
+This will create your configuration file in path `C:\Users\Alowr\AppData\Local\Programs\oh-my-posh\themes\.mytheme.omp.json`
+
+In case you want to enable auto-upgrades, you need to edit your configuration file, by adding the following line to your configuration file.
+
+```json
+{
+  "auto_upgrade": true
+}
+```
+
 ## Learning Paths
 
 1. Learn PowerShell in a Month of Lunches, Fourth Eidition
