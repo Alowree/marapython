@@ -9,7 +9,8 @@ import { setFrontmatter } from "./utils/setFrontmatter";
 const config = defineConfigWithTheme<ThemeConfig>({
   title: "MaraPython",
   titleTemplate: false,
-  description: "🎉 记录我的学习和编码：这是一个基于 VitePress 构建的碎片化、结构化、体系化的个人知识库",
+  description:
+    "🎉 记录我的学习和编码：这是一个基于 VitePress 构建的碎片化、结构化、体系化的个人知识库",
   themeConfig,
   cleanUrls: true,
   lastUpdated: true,

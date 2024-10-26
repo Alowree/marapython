@@ -27,7 +27,6 @@ export async function setFrontmatter() {
       const fmData = `---
 title: ${data.title}
 date: ${data.date}
-tags: ${data.tags}
 order: ${data.order}
 ---`;
 
