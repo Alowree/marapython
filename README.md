@@ -7,4 +7,4 @@ A VitePress theme that resembles to VuePress Vdoing in certain ways - an initial
 ## Features
 
 - Auto sidebar on the left side
-- Pos content area is set to be wide for PC mode
+- Post content area is set to be wide for PC mode

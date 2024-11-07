@@ -23,7 +23,7 @@ Sound Spot II is an ideal Bluetooth wireless speaker to complement a modern life
 - Rechargeable lithium battery with up to 10 hours music playback
 - Volume limiter for large or small rooms (70% of full sound volume)
 - Personal speakerphone with DSP noise reduction to take phone calls over Bluetooth with great voice clarity
-- Nature sound — producing soothing sound for relaxing, focus and deep sleep (Bird, Forest, Ocean, Rain, Wind, Urban, Chime and Bell)
+- Nature sound — producing soothing sound for relaxing, focus and deep sleep (Bird, Forest, Ocean, Rain, Urban, Chime, Bell and Wind)
 - Sleep timer — 30/60/120 minutes
 - Ambient light — improving your comfort with warm and soft white light
 - USB-C charging port to charge iPhone, Android and most mobile devices
