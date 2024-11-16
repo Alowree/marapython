@@ -6,7 +6,7 @@ order:
 
 ## 什么是 PowerShell？
 
-Windows PowerShell 是一种易于使用的命令行 shell 和脚本环境，用于自动执行基于 Windows 的系统的管理任务。 Windows PowerShell 预安装在 Windows 操作系统的所有新式版本上。
+Windows PowerShell 是一种易于使用的命令行 Shell 和脚本环境，用于自动执行基于 Windows 的系统的管理任务。 Windows PowerShell 预安装在 Windows 操作系统的所有新式版本上。
 
 ## Useful Terminal Commands
 

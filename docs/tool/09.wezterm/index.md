@@ -1,5 +1,5 @@
 ---
-title: 01.五笔速查
+title: index
 date: 2024-11-14 13:49:08
 order: 
 ---
