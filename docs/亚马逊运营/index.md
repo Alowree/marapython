@@ -5,3 +5,8 @@ order:
 ---
 
 > If you're not careful they're going to fuck up your good work!
+
+- B09VB12M1B (SFQ-16WT)
+  - [x] Canada
+  - [ ] Brazil - ASIN does not exist in this marketplace
+  - [ ] Hazmat/Dangerous Goods Status
