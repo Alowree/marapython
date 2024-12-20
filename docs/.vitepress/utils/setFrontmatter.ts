@@ -20,6 +20,12 @@ export async function setFrontmatter() {
 
     !data.title &&
       (data.title = path.basename(postPath, path.extname(postPath)));
+    if (!data.title) {
+      // Get the filename without extension
+      const rawTitle = path.basename(postPath, path.extname(postPath));
+      // Remove numeric prefix (e.g., "01.", "1.", "001.")
+      data.title = rawTitle.replace(/^\d+\.\s*/, '');
+    }
     data.date = formatDate(new Date());
     !data.order && (data.order = "");
 
