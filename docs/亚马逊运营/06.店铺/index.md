@@ -1,3 +1,9 @@
+---
+title: 06.店铺
+date: 2024-12-17 09:34:42
+order: 
+---
+
 ## Store Guides
 
 [品牌旗舰店 - 简介](https://advertising.amazon.com/solutions/products/stores)  
