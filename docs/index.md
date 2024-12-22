@@ -42,4 +42,4 @@ features:
 
 ## 文章列表
 
-<!-- <Posts /> -->
+<Posts />
