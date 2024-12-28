@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@shikijs/vitepress-twoslash": "^1.22.2",
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.17.6",
     "fast-glob": "^3.3.2",
     "flexsearch": "^0.7.43",
@@ -42,14 +43,20 @@
   },
   "dependencies": {
     "@braintree/sanitize-url": "^7.1.0",
+    "chalk": "^5.4.1",
+    "cheerio": "^1.0.0",
     "cytoscape": "^3.30.3",
     "cytoscape-cose-bilkent": "^4.1.0",
     "dayjs": "^1.11.13",
     "debug": "^4.3.7",
     "element-plus": "^2.8.7",
+    "fs-extra": "^11.2.0",
+    "globby": "^14.0.2",
+    "json2yaml": "^1.1.0",
     "viewerjs": "^1.11.6",
     "vitepress-plugin-back-to-top": "^1.0.1",
-    "vitepress-plugin-image-viewer": "^1.1.5"
+    "vitepress-plugin-image-viewer": "^1.1.5",
+    "vue-router": "^4.0.13"
   },
   "packageManager": "pnpm@9.12.3"
 }

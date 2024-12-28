@@ -35,4 +35,11 @@ export default {
   ssr: {
     noExternal: ["element-plus"],
   },
+  // Ensure TS files are processed
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
+  optimizeDeps: {
+    exclude: ['vitepress']
+  }
 };

@@ -1,5 +1,5 @@
 <script setup>
-import { data as pages } from "../utils/posts.data.ts";
+import { data as pages } from "../utils/posts.data";
 </script>
 
 <template>

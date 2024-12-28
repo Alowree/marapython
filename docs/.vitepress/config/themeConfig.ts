@@ -9,7 +9,7 @@ export default <ThemeConfig>{
   nav,
   sidebar: generateSidebar(sidebar),
   search,
-  socialLinks,
+  // socialLinks,
   outline: [2, 4],
   outlineTitle: "文章目录",
   darkModeSwitchLabel: "切换夜间模式",
@@ -22,8 +22,8 @@ export default <ThemeConfig>{
     prev: "上一页",
     next: "下一页",
   },
-  editLink: {
-    pattern: "https://github.com/alowree/marapython/edit/main/docs/:path",
-    text: "在 GitHub 上编辑此页面",
-  },
+  // editLink: {
+  //   pattern: "https://github.com/alowree/marapython/edit/main/docs/:path",
+  //   text: "在 GitHub 上编辑此页面",
+  // }
 };

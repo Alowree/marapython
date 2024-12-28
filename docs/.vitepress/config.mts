@@ -5,7 +5,7 @@ import markdown from "./config/markdown";
 import themeConfig from "./config/themeConfig";
 import vite from "./config/vite";
 import type { ThemeConfig } from "./types/ThemeConfig";
-import { setFrontmatter } from "./utils/setFrontmatter";
+import { setFrontmatter } from "./utils/setFrontmatter2";
 const config = defineConfigWithTheme<ThemeConfig>({
   title: "MaraPython",
   titleTemplate: false,
@@ -18,7 +18,18 @@ const config = defineConfigWithTheme<ThemeConfig>({
   head,
   markdown,
   async transformPageData() {
-    await setFrontmatter();
+    const sourceDir = "docs/**/*.md";
+    const ignorePatterns = [
+      "docs/index.md",
+      "docs/pages/**",
+      "docs/frontend/**",
+      "docs/about/**",
+      "docs/Soundfreaq/**",
+      "docs/tool/**",
+      "docs/亚马逊运营/**",
+      // Add more patterns as needed
+    ];
+    await setFrontmatter(sourceDir, themeConfig, ignorePatterns);
   },
 });
 

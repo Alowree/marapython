@@ -5,8 +5,8 @@ import os from "node:os";
 import path from "path";
 
 export async function setFrontmatter() {
-  const paths = await fg("docs/**/*.md", {
-    ignore: ["docs/index.md", "docs/.vitepress/**", "docs/public/**"],
+  const paths = await fg("docs/市场营销/*.md", {
+    ignore: ["docs/index.md", "docs/.vitepress/**", "docs/pages/**", "docs/public/**"],
   });
 
   paths.map(async (postPath) => {

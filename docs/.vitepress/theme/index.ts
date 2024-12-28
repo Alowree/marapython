@@ -1,3 +1,4 @@
+// theme entry file
 import "@shikijs/vitepress-twoslash/style.css";
 import "viewerjs/dist/viewer.min.css";
 import type { Theme } from "vitepress";
