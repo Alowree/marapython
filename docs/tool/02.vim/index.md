@@ -1,7 +1,13 @@
 ---
 title: Vim
 date: 2024-07-08 09:11:20
-order:
+order: null
+permalink: /pages/47685c/
+categories: 
+  - tool
+tags: 
+  - tool
+  - Vim
 ---
 
 ## Vim 是什么

@@ -1,7 +1,13 @@
 ---
 title: DrawIO 快捷键
 date: 2024-05-15 23:43:28
-order: 
+order: null
+permalink: /pages/fc0a0a/
+categories: 
+  - tool
+tags: 
+  - tool
+  - software
 ---
 
 ## 文档 / DOCUMENT

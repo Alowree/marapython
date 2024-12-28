@@ -1,3 +1,24 @@
+/* Add these rules at the top of your layout.css */
+
+/* Force scrollbar to always show on Windows */
+html {
+  overflow-y: scroll;
+}
+
+/* For MacOS, create a permanent space for scrollbar */
+@supports (-moz-appearance:none) {
+  html {
+    scrollbar-width: thin;
+  }
+}
+
+@supports not (-moz-appearance:none) {
+  html {
+    /* Create space for scrollbar on WebKit browsers */
+    margin-right: calc(100vw - 100%);
+  }
+}
+
 @media (min-width: 1440px) {
   /* 侧边栏宽度 */
   .VPSidebar {
@@ -20,9 +41,9 @@
     padding-left: var(--vp-sidebar-width) !important;
   }
 }
-
+/*
 @media (min-width: 960px) {
-  /* navbar divider */
+  
   .VPNavBar > .divider {
     display: none !important;
   }
@@ -32,18 +53,43 @@
   .VPNavBar.has-sidebar .title {
     border-bottom: none;
   }
-  /* sidebar 高度 */
+ 
   .VPSidebar {
     top: var(--vp-nav-height) !important;
     padding-top: unset !important;
   }
-  /* aside */
+
   .VPDoc.has-sidebar.has-aside .aside {
     justify-content: flex-end;
   }
-  /* no sidebar & no aside */
+
   .VPDoc:not(.has-sidebar) .content {
     max-width: unset !important;
+  }
+}
+*/
+@media (min-width: 960px) {
+  /* navbar divider */
+  .VPNavBar > .divider {
+    display: none !important;
+  }
+  
+  div.wrapper {
+    border-bottom: 1px solid var(--zero-theme-op);
+  }
+  
+  .VPNavBar.has-sidebar .title {
+    border-bottom: none;
+  }
+  
+  /* Ensure consistent spacing regardless of scrollbar */
+  .VPNavBar.has-sidebar .content {
+    padding-right: calc(32px + var(--scrollbar-width, 15px)) !important;
+  }
+  
+  .VPLocalNav.has-sidebar,
+  .VPLocalNav.has-sidebar.empty {
+    padding-right: calc(32px + var(--scrollbar-width, 15px)) !important;
   }
 }
 

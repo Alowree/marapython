@@ -1,7 +1,13 @@
 ---
 title: VS Code
 date: 2024-08-17 09:40:00
-order:
+order: null
+permalink: /pages/9bd966/
+categories: 
+  - tool
+tags: 
+  - tool
+  - VS Code
 ---
 
 ## VS Code 是什么

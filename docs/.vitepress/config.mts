@@ -23,9 +23,8 @@ const config = defineConfigWithTheme<ThemeConfig>({
       "docs/index.md",
       "docs/pages/**",
       "docs/frontend/**",
-      "docs/about/**",
       "docs/Soundfreaq/**",
-      "docs/tool/**",
+      // "docs/tool/**",
       "docs/亚马逊运营/**",
       // Add more patterns as needed
     ];

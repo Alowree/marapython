@@ -1,7 +1,13 @@
 ---
 title: 软件工具
 date: 2024-05-15 22:40:49
-order: 
+order: null
+permalink: /pages/131a7c/
+categories: 
+  - tool
+tags: 
+  - tool
+  - software
 ---
 
 ## 端口占用

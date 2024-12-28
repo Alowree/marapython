@@ -1,7 +1,13 @@
 ---
 title: PowerShell
 date: 2024-08-17 11:41:46
-order:
+order: null
+permalink: /pages/ae9cbd/
+categories: 
+  - tool
+tags: 
+  - tool
+  - PowerShell
 ---
 
 ## 什么是 PowerShell？

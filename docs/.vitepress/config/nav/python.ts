@@ -1,4 +1,4 @@
 export default {
   text: "Python",
-  items: [{ text: "Python", link: "/python/python/" }],
+  items: [{ text: "Python", link: "/python/" }],
 };

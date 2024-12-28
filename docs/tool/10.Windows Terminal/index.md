@@ -1,7 +1,13 @@
 ---
 title: Windows Terminal
 date: 2024-11-14 13:49:08
-order:
+order: null
+permalink: /pages/d918e2/
+categories: 
+  - tool
+tags: 
+  - tool
+  - Windows Terminal
 ---
 
 ## What is Windows Terminal

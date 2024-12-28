@@ -1,7 +1,13 @@
 ---
 title: IDEA 快捷键
 date: 2024-05-15 23:47:43
-order: 
+order: null
+permalink: /pages/aa7782/
+categories: 
+  - tool
+tags: 
+  - tool
+  - software
 ---
 
 ## 基本编辑

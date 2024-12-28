@@ -1,7 +1,13 @@
 ---
 title: 常用标点符号
 date: 2024-05-17 09:06:34
-order: 
+order: null
+permalink: /pages/6922e2/
+categories: 
+  - tool
+tags: 
+  - tool
+  - software
 ---
 
 ## 句号

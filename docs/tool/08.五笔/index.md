@@ -1,7 +1,13 @@
 ---
 title: 五笔
 date: 2024-11-14 13:49:08
-order: 
+order: null
+permalink: /pages/bd6755/
+categories: 
+  - tool
+tags: 
+  - tool
+  - 五笔
 ---
 
 I feel a bit crippled in my ability to type with this sophisticated input method, because I've had to switch to Pinyin from time to time to type in certain characters, when I don't know the Wubi input code and things at hand get hectic and you just want to move fast and get the job done. With an inefficient alternative, you never feel compelled to learn and remember the correct typing code in Wubi. Well, that has to change. Today.

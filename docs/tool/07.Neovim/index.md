@@ -1,7 +1,13 @@
 ---
 title: Neovim
 date: 2024-08-20 11:13:26
-order:
+order: null
+permalink: /pages/b917e9/
+categories: 
+  - tool
+tags: 
+  - tool
+  - Neovim
 ---
 
 ## Neovim 是什么

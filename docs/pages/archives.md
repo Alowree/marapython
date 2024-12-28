@@ -34,8 +34,8 @@ const computedYearMap = computed(() => {
   </div>
 
   <div class="content-container">
-    <div v-for="year in yearList" :key="year">
-      <div class="year-row">
+    <div v-for="year in yearList" :key="year" class="year-section">
+      <div class="year-row sticky-year">
         <div class="year-text">{{ year }}</div>
         <div class="year-count">{{ yearMap[year].length }}篇</div>
       </div>
@@ -72,7 +72,40 @@ const computedYearMap = computed(() => {
   font-size: 1rem;
   color: var(--vp-c-text-2);
 }
+.year-section {
+  position: relative;
+}
 
+.sticky-year {
+  position: sticky;
+  top: calc(var(--vp-nav-height) + 0px); /* Adjust based on your header height */
+  background: var(--vp-c-bg);
+  z-index: 10;
+  margin: 0;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+/* Optional: add subtle shadow when sticky */
+.sticky-year::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--vp-c-bg-rgb), 0.1),
+    rgba(var(--vp-c-bg-rgb), 0)
+  );
+  pointer-events: none;
+}
+
+/* Ensure proper spacing between year sections */
+.year-section + .year-section {
+  margin-top: 2rem;
+}
 .year-row {
   display: flex;
   justify-content: space-between;
@@ -94,7 +127,7 @@ const computedYearMap = computed(() => {
 }
 
 .archives-container {
-  /* max-width: 1000px; */
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }

@@ -1,7 +1,13 @@
 ---
 title: VSCode 快捷键
 date: 2024-05-15 23:45:40
-order: 
+order: null
+permalink: /pages/2f19ec/
+categories: 
+  - tool
+tags: 
+  - tool
+  - software
 ---
 
 ## 文件

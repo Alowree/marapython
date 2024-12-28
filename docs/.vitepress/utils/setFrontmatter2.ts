@@ -29,23 +29,24 @@ export async function setFrontmatter(sourceDir: string, themeConfig: any, ignore
     let dataStr = fs.readFileSync(filePath, 'utf8');
     const fileMatterObj = matter(dataStr, {});
 
+// For files without frontmatter
     if (Object.keys(fileMatterObj.data).length === 0) {
       const stat = fs.statSync(filePath);
       const dateStr = dateFormat(getBirthtime(stat));
       const allCategories = getCategories({ filePath }, categoryText);
-      console.log('Generated categories for new file:', allCategories);
-
-      // Split categories into main category and tags
+      
+      // Main category remains the first one or default
       const mainCategory = allCategories[0] || categoryText;
-      const tags = allCategories.slice(1);
-      console.log('Main category:', mainCategory);
-      console.log('Tags:', tags);
+      // Use all categories as tags (including the main category)
+      const tags = allCategories.length > 0 ? allCategories : [''];
 
+      // Build category string
       let cateStr = '';
       if (!(isCategory === false)) {
         cateStr = os.EOL + 'categories:' + os.EOL + '  - ' + mainCategory;
       }
 
+      // Build tags string - now includes all categories
       let tagsStr = '';
       if (isTag !== false) {
         tagsStr = os.EOL + 'tags:';
@@ -91,22 +92,19 @@ ${extendFrontmatterStr}---`;
         hasChange = true;
       }
 
+      // Update categories and tags if they don't exist
       if (!matterData.hasOwnProperty('pageComponent') && matterData.article !== false) {
         const allCategories = getCategories({ filePath }, categoryText);
-        console.log('Generated categories for existing file:', allCategories);
         
         if (isCategory !== false) {
           // Set main category
           matterData.categories = [allCategories[0] || categoryText];
-          console.log('Setting main category:', matterData.categories);
           hasChange = true;
         }
         
         if (isTag !== false) {
-          // Set remaining categories as tags
-          const tags = allCategories.slice(1);
-          matterData.tags = tags.length > 0 ? tags : [''];
-          console.log('Setting tags:', matterData.tags);
+          // Set all categories as tags
+          matterData.tags = allCategories.length > 0 ? allCategories : [''];
           hasChange = true;
         }
       }

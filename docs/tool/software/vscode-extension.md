@@ -1,7 +1,13 @@
 ---
 title: VSCode 扩展
 date: 2024-05-15 23:45:11
-order:
+order: null
+permalink: /pages/a9db18/
+categories: 
+  - tool
+tags: 
+  - tool
+  - software
 ---
 
 | 插件                             | 作用                                                      |
