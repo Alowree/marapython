@@ -195,4 +195,20 @@ onMounted(() => {
   color: var(--vp-c-brand);
   text-decoration: none;
 }
+
+/* Tablet view */
+@media (max-width: 960px) {
+  .sticky-header {
+    top: calc(var(--vp-nav-height-mobile) + 0px); /* Adjust for mobile nav height */
+    /* padding: 0.5rem 0;  */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 640px) {
+  .sticky-header {
+    top: calc(var(--vp-nav-height-mobile) + 0px); /* Further reduced offset */
+    /* padding: 0.5rem 1rem;  */
+  }
+}  
 </style>

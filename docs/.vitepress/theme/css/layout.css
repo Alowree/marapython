@@ -50,6 +50,7 @@ html {
   div.wrapper {
     border-bottom: 1px solid var(--zero-theme-op);
   }
+
   .VPNavBar.has-sidebar .title {
     border-bottom: none;
   }
@@ -82,6 +83,11 @@ html {
     border-bottom: none;
   }
   
+  .VPSidebar {
+    top: var(--vp-nav-height) !important;
+    padding-top: unset !important;
+  }
+
   /* Ensure consistent spacing regardless of scrollbar */
   .VPNavBar.has-sidebar .content {
     padding-right: calc(32px + var(--scrollbar-width, 15px)) !important;
@@ -106,3 +112,4 @@ html {
 .outline-link.active {
   color: var(--vp-c-brand-1) !important;
 }
+

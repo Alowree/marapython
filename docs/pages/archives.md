@@ -170,4 +170,32 @@ const computedYearMap = computed(() => {
   color: var(--vp-c-brand);
   text-decoration: none;
 }
+
+/* Tablet view */
+@media (max-width: 960px) {
+  .sticky-year {
+    top: calc(var(--vp-nav-height-mobile) + 0px); /* Adjust for mobile nav height */
+    padding: 0.5rem 0; /* Slightly reduced padding */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 640px) {
+  .sticky-year {
+    top: calc(var(--vp-nav-height-mobile) + 0px); /* Further reduced offset */
+    padding: 0.5rem 1rem; /* Add horizontal padding */
+  }
+
+  .year-text {
+    font-size: 1.1rem; /* Slightly smaller font */
+  }
+
+  .year-count {
+    font-size: 0.8rem; /* Smaller count text */
+  }
+
+  .post-item {
+    padding: 8px 1rem; /* Adjust padding for mobile */
+  }
+}
 </style>
