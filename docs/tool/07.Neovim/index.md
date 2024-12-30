@@ -1,7 +1,6 @@
 ---
 title: Neovim
 date: 2024-08-20 11:13:26
-order: null
 permalink: /pages/b917e9/
 categories: 
   - tool

@@ -25,7 +25,7 @@ const config = defineConfigWithTheme<ThemeConfig>({
       "docs/frontend/**",
       "docs/Soundfreaq/**",
       // "docs/tool/**",
-      "docs/亚马逊运营/**",
+      // "docs/亚马逊运营/**",
       // Add more patterns as needed
     ];
     await setFrontmatter(sourceDir, themeConfig, ignorePatterns);

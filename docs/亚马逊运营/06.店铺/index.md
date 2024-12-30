@@ -1,7 +1,12 @@
 ---
 title: 06.店铺
 date: 2024-12-17 09:34:42
-order: 
+permalink: /pages/f8fbce/
+categories: 
+  - 亚马逊运营
+tags: 
+  - 亚马逊运营
+  - 店铺
 ---
 
 ## Store Guides
