@@ -2,7 +2,7 @@
 layout: home
 hero: 
   name: MaraPython
-  text: null
+  text: 
   tagline: CLEAR WRITING IS THE KEY TO CLEAR THINKING
   image: 
     src: /images/index/ghost.png
