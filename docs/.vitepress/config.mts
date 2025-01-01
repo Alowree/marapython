@@ -5,7 +5,8 @@ import markdown from "./config/markdown";
 import themeConfig from "./config/themeConfig";
 import vite from "./config/vite";
 import type { ThemeConfig } from "./types/ThemeConfig";
-import { setFrontmatter } from "./utils/setFrontmatter2";
+import { setFrontmatter } from "./utils/setFrontmatter";
+
 const config = defineConfigWithTheme<ThemeConfig>({
   title: "MaraPython",
   titleTemplate: false,

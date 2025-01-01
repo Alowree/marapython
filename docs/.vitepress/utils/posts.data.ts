@@ -1,4 +1,3 @@
-// test 3, from 无声2017
 import { createContentLoader } from "vitepress";
 import { dayjs } from "./dayjs";
 
