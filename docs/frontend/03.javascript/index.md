@@ -1,7 +1,12 @@
 ---
 title: JavaScript
 date: 2024-05-24 12:08:53
-order:
+permalink: /pages/fdbfaa/
+categories: 
+  - frontend
+tags: 
+  - frontend
+  - javascript
 ---
 
 ## JavaScript 是啥

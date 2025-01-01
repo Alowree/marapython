@@ -1,7 +1,12 @@
 ---
 title: SFQ-16 Sound Rise II
 date: 2024-05-19 17:24:25
-order: 
+permalink: /pages/47eabc/
+categories: 
+  - Soundfreaq
+tags: 
+  - Soundfreaq
+  - Sound Rise II
 ---
 
 # {{ $frontmatter.title }}

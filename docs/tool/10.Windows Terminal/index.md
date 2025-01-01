@@ -1,7 +1,6 @@
 ---
 title: Windows Terminal
 date: 2024-11-14 13:49:08
-order: null
 permalink: /pages/d918e2/
 categories: 
   - tool

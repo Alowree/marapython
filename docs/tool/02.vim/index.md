@@ -1,7 +1,6 @@
 ---
 title: Vim
 date: 2024-07-08 09:11:20
-order: null
 permalink: /pages/47685c/
 categories: 
   - tool

@@ -9,23 +9,31 @@ import { type, repairDate, dateFormat } from "./fn.js";
 
 const log = console.log;
 const PREFIX = "/pages/";
+const DEFAULT_CATEGORY_TEXT = "随笔";
+
+interface ThemeConfig {
+  category: boolean;
+  tag: boolean;
+  extendFrontmatter?: any;
+}
+
+interface MatterData {
+  title?: string;
+  date?: string;
+  permalink?: string;
+  categories?: string[];
+  tags?: string[];
+  pageComponent?: any;
+  article?: boolean;
+}
 
 export async function setFrontmatter(
   sourceDir: string,
-  themeConfig: any,
+  themeConfig: ThemeConfig,
   ignorePatterns: string[] = [],
 ) {
-  // console.log('Starting setFrontmatter with sourceDir:', sourceDir);
-  // console.log('Ignore patterns:', ignorePatterns);
-
-  const {
-    category: isCategory,
-    tag: isTag,
-    categoryText = "随笔",
-    extendFrontmatter,
-  } = themeConfig;
+  const { category: isCategory, tag: isTag, extendFrontmatter } = themeConfig;
   const files = await fg(sourceDir, { ignore: ignorePatterns });
-  // console.log('Found files:', files);
 
   const extendFrontmatterStr = extendFrontmatter
     ? jsonToYaml
@@ -34,162 +42,157 @@ export async function setFrontmatter(
         .replace(/"|---\n/g, "")
     : "";
 
-  files.forEach((filePath) => {
-    // console.log('\nProcessing file:', filePath);
-    let dataStr = fs.readFileSync(filePath, "utf8");
-    const fileMatterObj = matter(dataStr, {});
+  for (const filePath of files) {
+    try {
+      let dataStr = fs.readFileSync(filePath, "utf8");
+      const fileMatterObj = matter(dataStr, {});
 
-    // For files without frontmatter
-    if (Object.keys(fileMatterObj.data).length === 0) {
-      const stat = fs.statSync(filePath);
-      const dateStr = dateFormat(getBirthtime(stat));
-      const allCategories = getCategories({ filePath }, categoryText);
-
-      // Main category remains the first one or default
-      const mainCategory = allCategories[0] || categoryText;
-      // Use all categories as tags (including the main category)
-      const tags = allCategories.length > 0 ? allCategories : [""];
-
-      // Build category string
-      let cateStr = "";
-      if (!(isCategory === false)) {
-        cateStr = os.EOL + "categories:" + os.EOL + "  - " + mainCategory;
-      }
-
-      // Build tags string - now includes all categories
-      let tagsStr = "";
-      if (isTag !== false) {
-        tagsStr = os.EOL + "tags:";
-        tags.forEach((tag) => {
-          tagsStr += os.EOL + "  - " + tag;
-        });
-        if (tags.length === 0) {
-          tagsStr += os.EOL + "  - ";
-        }
-      }
-
-      const fmData = `---
-title: ${processTitle(filePath)}
-date: ${dateStr}
-permalink: ${getPermalink()}${filePath.indexOf("_posts") > -1 ? os.EOL + "sidebar: auto" : ""}${cateStr}${tagsStr}
-${extendFrontmatterStr}---`;
-
-      fs.writeFileSync(filePath, `${fmData}${os.EOL}${fileMatterObj.content}`);
-      log(
-        chalk.blue("tip ") +
-          chalk.green(`write frontmatter(写入frontmatter)：${filePath} `),
-      );
-    } else {
-      let matterData = fileMatterObj.data;
-      let hasChange = false;
-
-      if (!matterData.hasOwnProperty("title")) {
-        matterData.title = processTitle(filePath);
-        hasChange = true;
-      }
-
-      if (!matterData.hasOwnProperty("date")) {
-        const stat = fs.statSync(filePath);
-        matterData.date = dateFormat(getBirthtime(stat));
-        hasChange = true;
-      }
-
-      if (!matterData.hasOwnProperty("permalink")) {
-        matterData.permalink = getPermalink();
-        hasChange = true;
-      }
-
-      if (
-        filePath.indexOf("_posts") > -1 &&
-        !matterData.hasOwnProperty("sidebar")
-      ) {
-        matterData.sidebar = "auto";
-        hasChange = true;
-      }
-
-      // Update categories and tags if they don't exist
-      if (
-        !matterData.hasOwnProperty("pageComponent") &&
-        matterData.article !== false
-      ) {
-        const allCategories = getCategories({ filePath }, categoryText);
-
-        if (isCategory !== false) {
-          // Set main category
-          matterData.categories = [allCategories[0] || categoryText];
-          hasChange = true;
-        }
-
-        if (isTag !== false) {
-          // Set all categories as tags
-          matterData.tags = allCategories.length > 0 ? allCategories : [""];
-          hasChange = true;
-        }
-      }
-
-      if (type(extendFrontmatter) === "object") {
-        Object.keys(extendFrontmatter).forEach((keyName) => {
-          if (!matterData.hasOwnProperty(keyName)) {
-            matterData[keyName] = extendFrontmatter[keyName];
-            hasChange = true;
-          }
-        });
-      }
-
-      if (hasChange) {
-        if (matterData.date && type(matterData.date) === "date") {
-          matterData.date = repairDate(matterData.date);
-        }
-        const newData =
-          jsonToYaml
-            .stringify(matterData)
-            .replace(/\n\s{2}/g, "\n")
-            .replace(/"/g, "") +
-          "---" +
-          os.EOL +
-          fileMatterObj.content;
-        fs.writeFileSync(filePath, newData);
-        log(
-          chalk.blue("tip ") +
-            chalk.green(`write frontmatter(写入frontmatter)：${filePath} `),
+      if (Object.keys(fileMatterObj.data).length === 0) {
+        handleNoFrontmatter(
+          filePath,
+          fileMatterObj,
+          extendFrontmatterStr,
+          isCategory,
+          isTag,
+        );
+      } else {
+        updateFrontmatter(
+          fileMatterObj.data,
+          filePath,
+          fileMatterObj,
+          dataStr,
+          isCategory,
+          isTag,
         );
       }
+    } catch (error) {
+      log(chalk.red(`Error processing file ${filePath}: ${error.message}`));
     }
-  });
+  }
+}
+
+function handleNoFrontmatter(
+  filePath: string,
+  fileMatterObj: any,
+  extendFrontmatterStr: string,
+  isCategory: boolean,
+  isTag: boolean,
+) {
+  const stat = fs.statSync(filePath);
+  const dateStr = dateFormat(getBirthtime(stat));
+  const allCategories = getCategories({ filePath }, DEFAULT_CATEGORY_TEXT);
+  const mainCategory = allCategories[0] || DEFAULT_CATEGORY_TEXT;
+  const tags = allCategories.length > 0 ? allCategories : [""];
+
+  const fmData = constructFrontmatter(
+    filePath,
+    dateStr,
+    mainCategory,
+    tags,
+    extendFrontmatterStr,
+  );
+  fs.writeFileSync(filePath, `${fmData}${os.EOL}${fileMatterObj.content}`);
+  log(
+    chalk.blue("tip ") +
+      chalk.green(`write frontmatter(写入frontmatter)：${filePath} `),
+  );
+}
+
+function constructFrontmatter(
+  filePath: string,
+  dateStr: string,
+  mainCategory: string,
+  tags: string[],
+  extendFrontmatterStr: string,
+): string {
+  return `---
+title: ${processTitle(filePath)}
+date: ${dateStr}
+permalink: ${getPermalink()}${filePath.indexOf("_posts") > -1 ? os.EOL + "sidebar: auto" : ""}
+categories:
+  - ${mainCategory}
+tags:
+${tags.map((tag) => `  - ${tag}`).join(os.EOL)}
+${extendFrontmatterStr}---`;
+}
+
+function updateFrontmatter(
+  matterData: MatterData,
+  filePath: string,
+  fileMatterObj: any,
+  dataStr: string,
+  isCategory: boolean,
+  isTag: boolean,
+) {
+  let hasChange = false;
+
+  if (!matterData.title) {
+    matterData.title = processTitle(filePath);
+    hasChange = true;
+  }
+
+  if (!matterData.date) {
+    const stat = fs.statSync(filePath);
+    matterData.date = dateFormat(getBirthtime(stat));
+    hasChange = true;
+  }
+
+  if (!matterData.permalink) {
+    matterData.permalink = getPermalink();
+    hasChange = true;
+  }
+
+  if (!matterData.pageComponent && matterData.article !== false) {
+    const allCategories = getCategories({ filePath }, DEFAULT_CATEGORY_TEXT);
+    if (isCategory !== false) {
+      matterData.categories = [allCategories[0] || DEFAULT_CATEGORY_TEXT];
+      hasChange = true;
+    }
+    if (isTag !== false) {
+      matterData.tags = allCategories.length > 0 ? allCategories : [""];
+      hasChange = true;
+    }
+  }
+
+  if (hasChange) {
+    if (matterData.date && type(matterData.date) === "date") {
+      matterData.date = repairDate(matterData.date);
+    }
+
+    const newData =
+      jsonToYaml
+        .stringify(matterData)
+        .replace(/\n\s{2}/g, "\n")
+        .replace(/"/g, "") +
+      "---" +
+      os.EOL +
+      fileMatterObj.content;
+
+    if (newData !== dataStr) {
+      fs.writeFileSync(filePath, newData);
+      log("Updated frontmatter in: " + filePath);
+    } else {
+      log("No changes to write for: " + filePath);
+    }
+  }
 }
 
 function getCategories(
   file: { filePath: string },
   categoryText: string,
 ): string[] {
-  // console.log('Processing filepath:', file.filePath);
-
   let categories: string[] = [];
-
-  // Normalize path separators
   const normalizedPath = file.filePath.replace(/\\/g, "/");
-  // console.log('Normalized path:', normalizedPath);
 
   if (normalizedPath.indexOf("_posts") === -1) {
     let pathParts = normalizedPath.split("/");
-    // console.log('Path parts:', pathParts);
-
     let docsIndex = pathParts.indexOf("docs");
-    // console.log('Docs index:', docsIndex);
 
     if (docsIndex !== -1) {
-      // Get all parts after 'docs'
       let categoryParts = pathParts.slice(docsIndex + 1, -1);
-      // console.log('Category parts:', categoryParts);
-
       categories = categoryParts
-        .map((part) => {
-          // Remove any numeric prefix if it exists
-          return part.replace(/^\d+\.\s*/, "");
-        })
-        .filter(Boolean); // Remove empty strings
-
-      // console.log('Final categories:', categories);
+        .map((part) => part.replace(/^\d+\.\s*/, ""))
+        .filter(Boolean);
     }
   } else {
     const matchResult = normalizedPath.match(/_posts\/(\S*)\//);
@@ -207,21 +210,15 @@ function getCategories(
 }
 
 function getBirthtime(stat: fs.Stats): Date {
-  return stat.birthtime.getFullYear() != 1970 ? stat.birthtime : stat.atime;
+  return stat.birthtime.getFullYear() !== 1970 ? stat.birthtime : stat.atime;
 }
 
 function getPermalink(): string {
   return `${PREFIX + (Math.random() + Math.random()).toString(16).slice(2, 8)}/`;
 }
 
-// Add this helper function
 function processTitle(filePath: string): string {
   const rawTitle = path.basename(filePath, path.extname(filePath));
-  console.log("Raw title:", rawTitle);
-
-  // Remove numeric prefix (e.g., "01.", "1.", "001.")
   const cleanTitle = rawTitle.replace(/^\d+\.\s*/, "");
-  console.log("Clean title:", cleanTitle);
-
   return cleanTitle;
 }

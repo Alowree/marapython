@@ -1,7 +1,6 @@
 ---
 title: 软件配置
 date: 2024-05-15 23:38:25
-order: null
 permalink: /pages/f4aa1f/
 categories: 
   - tool

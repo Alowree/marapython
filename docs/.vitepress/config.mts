@@ -22,10 +22,13 @@ const config = defineConfigWithTheme<ThemeConfig>({
     const ignorePatterns = [
       "docs/index.md",
       "docs/pages/**",
-      "docs/frontend/**",
-      "docs/Soundfreaq/**",
+      // "docs/frontend/**",
+      // "docs/Soundfreaq/**",
       // "docs/tool/**",
       // "docs/亚马逊运营/**",
+      // "docs/市场营销/**",
+      // "docs/京东运营/**",
+      // "docs/python/**",
       // Add more patterns as needed
     ];
     await setFrontmatter(sourceDir, themeConfig, ignorePatterns);

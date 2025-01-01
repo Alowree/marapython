@@ -1,7 +1,12 @@
 ---
 title: 表格 table
 date: 2024-05-16 00:18:46
-order: 3
+permalink: /pages/909f83/
+categories: 
+  - frontend
+tags: 
+  - frontend
+  - html
 ---
 
 什么是表格？表格是由行和列组成的结构化数据集（表格数据），它让你快速简单地查找某个表示不同类型数据之间的某种关系的值。比如说，某个人和他的年龄，一天或是一周，当地游泳池的时间表。

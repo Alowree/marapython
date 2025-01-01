@@ -1,7 +1,12 @@
 ---
 title: SFQ-18 Sound Spot II
 date: 2024-05-21 21:00:00
-order:
+permalink: /pages/b26573/
+categories: 
+  - Soundfreaq
+tags: 
+  - Soundfreaq
+  - Sound Spot II
 ---
 
 # {{ $frontmatter.title }}

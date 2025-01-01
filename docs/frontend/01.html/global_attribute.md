@@ -1,7 +1,12 @@
 ---
 title: 全局属性
 date: 2024-05-16 00:19:15
-order: 5
+permalink: /pages/35bc7b/
+categories: 
+  - frontend
+tags: 
+  - frontend
+  - html
 ---
 
 | 全局属性          | 说明                                                                             |

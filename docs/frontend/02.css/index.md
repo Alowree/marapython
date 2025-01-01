@@ -1,7 +1,12 @@
 ---
 title: CSS
 date: 2024-05-19 18:10:15
-order: 
+permalink: /pages/84d85c/
+categories: 
+  - frontend
+tags: 
+  - frontend
+  - css
 ---
 
 # {{ $frontmatter.title }}

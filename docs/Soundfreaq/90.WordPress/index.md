@@ -1,7 +1,12 @@
 ---
 title: WordPress
 date: 2024-06-15 16:43:15
-order:
+permalink: /pages/86225d/
+categories: 
+  - Soundfreaq
+tags: 
+  - Soundfreaq
+  - WordPress
 ---
 
 WordPress + Woocommerce 可以搭建 B2C 零售型独立站。主要竞品 Shopify 建站平台。

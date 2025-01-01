@@ -1,7 +1,12 @@
 ---
 title: 表单 form
 date: 2024-05-16 00:18:46
-order: 4
+permalink: /pages/746120/
+categories: 
+  - frontend
+tags: 
+  - frontend
+  - html
 ---
 
 ## form 标签

@@ -1,7 +1,12 @@
 ---
 title: SFQ-08 Sound Rise
 date: 2024-06-27 15:53:47
-order: 
+permalink: /pages/393d57/
+categories: 
+  - Soundfreaq
+tags: 
+  - Soundfreaq
+  - Sound Rise
 ---
 # {{ $frontmatter.title }}
 

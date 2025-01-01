@@ -1,7 +1,6 @@
 ---
 title: Sublime Text 4
 date: 2024-07-08 09:11:20
-order: null
 permalink: /pages/e6660c/
 categories: 
   - tool

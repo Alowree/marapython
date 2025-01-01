@@ -8,7 +8,7 @@ export default [
     useFolderLinkFromIndexFile: true,
     sortMenusByFrontmatterOrder: true,
     collapsed: true,
-    hyphenToSpace: true,
+    hyphenToSpace: false,
     underscoreToSpace: true,
   },
 ];

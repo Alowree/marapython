@@ -1,7 +1,6 @@
 ---
 title: PowerShell
 date: 2024-08-17 11:41:46
-order: null
 permalink: /pages/ae9cbd/
 categories: 
   - tool

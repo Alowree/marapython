@@ -1,7 +1,12 @@
 ---
 title: HTML
 date: 2024-05-15 22:40:49
-order: 
+permalink: /pages/76b51d/
+categories: 
+  - frontend
+tags: 
+  - frontend
+  - html
 ---
 
 ## Web 标准组成

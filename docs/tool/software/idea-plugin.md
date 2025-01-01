@@ -1,7 +1,6 @@
 ---
 title: IDEA 插件
 date: 2024-05-15 23:46:59
-order: null
 permalink: /pages/2cf8c3/
 categories: 
   - tool

@@ -1,7 +1,6 @@
 ---
 title: Typora
 date: 2024-08-17 09:40:49
-order: null
 permalink: /pages/2ff141/
 categories: 
   - tool

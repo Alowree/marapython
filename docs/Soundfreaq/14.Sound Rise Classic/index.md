@@ -1,7 +1,12 @@
 ---
 title: SFQ-14 Sound Rise Classic
 date: 2024-07-31 08:51:38
-order:
+permalink: /pages/d85643/
+categories: 
+  - Soundfreaq
+tags: 
+  - Soundfreaq
+  - Sound Rise Classic
 ---
 
 ## The Classic Alarm Clock Re-Crafted

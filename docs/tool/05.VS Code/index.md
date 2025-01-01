@@ -1,7 +1,6 @@
 ---
 title: VS Code
 date: 2024-08-17 09:40:00
-order: null
 permalink: /pages/9bd966/
 categories: 
   - tool

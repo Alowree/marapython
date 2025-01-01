@@ -1,7 +1,6 @@
 ---
 title: IDEA 快捷键
 date: 2024-05-15 23:47:43
-order: null
 permalink: /pages/aa7782/
 categories: 
   - tool
