@@ -23,7 +23,7 @@ hero:
     - 
       theme: alt
       text: Python
-      link: /python/python/
+      link: /python/
 features: 
   - 
     icon: 🛢️
@@ -32,9 +32,9 @@ features:
     link: /亚马逊运营/
   - 
     icon: 💨
-    title: Linux
+    title: 市场营销
     details: Linux 基础语法和服务器相关的使用细节。
-    link: /server/linux/
+    link: /市场营销/01.极简市场营销/
   - 
     icon: 🛠️
     title: 开发工具
@@ -59,7 +59,7 @@ const computedRecentPosts = computed(() => data.recentPosts.map(item =>
     ({...item, date: item.date.string})))
 </script>
 
-<div class="max-w-screen-lg w-full px-6 py-8 my-0 mx-auto">
+<div class="">
   <DetailedPostCard
     v-for="(article, index) in computedRecentPosts"
     :key="index"

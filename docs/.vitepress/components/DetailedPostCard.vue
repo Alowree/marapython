@@ -3,7 +3,8 @@ import { withBase } from 'vitepress'
 
 defineProps({
     url: {
-        type: String
+        type: String,
+        default: ''
     },
     title: {
         type: String
@@ -44,55 +45,74 @@ defineProps({
 
 <style scoped>
 .post-card {
-    padding: 14px 0 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .post-title {
-    color: var(--vp-c-text-1);
-    font-size: 1.125rem;
-    font-weight: 500;
-    margin: 0.1rem 0;
+  font-size: 1.25em;
+  font-weight: bold;
+
 }
 
 .post-title-text {
-    color: var(--vp-c-text-1);
+    color: var(--vp-c-indigo-1);
 }
 
 .post-title-text:hover {
-    color: var(--vp-c-brand-1);
+    color: var(--vp-c-indigo-2);
+    text-decoration: none;
+}
+
+.abstract {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 8px;
 }
 
 .post-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 0.875em;
+    color: #999;
 }
 
-.abstract {
-    font-size: 0.9375rem;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    color: var(--vp-c-text-2);
-    margin: 10px 0;
-    line-height: 1.5rem;
+.flex {
+  display: flex;
+  gap: 8px;
 }
 
 .tag {
-    background-color: var(--vp-c-bg-alt);
-    padding: 0 8px;
+  background-color: var(--vp-c-bg-alt);
+  /* background-color: var(--vp-c-bg); */
+  padding: 0 8px;
+  border-radius: 4px;
+  color: var(--vp-c-text);
 }
 
 .tag + .tag {
     margin-left: 6px;
+}
+
+.tag:hover {
+  background-color: var(--vp-c-brand);
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
