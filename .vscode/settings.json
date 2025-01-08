@@ -3,5 +3,7 @@
     "editor.fontFamily": "'Ubuntu Mono derivative Powerline', Consolas, 'PingFang SC Regular', monospace"
   },
   "editor.fontFamily": "JetBrainsMonoNL Nerd Font, LXGW WenKai Mono GB",
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "editor.codeActionsOnSave": {},
+  "editor.renderFinalNewline": "off"
 }

@@ -28,22 +28,22 @@ features:
   - 
     icon: 🛢️
     title: 亚马逊运营
-    details: SQL 基础语法和 MySQL 数据库的使用细节。
+    details: Amazon 基础操作和站内广告的投放细节
     link: /亚马逊运营/
   - 
     icon: 💨
     title: 市场营销
-    details: Linux 基础语法和服务器相关的使用细节。
+    details: 从更宽泛的角度观察市场、产品、品牌和传播
     link: /市场营销/01.极简市场营销/
   - 
     icon: 🛠️
     title: 开发工具
-    details: 各种工具软件或者轮子的语法和使用细节。
+    details: 各种工具软件或者轮子的语法和使用细节
     link: /tool/01.PowerShell/
   - 
     icon: 💡
     title: 软件配置
-    details: 包括各类软件的快捷键、插件汇总、软件配置、装机必备等。
+    details: 包括各类软件的快捷键、插件汇总、软件配置、装机必备等
     link: /tool/02.Vim/
 ---
 
@@ -53,7 +53,6 @@ features:
 import { computed } from 'vue'
 import  { data }  from './.vitepress/utils/posts.data'
 import DetailedPostCard from './.vitepress/components/DetailedPostCard.vue'
-// import nav from './.vitepress/nav'
 
 const computedRecentPosts = computed(() => data.recentPosts.map(item => 
     ({...item, date: item.date.string})))
