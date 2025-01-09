@@ -113,7 +113,7 @@ html {
 }
 
 /* After swap menu and search  */
-.VPNavBarMenu {
+/* .VPNavBarMenu {
   flex-grow: 1;
   justify-content: center;
 }
@@ -124,5 +124,5 @@ html {
 
 .VPNavBarAppearance {
   padding-left: 12px;
-}
+} */
 
