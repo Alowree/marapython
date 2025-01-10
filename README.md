@@ -1,12 +1,10 @@
 ## Introduction
 
-This is a repository cloned and modified from sbgong.github.io
-
-A simple VitePress theme that resembles to VuePress Vdoing in certain ways — an initially scattered, then gradually structured, and eventually systemized organization of a personal knowledge base.
+A simple VitePress theme that resembles to VuePress theme Vdoing in certain ways - an initially scattered, then gradually structured, and eventually organized knowledge base.
 
 ## Features
 
-- Auto sidebar on the left side
+- Configurable auto sidebar on the left side
 - Post content area is set to be wide for PC mode
 
 ## To do list
