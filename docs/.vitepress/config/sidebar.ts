@@ -5,6 +5,8 @@ import soundfreaq from "./sidebar/soundfreaq";
 import about from "./sidebar/about";
 import amazon from "./sidebar/amazon";
 import marketing from "./sidebar/marketing";
+import editor from "./sidebar/editor";
+import shell from "./sidebar/shell";
 
 export default [
   ...frontend,
@@ -14,4 +16,6 @@ export default [
   ...about,
   ...amazon,
   ...marketing,
+  ...editor,
+  ...shell,
 ];

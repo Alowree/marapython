@@ -38,13 +38,13 @@ features:
   - 
     icon: 🛠️
     title: 开发工具
-    details: 各种工具软件或者轮子的语法和使用细节
-    link: /tool/01.PowerShell/
+    details: PowerShell, WezTerm, Git Bash... 各种 Shell 终端工具软件
+    link: /shell/01.PowerShell/
   - 
     icon: 💡
     title: 软件配置
-    details: 包括各类软件的快捷键、插件汇总、软件配置、装机必备等
-    link: /tool/06.Vim/
+    details: Vim, Neovim, ..., 包括各类编辑软件的快捷键、插件汇总、软件配置等
+    link: /editor/06.Vim/
 ---
 
 ## 最近 10 篇文章
