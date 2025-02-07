@@ -23,13 +23,13 @@ Vim is rock stable and is continuously being developed to become even better. Am
 - powerful search and replace
 - integrates with many tools
 
-Vim 是一个多模态的文本编辑器。对于大多数的普通用户，在接触 Vim 之前使用的编辑器，基本都是单模态编辑器，对应的是 Vim 的“插入”模式。Vim 还有以下特点：
+Vim 是一个多模态的文本编辑器。对于大多数的普通用户，在接触 Vim 之前使用的编辑器，基本都是单模态编辑器，对应的是 Vim 的「插入」模式。Vim 还有以下特点：
 
 - 基于 TUI (Terminal User Interface)
 - 熟练用户重度依赖键盘，少用、不用鼠标
 - 高度可定制化，个人风格明显
 - 编辑纯英文文本可以像闪电一样快速
-- 编辑中文文本稍稍差了那么一点意思，频繁的中英输入切换和 Vim 的模态转换，容易产生击键错误，让人有“利刃在手、刀未出鞘”的迟滞感
+- 编辑中文文本稍稍差了那么一点意思，频繁的中英输入切换和 Vim 的模态转换，容易产生击键错误，让人有「利刃在手、刀未出鞘」的迟滞感
 
 ## Vim 能做什么
 
@@ -46,13 +46,13 @@ Yes, it can. 这可能是当你问起任何关于“Vim 能做...吗？”的答
 
 ## 安装 Vim
 
-下载和安装 Vim 至 `C:\Program Files\Vim` 位置，选择 English 为安装语言。
+下载和安装 Vim 9.1 至 `C:\Program Files\Vim` 位置，选择 English 为安装语言。
 
 但不知何故（可能因为操作系统是中文版 Windows），安装成功之后，进入 Vim 界面仍然存在中文提示。例如，当进入 Insert mode 时，底部命令行的状态提示显示为 `--插入--`。
 
 若要将 Vim 界面语言设置为英文，需要在配置文件内 `$VIM\vimrc` 添加如下配置：
 
-```vim
+```vimrc
 " set the menu and the message to English
 set langmenu=en_US
 let $LANG='en_US'
@@ -94,7 +94,9 @@ Vim 的配置文件安装在 Vim 目录下。例如，我的 Vim 配置文件在
 
 这样，`_vimrc` 内修改更新过的配置内容就会重载和生效了。
 
-20250113 再次安装 Vim，按照 https://github.com/amix/vimrc 的配置教程，这次选择创建配置文件 `~\.vimrc`，也就是把配置文件放在用户目录下。
+## 2025-01-13 重新安装 Vim
+
+按照 https://github.com/amix/vimrc 的配置教程，这次选择创建配置文件 `~\.vimrc`，也就是把配置文件放在用户目录下。
 
 如果使用 Basic 版本，直接复制粘贴 basic.vim 内的配置至 `~\.vimrc` 即可。
 
@@ -102,7 +104,7 @@ Vim 的配置文件安装在 Vim 目录下。例如，我的 Vim 配置文件在
 
 ```pwsh
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_basic_vimrc.sh
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
 运行之后，原先配置文件内的代码会被强制刷新，个人的配置文件重新创建至 `~\.vim_runtime\my_configs.vim`，
@@ -151,7 +153,7 @@ How can I edit multiple files in Vim?
 ## 退出文件
 
 - `:wq` or `ZZ`，保存退出当前 buffer
-- `:q!`，不保存退出
+- `:q!` 不保存退出 Vim
 - `:qa` 退出 Vim
 
 ## 配置入门
@@ -180,10 +182,6 @@ https://www.thewindowsclub.com/keyboard-repeat-rate-and-repeat-delay-in-windows-
 ## Learning Paths
 
 1. Practical Vim (Second Edition), Drew Neil, 2015
-
-   - The Vim Way
-   - Normal Mode
-
 2. Modern Vim, Drew Neil, 2018
 
 ## 参考资料

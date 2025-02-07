@@ -3,9 +3,9 @@ title: WezTerm
 date: 2025-01-18 18:05:00
 permalink: /pages/536dc4/
 categories: 
-  - shell
+  - tool
 tags: 
-  - shell
+  - tool
   - Wezterm
 ---
 
