@@ -16,6 +16,17 @@ Windows PowerShell 是一种易于使用的命令行 Shell 和脚本环境，用
 - Windows PowerShell 预安装，版本 5
 - PowerShell 跨平台版，版本 7
 
+## 配置文件位置
+
+注意，Windows 自带的旧版本 Windows PowerShell 和自行安装的新版本 PowerShell 二者的配置文件是独立的，位置分别如下：
+
+- Windows PowerShell: `C:\Users\Alowr\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+- PowerShell: `C:\Users\Alowr\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+
+## 隐藏启动提示信息
+
+设置路径 `Settings >> Profiles >> PowerShell >> Command line` 在启动可执行文件后面添加参数 `-nologo`。以 PowerShell 为例，设置成：`C:\Program Files\PowerShell\7-preview\pwsh.exe -nologo` 即可。这样，每次开启 PowerShell 时，前面的一堆提示信息就消失不见，清爽很多。
+
 ## Useful Terminal Commands
 
 In Windows, we assume that PowerShell v7 has been installed. While with Linux and macOS, the commands in the table below are just listed for comparison purposes. Just note the differences.
@@ -68,6 +79,12 @@ In case you want to enable auto-upgrades, you need to edit your configuration fi
 {
   "auto_upgrade": true
 }
+```
+
+## 查看主题
+
+```pwsh
+Get-PoshThemes
 ```
 
 ## Learning Paths
