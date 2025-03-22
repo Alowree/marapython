@@ -15,6 +15,10 @@ Neovim 是 Vim 的最新替代品。
 
 ## 安装
 
+```pwsh
+winget install neovim.neovim
+```
+
 ## 升级
 
 运行 `nvim --version` 可以查看当前版本。

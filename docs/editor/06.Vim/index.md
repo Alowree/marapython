@@ -118,7 +118,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 In PowerShell, type `vim foo.txt bar.txt zar.txt` will open 3 files, 1 existing file and 2 newly created files.
 
 - `:n` will toggle to the 2nd file.
-- `:args` will show the currect active file.
+- `:args` will show the current active file.
 
 如果当前状态已经在 Vim 里面：
 
@@ -189,3 +189,26 @@ https://www.thewindowsclub.com/keyboard-repeat-rate-and-repeat-delay-in-windows-
 - [第九章、Vim 程式編輯器](https://linux.vbird.org/linux_basic/centos7/0310vi.php)
 - [Writing Markdown in Vim](https://codeinthehole.com/tips/writing-markdown-in-vim/)
 - [Vim 配置入门](https://ruanyifeng.com/blog/2018/09/vimrc.html)
+
+2025-03-17 update
+
+Now I have two versions of VIM91 installed, one using Windows installer (Vim and Gvim combined), the other being a byproduct of installing Zsh.
+
+GUI version
+
+- `C:/Program Files/Vim/vim91/vim.exe`
+- `C:/Program Files/Vim/vim91/`
+- ```
+  :echo $VIMRUNTIME
+  C:/Program Files/Vim/vim91/
+  ```
+
+TUI version
+
+- `C:/Program Files/Git/usr/bin/vim.exe`
+- `C:/Program Files/Git/usr/share/vim/vim91/`
+- ```
+  :echo $VIMRUNTIME
+  /usr/share/vim/vim91/
+  ```
+  Both Vim versions will source the same config file from `~/.vimrc`, but the GUI version does not source `~/.vim/colors/` for the additional themes added under this folder.

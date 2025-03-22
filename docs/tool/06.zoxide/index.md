@@ -1,5 +1,12 @@
 ---
 title: Zoxide
+date: 2025-02-14 10:21:30
+permalink: /pages/2e2e3a/
+categories: 
+  - tool
+tags: 
+  - tool
+  - Zoxide
 ---
 
 zoxide is a smarter `cd` command, inspired by `z` and `autojump`. It remembers which directories you use most frequently, so you can "jump" to them in just a few keystrokes. zoxide works on all major shells.

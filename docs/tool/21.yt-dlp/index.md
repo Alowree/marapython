@@ -1,3 +1,13 @@
+---
+title: index
+date: 2025-02-15 18:05:57
+permalink: /pages/80d479/
+categories: 
+  - tool
+tags: 
+  - tool
+  - yt-dlp
+---
 ## 安装和升级
 
 使用 Windows 操作系统的用户：
