@@ -177,9 +177,15 @@ Win+R -> regedit -> HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Control
 
 https://www.cnblogs.com/komean/p/12700100.html
 
-Mac mini macOS, remap Caps Lock to Escape
+Mac mini macOS
 
-Need to update on macOS to get a full path of the setting
+`Apple → System Settings → Keyboard → Keyboard Shortcuts → Modifier Keys`:
+
+我使用的是青龙 4.0 键盘 (QingLong 4.0)，它本身是一款 Windows 键盘。当连接 Mac Mini 4 的 macOS 之后，苹果按键功能和青龙按键的对应关系参见括号内容：
+
+- Caps Lock → Escape
+- Option (Alt) → Command
+- Command (System) → Option
 
 ### Speed up your key repeat
 
