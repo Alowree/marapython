@@ -164,6 +164,8 @@ How can I edit multiple files in Vim?
 
 ### Remap Caps Lock to Esc
 
+Windows 10
+
 Win+R -> regedit -> HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Control -> Keyboard Layout -> 右键 “Keyboard Layout” -> “新建” -> “二进制值” -> 重命名 “新值 #1” 为 “Scancode Map” -> 右键 “Scancode Map” -> “修改” -> 输入值如下：
 
 00,00,00,00,
@@ -174,6 +176,10 @@ Win+R -> regedit -> HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Control
 00,00,00,00
 
 https://www.cnblogs.com/komean/p/12700100.html
+
+Mac mini macOS, remap Caps Lock to Escape
+
+Need to update on macOS to get a full path of the setting
 
 ### Speed up your key repeat
 
@@ -212,3 +218,36 @@ TUI version
   /usr/share/vim/vim91/
   ```
   Both Vim versions will source the same config file from `~/.vimrc`, but the GUI version does not source `~/.vim/colors/` for the additional themes added under this folder.
+
+## 自动格式化
+
+1. Add plugin in your `.vimrc` file
+
+   ```
+   Plug 'neoclide/coc-prettier'
+   ```
+
+2. Run vim command `:CocInstall coc-prettier`
+3. Run `:CocConfig` to open coc-settings.json (note this is json file, so everything is enclosed with a pair of curly braces) and add following
+
+   ```
+   {
+   // Require .prettierrc
+   "prettier.requireConfig": true,
+
+   // Tslint on save
+   "tslint.enable": true,
+   "tslint.autoFixOnSave": true,
+
+   // Run prettier (and others)
+   "coc.preferences.formatOnSaveFiletypes": [
+       "css",
+       "markdown",
+       "Markdown",
+       "javascript",
+       "javascriptreact",
+       "typescript",
+       "typescriptreact"
+     ]
+   }
+   ```
